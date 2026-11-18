@@ -1,0 +1,889 @@
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+const { normalizeProjectFolder } = require('./bot-rerun');
+const { scanBatch } = require('../scripts/campaign-import-worker');
+const { getDefaultImageModel } = require('../config/env');
+
+function createPendingTextHandlers(deps) {
+  const {
+    projectRoot,
+    session,
+    bot,
+    monitoredSignals,
+    ensureWorker,
+    stages,
+    enqueueStage,
+    writeVideoApproval,
+    runClaude,
+    sendVideoApprovalRequest,
+    showCampaignConfirmation,
+    parseCampaignFromText,
+    runPipelineV3,
+    env = process.env,
+  } = deps;
+
+  const sourceLabels = {
+    brand: 'assets da marca',
+    api: 'IA (API)',
+    free: 'banco grátis',
+    screenshot: 'screenshots',
+    folder: 'pasta',
+    pasta: 'pasta',
+    solid: 'fundo sólido',
+  };
+
+  function normalizeImageSource(raw) {
+    const lower = String(raw || '').trim().toLowerCase();
+    if (/^(solido|solid)\b/.test(lower)) return 'solid';
+    const aliases = { marca: 'brand', gratis: 'free', stock: 'free', captura: 'screenshot', capturas: 'screenshot', pasta: 'folder' };
+    return aliases[lower] || lower || 'brand';
+  }
+
+  function describePendingRerun(payload, rerunStages) {
+    const stageLabels = { 1: 'Brief', 2: 'Imagens', 3: 'Vídeo', 4: 'Plataformas', 5: 'Distribuição' };
+    const stageText = rerunStages.map((n) => stageLabels[n] || `Etapa ${n}`).join(', ');
+    const source = normalizeImageSource(payload.image_source);
+    const provLabel = (payload.image_provider || '').toUpperCase() || 'default';
+    const lines = [
+      `Reprocessamento: <b>${payload.task_name}</b>`,
+      `Etapas: ${stageText}`,
+      `Fonte de imagens: <b>${sourceLabels[source] || source}</b>`,
+      `Imagens: <b>${payload.image_count || 5}</b>`,
+    ];
+    if (source === 'api') {
+      lines.push(`Provider: <b>${provLabel}</b> | Modelo: <b>${payload.image_model || 'default'}</b>`);
+    }
+    if (payload.image_reference) {
+      lines.push(`Referência: <code>${payload.image_reference}</code>`);
+    }
+    if (source === 'folder' && payload.image_folder) {
+      lines.push(`Pasta: <code>${payload.image_folder}</code>`);
+    }
+    if (source === 'solid' && payload.image_background_color) {
+      lines.push(`Cor: <code>${payload.image_background_color}</code>`);
+    }
+    if (source === 'screenshot' && Array.isArray(payload.screenshot_urls) && payload.screenshot_urls.length > 0) {
+      lines.push(`URLs: ${payload.screenshot_urls.join(', ')}`);
+    }
+    lines.push('');
+    lines.push('Ajustes: <code>imagens N</code>, <code>provider X</code>, <code>modelo X</code>, <code>fonte X</code>');
+    lines.push('Responda <b>sim</b> para confirmar ou <b>não</b> para cancelar.');
+    return lines.join('\n');
+  }
+
+  async function handlePendingImageError(ctx, chatId, s, text) {
+    if (!s.pendingImageError) return false;
+
+    const lower = text.toLowerCase().trim();
+    const { outputDir } = s.pendingImageError;
+    const decisionPath = path.resolve(projectRoot, outputDir, 'imgs', 'error_decision.json');
+
+    let action = null;
+    let newSource = null;
+    if (/^(avan[çc]|avanc|continuar|sem imagem)/.test(lower)) action = 'advance';
+    else if (/^(tentar|retry|repetir|novamente)/.test(lower)) action = 'retry';
+    else if (/^(cancel|cancelar|nao|não|para)/.test(lower)) action = 'cancel';
+    else if (/^(outra|trocar|mudar|fonte|source)/.test(lower) || /^(api|free|gratis|brand|marca|folder|pasta|solido|solid)/.test(lower)) {
+      if (/api/.test(lower)) newSource = 'api';
+      else if (/free|gratis|stock/.test(lower)) newSource = 'free';
+      else if (/brand|marca/.test(lower)) newSource = 'brand';
+      else if (/solido|solid/.test(lower)) newSource = 'solid';
+      else if (/folder|pasta/.test(lower)) {
+        newSource = 'folder';
+        const folderMatch = text.match(/(?:folder|pasta)\s+(\S+)/i);
+        if (folderMatch) {
+          action = 'change_source';
+          fs.mkdirSync(path.dirname(decisionPath), { recursive: true });
+          fs.writeFileSync(decisionPath, JSON.stringify({ action, image_source: 'folder', image_folder: folderMatch[1], ts: Date.now() }));
+          session.clearPendingImageError(chatId);
+          await ctx.reply(`🔄 Trocando para pasta: <code>${folderMatch[1]}</code>`, { parse_mode: 'HTML' });
+          return true;
+        }
+      }
+      if (newSource && !action) {
+        action = 'change_source';
+        fs.mkdirSync(path.dirname(decisionPath), { recursive: true });
+        const payload = { action, image_source: newSource, ts: Date.now() };
+        if (newSource === 'solid') {
+          const colorMatch = text.match(/(?:solido|solid)\s+([#a-z0-9]+)/i);
+          payload.image_background_color = colorMatch ? colorMatch[1] : '#0D0D0D';
+        }
+        fs.writeFileSync(decisionPath, JSON.stringify(payload));
+        session.clearPendingImageError(chatId);
+        const sourceLabels = { api: 'IA (API)', free: 'banco grátis', brand: 'assets da marca', folder: 'pasta', solid: 'fundo sólido' };
+        await ctx.reply(`🔄 Trocando fonte de imagens para: <b>${sourceLabels[newSource]}</b>`, { parse_mode: 'HTML' });
+        return true;
+      }
+    }
+
+    if (action) {
+      fs.mkdirSync(path.dirname(decisionPath), { recursive: true });
+      fs.writeFileSync(decisionPath, JSON.stringify({ action, ts: Date.now() }));
+      session.clearPendingImageError(chatId);
+      const msgs = {
+        advance: '▶️ Avançando sem imagens — usando layout CSS.',
+        retry: '🔄 Tentando gerar as imagens novamente...',
+        cancel: '❌ Campanha cancelada.',
+      };
+      await ctx.reply(msgs[action]);
+      return true;
+    }
+
+    await ctx.reply(
+      'Responda:\n• <b>avançar</b> — continuar sem imagens (CSS)\n• <b>tentar novamente</b> — repetir a geração\n• <b>outra fonte</b> — trocar: api, free, brand, pasta xxx, solido #111111\n• <b>cancelar</b>',
+      { parse_mode: 'HTML' },
+    );
+    return true;
+  }
+
+  async function handlePendingVideoApproval(ctx, chatId, s, text) {
+    if (!s.pendingVideoApproval) return false;
+
+    const currentOutputDir = s.pendingVideoApproval.outputDir;
+    const videoDir = path.resolve(projectRoot, currentOutputDir, 'video');
+    const approvalSignal = path.join(videoDir, 'approval_needed.json');
+    const timedOutPath = path.join(videoDir, 'timed_out.json');
+    if (fs.existsSync(timedOutPath) || !fs.existsSync(approvalSignal)) {
+      session.clearPendingVideoApproval(chatId);
+      await ctx.reply('Essa aprovação expirou. O fluxo já seguiu adiante.');
+      return true;
+    }
+
+    const lower = text.toLowerCase().trim();
+    const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda|rodar|renderiza|renderizar)/.test(lower);
+    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+
+    if (isConfirm) {
+      const { outputDir } = s.pendingVideoApproval;
+      session.clearPendingVideoApproval(chatId);
+      writeVideoApproval(projectRoot, outputDir, true);
+      await ctx.reply('Aprovado! Renderizando os vídeos agora...');
+      return true;
+    }
+
+    if (isCancel) {
+      const { outputDir } = s.pendingVideoApproval;
+      session.clearPendingVideoApproval(chatId);
+      writeVideoApproval(projectRoot, outputDir, false);
+      await ctx.reply('Vídeos cancelados. Os outros arquivos da campanha continuam disponíveis.');
+      return true;
+    }
+
+    if (lower.length > 10) {
+      const { outputDir, absOutputDir } = s.pendingVideoApproval;
+      await ctx.reply('Entendido — ajustando o roteiro...');
+
+      const planFiles = fs.existsSync(path.join(absOutputDir, 'video'))
+        ? fs.readdirSync(path.join(absOutputDir, 'video')).filter((file) => file.endsWith('_scene_plan.json'))
+        : [];
+
+      const adjustPrompt = `Adjust the video scene plans based on this feedback: "${text}"
+
+Scene plan files to update:
+${planFiles.map((file) => path.join(absOutputDir, 'video', file)).join('\n')}
+
+Read each scene plan, apply the feedback, and save the updated versions to the same file paths.
+Keep the same JSON structure. Only modify what the feedback requests.`;
+
+      runClaude(adjustPrompt, 'video_adjustment', (code) => {
+        if (code !== 0) {
+          ctx.reply('Erro ao ajustar o roteiro.');
+          return;
+        }
+        sendVideoApprovalRequest(ctx, chatId, outputDir).catch(() => {});
+      });
+      return true;
+    }
+
+    return false;
+  }
+
+  async function handlePendingRerun(ctx, chatId, s, text) {
+    if (!s.pendingRerun) return false;
+
+    const lower = text.toLowerCase().trim();
+    const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda)/.test(lower);
+    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+
+    if (isCancel) {
+      session.clearPendingRerun(chatId);
+      await ctx.reply('Reprocessamento cancelado.');
+      return true;
+    }
+
+    const rerunPayload = s.pendingRerun.payload || (s.pendingRerun.payloads && s.pendingRerun.payloads[0]);
+    const sourceMatch = text.match(/^fonte\s+(brand|marca|api|free|gratis|stock|screenshot|captura|capturas|pasta|folder|solido|solid)(?:\s+(.+))?$/i);
+    if (sourceMatch) {
+      const nextSource = normalizeImageSource(sourceMatch[1]);
+      const extra = (sourceMatch[2] || '').trim();
+      rerunPayload.image_source = nextSource;
+
+      if (nextSource === 'folder') {
+        if (!extra) {
+          await ctx.reply('Informe a pasta. Ex: <code>fonte pasta prj/inema/imgs</code>', { parse_mode: 'HTML' });
+          return true;
+        }
+        rerunPayload.image_folder = normalizeProjectFolder(rerunPayload.project_dir || s.projectDir, extra);
+        rerunPayload.image_background_color = null;
+        rerunPayload.screenshot_urls = [];
+      } else if (nextSource === 'screenshot') {
+        rerunPayload.image_folder = null;
+        rerunPayload.image_background_color = null;
+        rerunPayload.screenshot_urls = extra
+          ? extra.split(/[\s,]+/).filter(Boolean).map((url) => (url.startsWith('http') ? url : `https://${url}`))
+          : (rerunPayload.screenshot_urls || []);
+      } else if (nextSource === 'solid') {
+        rerunPayload.image_folder = null;
+        rerunPayload.screenshot_urls = [];
+        rerunPayload.image_background_color = extra || '#0D0D0D';
+      } else {
+        rerunPayload.image_folder = null;
+        rerunPayload.image_background_color = null;
+        rerunPayload.screenshot_urls = [];
+      }
+
+      await ctx.reply(`✅ Fonte ajustada para <b>${sourceLabels[nextSource] || nextSource}</b>.`, { parse_mode: 'HTML' });
+      await ctx.reply(describePendingRerun(rerunPayload, s.pendingRerun.stages), { parse_mode: 'HTML' });
+      return true;
+    }
+
+    // Reference handler MUST be before URL detection (filenames with .jpg/.png trigger URL matcher)
+    const refMatchEarly = lower.match(/^(?:ref(?:erencia|erência)?|reference)\s+(.+)$/i);
+    if (refMatchEarly) {
+      const refValue = refMatchEarly[1].trim();
+      const updateAll = (key, value) => {
+        rerunPayload[key] = value;
+        if (s.pendingRerun.payloads) s.pendingRerun.payloads.forEach((p) => { p[key] = value; });
+      };
+      if (refValue === 'nenhuma' || refValue === 'sem' || refValue === 'none') {
+        updateAll('image_reference', null);
+        updateAll('image_reference_note', null);
+      } else {
+        updateAll('image_reference', refValue);
+      }
+      const msg = rerunPayload.image_reference ? `✅ Referência: <b>${rerunPayload.image_reference}</b>` : '✅ Referência removida';
+      await ctx.reply(`${msg}\n\n${describePendingRerun(rerunPayload, s.pendingRerun.stages)}`, { parse_mode: 'HTML' });
+      return true;
+    }
+    if (/^sem\s+ref(?:erencia|erência)?$/i.test(lower)) {
+      const updateAll = (key, value) => {
+        rerunPayload[key] = value;
+        if (s.pendingRerun.payloads) s.pendingRerun.payloads.forEach((p) => { p[key] = value; });
+      };
+      updateAll('image_reference', null);
+      updateAll('image_reference_note', null);
+      await ctx.reply(`✅ Referência removida\n\n${describePendingRerun(rerunPayload, s.pendingRerun.stages)}`, { parse_mode: 'HTML' });
+      return true;
+    }
+
+    if ((lower.match(/^https?:\/\//) || lower.includes('.')) && !isConfirm) {
+      const urls = text.split(/[\s,]+/).filter(Boolean).filter((token) => /^https?:\/\//i.test(token) || /\.\w{2,}(\/|$)/.test(token));
+      if (urls.length > 0) {
+        rerunPayload.image_source = 'screenshot';
+        rerunPayload.image_folder = null;
+        rerunPayload.screenshot_urls = urls.map((url) => (url.startsWith('http') ? url : `https://${url}`));
+        await ctx.reply('✅ URLs de screenshot atualizadas.', { parse_mode: 'HTML' });
+        await ctx.reply(describePendingRerun(rerunPayload, s.pendingRerun.stages), { parse_mode: 'HTML' });
+        return true;
+      }
+    }
+
+    // Helper: update all payloads and re-show config
+    const updateAllPayloads = (key, value) => {
+      rerunPayload[key] = value;
+      if (s.pendingRerun.payloads) s.pendingRerun.payloads.forEach((p) => { p[key] = value; });
+    };
+    const showUpdatedConfig = async (msg) => {
+      await ctx.reply(`${msg}\n\n${describePendingRerun(rerunPayload, s.pendingRerun.stages)}`, { parse_mode: 'HTML' });
+    };
+
+    // Adjust image_count: "imagens 10", "images 15"
+    const imgCountMatch = lower.match(/^(?:imagens?|images?)\s+(\d+)$/i);
+    if (imgCountMatch) {
+      updateAllPayloads('image_count', parseInt(imgCountMatch[1], 10));
+      await showUpdatedConfig(`✅ Imagens: <b>${rerunPayload.image_count}</b>`);
+      return true;
+    }
+
+    // Adjust provider: "provider inemaimg", "provider kie"
+    const provMatch = lower.match(/^(?:provider|provedor)\s+(.+)$/i);
+    if (provMatch) {
+      const prov = provMatch[1].trim().toLowerCase();
+      updateAllPayloads('image_provider', prov);
+      updateAllPayloads('image_model', getDefaultImageModel(prov));
+      await showUpdatedConfig(`✅ Provider: <b>${prov}</b> (modelo: ${rerunPayload.image_model})`);
+      return true;
+    }
+
+    // Adjust model: "modelo flux2-klein", "model qwen-edit-2511"
+    const modelMatch = lower.match(/^(?:modelo?|model)\s+(.+)$/i);
+    if (modelMatch) {
+      updateAllPayloads('image_model', modelMatch[1].trim());
+      await showUpdatedConfig(`✅ Modelo: <b>${rerunPayload.image_model}</b>`);
+      return true;
+    }
+
+    if (!isConfirm) return false;
+
+    const { payloads: rerunPayloads, payload: singlePayload, stages: rerunStages, campaignFolder } = s.pendingRerun;
+    session.clearPendingRerun(chatId);
+
+    const allPayloads = rerunPayloads || [singlePayload];
+
+    await ctx.reply(`Reprocessamento confirmado para <b>${campaignFolder}</b>.`, { parse_mode: 'HTML' });
+
+    executeRerunPayloads({ ctx, chatId, payloads: allPayloads, stages: rerunStages, campaignFolder })
+      .catch((err) => {
+        session.clearRunningTask(chatId);
+        session.clearCampaignV3(chatId);
+        bot.api.sendMessage(chatId, `Erro no reprocessamento: ${err.message}`).catch(() => {});
+      });
+
+    return true;
+  }
+
+  // Executes the rerun stages for a single campaign. Awaitable — used by /rerun (fire-and-forget)
+  // and /loterun (awaited sequentially). Sets/clears runningTask + campaignV3 state itself.
+  async function executeRerunPayloads({ ctx, chatId, payloads, stages: rerunStages, campaignFolder }) {
+    const payload = payloads[0];
+
+    const videoMode = payload.video_pro && payload.video_quick ? 'Quick + Pro'
+      : payload.video_pro ? 'Pro' : 'Quick';
+
+    session.setRunningTask(chatId, {
+      taskName: campaignFolder,
+      taskDate: payload.task_date,
+      outputDir: payload.output_dir,
+      startedAt: new Date().toISOString(),
+      rerun: true,
+      rerunStages,
+      videoMode,
+    });
+
+    const minStage = Math.min(...rerunStages);
+    const activeStages = [];
+    for (let n = minStage; n <= 5; n += 1) activeStages.push(n);
+
+    session.setCampaignV3(chatId, {
+      payload,
+      outputDir: payload.output_dir,
+      approvalModes: payload.approval_modes || {},
+      notifications: payload.notifications !== false,
+      activeStages,
+    });
+    session.setCampaignV3Stage(chatId, minStage - 1);
+
+    for (const stageNum of activeStages) monitoredSignals.delete(`stage_done:${payload.output_dir}:${stageNum}`);
+    for (const sig of [...monitoredSignals]) {
+      if (sig.startsWith(`phase:${payload.output_dir}:`)) monitoredSignals.delete(sig);
+    }
+
+    const stageLabels = { 1: 'Brief', 2: 'Imagens', 3: 'Video', 4: 'Plataformas', 5: 'Distribuicao' };
+    const label = rerunStages.map((n) => (n === 3 ? `Video ${videoMode}` : stageLabels[n])).join(' + ');
+    await ctx.reply(`Enfileirando <b>${campaignFolder}</b>: ${label}...`, { parse_mode: 'HTML' }).catch(() => {});
+
+    const absOutDir = path.resolve(projectRoot, payload.output_dir);
+    if (payload.cleanFlags) {
+      if (payload.cleanFlags.plan) {
+        const videoDir = path.join(absOutDir, 'video');
+        if (fs.existsSync(videoDir)) {
+          for (const file of fs.readdirSync(videoDir)) {
+            if (file.endsWith('_scene_plan.json') || file.endsWith('_scene_plan_motion.json') || file === 'photography_plan.json') {
+              fs.unlinkSync(path.join(videoDir, file));
+            }
+          }
+          await ctx.reply('🗑️ Planos de cena limpos.').catch(() => {});
+        }
+      }
+      if (payload.cleanFlags.img) {
+        const imgsDir = path.join(absOutDir, 'imgs');
+        if (fs.existsSync(imgsDir)) {
+          for (const file of fs.readdirSync(imgsDir)) {
+            if (file.endsWith('.jpg') || file.endsWith('.png') || file.endsWith('.webp')) {
+              fs.unlinkSync(path.join(imgsDir, file));
+            }
+          }
+          for (const file of ['approved.json', 'rejected.json', 'approval_needed.json', 'error_decision.json']) {
+            const fullPath = path.join(imgsDir, file);
+            if (fs.existsSync(fullPath)) fs.unlinkSync(fullPath);
+          }
+          await ctx.reply('🗑️ Imagens limpas.').catch(() => {});
+        }
+      }
+      if (payload.cleanFlags.audio) {
+        const audioDir = path.join(absOutDir, 'audio');
+        if (fs.existsSync(audioDir)) {
+          for (const file of fs.readdirSync(audioDir)) {
+            if (file.endsWith('.mp3') || file.endsWith('.wav') || file.endsWith('_timing.json')) {
+              fs.unlinkSync(path.join(audioDir, file));
+            }
+          }
+          await ctx.reply('🗑️ Áudio limpo.').catch(() => {});
+        }
+      }
+    }
+
+    try {
+      for (const stageNum of rerunStages) {
+        const stageKey = `stage${stageNum}`;
+        const agentNames = stages[stageKey];
+        if (!agentNames) continue;
+
+        await ctx.reply(`Etapa ${stageNum}/5 — ${stageLabels[stageNum]}...`).catch(() => {});
+
+        const worker = ensureWorker();
+        let activeAgents = [...agentNames];
+        if (stageNum === 3) {
+          activeAgents = [];
+          if (payload.video_quick !== false) activeAgents.push('video_quick');
+          if (payload.video_pro === true) activeAgents.push('video_pro');
+          if (activeAgents.length === 0) activeAgents.push('video_quick');
+        }
+        if (stageNum === 4) {
+          const targets = payload.platform_targets || [];
+          activeAgents = agentNames.filter((agent) => targets.includes(agent.replace('platform_', '')));
+        }
+
+        const logsDir = path.resolve(projectRoot, payload.output_dir, 'logs');
+        fs.mkdirSync(logsDir, { recursive: true });
+        for (const agent of activeAgents) {
+          const logFile = path.join(logsDir, `${agent}.log`);
+          if (fs.existsSync(logFile)) fs.unlinkSync(logFile);
+        }
+
+        if (stageNum === 3 && payloads.length > 1) {
+          await enqueueStage(payload, agentNames.filter((a) => a !== 'video_pro'));
+          for (const tplPayload of payloads) {
+            await enqueueStage(tplPayload, ['video_pro']);
+            const tpl = tplPayload.video_template || 'auto';
+            await ctx.reply(`🎬 Video Pro template <b>${tpl}</b> enfileirado`).catch(() => {});
+          }
+        } else {
+          await enqueueStage(payload, agentNames);
+        }
+
+        const expected = activeAgents.length;
+        await new Promise((resolve) => {
+          const checkInterval = setInterval(() => {
+            if (!fs.existsSync(logsDir)) return;
+            let done = 0;
+            for (const agent of activeAgents) {
+              const logFile = path.join(logsDir, `${agent}.log`);
+              if (!fs.existsSync(logFile)) continue;
+              const content = fs.readFileSync(logFile, 'utf-8');
+              if (content.includes('Completed successfully') || content.includes('FAILED')) done += 1;
+            }
+            if (done >= expected) {
+              clearInterval(checkInterval);
+              if (worker) worker.kill('SIGTERM');
+              resolve();
+            }
+          }, 5000);
+
+          setTimeout(() => {
+            clearInterval(checkInterval);
+            if (worker) worker.kill('SIGTERM');
+            resolve();
+          }, 1800000);
+        });
+      }
+    } finally {
+      session.clearRunningTask(chatId);
+      session.clearCampaignV3(chatId);
+    }
+
+    await bot.api.sendMessage(chatId, `Reprocessamento de <b>${campaignFolder}</b> concluido!`, { parse_mode: 'HTML' }).catch(() => {});
+  }
+
+  async function handlePendingLoterun(ctx, chatId, s, text) {
+    if (!s.pendingLoterun) return false;
+
+    const lower = text.toLowerCase().trim();
+    const isConfirm = /^(sim|s|yes|ok|confirma|confirmar)$/.test(lower);
+    const isCancel = /^(n[aã]o|nao|n|cancel|cancelar|não)$/.test(lower);
+
+    if (!isConfirm && !isCancel) return false;
+
+    if (isCancel) {
+      session.clearPendingLoterun(chatId);
+      await ctx.reply('Lote rerun cancelado.');
+      return true;
+    }
+
+    const { items } = s.pendingLoterun;
+    session.clearPendingLoterun(chatId);
+
+    await ctx.reply(`<b>Lote rerun iniciado</b> — ${items.length} campanhas em série.`, { parse_mode: 'HTML' });
+
+    (async () => {
+      const results = [];
+      for (let i = 0; i < items.length; i += 1) {
+        const item = items[i];
+        const idx = i + 1;
+        const total = items.length;
+        await bot.api.sendMessage(chatId, `▶️ <b>${idx}/${total}</b> — <code>${item.campaignFolder}</code>`, { parse_mode: 'HTML' }).catch(() => {});
+        try {
+          await executeRerunPayloads({
+            ctx,
+            chatId,
+            payloads: item.payloads,
+            stages: item.sortedStages,
+            campaignFolder: item.campaignFolder,
+          });
+          results.push({ ok: true, campaignFolder: item.campaignFolder });
+          await bot.api.sendMessage(chatId, `✅ <b>${idx}/${total}</b> — <code>${item.campaignFolder}</code> concluída`, { parse_mode: 'HTML' }).catch(() => {});
+        } catch (err) {
+          results.push({ ok: false, campaignFolder: item.campaignFolder, error: err.message });
+          await bot.api.sendMessage(chatId, `❌ <b>${idx}/${total}</b> — <code>${item.campaignFolder}</code> falhou: ${err.message}`, { parse_mode: 'HTML' }).catch(() => {});
+          session.clearRunningTask(chatId);
+          session.clearCampaignV3(chatId);
+        }
+      }
+
+      const okCount = results.filter((r) => r.ok).length;
+      const failCount = results.length - okCount;
+      const summary = [`<b>Lote rerun concluído</b> — ${okCount}/${results.length} OK`];
+      if (failCount > 0) {
+        const failed = results.filter((r) => !r.ok).map((r) => r.campaignFolder);
+        summary.push(`Falhas: <code>${failed.join(', ')}</code>`);
+      }
+      await bot.api.sendMessage(chatId, summary.join('\n'), { parse_mode: 'HTML' }).catch(() => {});
+    })().catch((err) => {
+      bot.api.sendMessage(chatId, `Erro fatal no lote rerun: ${err.message}`).catch(() => {});
+    });
+
+    return true;
+  }
+
+  async function handlePendingCampaign(ctx, chatId, s, text) {
+    if (!s.pendingCampaign) return false;
+
+    const lower = text.toLowerCase().trim();
+    const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda|rodar)/.test(lower);
+    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+
+    if (isConfirm) {
+      const payload = s.pendingCampaign;
+      session.clearPendingCampaign(chatId);
+
+      const baseName = payload.task_name;
+      const outsDir = path.join(projectRoot, payload.project_dir, 'outputs');
+      let nextCounter = 1;
+      if (fs.existsSync(outsDir)) {
+        for (const folder of fs.readdirSync(outsDir)) {
+          const match = folder.match(/^c(\d{4})-/);
+          if (match) nextCounter = Math.max(nextCounter, parseInt(match[1], 10) + 1);
+        }
+      }
+      payload.task_name = `c${String(nextCounter).padStart(4, '0')}-${baseName}`;
+      const outputDir = `${payload.project_dir}/outputs/${payload.task_name}`;
+      payload.output_dir = outputDir;
+
+      session.setRunningTask(chatId, {
+        taskName: payload.task_name,
+        taskDate: payload.task_date,
+        outputDir,
+        startedAt: new Date().toISOString(),
+      });
+
+      session.clearHistory(chatId);
+      await ctx.reply(`Iniciando pipeline <b>${payload.task_name}</b>...\n\nUse /status para acompanhar.`, { parse_mode: 'HTML' });
+      runPipelineV3(ctx, chatId, payload, outputDir);
+      return true;
+    }
+
+    if (isCancel) {
+      session.clearPendingCampaign(chatId);
+      await ctx.reply('Campanha cancelada.');
+      return true;
+    }
+
+    const replyAndRefresh = async (message) => {
+      await ctx.reply(message, { parse_mode: 'HTML' }).catch(() => ctx.reply(message));
+      showCampaignConfirmation({ ctx, chatId, payload: s.pendingCampaign, session, env });
+    };
+
+    if (/^auto$/.test(lower)) {
+      s.pendingCampaign.approval_modes = { stage1: 'auto', stage2: 'auto', stage3: 'auto', stage4: 'auto', stage5: 'auto' };
+      await replyAndRefresh('✅ Todas as aprovações definidas como <b>auto</b>.');
+      return true;
+    }
+    if (/^humano$/.test(lower)) {
+      s.pendingCampaign.approval_modes = { stage1: 'humano', stage2: 'humano', stage3: 'humano', stage4: 'humano', stage5: 'humano' };
+      await replyAndRefresh('✅ Todas as aprovações definidas como <b>humano</b>.');
+      return true;
+    }
+    if (/^(notif|notifica).*(off|desativ|nao|não)/.test(lower)) {
+      s.pendingCampaign.notifications = false;
+      await replyAndRefresh('🔇 Notificações desativadas.');
+      return true;
+    }
+    if (/^(notif|notifica).*(on|ativ|sim)/.test(lower)) {
+      s.pendingCampaign.notifications = true;
+      await replyAndRefresh('🔔 Notificações ativadas.');
+      return true;
+    }
+    if (/^pro$/.test(lower)) {
+      s.pendingCampaign.video_pro = true;
+      s.pendingCampaign.video_quick = true;
+      s.pendingCampaign.video_mode = 'both';
+      await replyAndRefresh('✅ Video Pro adicionado.');
+      return true;
+    }
+    if (/^sem\s*quick$/i.test(lower)) {
+      s.pendingCampaign.video_quick = false;
+      s.pendingCampaign.video_mode = s.pendingCampaign.video_pro ? 'pro' : 'quick';
+      await replyAndRefresh('✅ Video Quick desativado.');
+      return true;
+    }
+    if (/^pular\s+(pesquisa|research)$/i.test(lower)) {
+      s.pendingCampaign.skip_research = true;
+      await replyAndRefresh('✅ Pesquisa será pulada.');
+      return true;
+    }
+    if (/^pular\s+(imagens?|image)$/i.test(lower)) {
+      s.pendingCampaign.skip_image = true;
+      await replyAndRefresh('✅ Imagens serão puladas.');
+      return true;
+    }
+    if (/^fundo\s+(blur|desfoque|desfocado)/i.test(lower)) {
+      s.pendingCampaign.image_bg_mode = 'blur';
+      await replyAndRefresh('✅ Fundo do quick: <b>blur</b> (imagem desfocada)');
+      return true;
+    }
+    if (/^fundo\s+(escuro|dark|black|preto)/i.test(lower)) {
+      s.pendingCampaign.image_bg_mode = 'dark';
+      await replyAndRefresh('✅ Fundo do quick: <b>escuro</b> (default)');
+      return true;
+    }
+    if (/^idioma\s+(.+)$/i.test(lower)) {
+      s.pendingCampaign.language = lower.match(/^idioma\s+(.+)$/i)[1].trim();
+      await replyAndRefresh(`✅ Idioma: <b>${s.pendingCampaign.language}</b>`);
+      return true;
+    }
+    if (/^narrad(or|ora)\s+(.+)$/i.test(lower)) {
+      s.pendingCampaign.narrator = lower.match(/^narrad(?:or|ora)\s+(.+)$/i)[1].trim();
+      await replyAndRefresh(`✅ Narrador: <b>${s.pendingCampaign.narrator}</b>`);
+      return true;
+    }
+    if (/^(tts|voz|narrac(?:ao|ão))\s+(auto|elevenlabs|minimax|openai)$/i.test(lower)) {
+      const provider = lower.match(/^(?:tts|voz|narrac(?:ao|ão))\s+(auto|elevenlabs|minimax|openai)$/i)[1].trim();
+      s.pendingCampaign.tts_provider = provider === 'openai' ? 'openai' : provider;
+      await replyAndRefresh(`✅ Provider de TTS: <b>${s.pendingCampaign.tts_provider}</b>`);
+      return true;
+    }
+    if (/^estilo\s+(.+)$/i.test(lower)) {
+      s.pendingCampaign.style_preset = lower.match(/^estilo\s+(.+)$/i)[1].trim();
+      await replyAndRefresh(`✅ Estilo visual: <b>${s.pendingCampaign.style_preset}</b>`);
+      return true;
+    }
+    if (/^dura[çc][aã]o\s+(\d+)/i.test(lower)) {
+      s.pendingCampaign.video_duration = parseInt(lower.match(/^dura[çc][aã]o\s+(\d+)/i)[1], 10);
+      await replyAndRefresh(`✅ Duração do vídeo Pro: <b>${s.pendingCampaign.video_duration}s</b>`);
+      return true;
+    }
+    if (/^(provider|provedor)\s+(.+)$/i.test(lower)) {
+      const prov = lower.match(/^(?:provider|provedor)\s+(.+)$/i)[1].trim().toLowerCase();
+      env.IMAGE_PROVIDER = prov;
+      s.pendingCampaign.image_provider = prov;
+      if (!s.pendingCampaign._modelExplicit) {
+        s.pendingCampaign.image_model = getDefaultImageModel(prov);
+      }
+      await replyAndRefresh(`✅ Provider de imagens: <b>${prov}</b> (modelo default: ${s.pendingCampaign.image_model})`);
+      return true;
+    }
+    if (/^modelo?\s+(.+)$/i.test(lower)) {
+      s.pendingCampaign.image_model = lower.match(/^modelo?\s+(.+)$/i)[1].trim();
+      s.pendingCampaign._modelExplicit = true;
+      await replyAndRefresh(`✅ Modelo de imagem: <b>${s.pendingCampaign.image_model}</b>`);
+      return true;
+    }
+    if (/^foto\s+(simples|premium)$/i.test(lower)) {
+      const quality = lower.match(/^foto\s+(simples|premium)$/i)[1].toLowerCase();
+      s.pendingCampaign.photo_quality = quality;
+      await replyAndRefresh(`✅ Fotografia: <b>${quality}</b> (${quality === 'premium' ? 'Opus — mais criativo, ~5min' : 'Sonnet — rápido, ~1min'})`);
+      return true;
+    }
+    if (/^videoplan\s+(simples|premium)$/i.test(lower)) {
+      const quality = lower.match(/^videoplan\s+(simples|premium)$/i)[1].toLowerCase();
+      s.pendingCampaign.scene_quality = quality;
+      await replyAndRefresh(`✅ Video Plan: <b>${quality}</b> (${quality === 'premium' ? 'Opus — mais detalhado, ~5min' : 'Sonnet — rápido, ~1min'})`);
+      return true;
+    }
+    if (/^fonte\s+(brand|api|free|screenshot|pasta)$/i.test(lower)) {
+      s.pendingCampaign.image_source = lower.match(/^fonte\s+(.+)$/i)[1].trim();
+      await replyAndRefresh(`✅ Fonte de imagens: <b>${s.pendingCampaign.image_source}</b>`);
+      return true;
+    }
+    if (/^template\s+(.+)$/i.test(lower)) {
+      const tpl = lower.match(/^template\s+(.+)$/i)[1].trim();
+      const validTemplates = ['auto', 'data_story', 'explainer', 'narrativo', 'brand_film', 'report', 'gatilhos'];
+      if (validTemplates.includes(tpl)) {
+        s.pendingCampaign.video_template = tpl;
+        await replyAndRefresh(`✅ Template: <b>${tpl}</b>`);
+      } else {
+        await ctx.reply(`Template "${tpl}" não reconhecido. Opções: ${validTemplates.join(', ')}`);
+      }
+      return true;
+    }
+    if (/^tipografia\s+(.+)$/i.test(lower)) {
+      const typo = lower.match(/^tipografia\s+(.+)$/i)[1].trim();
+      const validTypo = ['auto', 'serif', 'sans', 'condensed', 'mono'];
+      if (validTypo.includes(typo)) {
+        s.pendingCampaign.typography = typo;
+        await replyAndRefresh(`✅ Tipografia: <b>${typo}</b>`);
+      } else {
+        await ctx.reply(`Tipografia "${typo}" não reconhecida. Opções: ${validTypo.join(', ')}`);
+      }
+      return true;
+    }
+    if (/^m[uú]sica\s+(sim|nao|não|auto)$/i.test(lower)) {
+      const val = lower.match(/^m[uú]sica\s+(.+)$/i)[1].trim().replace('não', 'nao');
+      s.pendingCampaign.video_music = val;
+      await replyAndRefresh(`✅ Música: <b>${val}</b>`);
+      return true;
+    }
+    if (/^sfx\s+(sim|nao|não|auto)$/i.test(lower)) {
+      const val = lower.match(/^sfx\s+(.+)$/i)[1].trim().replace('não', 'nao');
+      s.pendingCampaign.video_sfx = val;
+      await replyAndRefresh(`✅ SFX: <b>${val}</b>`);
+      return true;
+    }
+
+    if (lower.length > 5) {
+      const originalBrief = s.pendingCampaign.campaign_brief || '';
+      const combinedText = `${originalBrief}. Ajuste: ${text}`;
+      await ctx.reply('Atualizando o briefing...');
+      parseCampaignFromText({
+        text: combinedText,
+        projectDir: s.projectDir,
+        projectRoot,
+        runClaude,
+        callback: (payload) => {
+          if (payload) {
+            const merged = { ...s.pendingCampaign, ...payload };
+            merged.campaign_brief = payload.campaign_brief || combinedText;
+            session.setPendingCampaign(chatId, merged);
+            showCampaignConfirmation({ ctx, chatId, payload: merged, session, env });
+          } else {
+            ctx.reply('Nao entendi o ajuste. Responda <b>sim</b> para confirmar ou descreva o que quer mudar.', { parse_mode: 'HTML' });
+          }
+        },
+        env,
+      });
+      return true;
+    }
+
+    return false;
+  }
+
+  async function handlePendingLote(ctx, chatId, s, text) {
+    if (!s.pendingLote) return false;
+
+    const lower = text.toLowerCase().trim();
+    const isConfirm = /^(sim|s|yes|ok|confirma|confirmar)$/.test(lower);
+    const isCancel = /^(n[aã]o|nao|n|cancel|cancelar|não)$/.test(lower);
+
+    if (!isConfirm && !isCancel) return false;
+
+    if (isCancel) {
+      session.clearPendingLote(chatId);
+      await ctx.reply('Lote cancelado.');
+      return true;
+    }
+
+    const { projectDir, selected, imageConfig, sourceLabel, quickMode, sourceSpec, commandText, scope, forceNew } = s.pendingLote;
+    session.clearPendingLote(chatId);
+
+    const batchId = `tg_lotequick_${Date.now()}_${crypto.randomUUID().slice(0, 6)}`;
+    const batchDir = path.join(projectRoot, projectDir, 'imports', batchId);
+    fs.mkdirSync(batchDir, { recursive: true });
+
+    const now = new Date();
+    const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    const manifest = {
+      titulo: `Lote Quick ${projectDir.split('/').pop()} ${dateStr}`,
+      batch_id: batchId,
+      created_at: now.toISOString(),
+      command_text: commandText,
+      project_dir: projectDir,
+      scope,
+      source_spec: sourceSpec,
+      source_label: sourceLabel,
+      quick_mode: quickMode,
+      selected_campaigns: selected,
+      clips: [],
+      defaults: {
+        targets: ['video_quick'],
+        quick_mode: quickMode,
+        ...imageConfig,
+        platform_targets: ['instagram'],
+        narrator: 'rachel',
+        video_duration: 20,
+      },
+      campaigns: selected,
+      force_new_plan: forceNew === true,
+    };
+    fs.writeFileSync(path.join(batchDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+
+    await ctx.reply(
+      `<b>Lote quick iniciado</b>\n`
+      + `Campanhas: <b>${selected.length}</b>\n`
+      + `Fonte: <b>${sourceLabel}</b>\n`
+      + `Modo: <b>${quickMode}</b>\n`
+      + `Saída: <code>${projectDir}/imports/${batchId}/videos/</code>`,
+      { parse_mode: 'HTML' },
+    );
+
+    const escHtml = (str) => String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    try {
+      const result = await scanBatch(batchDir, {
+        keepGoing: true,
+        onProgress: async ({ status, campaign_id, index, total, error }) => {
+          if (status === 'starting') {
+            await ctx.reply(
+              `▶️ <b>${index}/${total}</b> — <code>${campaign_id}</code>`,
+              { parse_mode: 'HTML' },
+            ).catch(() => {});
+          } else if (status === 'done') {
+            await ctx.reply(
+              `✅ <b>${index}/${total}</b> — <code>${campaign_id}</code> concluída`,
+              { parse_mode: 'HTML' },
+            ).catch(() => {});
+          } else if (status === 'failed') {
+            await ctx.reply(
+              `❌ <b>${index}/${total}</b> — <code>${campaign_id}</code> falhou: ${escHtml(error)}`,
+              { parse_mode: 'HTML' },
+            ).catch(() => {});
+          }
+        },
+      });
+      const success = (result.detalhes || []).filter((item) => item.ok);
+      const failed = (result.detalhes || []).filter((item) => item.ok === false);
+      const lines = [
+        `<b>Lote concluído</b> — ${success.length}/${result.total} OK`,
+      ];
+      if (failed.length > 0) {
+        lines.push(`Falhas: <code>${failed.map((item) => item.campaign_id).join(', ')}</code>`);
+      }
+      await ctx.reply(lines.join('\n'), { parse_mode: 'HTML' });
+    } catch (err) {
+      await ctx.reply(`Falha no lote: <code>${escHtml(err.message)}</code>`, { parse_mode: 'HTML' });
+    }
+
+    return true;
+  }
+
+  return {
+    handlePendingImageError,
+    handlePendingVideoApproval,
+    handlePendingRerun,
+    handlePendingCampaign,
+    handlePendingLote,
+    handlePendingLoterun,
+  };
+}
+
+module.exports = { createPendingTextHandlers };
