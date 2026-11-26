@@ -19,7 +19,7 @@ sudo npm install -g pm2
 ## 2. Baixar o projeto
 
 ```bash
-git clone git@github.com:inematds/timesmkt3.git
+git clone git@github.com:linnoff88-dev/timesmkt3.git
 cd timesmkt3
 npm install
 cd remotion-ad && npm install && cd ..

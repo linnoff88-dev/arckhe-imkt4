@@ -308,10 +308,10 @@ RULES:
 
 CTA + HOLD — MANDATORY CLOSING (read brand_identity.md for brand URL):
 - SECOND-TO-LAST scene: the CTA scene — MUST include the brand URL in text_overlay
-  Example for INEMA: text_overlay "INEMA.CLUB" or "ACESSE INEMA.CLUB"
+  Example for ARCKHÉ: text_overlay "ARCKHÉ AI" or "ACESSE ARCKHÉ AI"
   Duration: 3 seconds, narration must end with "Acesse [URL]"
 - LAST scene: SILENT HOLD — ${quickHoldSeconds} seconds, narration: "" (empty), same CTA image
-  text_overlay: brand URL again (e.g. "INEMA.CLUB"), big and centered
+  text_overlay: brand URL again (e.g. "ARCKHÉ AI"), big and centered
   This gives viewers time to absorb the brand name
 - Total structure: hook → content → proof → CTA (with narration) → HOLD (${quickHoldSeconds}s silent)
 
@@ -525,7 +525,7 @@ STEP 2 — Image source: ${providerNameVideo} API (images will be generated AFTE
 - Set "image": null for all scenes in the JSON
 - For EACH scene, add an "image_prompt" field: a concise English visual description (max 200 chars)
   of exactly what should be shown visually in that scene — derived from the scene's narration and purpose
-  Example: "tired person sitting on bed at sunrise, exhausted expression, warm muted light, cinematic"
+  Example: "tired person sitting on bed at sunrise, exhausted expression, warm muted light, cARCKHÉtic"
 - The pipeline will generate one image per scene using your image_prompt + brand colors
 - Do NOT use generic descriptions — each image_prompt must match what is being said/shown in that scene`;
     } else if (image_source === 'free') {
@@ -750,7 +750,7 @@ After saving all scene plans, print exactly: [VIDEO_APPROVAL_NEEDED] ${output_di
             cta: 'optimistic, inviting, forward momentum',
           };
           const mood = moodMap[sceneType] || moodMap.solution;
-          const rawPrompt = `${scene.image_prompt}. ${mood}. vertical 9:16.${colorHint} Cinematic lighting, photorealistic. No text, no words, no watermark, no logo.`;
+          const rawPrompt = `${scene.image_prompt}. ${mood}. vertical 9:16.${colorHint} CARCKHÉtic lighting, photorealistic. No text, no words, no watermark, no logo.`;
           const finalPrompt = rawPrompt.length > 490 ? rawPrompt.slice(0, 487) + '...' : rawPrompt;
 
           log(output_dir, 'video_ad_specialist', `Generating image for video_${idx} scene ${s + 1}/${total} [${sceneType}]: ${scene.image_prompt.slice(0, 80)}`);
@@ -861,7 +861,7 @@ Scene plans to enrich:
 ${scenePlans.map((scenePlan, i) => `  ${i + 1}. ${scenePlan}`).join('\n')}
 
 For each scene plan:
-1. Read all reference files: skills/motion-director/cinematography-rules.md, layout-typography.md, pacing-by-mood.md, scene-type-presets.md
+1. Read all reference files: skills/motion-director/cARCKHÉtography-rules.md, layout-typography.md, pacing-by-mood.md, scene-type-presets.md
 2. Read the scene plan JSON
 3. Use the Read tool to view each image listed in the scenes
 4. Read ${projectDir}/knowledge/brand_identity.md for brand mood and visual style

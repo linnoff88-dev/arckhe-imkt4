@@ -217,7 +217,7 @@ function registerRerunCommands(bot, deps) {
         + 'Exemplos:\n'
         + '<code>/continue c16</code>\n'
         + '<code>/continue c16 screenshot</code>\n'
-        + '<code>/continue c16 inema.club</code>',
+        + '<code>/continue c16 ARCKHÉ AI</code>',
         { parse_mode: 'HTML' },
       );
     }
@@ -393,7 +393,7 @@ function registerRerunCommands(bot, deps) {
         + '<code>/rerun c13 video quick</code>\n'
         + '<code>/rerun c13 video pro</code>\n'
         + '<code>/rerun c13 video pro screenshot</code>\n'
-        + '<code>/rerun c13 video pro inema.club</code>\n'
+        + '<code>/rerun c13 video pro ARCKHÉ AI</code>\n'
         + '<code>/rerun c13 imagens api</code>\n'
         + '<code>/rerun c13 2,3</code>\n'
         + '<code>/rerun c13 video pro cleanplan</code>\n'

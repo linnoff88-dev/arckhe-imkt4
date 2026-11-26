@@ -44,7 +44,7 @@ const IMAGE_PROVIDER_MAP = {
     { value: 'kie',         label: 'KIE.ai',         models: ['z-image', 'z-image-turbo', 'flux-kontext-pro', 'flux-kontext-max', 'gpt-image-1', 'seedream', 'grok-imagine', 'qwen-edit-2511', 'ernie'] },
     { value: 'pollinations', label: 'Pollinations',   models: ['flux', 'flux-2', 'turbo', 'nano-banana-2'] },
     { value: 'piramyd',     label: 'Piramyd',         models: ['flux-2', 'flux2-klein', 'flux2-dev'] },
-    { value: 'inemaimg',    label: 'inemaimg local',  models: ['flux2-klein', 'seedream'] },
+    { value: 'ARCKHÉimg',    label: 'ARCKHÉimg local',  models: ['flux2-klein', 'seedream'] },
   ],
   free: [
     { value: 'pexels',    label: 'Pexels',    models: [] },
@@ -437,7 +437,7 @@ function renderCadastros() {
         `).join('')}
       </div>
       <form class="reg-add-form" data-action="cad-add" data-group="video_templates" data-key="">
-        <input class="reg-add-input" id="cadTplValue" placeholder="value (ex: cinematic)" required style="width:140px">
+        <input class="reg-add-input" id="cadTplValue" placeholder="value (ex: cARCKHÉtic)" required style="width:140px">
         <input class="reg-add-input" id="cadTplLabel" placeholder="label (ex: Cinemático)" required style="width:150px">
         <button type="submit" class="button ghost" style="min-height:32px;padding:4px 10px;font-size:12px">+ Adicionar</button>
       </form>
@@ -657,11 +657,11 @@ function renderConfig() {
         <div class="form-grid">
           <label class="field full">
             <span>Pasta local para imagens</span>
-            <input name="image_folder" placeholder="prj/inema/assets/logo" value="${escapeHtml(config.image_folder || '')}">
+            <input name="image_folder" placeholder="prj/ARCKHÉ/assets/logo" value="${escapeHtml(config.image_folder || '')}">
           </label>
           <label class="field full">
             <span>Imagem ou pasta de referência</span>
-            <input name="image_reference" placeholder="prj/inema/assets/logo/logo.jpg" value="${escapeHtml(config.image_reference || '')}">
+            <input name="image_reference" placeholder="prj/ARCKHÉ/assets/logo/logo.jpg" value="${escapeHtml(config.image_reference || '')}">
           </label>
           <label class="field full">
             <span>Nota para referência visual</span>
@@ -724,7 +724,7 @@ function renderConfig() {
           <label class="field">
             <span>Preset visual</span>
             <select name="style_preset">
-              ${optionList([['inema_hightech','INEMA hightech'],['01_hero_film','Hero film'],['02_product_demo','Product demo'],['03_explainer','Explainer'],['10_problem_solution','Problema e soluçêo'],['13_kinetic_typography','Kinetic typography'],['14_short_vertical','Short vertical'],['20_performance_ad','Performance ad']], config.style_preset || 'inema_hightech')}
+              ${optionList([['ARCKHÉ_hightech','ARCKHÉ hightech'],['01_hero_film','Hero film'],['02_product_demo','Product demo'],['03_explainer','Explainer'],['10_problem_solution','Problema e soluçêo'],['13_kinetic_typography','Kinetic typography'],['14_short_vertical','Short vertical'],['20_performance_ad','Performance ad']], config.style_preset || 'ARCKHÉ_hightech')}
             </select>
           </label>
           <div class="field full">
@@ -757,7 +757,7 @@ function renderConfig() {
             </div>
             <label class="field" style="margin-top:10px;max-width:360px">
               <span>Narraçêo existente</span>
-              <input name="existing_narration_file" placeholder="prj/inema/outputs/.../audio/narration.mp3" value="${escapeHtml(config.existing_narration_file || '')}">
+              <input name="existing_narration_file" placeholder="prj/ARCKHÉ/outputs/.../audio/narration.mp3" value="${escapeHtml(config.existing_narration_file || '')}">
             </label>
           </div>
         </div>
@@ -823,7 +823,7 @@ function renderConfig() {
           </label>
           <label class="field full">
             <span>Narraçêo existente</span>
-            <input name="quick_existing_narration_file" placeholder="prj/inema/outputs/.../audio/quick.mp3" value="${escapeHtml(config.quick_existing_narration_file || '')}">
+            <input name="quick_existing_narration_file" placeholder="prj/ARCKHÉ/outputs/.../audio/quick.mp3" value="${escapeHtml(config.quick_existing_narration_file || '')}">
           </label>
         </div>
       `;
@@ -886,7 +886,7 @@ function renderConfig() {
           </label>
           <label class="field full">
             <span>Narraçêo existente</span>
-            <input name="pro_existing_narration_file" placeholder="prj/inema/outputs/.../audio/pro.mp3" value="${escapeHtml(config.pro_existing_narration_file || '')}">
+            <input name="pro_existing_narration_file" placeholder="prj/ARCKHÉ/outputs/.../audio/pro.mp3" value="${escapeHtml(config.pro_existing_narration_file || '')}">
           </label>
           <div class="field full">
             <div class="check-row">
@@ -1031,7 +1031,7 @@ function collectConfigForm(form) {
     pro_words_per_second: proWordsPerSecond,
     pro_narration_words: Number(data.get('pro_narration_words') || Math.round(proDuration * proWordsPerSecond)),
     pro_existing_narration_file: data.get('pro_existing_narration_file') || '',
-    style_preset: data.get('style_preset') || 'inema_hightech',
+    style_preset: data.get('style_preset') || 'ARCKHÉ_hightech',
     photo_quality: data.get('photo_quality') || 'simples',
     scene_quality: data.get('scene_quality') || 'simples',
     video_draft: data.has('video_draft'),
@@ -1285,7 +1285,7 @@ const BATCH_CATEGORIES = [
   ['lotes',        'Lotes'],
   ['gatilhos',     'Gatilhos'],
   ['rerun',        'Rerun'],
-  ['inema-videos', 'INEMA vídeos'],
+  ['ARCKHÉ-videos', 'ARCKHÉ vídeos'],
 ];
 
 function serviceTypeMatches(service, type) {
@@ -1303,8 +1303,8 @@ function isServiceType(service) {
 }
 
 function isBatchType(service) {
-  return ['lotes', 'gatilhos', 'rerun', 'inema-videos'].includes(service.category) ||
-    (service.tags || []).some((t) => ['lotes', 'gatilhos', 'rerun', 'inema-videos'].includes(t));
+  return ['lotes', 'gatilhos', 'rerun', 'ARCKHÉ-videos'].includes(service.category) ||
+    (service.tags || []).some((t) => ['lotes', 'gatilhos', 'rerun', 'ARCKHÉ-videos'].includes(t));
 }
 
 function renderTools() {
@@ -1483,7 +1483,7 @@ function renderGenerator() {
           </label>
           <label class="field full">
             <span>Negocio / marca</span>
-            <input name="business" value="INEMA - Ecossistema de IA e Transformacao Digital">
+            <input name="business" value="ARCKHÉ - Ecossistema de IA e Transformacao Digital">
           </label>
           <label class="field full">
             <span>Topicos, um por linha <em class="field-em">(1 topico = 1 payload)</em></span>
@@ -1627,7 +1627,7 @@ function buildPayloadsFromForm(config, fallbackOnly = false) {
     task_date: today(),
     prefix: config.batch?.name_prefix || 'c',
     image_source: config.image_source || 'api',
-    business: 'INEMA - Ecossistema de IA e Transformacao Digital',
+    business: 'ARCKHÉ - Ecossistema de IA e Transformacao Digital',
     topics: ['nova campanha'],
     brief: '',
     platforms: config.platform_targets || ['instagram'],

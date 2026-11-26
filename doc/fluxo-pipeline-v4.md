@@ -137,7 +137,7 @@ Config       Atual         Opcoes
   Pro        nao            pro
   Narrador   rachel         rachel / bella / domi / antoni / josh / arnold
   Duracao    60s            30 / 60
-  Estilo     inema_hightech inema_hightech / 01_hero_film / ...
+  Estilo     ARCKHÉ_hightech ARCKHÉ_hightech / 01_hero_film / ...
   Dir.Foto   simples        simples / premium
   Scene plan simples        simples / premium
   Fundo quick escuro        escuro / blur

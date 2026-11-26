@@ -8,13 +8,13 @@ const { startContinuousMonitor } = require('../telegram/bot-monitor');
 
 test('startContinuousMonitor auto-approves pending video when stage3 mode is auto', async () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'timesmkt3-monitor-'));
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-01');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-01');
   fs.mkdirSync(path.join(campDir, 'video'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'chat_context.json'), JSON.stringify({ chatId: '321' }));
   fs.writeFileSync(path.join(campDir, 'video', 'approval_needed.json'), JSON.stringify({ needed: true }));
 
   const sessionState = {
-    runningTask: { outputDir: 'prj/inema/outputs/camp-01' },
+    runningTask: { outputDir: 'prj/ARCKHÉ/outputs/camp-01' },
     campaignV3: {
       payload: { approval_modes: { stage3: 'auto' } },
       notifications: true,
@@ -71,13 +71,13 @@ test('startContinuousMonitor auto-approves pending video when stage3 mode is aut
 
 test('startContinuousMonitor advances stage1 when research is skipped and copywriter completed', async () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'timesmkt3-monitor-skip-'));
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-02');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-02');
   fs.mkdirSync(path.join(campDir, 'logs'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'chat_context.json'), JSON.stringify({ chatId: '654' }));
   fs.writeFileSync(path.join(campDir, 'logs', 'copywriter_agent.log'), 'Completed successfully\n');
 
   const sessionState = {
-    runningTask: { outputDir: 'prj/inema/outputs/camp-02' },
+    runningTask: { outputDir: 'prj/ARCKHÉ/outputs/camp-02' },
     campaignV3: {
       payload: {
         skip_research: true,
@@ -132,17 +132,17 @@ test('startContinuousMonitor advances stage1 when research is skipped and copywr
 
 test('startContinuousMonitor advances stage3 when skip_image disables quick video', async () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'timesmkt3-monitor-stage3-'));
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-03');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-03');
   fs.mkdirSync(path.join(campDir, 'logs'), { recursive: true });
   fs.mkdirSync(path.join(campDir, 'ads'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'chat_context.json'), JSON.stringify({ chatId: '777' }));
 
   const monitoredSignals = new Set([
-    'stage_done:prj/inema/outputs/camp-03:1',
-    'stage_done:prj/inema/outputs/camp-03:2',
+    'stage_done:prj/ARCKHÉ/outputs/camp-03:1',
+    'stage_done:prj/ARCKHÉ/outputs/camp-03:2',
   ]);
   const sessionState = {
-    runningTask: { outputDir: 'prj/inema/outputs/camp-03' },
+    runningTask: { outputDir: 'prj/ARCKHÉ/outputs/camp-03' },
     campaignV3: {
       payload: {
         skip_image: true,
@@ -199,7 +199,7 @@ test('startContinuousMonitor advances stage3 when skip_image disables quick vide
 
 test('startContinuousMonitor requests human approval for the completed stage', async () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'timesmkt3-monitor-human-'));
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-04');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-04');
   fs.mkdirSync(path.join(campDir, 'logs'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'chat_context.json'), JSON.stringify({ chatId: '888' }));
   fs.writeFileSync(path.join(campDir, 'logs', 'research_agent.log'), 'Completed successfully\n');
@@ -207,7 +207,7 @@ test('startContinuousMonitor requests human approval for the completed stage', a
   fs.writeFileSync(path.join(campDir, 'logs', 'copywriter_agent.log'), 'Completed successfully\n');
 
   const sessionState = {
-    runningTask: { outputDir: 'prj/inema/outputs/camp-04' },
+    runningTask: { outputDir: 'prj/ARCKHÉ/outputs/camp-04' },
     campaignV3: {
       payload: {
         approval_modes: { stage1: 'humano' },
@@ -259,13 +259,13 @@ test('startContinuousMonitor requests human approval for the completed stage', a
 
 test('startContinuousMonitor syncs currentStage to the stage currently running', async () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'timesmkt3-monitor-running-'));
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-05');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-05');
   fs.mkdirSync(path.join(campDir, 'logs'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'chat_context.json'), JSON.stringify({ chatId: '889' }));
   fs.writeFileSync(path.join(campDir, 'logs', 'video_quick.log'), 'Starting video_quick...\nInvoking Claude CLI...\n');
 
   const sessionState = {
-    runningTask: { outputDir: 'prj/inema/outputs/camp-05' },
+    runningTask: { outputDir: 'prj/ARCKHÉ/outputs/camp-05' },
     campaignV3: {
       currentStage: 2,
       payload: {
@@ -300,8 +300,8 @@ test('startContinuousMonitor syncs currentStage to the stage currently running',
       },
       projectRoot,
       monitoredSignals: new Set([
-        'stage_done:prj/inema/outputs/camp-05:1',
-        'stage_done:prj/inema/outputs/camp-05:2',
+        'stage_done:prj/ARCKHÉ/outputs/camp-05:1',
+        'stage_done:prj/ARCKHÉ/outputs/camp-05:2',
       ]),
       readChatContext: (dir) => JSON.parse(fs.readFileSync(path.join(dir, 'chat_context.json'), 'utf-8')),
       writeImageApproval: () => {},
@@ -323,7 +323,7 @@ test('startContinuousMonitor syncs currentStage to the stage currently running',
 
 test('startContinuousMonitor notifies quick video failures from logs even without worker stdout', async () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'timesmkt3-monitor-fail-'));
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-fail');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-fail');
   fs.mkdirSync(path.join(campDir, 'logs'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'chat_context.json'), JSON.stringify({ chatId: '999' }));
   fs.writeFileSync(

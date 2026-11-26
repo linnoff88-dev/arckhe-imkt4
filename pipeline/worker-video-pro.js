@@ -102,7 +102,7 @@ function createWorkerVideoProHandler({
       try {
         const result = await generateReport({
           projectRoot, outputDir: output_dir, projectDir: project_dir,
-          taskName: task_name, stylePreset: job.data.style_preset || 'inema_hightech',
+          taskName: task_name, stylePreset: job.data.style_preset || 'ARCKHÉ_hightech',
           videoAudio: proVideoAudio,
           narrator: proNarrator,
           ttsProvider: proTtsProvider,
@@ -130,11 +130,11 @@ function createWorkerVideoProHandler({
           ctaBrandName = brandCtx.brand || '';
         }
         // Default CTA brand: project folder name cleaned up, or brand from research
-        const ctaBrand = ctaBrandName ? `${ctaBrandName.toUpperCase()}.CLUB` : 'INEMA.CLUB';
+        const ctaBrand = ctaBrandName ? `${ctaBrandName.toUpperCase()}.CLUB` : 'ARCKHÉ AI';
 
         const result = await generateGatilhos({
           projectRoot, outputDir: output_dir, projectDir: project_dir,
-          taskName: task_name, stylePreset: job.data.style_preset || 'inema_hightech',
+          taskName: task_name, stylePreset: job.data.style_preset || 'ARCKHÉ_hightech',
           videoAudio: proVideoAudio,
           narrator: proNarrator,
           ttsProvider: proTtsProvider,
@@ -217,7 +217,7 @@ function createWorkerVideoProHandler({
           image: imagePath,
           image_has_text: !!(imagePath && /(_post|_stories|carousel_|oficial_|logo_|instagram|facebook|_ad\.|banner|calendar)/i.test(imagePath)),
           face_position: 'center',
-          text_overlay: isLast ? 'inema.club' : null,
+          text_overlay: isLast ? 'ARCKHÉ AI' : null,
           text_position: 'top',
           image_reason: imagePath ? 'Fallback local após timeout do Photography Director' : 'Sem asset fallback disponível',
           background_color: !imagePath ? (solidBackgroundColor || '#0D0D0D') : undefined,
@@ -355,7 +355,7 @@ NARRATION SCRIPT RULES (TTS reads exactly what you write):
 - NEVER use currency symbols: "R$ 10" → "dez reais" or just "dez"
 - NEVER use abbreviations: "%" → "por cento", "R$" → "reais", "US$" → "dólares"
 - Write numbers by extenso: "16%" → "dezesseis por cento", "3x" → "três vezes"
-- Write URLs spoken form: "inema.club" → "inema ponto club"
+- Write URLs spoken form: "ARCKHÉ AI" → "ARCKHÉ ponto club"
 - Avoid special characters the TTS might misread: &, @, #, /, etc.
 ${musicInstructions}` : `
 AUDIO: no TTS provider configured. Generate silent videos. Narration scripts only.
@@ -641,7 +641,7 @@ RULES:
       // Simples mode: skip Photography Director agent, use automatic plan
       log(output_dir, 'video_pro', 'Phase 1.6: Auto photography plan (simples mode)...');
       const fallbackPlan = buildFallbackPhotographyPlan(narrationTimings);
-      fallbackPlan.style_preset = job.data.style_preset || 'inema_hightech';
+      fallbackPlan.style_preset = job.data.style_preset || 'ARCKHÉ_hightech';
       fs.writeFileSync(photoplanPath, JSON.stringify(fallbackPlan, null, 2), 'utf-8');
       log(output_dir, 'video_pro', 'Photography plan created (auto/simples).');
     } else if (!fs.existsSync(photoplanPath)) {
@@ -685,7 +685,7 @@ CRITICAL RULES:
       if (photoQuality === 'premium') {
         photoDirPrompt = `You are the Photography Director (Diretor de Fotografia). Follow the skill defined in skills/photography-director/SKILL.md exactly.
 
-You think like a CINEMATOGRAPHER. You define the complete visual language BEFORE the editor creates the scene plan.
+You think like a CARCKHÉTOGRAPHER. You define the complete visual language BEFORE the editor creates the scene plan.
 
 Task: Create the photography plan for ${video_count} video(s) — "${task_name}" campaign.
 Platforms: ${platform_targets.join(', ')}
@@ -761,7 +761,7 @@ ${narrationNote}
 ${imageListForPhoto}
 
 ═══ PHOTOGRAPHY PLAN RULES ═══
-1. Choose 1 of 12 style presets: neon_futurista, warm_lifestyle, corporate_clean, bold_pop, minimal_zen, dark_cinematic, pastel_soft, retro_vintage, nature_organic, urban_street, luxury_gold, editorial_documentary
+1. Choose 1 of 12 style presets: neon_futurista, warm_lifestyle, corporate_clean, bold_pop, minimal_zen, dark_cARCKHÉtic, pastel_soft, retro_vintage, nature_organic, urban_street, luxury_gold, editorial_documentary
 2. Default format is 9:16. Only use 1:1 or 16:9 if explicitly requested in the payload/platform plan.
 3. For each shot define: framing (extreme-close-up/close-up/medium-shot/wide-shot/detail-shot/overhead), motion (push-in/pull-out/pan-right/drift/ken-burns-in/zoom-in/breathe/parallax-zoom), mood, image file, text_overlay (max 6 words)
 4. Classify each image: "clean" (no text) or "has_text" (has text/logo) or "unsuitable"
@@ -925,13 +925,13 @@ Your scene plan MUST follow this visual_type distribution:
 Structure: hook (text_card) → context (photo) → point 1 (text_card) → evidence (chart) → point 2 (text_card) → photo → CTA (text_card)
 CRITICAL: Text cards should have large, bold typography that carries the story forward. Each card = one impactful statement.`,
       brand_film: `
-TEMPLATE: brand_film — Cinematic, photo-dominant
+TEMPLATE: brand_film — CARCKHÉtic, photo-dominant
 Your scene plan MUST follow this visual_type distribution:
-- ~70% of scenes: "photo" (cinematic photography with strong motion)
+- ~70% of scenes: "photo" (cARCKHÉtic photography with strong motion)
 - ~20% of scenes: "text_card" (minimal, elegant text moments)
 - ~10% of scenes: "chart" (only when critical data is narrated)
 Structure: hook (photo) → story sequence (photo × 4-6) → insight (text_card) → data (chart) → story (photo × 3-4) → CTA (text_card)
-CRITICAL: This is a cinematic template — photos MUST have varied motion (zoom_in, pan_right, ken-burns, etc.). Text cards should be minimal and elegant.`,
+CRITICAL: This is a cARCKHÉtic template — photos MUST have varied motion (zoom_in, pan_right, ken-burns, etc.). Text cards should be minimal and elegant.`,
     };
 
     const templateBlock = TEMPLATE_INSTRUCTIONS[templateName] || TEMPLATE_INSTRUCTIONS.auto;
@@ -1013,7 +1013,7 @@ AUDIO-VISUAL SYNC (CRITICAL):
 
 CAROUSEL/BANNER BAN (CRITICAL):
 - NEVER use images from ads/ (carousel, banner, static ad images) in video pro
-- Video pro is CINEMATIC — use ONLY raw photographic images (imgs/, assets/, API-generated)
+- Video pro is CARCKHÉTIC — use ONLY raw photographic images (imgs/, assets/, API-generated)
 - If photography_plan references an ads/ image, SKIP it and use a photographic alternative
 - Only exception: payload contains "carousel_in_video": true explicitly
 
@@ -1028,7 +1028,7 @@ TYPOGRAPHY — MAGAZINE EDITORIAL STYLE:
 
 GLOBAL VIDEO SETTINGS — include these top-level fields in the scene plan JSON:
 - "color_grading": { "gamma": 1.05, "saturate": 1.1, "contrast": 1.15, "hueRotate": 10 } — unified color across ALL scenes ("same camera, same day")
-- "film_grain": { "intensity": 0, "monochromatic": true, "lightLeak": false } — cinematic grain + light leaks
+- "film_grain": { "intensity": 0, "monochromatic": true, "lightLeak": false } — cARCKHÉtic grain + light leaks
 - "organic_shake": { "amplitude": 2, "frequency": 1 } — subtle hand-held feel (set amplitude 1-2 for premium, 3-5 for UGC)
 - Adjust values based on style_preset from Photography Director. For tech/futuristic: higher contrast, bluer hue. For warm/lifestyle: lower contrast, warmer grain.
 
@@ -1061,7 +1061,7 @@ For EACH scene, provide:
 
 Per visual_type, also provide:
 - photo: no extra fields needed (system picks background image automatically)
-- cta: "cta_brand" (brand URL or name, e.g. "INEMA.CLUB"), "cta_action" (call to action text, e.g. "Agende sua análise gratuita")
+- cta: "cta_brand" (brand URL or name, e.g. "ARCKHÉ AI"), "cta_action" (call to action text, e.g. "Agende sua análise gratuita")
 - chart: "chart_type" (bar/line/pie/donut), "chart_title", "chart_data" [{label,value}]
 - text_card: "card_title" (main phrase), "card_body" (supporting text)
 - list: "list_title", "list_items" (array of strings), "list_numbered" (true/false)
@@ -1106,7 +1106,7 @@ RULES:
   - NEVER currency symbols: "R$ 10" → "dez reais" or "dez"
   - NEVER abbreviations: "%" → "por cento", "3x" → "três vezes"
   - Numbers by extenso: "16%" → "dezesseis por cento"
-  - URLs: "inema.club" → "inema ponto club"
+  - URLs: "ARCKHÉ AI" → "ARCKHÉ ponto club"
 - keyword must be related to what's being said (1-3 words, impactful)
 ${visualTypeInstructions}
 
@@ -1258,7 +1258,7 @@ Then print: [VIDEO_APPROVAL_NEEDED] ${output_dir}`;
           const mood = moodMap[sceneType] || moodMap.solution;
           const refGuide = refImages.length > 0 ? 'Based on the reference image, transform and adapt: ' : '';
           const refSuffix = refImages.length > 0 ? ' Maintain core visual elements and color palette from reference.' : '';
-          const rawPrompt = `${refGuide}${scene.image_prompt}. ${mood}. vertical 9:16.${colorHint} Cinematic lighting, photorealistic.${refSuffix} No text, no words, no watermark.`;
+          const rawPrompt = `${refGuide}${scene.image_prompt}. ${mood}. vertical 9:16.${colorHint} CARCKHÉtic lighting, photorealistic.${refSuffix} No text, no words, no watermark.`;
           const finalPrompt = rawPrompt.length > 490 ? rawPrompt.slice(0, 487) + '...' : rawPrompt;
 
           log(output_dir, 'video_pro', `Generating image ${promptMap.size + 1} for video_${idx}: ${scene.image_prompt.slice(0, 80)}`);
@@ -1477,7 +1477,7 @@ Salve o JSON corrigido em: ${planPath}`;
 
     if (useSlideSystem) {
       const styleDictPath = path.resolve(projectRoot, 'skills/video-engineering/style-dictionary.json');
-      const presetName = job.data.style_preset || 'inema_hightech';
+      const presetName = job.data.style_preset || 'ARCKHÉ_hightech';
       const preset = resolvePreset(presetName, styleDictPath);
       const absImgsDir = path.resolve(projectRoot, output_dir, 'imgs');
       const absAssetsDir = path.resolve(projectRoot, project_dir, 'assets');

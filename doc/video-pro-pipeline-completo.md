@@ -6,7 +6,7 @@
 
 ## Visao Geral
 
-O Video Pro gera videos de 30-60s com 25-50 cortes cinematograficos, narracao sincronizada e efeitos visuais. O pipeline tem **6 fases** executadas sequencialmente pelo worker.
+O Video Pro gera videos de 30-60s com 25-50 cortes cARCKHÉtograficos, narracao sincronizada e efeitos visuais. O pipeline tem **6 fases** executadas sequencialmente pelo worker.
 
 ```
 Fase 1    → Narracao (TTS — Fish Audio, voz Bella default)
@@ -196,8 +196,8 @@ Correcoes automaticas aplicadas ao scene plan:
 
 Cada preset define cores, fontes, motion, audio e mood. O Diretor de Fotografia escolhe 1 na Fase 1.6.
 
-### 1. inema_hightech (PADRAO)
-**Para:** Tech, IA, automacao, INEMA
+### 1. ARCKHÉ_hightech (PADRAO)
+**Para:** Tech, IA, automacao, ARCKHÉ
 **Cores:** Cyan #0099FF, green #00FF88, gold #FFD700, bg #080C14
 **Fontes:** Space Grotesk 800, Oswald 900 CAPS
 **Motion:** push-in agressivo, parallax-zoom, zoom_in tech
@@ -227,7 +227,7 @@ Cada preset define cores, fontes, motion, audio e mood. O Diretor de Fotografia 
 **Audio:** EDM/trap 120-145 BPM
 **Ref:** Nike, Gatorade, Red Bull
 
-### 5. Emocional Cinematico
+### 5. Emocional CARCKHÉtico
 **Para:** Familia, saude, causas sociais, datas comemorativas
 **Cores:** Warm white #FFF5E1, brown #2C1810, earth #D4956A
 **Fontes:** Lora 700, Inter 400
@@ -337,10 +337,10 @@ Todas as cenas sao `photo` com text overlay. Agente tem liberdade total. Comport
 
 **Estrutura tipo:** hook (text_card) → contexto (photo) → ponto 1 (text_card) → evidencia (chart) → ponto 2 (text_card) → CTA (text_card)
 
-### `brand_film` — Cinematografico
+### `brand_film` — CARCKHÉtografico
 | visual_type | % | Uso |
 |-------------|---|-----|
-| `photo` | ~70% | Fotografia cinematografica com motion variado |
+| `photo` | ~70% | Fotografia cARCKHÉtografica com motion variado |
 | `text_card` | ~20% | Momentos de texto minimalista e elegante |
 | `chart` | ~10% | Apenas quando dado critico e narrado |
 
@@ -465,7 +465,7 @@ quero um video pro sobre automacoes com IA, template data_story
 `auto`, `data_story`, `explainer`, `narrativo`, `brand_film`
 
 **Opcoes no briefing:**
-- Estilo: inema_hightech / neon_futurista / premium_minimal / energetico / emocional / corporate / streetwear / nature / retro / bold_pop / dark_dramatic / playful / editorial
+- Estilo: ARCKHÉ_hightech / neon_futurista / premium_minimal / energetico / emocional / corporate / streetwear / nature / retro / bold_pop / dark_dramatic / playful / editorial
 - Tipografia: auto / serif / sans / condensed / mono
 - Template: auto / data_story / explainer / narrativo / brand_film
 - Narrador: bella / rachel / domi / antoni / josh / arnold

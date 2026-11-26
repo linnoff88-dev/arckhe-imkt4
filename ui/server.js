@@ -657,7 +657,7 @@ function classifyScript(filePath) {
   const name = path.basename(filePath);
   const lower = name.toLowerCase();
   const source = textHead(filePath);
-  const mentionsInemaVideos = source.includes('prj/inema/videos') || source.includes('gen-lib/scene-templates');
+  const mentionsARCKHÉVideos = source.includes('prj/ARCKHÉ/videos') || source.includes('gen-lib/scene-templates');
   const mentionsGatilhos = lower.includes('gatilho') || source.toLowerCase().includes('gatilhos');
   const mentionsRerun = lower.includes('rerun') || source.toLowerCase().includes('/rerun');
   const tags = [];
@@ -678,14 +678,14 @@ function classifyScript(filePath) {
     description = 'Renderiza entregaveis por CLI.';
   }
 
-  if (mentionsInemaVideos) {
-    category = 'inema-videos';
-    tags.push('inema-videos');
-    description = 'Template standalone que gera ou renderiza videos em prj/inema/videos.';
+  if (mentionsARCKHÉVideos) {
+    category = 'ARCKHÉ-videos';
+    tags.push('ARCKHÉ-videos');
+    description = 'Template standalone que gera ou renderiza videos em prj/ARCKHÉ/videos.';
   }
   if (mentionsGatilhos) {
     tags.push('gatilhos');
-    if (!mentionsInemaVideos) category = 'gatilhos';
+    if (!mentionsARCKHÉVideos) category = 'gatilhos';
     description = description || 'Fluxo de gatilhos/hooks.';
   }
   if (mentionsRerun) {
@@ -693,7 +693,7 @@ function classifyScript(filePath) {
     category = 'rerun';
   }
 
-  const outputMatch = source.match(/prj\/inema\/videos\/[^`'")\s]+/);
+  const outputMatch = source.match(/prj\/ARCKHÉ\/videos\/[^`'")\s]+/);
   return {
     type,
     category,
@@ -703,8 +703,8 @@ function classifyScript(filePath) {
     path: rel(filePath),
     command: inferScriptCommand(filePath, source),
     argsHint: extractArgsHint(source),
-    outputRoot: outputMatch ? outputMatch[0] : mentionsInemaVideos ? 'prj/inema/videos' : '',
-    outputExists: mentionsInemaVideos ? exists(path.join(ROOT, 'prj/inema/videos')) : null,
+    outputRoot: outputMatch ? outputMatch[0] : mentionsARCKHÉVideos ? 'prj/ARCKHÉ/videos' : '',
+    outputExists: mentionsARCKHÉVideos ? exists(path.join(ROOT, 'prj/ARCKHÉ/videos')) : null,
     description,
     runnable: true,
   };
@@ -766,13 +766,13 @@ function commandServices() {
   ];
 }
 
-function inemaVideoTemplateServices() {
-  const rootExists = exists(path.join(ROOT, 'prj/inema/videos'));
-  const videoCount = countFiles(path.join(ROOT, 'prj/inema/videos'), (filePath) => VIDEO_EXT.has(path.extname(filePath).toLowerCase()), 6);
+function ARCKHÉVideoTemplateServices() {
+  const rootExists = exists(path.join(ROOT, 'prj/ARCKHÉ/videos'));
+  const videoCount = countFiles(path.join(ROOT, 'prj/ARCKHÉ/videos'), (filePath) => VIDEO_EXT.has(path.extname(filePath).toLowerCase()), 6);
   const base = {
     type: 'video-template',
-    category: 'inema-videos',
-    tags: ['inema-videos'],
+    category: 'ARCKHÉ-videos',
+    tags: ['ARCKHÉ-videos'],
     group: 'standalone',
     outputExists: rootExists,
     videoCount,
@@ -783,7 +783,7 @@ function inemaVideoTemplateServices() {
       name: 'CriaProf + GERTRAN',
       command: 'node batch-profissoes.js <slug|all|new>',
       path: 'batch-profissoes.js',
-      outputRoot: 'prj/inema/videos/criaprof/ e prj/inema/videos/gertran/',
+      outputRoot: 'prj/ARCKHÉ/videos/criaprof/ e prj/ARCKHÉ/videos/gertran/',
       description: 'Factory CLI de profissoes: gera imagens, TTS, whisper, CriaProf 1:1 e GERTRAN 9:16.',
     },
     {
@@ -791,7 +791,7 @@ function inemaVideoTemplateServices() {
       name: 'CriaProf-CTA 9:16',
       command: 'node batch-criaprof-cta.js <slug|all|new>',
       path: 'batch-criaprof-cta.js',
-      outputRoot: 'prj/inema/videos/criaprof-cta-916/',
+      outputRoot: 'prj/ARCKHÉ/videos/criaprof-cta-916/',
       description: 'Template vertical com hook forte e CTA pesado, variantes prof e generic.',
     },
     {
@@ -799,7 +799,7 @@ function inemaVideoTemplateServices() {
       name: 'CriaProf-CTA A/B narrativo',
       command: 'node gen-narrations-multi.js <slug> && node render-criaprof-cta-916.js <slug> prof 3',
       path: 'gen-narrations-multi.js',
-      outputRoot: 'prj/inema/videos/criaprof-cta-916/<slug>_<date>/video/',
+      outputRoot: 'prj/ARCKHÉ/videos/criaprof-cta-916/<slug>_<date>/video/',
       description: 'Gera v1-v5 de narracao para testar estilos de abertura e trilha.',
     },
     {
@@ -807,7 +807,7 @@ function inemaVideoTemplateServices() {
       name: 'Extras GERTRAN',
       command: 'node batch-extras.js',
       path: 'batch-extras.js',
-      outputRoot: 'prj/inema/videos/extras/<paired|artifacts|decades>/videos/',
+      outputRoot: 'prj/ARCKHÉ/videos/extras/<paired|artifacts|decades>/videos/',
       description: 'Tres templates extras 9:16: paired, artifacts e decades.',
     },
     {
@@ -815,7 +815,7 @@ function inemaVideoTemplateServices() {
       name: 'CriaProf Comic A',
       command: 'node gen-criaprof-comic-A.js <slug> && node render-criaprof-comic-A-cta-916.js <slug>',
       path: 'gen-criaprof-comic-A.js',
-      outputRoot: 'prj/inema/videos/criaprof-comic-A/ e criaprof-comic-A-cta-916/',
+      outputRoot: 'prj/ARCKHÉ/videos/criaprof-comic-A/ e criaprof-comic-A-cta-916/',
       description: 'Variaçêo em quadrinho americano do template CriaProf CTA.',
     },
   ];
@@ -870,7 +870,7 @@ function listServices() {
 
   return [
     ...commandServices(),
-    ...inemaVideoTemplateServices(),
+    ...ARCKHÉVideoTemplateServices(),
     ...scripts,
     ...remotionScripts,
     ...workers,

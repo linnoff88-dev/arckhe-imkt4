@@ -14,8 +14,8 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const IN_VIDEO = path.join(__dirname, 'prj/inema/videos/fisioterapeuta_2026-04-22/video/fisioterapeuta-30s.mp4');
-const OUT_DIR = path.join(__dirname, 'prj/inema/videos/fisioterapeuta_2026-04-22/video');
+const IN_VIDEO = path.join(__dirname, 'prj/ARCKHÉ/videos/fisioterapeuta_2026-04-22/video/fisioterapeuta-30s.mp4');
+const OUT_DIR = path.join(__dirname, 'prj/ARCKHÉ/videos/fisioterapeuta_2026-04-22/video');
 const OUT_FILE = path.join(OUT_DIR, 'fisioterapeuta-30s-reels-v2.mp4');
 const FONT_HOOK = '/home/nmaldaner/.local/share/fonts/BebasNeue-Regular.ttf';
 const FONT_CAPS = '/home/nmaldaner/.local/share/fonts/Montserrat-ExtraBold.ttf';
@@ -88,9 +88,9 @@ const capBlocks = [
   { t0: 28.3, t1: 30.0, text: 'ALÍVIO VIROU CIÊNCIA' },
 ];
 
-const watermark = `drawtext=fontfile=${FONT_HOOK}:text='INEMA.CLUB':fontcolor=white@0.85:fontsize=38:borderw=3:bordercolor=black@0.6:x=48:y=380`;
+const watermark = `drawtext=fontfile=${FONT_HOOK}:text='ARCKHÉ AI':fontcolor=white@0.85:fontsize=38:borderw=3:bordercolor=black@0.6:x=48:y=380`;
 
-const handle = `drawtext=fontfile=${FONT_CAPS}:text='@inema.club':fontcolor=white@0.8:fontsize=36:x=(w-tw)/2:y=1820`;
+const handle = `drawtext=fontfile=${FONT_CAPS}:text='@ARCKHÉ AI':fontcolor=white@0.8:fontsize=36:x=(w-tw)/2:y=1820`;
 
 // Pulse visual nos primeiros 2.5s — barra fina colorida animada no rodapé do topo pra dar pattern interrupt
 const pulse = `drawbox=x=0:y=415:w=1080:h=6:color=#FFEB3B@0.9:t=fill:enable='between(t,0,2.5)'`;

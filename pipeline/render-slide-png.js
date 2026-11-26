@@ -352,7 +352,7 @@ function brandFilmSlide(scene, p, bgImage, w, h) {
 // ─── CTA (shared, colors from preset) ───────────────────────────────────
 
 function ctaSlide(scene, p, bgImage, w, h) {
-  const brand = scene.cta_brand || 'INEMA.CLUB';
+  const brand = scene.cta_brand || 'ARCKHÉ AI';
   const action = scene.cta_action || '';
   const keyword = scene.keyword || '';
   const overlay = `background:radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%);`;
@@ -419,7 +419,7 @@ async function renderAllSlides(plan, preset, imagesDir, assetsDir, width, height
   const skipDirs = ['logo', 'logos', 'brand', 'icons', 'ads'];
 
   // Filename patterns that indicate text/branding — skip these images
-  const skipPatterns = /banner|logo_|oficial_|badge_|stats_|apresenta|convite|_texto|texto_|_text|clean_|semcoroa|interno_|premium_|inema_.*v\d|classico|gold_|carousel_|_ad\.|_post\.|_story/i;
+  const skipPatterns = /banner|logo_|oficial_|badge_|stats_|apresenta|convite|_texto|texto_|_text|clean_|semcoroa|interno_|premium_|ARCKHÉ_.*v\d|classico|gold_|carousel_|_ad\.|_post\.|_story/i;
 
   const collectImages = (dir) => {
     if (!dir || !fs.existsSync(dir)) return [];

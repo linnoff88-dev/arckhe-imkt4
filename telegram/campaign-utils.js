@@ -41,7 +41,7 @@ function buildPayload(taskName, opts, projectDir, today, env = process.env) {
 
 function buildConfigTable(payload, title, env = process.env) {
   const imageSource = payload.image_source || 'brand';
-  const providerLabel = (payload.image_provider || env.IMAGE_PROVIDER || 'inemaimg').toUpperCase();
+  const providerLabel = (payload.image_provider || env.IMAGE_PROVIDER || 'ARCKHÉimg').toUpperCase();
   const modelLabels = {
     'z-image': 'Z-Image', 'z-image-turbo': 'Z-Image Turbo',
     'flux-kontext-pro': 'Flux Pro', 'flux-kontext-max': 'Flux Max', 'gpt-image-1': 'GPT-Image-1',
@@ -54,8 +54,8 @@ function buildConfigTable(payload, title, env = process.env) {
   const modelLabel = modelLabels[payload.image_model] || payload.image_model || 'flux2-klein';
 
   const DEFAULTS = {
-    image_source: 'brand', image_model: 'flux2-klein', image_provider: 'INEMAIMG',
-    narrator: 'rachel', video_duration: 60, style_preset: 'inema_hightech',
+    image_source: 'brand', image_model: 'flux2-klein', image_provider: 'ARCKHÉIMG',
+    narrator: 'rachel', video_duration: 60, style_preset: 'ARCKHÉ_hightech',
     photo_quality: 'simples', scene_quality: 'simples',
     video_quick: true, video_pro: false, video_template: 'auto', language: 'pt-BR',
     image_bg_mode: 'dark', notifications: true, approval: 'auto',
@@ -80,7 +80,7 @@ function buildConfigTable(payload, title, env = process.env) {
     { setting: 'Narrador', current: payload.narrator || 'rachel', def: DEFAULTS.narrator, opts: 'rachel / bella / domi / antoni / josh / arnold' },
     { setting: 'TTS', current: payload.tts_provider || 'auto', def: DEFAULTS.tts_provider, opts: 'auto / chatterbox / fish / elevenlabs / openai' },
     { setting: 'Duraçêo', current: `${payload.video_duration || 60}s`, def: '60s', opts: '30 / 60' },
-    { setting: 'Estilo', current: payload.style_preset || 'inema_hightech', def: DEFAULTS.style_preset, opts: 'inema_hightech / neon_futurista / premium_minimal / energetico / emocional / corporate / streetwear / nature / retro / bold_pop / dark_dramatic / playful / editorial' },
+    { setting: 'Estilo', current: payload.style_preset || 'ARCKHÉ_hightech', def: DEFAULTS.style_preset, opts: 'ARCKHÉ_hightech / neon_futurista / premium_minimal / energetico / emocional / corporate / streetwear / nature / retro / bold_pop / dark_dramatic / playful / editorial' },
     { setting: 'Tipografia', current: payload.typography || 'auto', def: 'auto', opts: 'auto / serif / sans / condensed / mono' },
     { setting: 'Dir.Foto', current: payload.photo_quality || 'simples', def: DEFAULTS.photo_quality, opts: 'simples / premium' },
     { setting: 'Scene plan', current: payload.scene_quality || 'simples', def: DEFAULTS.scene_quality, opts: 'simples / premium' },
@@ -95,7 +95,7 @@ function buildConfigTable(payload, title, env = process.env) {
 
   if (imageSource === 'api') {
     rows.splice(1, 0,
-      { setting: 'Provider', current: providerLabel, def: DEFAULTS.image_provider, opts: 'inemaimg / kie / pollinations / piramyd' },
+      { setting: 'Provider', current: providerLabel, def: DEFAULTS.image_provider, opts: 'ARCKHÉimg / kie / pollinations / piramyd' },
       { setting: 'Modelo', current: modelLabel, def: DEFAULTS.image_model, opts: 'flux2-klein / qwen-edit-2511 / ernie / flux2-dev / z-image / flux' },
     );
   }
@@ -205,10 +205,10 @@ Rules:
 - video_count: how many videos requested (default 1)
 - video_quick: always true unless user explicitly says "sem video quick" or "only pro"
 - video_pro: true if user says "video pro", "video profissional", "remotion", "pro", "both", "2 videos"
-- video_template: "auto" (default, agent decides freely), "data_story" (data/statistics focused), "explainer" (step-by-step, process), "narrativo" (text-card narrative), "brand_film" (cinematic, photo-dominant). Set based on user request: "template data_story", "template explicativo", "template narrativo", "template cinematografico/filme".
+- video_template: "auto" (default, agent decides freely), "data_story" (data/statistics focused), "explainer" (step-by-step, process), "narrativo" (text-card narrative), "brand_film" (cARCKHÉtic, photo-dominant). Set based on user request: "template data_story", "template explicativo", "template narrativo", "template cARCKHÉtografico/filme".
 - image_source: "brand" (or "marca") if user mentions brand images, project images, fotos da marca; "free" (or "gratis") if user mentions free stock photos, banco de imagens, pexels, unsplash, pixabay; "api" if user mentions AI generation, gerar imagens, criar imagens com IA; "folder" (or "pasta") if user specifies a folder path; "screenshot" (or "captura") if user mentions screenshot, captura de site, print do site, capturar pagina; "solid" (or "solido") if user wants no images, only solid/flat background. When screenshot, also populate "screenshot_urls" with any URLs mentioned. Default "brand".
 - image_background_color: only relevant when image_source is "solid". If user says just "solido", default to "#0D0D0D". If they specify a color, preserve it (e.g. "#112233").
-- image_model: only relevant when image_source is "api". Default is ALWAYS "${getDefaultImageModel(env.IMAGE_PROVIDER)}" (derived from IMAGE_PROVIDER + per-provider defaults in .env). Only change if the user explicitly requests a different model. Options depend on provider: inemaimg → "flux2-klein", "qwen-edit-2511", "ernie", "flux2-dev"; kie → "z-image", "z-image-turbo", "flux-kontext-pro", "flux-kontext-max", "gpt-image-1"; pollinations → "flux".
+- image_model: only relevant when image_source is "api". Default is ALWAYS "${getDefaultImageModel(env.IMAGE_PROVIDER)}" (derived from IMAGE_PROVIDER + per-provider defaults in .env). Only change if the user explicitly requests a different model. Options depend on provider: ARCKHÉimg → "flux2-klein", "qwen-edit-2511", "ernie", "flux2-dev"; kie → "z-image", "z-image-turbo", "flux-kontext-pro", "flux-kontext-max", "gpt-image-1"; pollinations → "flux".
 - approval_modes: each stage can be "humano" (user must approve), "agente" (AI reviewer decides), or "auto" (advance automatically). Default "auto" for all. Set to "humano" if user explicitly asks for approval before each stage. Set to "agente" if user says "aprovaçêo por agente", "agente revisa".
 - notifications: false only if user explicitly says "sem notificações", "silencioso", "nêo notificar".
 - video_audio: "narration" if user wants voiceover/narraçêo (default), "music" if user wants background music only, "both" if user wants narration + music, "none" for silent/no audio.

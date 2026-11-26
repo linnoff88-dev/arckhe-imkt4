@@ -96,7 +96,7 @@ for (const slug of selected) {
   console.log(`=============================================`);
 
   // 1. gen-criaprof
-  const criaDir = path.join(__dirname, `prj/inema/videos/criaprof/${slug}_2026-04-23/imgs`);
+  const criaDir = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof/${slug}_2026-04-23/imgs`);
   if (imgsExist(criaDir) >= 50) {
     console.log(`⏭ [${slug}] criaprof já completo (50 imgs)`);
   } else {
@@ -104,7 +104,7 @@ for (const slug of selected) {
   }
 
   // 2. gen-gertran-nostalgia
-  const nostalgiaDir = path.join(__dirname, `prj/inema/videos/gertran-nostalgia/${slug}_2026-04-23/imgs`);
+  const nostalgiaDir = path.join(__dirname, `prj/ARCKHÉ/videos/gertran-nostalgia/${slug}_2026-04-23/imgs`);
   if (imgsExist(nostalgiaDir) >= 20) {
     console.log(`⏭ [${slug}] nostalgia já completo (20 imgs)`);
   } else {

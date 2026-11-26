@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SESSION_FILE = path.resolve(__dirname, '..', '.sessions.json');
-const DEFAULT_PROJECT = 'prj/inema';
+const DEFAULT_PROJECT = 'prj/ARCKHÉ';
 const MAX_HISTORY = 20;
 
 // Map<chatId, sessionData>

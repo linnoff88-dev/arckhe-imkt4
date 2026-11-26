@@ -68,8 +68,8 @@ function concatPartsWithSilence(partFiles, silencesSec, outputFile) {
 async function generateGatilhos(opts) {
   const {
     projectRoot, outputDir, projectDir, taskName,
-    stylePreset = 'inema_hightech',
-    ctaBrand = 'INEMA.CLUB', ctaAction = 'Acesse grátis',
+    stylePreset = 'ARCKHÉ_hightech',
+    ctaBrand = 'ARCKHÉ AI', ctaAction = 'Acesse grátis',
     videoAudio = 'narration', // 'narration' | 'none' | 'music'
     narrator = 'rachel',
     ttsProvider = 'auto',
@@ -181,7 +181,7 @@ async function generateGatilhos(opts) {
   // Only fall back to assets/ if no campaign images exist
   // If nothing clean is available, use null (solid bg from preset)
   const imgExts = ['.jpg', '.jpeg', '.png', '.webp'];
-  const skipPatterns = /banner|logo_|oficial_|badge_|stats_|apresenta|convite|_texto|texto_|_text|clean_|semcoroa|interno_|premium_|inema_.*v\d|classico|gold_/i;
+  const skipPatterns = /banner|logo_|oficial_|badge_|stats_|apresenta|convite|_texto|texto_|_text|clean_|semcoroa|interno_|premium_|ARCKHÉ_.*v\d|classico|gold_/i;
   const skipDirs = ['logo', 'logos', 'brand', 'icons'];
   const collectImages = (dir) => {
     if (!dir || !fs.existsSync(dir)) return [];

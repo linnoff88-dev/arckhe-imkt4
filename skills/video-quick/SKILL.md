@@ -99,7 +99,7 @@ O texto do Quick segue estilo **capa de revista** — grande, bold, ocupando o t
 A narracao do Video Quick e DIFERENTE do Video Pro (video-editor-agent):
 
 - **Quick**: narracao CURTA e direta. Maximo 15-20 segundos. Cada frase corresponde a UMA cena. O text_overlay e a versao resumida da narracao — ambos sincronizados.
-- **Pro**: narracao longa e cinematica (50-70s), com roteiro narrativo completo, arco emocional e sincronizacao frame-a-frame.
+- **Pro**: narracao longa e cARCKHÉtica (50-70s), com roteiro narrativo completo, arco emocional e sincronizacao frame-a-frame.
 
 **Regras de narracao Quick:**
 - Cada cena tem UMA frase curta que o narrador fala

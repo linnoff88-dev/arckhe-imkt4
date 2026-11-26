@@ -33,7 +33,7 @@ Mapa simples de todos os módulos do `pipeline/` e das specs de agentes em `skil
 | Arquivo | O que faz |
 |---|---|
 | `generate-image-kie.js` | Provider KIE (modelo de imagem) |
-| `generate-image-inemaimg.js` | Provider InemaImg |
+| `generate-image-ARCKHÉimg.js` | Provider ARCKHÉImg |
 | `generate-image-piramyd.js` | Provider Piramyd |
 | `generate-image-pollinations.js` | Provider Pollinations (gratuito) |
 
@@ -82,7 +82,7 @@ Sêo as **specs dos agentes** — prompts, responsabilidades e outputs esperados
 | `agente-revisor` | Avalia saídas e aprova/rejeita automaticamente |
 | `image-generation` | Guia de prompts para geraçêo de imagem |
 | `photography-director` | Direçêo de fotografia para as cenas |
-| `video-art-direction` | 12 presets visuais (cinematic, bold, minimal...) |
+| `video-art-direction` | 12 presets visuais (cARCKHÉtic, bold, minimal...) |
 | `video-composition` | Regras de composiçêo de cena |
 | `video-quick` | Spec específica do modo quick |
 | `video-engineering` | Detalhes técnicos de renderizaçêo |

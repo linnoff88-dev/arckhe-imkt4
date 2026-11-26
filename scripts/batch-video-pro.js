@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * batch-video-pro.js — Gera video pro de 30s para TODAS as campanhas ativas do projeto INEMA.
+ * batch-video-pro.js — Gera video pro de 30s para TODAS as campanhas ativas do projeto ARCKHÉ.
  *
  * Para cada campanha:
  * 1. Limpa planos antigos (photography_plan, scene_plan, scene_plan_motion)
@@ -19,7 +19,7 @@ const { enqueueStage } = require('../pipeline/orchestrator');
 const { getEnv } = require('../config/env');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
-const PROJECT_DIR = 'prj/inema';
+const PROJECT_DIR = 'prj/ARCKHÉ';
 const OUTPUTS_DIR = path.join(PROJECT_ROOT, PROJECT_DIR, 'outputs');
 const CHAT_ID = '7388953786'; // Telegram chat ID
 
@@ -204,7 +204,7 @@ async function main() {
       video_quick: false,
       image_source: 'brand',
       narrator: origPayload.narrator || 'rachel',
-      style_preset: origPayload.style_preset || 'inema_hightech',
+      style_preset: origPayload.style_preset || 'ARCKHÉ_hightech',
       photo_quality: 'simples',
       scene_quality: 'simples',
       approval_modes: { stage1: 'auto', stage2: 'auto', stage3: 'auto', stage4: 'auto', stage5: 'auto' },

@@ -1,7 +1,7 @@
 /**
  * Render Carousels — c0096-mudanca_paradigma_jarvis_llm
  * Campanha: O Fim do If/Else — O Paradigma Jarvis
- * 5 slides 1080×1080, dark-tech, cinematic
+ * 5 slides 1080×1080, dark-tech, cARCKHÉtic
  */
 
 const { chromium } = require('playwright');
@@ -10,8 +10,8 @@ const path = require('path');
 
 const BASE = path.resolve(__dirname);
 const CAMPAIGN = 'c0096-mudanca_paradigma_jarvis_llm';
-const IMGS_DIR = path.join(BASE, `prj/inema/outputs/${CAMPAIGN}/imgs`);
-const ADS_DIR  = path.join(BASE, `prj/inema/outputs/${CAMPAIGN}/ads`);
+const IMGS_DIR = path.join(BASE, `prj/ARCKHÉ/outputs/${CAMPAIGN}/imgs`);
+const ADS_DIR  = path.join(BASE, `prj/ARCKHÉ/outputs/${CAMPAIGN}/ads`);
 
 if (!fs.existsSync(ADS_DIR)) fs.mkdirSync(ADS_DIR, { recursive: true });
 
@@ -79,7 +79,7 @@ const slides = [
   <!-- Background image -->
   <img src="${fileUrl(imgPath(1))}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.55) contrast(1.15) saturate(1.25);" />
 
-  <!-- Cinematic overlay -->
+  <!-- CARCKHÉtic overlay -->
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.65) 0%,rgba(13,0,26,0.2) 45%,rgba(0,0,0,0.85) 100%);"></div>
 
   <!-- Top accent bar -->
@@ -87,7 +87,7 @@ const slides = [
 
   <!-- Brand pill top-left -->
   <div class="anim-fade" style="position:absolute;top:54px;left:60px;background:rgba(0,153,255,0.15);border:1px solid rgba(0,153,255,0.45);backdrop-filter:blur(12px);border-radius:9999px;padding:9px 22px;color:${C.blue};font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">
-    INEMA.CLUB
+    ARCKHÉ AI
   </div>
 
   <!-- Code label top-right -->
@@ -143,9 +143,9 @@ const slides = [
   <!-- Top bar -->
   <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,${C.green},${C.blue});"></div>
 
-  <!-- INEMA tag -->
+  <!-- ARCKHÉ tag -->
   <div class="anim-fade" style="position:absolute;top:54px;left:60px;background:rgba(0,255,136,0.12);border:1px solid rgba(0,255,136,0.35);backdrop-filter:blur(12px);border-radius:9999px;padding:9px 22px;color:${C.green};font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">
-    INEMA.CLUB
+    ARCKHÉ AI
   </div>
 
   <!-- Split visual label -->
@@ -209,9 +209,9 @@ const slides = [
   <!-- Top bar -->
   <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,${C.blue},${C.green});"></div>
 
-  <!-- INEMA tag -->
+  <!-- ARCKHÉ tag -->
   <div class="anim-fade" style="position:absolute;top:54px;left:60px;background:rgba(0,153,255,0.15);border:1px solid rgba(0,153,255,0.4);backdrop-filter:blur(12px);border-radius:9999px;padding:9px 22px;color:${C.blue};font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">
-    INEMA.CLUB
+    ARCKHÉ AI
   </div>
 
   <!-- Stats grid -->
@@ -272,9 +272,9 @@ const slides = [
   <!-- Top bar -->
   <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,${C.green},${C.blue});"></div>
 
-  <!-- INEMA tag -->
+  <!-- ARCKHÉ tag -->
   <div class="anim-fade" style="position:absolute;top:54px;left:60px;background:rgba(0,153,255,0.15);border:1px solid rgba(0,153,255,0.4);backdrop-filter:blur(12px);border-radius:9999px;padding:9px 22px;color:${C.blue};font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">
-    INEMA.CLUB
+    ARCKHÉ AI
   </div>
 
   <!-- Code label -->
@@ -320,7 +320,7 @@ const slides = [
   {
     filename: `${CAMPAIGN}_carousel_05.png`,
     htmlFile: `${CAMPAIGN}_carousel_05.html`,
-    concept:  'CTA final — INEMA.CLUB brand, curso gratuito',
+    concept:  'CTA final — ARCKHÉ AI brand, curso gratuito',
     copy_source: 'narrative.json → carousel_texts[6] + approved_ctas[0]',
     images_used: [imgPath(5)],
     html: () => baseHtml(`
@@ -349,7 +349,7 @@ const slides = [
 
     <!-- MEGA brand URL -->
     <div class="anim-scale" style="font-size:132px;font-weight:800;background:linear-gradient(135deg,${C.blue},${C.green});-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.0;letter-spacing:-0.03em;text-align:center;margin-bottom:36px;filter:drop-shadow(0 0 40px rgba(0,153,255,0.4));">
-      INEMA.CLUB
+      ARCKHÉ AI
     </div>
 
     <!-- Course name -->
@@ -441,7 +441,7 @@ async function render() {
     format:       'carousel',
     dimensions:   '1080x1080',
     slide_count:  slides.length,
-    brand_url:    'INEMA.CLUB',
+    brand_url:    'ARCKHÉ AI',
     typography:   'Space Grotesk + JetBrains Mono',
     color_palette: { bg: C.bg, primary: C.blue, accent: C.green, text: C.white },
     slides:       rendered,

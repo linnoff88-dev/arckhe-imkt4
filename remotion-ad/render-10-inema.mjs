@@ -1,20 +1,20 @@
 /**
- * Render 10 INEMA showcase videos via Remotion DynamicAd.
+ * Render 10 ARCKHÉ showcase videos via Remotion DynamicAd.
  * Each video: 60s (1800 frames @30fps), 1080x1920 (9:16).
  *
- * Usage: node render-10-inema.mjs
+ * Usage: node render-10-ARCKHÉ.mjs
  */
 
 import { execSync } from 'child_process';
 import { mkdirSync } from 'fs';
 import { resolve } from 'path';
 
-const OUTPUT_DIR = resolve('../prj/inema/testes/10videos');
+const OUTPUT_DIR = resolve('../prj/ARCKHÉ/testes/10videos');
 const FPS = 30;
 const TOTAL_FRAMES = FPS * 60; // 60s
 
-// INEMA brand palette
-const INEMA_PALETTE = {
+// ARCKHÉ brand palette
+const ARCKHÉ_PALETTE = {
   coffee_dark: '#0D0D0D',     // dark background
   coffee_mid: '#1A1A2E',      // surface
   cold_blue: '#0099FF',       // cyan primary
@@ -32,10 +32,10 @@ const videos = [
     id: 'video01_hero_journey',
     scenes: [
       { tipo: 'hook', img: 'neimaldaner.jpg', text: 'Você sente que pode\nir mais longe?', cam: 'push-in', textAnim: 'blur-in', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'tension', img: 'inemaclub1.jpg', text: 'O mundo pede que\nvocê evolua.', cam: 'ken-burns-out', textAnim: 'per-word', pos: 'center', overlay: 'dark' },
-      { tipo: 'solution', img: 'inemaclub.jpg', text: 'INEMA: sua ponte\npara a transformação.', cam: 'ken-burns-in', textAnim: 'slide-up', pos: 'bottom', overlay: 'warm' },
-      { tipo: 'benefit', img: 'inemavip.jpg', text: 'Resultados reais.\nConexões reais.', cam: 'parallax-zoom', textAnim: 'per-word', pos: 'top', overlay: 'dark' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'COMECE AGORA.\nINEMA.CLUB', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'tension', img: 'ARCKHÉclub1.jpg', text: 'O mundo pede que\nvocê evolua.', cam: 'ken-burns-out', textAnim: 'per-word', pos: 'center', overlay: 'dark' },
+      { tipo: 'solution', img: 'ARCKHÉclub.jpg', text: 'ARCKHÉ: sua ponte\npara a transformação.', cam: 'ken-burns-in', textAnim: 'slide-up', pos: 'bottom', overlay: 'warm' },
+      { tipo: 'benefit', img: 'ARCKHÉvip.jpg', text: 'Resultados reais.\nConexões reais.', cam: 'parallax-zoom', textAnim: 'per-word', pos: 'top', overlay: 'dark' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'COMECE AGORA.\nARCKHÉ AI', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
     ],
   },
   // ── VIDEO 02: AIDA Premium — ultra-slow drift, scale-up text ──
@@ -43,10 +43,10 @@ const videos = [
     id: 'video02_aida_premium',
     scenes: [
       { tipo: 'hook', img: 'neimaldaner2.jpg', text: 'ATENÇÃO', cam: 'drift', textAnim: 'scale-up', pos: 'center', overlay: 'dark' },
-      { tipo: 'interest', img: 'inemaclub2.jpg', text: 'Seu negócio merece\nestratégia de verdade.', cam: 'drift', textAnim: 'fade', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'desire', img: 'inemaclub3.jpg', text: 'Marketing que gera\nresultado mensurável.', cam: 'drift', textAnim: 'slide-up', pos: 'bottom', overlay: 'cool' },
-      { tipo: 'desire', img: 'inemavip.jpg', text: 'Imagine crescer 3x\nem 90 dias.', cam: 'drift', textAnim: 'per-word', pos: 'center', overlay: 'dark' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'Entre para o INEMA.CLUB\nLink na bio.', cam: 'breathe', textAnim: 'bounce-in', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'interest', img: 'ARCKHÉclub2.jpg', text: 'Seu negócio merece\nestratégia de verdade.', cam: 'drift', textAnim: 'fade', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'desire', img: 'ARCKHÉclub3.jpg', text: 'Marketing que gera\nresultado mensurável.', cam: 'drift', textAnim: 'slide-up', pos: 'bottom', overlay: 'cool' },
+      { tipo: 'desire', img: 'ARCKHÉvip.jpg', text: 'Imagine crescer 3x\nem 90 dias.', cam: 'drift', textAnim: 'per-word', pos: 'center', overlay: 'dark' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'Entre para o ARCKHÉ AI\nLink na bio.', cam: 'breathe', textAnim: 'bounce-in', pos: 'bottom', overlay: 'dark' },
     ],
   },
   // ── VIDEO 03: PAS Energetic — pan movements, punch-in text ──
@@ -54,10 +54,10 @@ const videos = [
     id: 'video03_pas_energetic',
     scenes: [
       { tipo: 'hook', img: 'tripe-profissional.jpg', text: 'Cansado de postar\ne ninguém comprar?', cam: 'pan-right', textAnim: 'punch-in', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'agitate', img: 'inemaclub4.jpg', text: 'Seus concorrentes\njá entenderam o jogo.', cam: 'pan-left', textAnim: 'slide-left', pos: 'center', overlay: 'dark' },
+      { tipo: 'agitate', img: 'ARCKHÉclub4.jpg', text: 'Seus concorrentes\njá entenderam o jogo.', cam: 'pan-left', textAnim: 'slide-left', pos: 'center', overlay: 'dark' },
       { tipo: 'agitate', img: 'neimaldaner.jpg', text: 'E se continuar\nassim... vai ficar pra trás.', cam: 'pan-right', textAnim: 'blur-in', pos: 'bottom', overlay: 'warm' },
-      { tipo: 'solution', img: 'inemaclub.jpg', text: 'INEMA resolve.\nEstratégia + execução.', cam: 'push-in', textAnim: 'per-word', pos: 'bottom', overlay: 'cool' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'ENTRE AGORA.\n@inema.club', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'solution', img: 'ARCKHÉclub.jpg', text: 'ARCKHÉ resolve.\nEstratégia + execução.', cam: 'push-in', textAnim: 'per-word', pos: 'bottom', overlay: 'cool' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'ENTRE AGORA.\n@ARCKHÉ AI', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
     ],
   },
   // ── VIDEO 04: Edu-Tainment — typewriter text, ken-burns ──
@@ -65,10 +65,10 @@ const videos = [
     id: 'video04_edutainment',
     scenes: [
       { tipo: 'hook', img: '-neimaldaner-banner.jpg', text: 'Você sabia que 90%\ndos negócios falham\nno marketing digital?', cam: 'ken-burns-in', textAnim: 'typewriter', pos: 'center', overlay: 'dark' },
-      { tipo: 'curiosity', img: 'inemaclub1.jpg', text: 'O problema não é\na ferramenta...', cam: 'ken-burns-in', textAnim: 'per-word', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'reveal', img: 'inemaclub2.jpg', text: 'É a ESTRATÉGIA\npor trás dela.', cam: 'pull-out', textAnim: 'scale-up', pos: 'center', overlay: 'cool' },
-      { tipo: 'solution', img: 'neimaldaner2.jpg', text: 'No INEMA.CLUB você\naprende o método\nque funciona.', cam: 'ken-burns-out', textAnim: 'split-lines', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'SALVE ESTE VÍDEO.\nInema.club — link na bio.', cam: 'breathe', textAnim: 'bounce-in', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'curiosity', img: 'ARCKHÉclub1.jpg', text: 'O problema não é\na ferramenta...', cam: 'ken-burns-in', textAnim: 'per-word', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'reveal', img: 'ARCKHÉclub2.jpg', text: 'É a ESTRATÉGIA\npor trás dela.', cam: 'pull-out', textAnim: 'scale-up', pos: 'center', overlay: 'cool' },
+      { tipo: 'solution', img: 'neimaldaner2.jpg', text: 'No ARCKHÉ AI você\naprende o método\nque funciona.', cam: 'ken-burns-out', textAnim: 'split-lines', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'SALVE ESTE VÍDEO.\nARCKHÉ AI — link na bio.', cam: 'breathe', textAnim: 'bounce-in', pos: 'bottom', overlay: 'dark' },
     ],
   },
   // ── VIDEO 05: Before/After — dramatic push/pull, blur transitions ──
@@ -76,10 +76,10 @@ const videos = [
     id: 'video05_before_after',
     scenes: [
       { tipo: 'before', img: 'tripe-profissional.jpg', text: 'ANTES:\nSem direção. Sem resultado.', cam: 'ken-burns-out', textAnim: 'slide-down', pos: 'top', overlay: 'sepia' },
-      { tipo: 'before', img: 'inemaclub4.jpg', text: 'Investindo errado.\nPerdendo tempo.', cam: 'ken-burns-out', textAnim: 'blur-in', pos: 'bottom', overlay: 'sepia' },
+      { tipo: 'before', img: 'ARCKHÉclub4.jpg', text: 'Investindo errado.\nPerdendo tempo.', cam: 'ken-burns-out', textAnim: 'blur-in', pos: 'bottom', overlay: 'sepia' },
       { tipo: 'bridge', img: 'neimaldaner.jpg', text: 'ATÉ QUE...', cam: 'push-in', textAnim: 'scale-up', pos: 'center', overlay: 'dark' },
-      { tipo: 'after', img: 'inemavip.jpg', text: 'DEPOIS:\nClientes todos os dias.\nMarca forte.', cam: 'ken-burns-in', textAnim: 'per-word', pos: 'bottom', overlay: 'cool' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'Sua transformação\ncomeça aqui. INEMA.CLUB', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'after', img: 'ARCKHÉvip.jpg', text: 'DEPOIS:\nClientes todos os dias.\nMarca forte.', cam: 'ken-burns-in', textAnim: 'per-word', pos: 'bottom', overlay: 'cool' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'Sua transformação\ncomeça aqui. ARCKHÉ AI', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
     ],
   },
   // ── VIDEO 06: AIDA Minimal — near-static, large text, clean ──
@@ -87,32 +87,32 @@ const videos = [
     id: 'video06_aida_minimal',
     scenes: [
       { tipo: 'hook', img: 'neimaldaner2.jpg', text: 'E se você pudesse\nmudar tudo?', cam: 'breathe', textAnim: 'fade', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'interest', img: 'inemaclub3.jpg', text: 'Estratégia.\nExecução.\nResultado.', cam: 'breathe', textAnim: 'split-lines', pos: 'center', overlay: 'none' },
-      { tipo: 'desire', img: 'inemaclub.jpg', text: 'O INEMA entrega\nos três.', cam: 'breathe', textAnim: 'slide-up', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'proof', img: 'inemavip.jpg', text: 'Quem entrou,\nnão voltou atrás.', cam: 'breathe', textAnim: 'per-word', pos: 'center', overlay: 'dark' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'INEMA.CLUB', cam: 'breathe', textAnim: 'scale-up', pos: 'center', overlay: 'dark' },
+      { tipo: 'interest', img: 'ARCKHÉclub3.jpg', text: 'Estratégia.\nExecução.\nResultado.', cam: 'breathe', textAnim: 'split-lines', pos: 'center', overlay: 'none' },
+      { tipo: 'desire', img: 'ARCKHÉclub.jpg', text: 'O ARCKHÉ entrega\nos três.', cam: 'breathe', textAnim: 'slide-up', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'proof', img: 'ARCKHÉvip.jpg', text: 'Quem entrou,\nnão voltou atrás.', cam: 'breathe', textAnim: 'per-word', pos: 'center', overlay: 'dark' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'ARCKHÉ AI', cam: 'breathe', textAnim: 'scale-up', pos: 'center', overlay: 'dark' },
     ],
   },
-  // ── VIDEO 07: Hero Cinematic — pan sweeps, dramatic overlays ──
+  // ── VIDEO 07: Hero CARCKHÉtic — pan sweeps, dramatic overlays ──
   {
-    id: 'video07_hero_cinematic',
+    id: 'video07_hero_cARCKHÉtic',
     scenes: [
-      { tipo: 'hook', img: 'inemaclub1.jpg', text: 'Todo empreendedor\ncomeça sozinho.', cam: 'pan-left', textAnim: 'blur-in', pos: 'top', overlay: 'dark' },
+      { tipo: 'hook', img: 'ARCKHÉclub1.jpg', text: 'Todo empreendedor\ncomeça sozinho.', cam: 'pan-left', textAnim: 'blur-in', pos: 'top', overlay: 'dark' },
       { tipo: 'call', img: 'neimaldaner.jpg', text: 'Mas a grandeza\nexige comunidade.', cam: 'pan-right', textAnim: 'per-word', pos: 'bottom', overlay: 'warm' },
-      { tipo: 'journey', img: 'inemaclub.jpg', text: 'No INEMA, você não\ncaminha sozinho.', cam: 'pan-left', textAnim: 'slide-left', pos: 'center', overlay: 'dark' },
-      { tipo: 'result', img: 'inemaclub2.jpg', text: 'Mentoria. Networking.\nCrescimento real.', cam: 'pan-right', textAnim: 'split-lines', pos: 'bottom', overlay: 'cool' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'Aceite o chamado.\nINEMA.CLUB', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'journey', img: 'ARCKHÉclub.jpg', text: 'No ARCKHÉ, você não\ncaminha sozinho.', cam: 'pan-left', textAnim: 'slide-left', pos: 'center', overlay: 'dark' },
+      { tipo: 'result', img: 'ARCKHÉclub2.jpg', text: 'Mentoria. Networking.\nCrescimento real.', cam: 'pan-right', textAnim: 'split-lines', pos: 'bottom', overlay: 'cool' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'Aceite o chamado.\nARCKHÉ AI', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
     ],
   },
   // ── VIDEO 08: PAS Luxury — zoom with sepia, elegant text ──
   {
     id: 'video08_pas_luxury',
     scenes: [
-      { tipo: 'problem', img: 'inemaclub3.jpg', text: 'Seu marketing parece\ngenérico?', cam: 'ken-burns-out', textAnim: 'fade', pos: 'bottom', overlay: 'sepia' },
+      { tipo: 'problem', img: 'ARCKHÉclub3.jpg', text: 'Seu marketing parece\ngenérico?', cam: 'ken-burns-out', textAnim: 'fade', pos: 'bottom', overlay: 'sepia' },
       { tipo: 'agitate', img: 'tripe-profissional.jpg', text: 'Posts sem alma.\nCopy sem estratégia.', cam: 'ken-burns-out', textAnim: 'typewriter', pos: 'center', overlay: 'sepia' },
-      { tipo: 'agitate', img: 'inemaclub4.jpg', text: 'Enquanto isso, o mercado\nnão espera por você.', cam: 'pan-left', textAnim: 'slide-left', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'solution', img: 'neimaldaner2.jpg', text: 'INEMA cria marcas\nque vendem.', cam: 'ken-burns-in', textAnim: 'per-word', pos: 'bottom', overlay: 'warm' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'Fale com a gente.\nINEMA.CLUB', cam: 'breathe', textAnim: 'bounce-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'agitate', img: 'ARCKHÉclub4.jpg', text: 'Enquanto isso, o mercado\nnão espera por você.', cam: 'pan-left', textAnim: 'slide-left', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'solution', img: 'neimaldaner2.jpg', text: 'ARCKHÉ cria marcas\nque vendem.', cam: 'ken-burns-in', textAnim: 'per-word', pos: 'bottom', overlay: 'warm' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'Fale com a gente.\nARCKHÉ AI', cam: 'breathe', textAnim: 'bounce-in', pos: 'center', overlay: 'dark' },
     ],
   },
   // ── VIDEO 09: Edu-Tainment Bold — mixed energetic animations ──
@@ -120,21 +120,21 @@ const videos = [
     id: 'video09_edutainment_bold',
     scenes: [
       { tipo: 'hook', img: '-neimaldaner-banner.jpg', text: 'POR QUE 80% dos\nnegócios digitais\nMORREM no 1o ano?', cam: 'push-in', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
-      { tipo: 'curiosity', img: 'inemaclub1.jpg', text: 'Falta de método.\nFalta de mentoria.', cam: 'pan-right', textAnim: 'split-lines', pos: 'bottom', overlay: 'dark' },
-      { tipo: 'content', img: 'inemaclub.jpg', text: 'Os que sobrevivem\ntêm uma coisa:\nESTRATÉGIA.', cam: 'pan-left', textAnim: 'per-word', pos: 'center', overlay: 'cool' },
-      { tipo: 'reveal', img: 'neimaldaner.jpg', text: 'No INEMA.CLUB\nvocê aprende\no método completo.', cam: 'ken-burns-in', textAnim: 'split-lines', pos: 'bottom', overlay: 'warm' },
-      { tipo: 'cta', img: 'inemavip.jpg', text: 'SALVE e compartilhe.\nINEMA.CLUB', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'curiosity', img: 'ARCKHÉclub1.jpg', text: 'Falta de método.\nFalta de mentoria.', cam: 'pan-right', textAnim: 'split-lines', pos: 'bottom', overlay: 'dark' },
+      { tipo: 'content', img: 'ARCKHÉclub.jpg', text: 'Os que sobrevivem\ntêm uma coisa:\nESTRATÉGIA.', cam: 'pan-left', textAnim: 'per-word', pos: 'center', overlay: 'cool' },
+      { tipo: 'reveal', img: 'neimaldaner.jpg', text: 'No ARCKHÉ AI\nvocê aprende\no método completo.', cam: 'ken-burns-in', textAnim: 'split-lines', pos: 'bottom', overlay: 'warm' },
+      { tipo: 'cta', img: 'ARCKHÉvip.jpg', text: 'SALVE e compartilhe.\nARCKHÉ AI', cam: 'breathe', textAnim: 'punch-in', pos: 'center', overlay: 'dark' },
     ],
   },
   // ── VIDEO 10: Before/After Neon — maximum energy, aggressive movement ──
   {
     id: 'video10_before_after_neon',
     scenes: [
-      { tipo: 'before', img: 'inemaclub4.jpg', text: 'ANTES:\nZero seguidores.\nZero vendas.', cam: 'pan-left', textAnim: 'punch-in', pos: 'top', overlay: 'dark' },
+      { tipo: 'before', img: 'ARCKHÉclub4.jpg', text: 'ANTES:\nZero seguidores.\nZero vendas.', cam: 'pan-left', textAnim: 'punch-in', pos: 'top', overlay: 'dark' },
       { tipo: 'before', img: 'tripe-profissional.jpg', text: 'Tentou de tudo.\nNada funcionou.', cam: 'pan-right', textAnim: 'blur-in', pos: 'bottom', overlay: 'sepia' },
-      { tipo: 'bridge', img: 'neimaldaner2.jpg', text: 'DEPOIS DO INEMA:', cam: 'push-in', textAnim: 'scale-up', pos: 'center', overlay: 'none' },
-      { tipo: 'after', img: 'inemaclub.jpg', text: 'Marca posicionada.\nClientes no automático.', cam: 'parallax-zoom', textAnim: 'per-word', pos: 'bottom', overlay: 'cool' },
-      { tipo: 'cta', img: 'conviteinemap.png', text: 'Mude sua história.\nINEMA.CLUB', cam: 'breathe', textAnim: 'bounce-in', pos: 'center', overlay: 'dark' },
+      { tipo: 'bridge', img: 'neimaldaner2.jpg', text: 'DEPOIS DO ARCKHÉ:', cam: 'push-in', textAnim: 'scale-up', pos: 'center', overlay: 'none' },
+      { tipo: 'after', img: 'ARCKHÉclub.jpg', text: 'Marca posicionada.\nClientes no automático.', cam: 'parallax-zoom', textAnim: 'per-word', pos: 'bottom', overlay: 'cool' },
+      { tipo: 'cta', img: 'conviteARCKHÉp.png', text: 'Mude sua história.\nARCKHÉ AI', cam: 'breathe', textAnim: 'bounce-in', pos: 'center', overlay: 'dark' },
     ],
   },
 ];
@@ -168,8 +168,8 @@ function buildProps(video) {
   return {
     titulo: video.id,
     total_frames: TOTAL_FRAMES,
-    paleta_cores: INEMA_PALETTE,
-    cta_final: 'INEMA.CLUB',
+    paleta_cores: ARCKHÉ_PALETTE,
+    cta_final: 'ARCKHÉ AI',
     cta_acao: 'Comece Agora',
     scenes,
   };

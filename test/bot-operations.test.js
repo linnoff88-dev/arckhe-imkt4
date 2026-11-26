@@ -38,7 +38,7 @@ function createSessionDouble() {
 
 test('resumeInProgressCampaigns restores newest incomplete campaign state', async () => {
   const projectRoot = makeTempProject();
-  const campDir = path.join(projectRoot, 'prj', 'inema', 'outputs', 'camp-01');
+  const campDir = path.join(projectRoot, 'prj', 'ARCKHÉ', 'outputs', 'camp-01');
   fs.mkdirSync(path.join(campDir, 'logs'), { recursive: true });
   fs.writeFileSync(path.join(campDir, 'campaign_payload.json'), JSON.stringify({
     task_date: '2026-04-02',
@@ -60,9 +60,9 @@ test('resumeInProgressCampaigns restores newest incomplete campaign state', asyn
   }, monitoredSignals);
 
   const restored = session.get('123');
-  assert.equal(restored.projectDir, 'prj/inema');
+  assert.equal(restored.projectDir, 'prj/ARCKHÉ');
   assert.equal(restored.runningTask.taskName, 'camp-01');
-  assert.equal(restored.runningTask.outputDir, 'prj/inema/outputs/camp-01');
+  assert.equal(restored.runningTask.outputDir, 'prj/ARCKHÉ/outputs/camp-01');
   assert.equal(restored.campaignV3Stage, 1);
-  assert.ok(monitoredSignals.has('stage_done:prj/inema/outputs/camp-01:1'));
+  assert.ok(monitoredSignals.has('stage_done:prj/ARCKHÉ/outputs/camp-01:1'));
 });

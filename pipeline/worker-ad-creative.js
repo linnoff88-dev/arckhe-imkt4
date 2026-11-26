@@ -186,10 +186,10 @@ CRITICAL: ALL filenames MUST start with "${fnPrefix}_" prefix.
 Each slide/story must have a DIFFERENT visual concept and copy. The carousel should tell a progression:
 - Slide 1: Hook (attention grabber)
 - Slides 2-${carouselCount - 1}: Benefits, emotional moments, product features
-- Slide ${carouselCount}: CTA — MUST prominently display the brand URL/name from brand_identity.md (e.g. "INEMA.CLUB", "INEMA VIP") as the largest text element, with a clear action verb ("Acesse", "Comece agora", "Entre grátis")
+- Slide ${carouselCount}: CTA — MUST prominently display the brand URL/name from brand_identity.md (e.g. "ARCKHÉ AI", "ARCKHÉ VIP") as the largest text element, with a clear action verb ("Acesse", "Comece agora", "Entre grátis")
 
 CRITICAL — BRAND PRESENCE:
-- The LAST slide (CTA) MUST show the brand URL/name in the largest text (e.g. "INEMA.CLUB")
+- The LAST slide (CTA) MUST show the brand URL/name in the largest text (e.g. "ARCKHÉ AI")
 - The brand name should be instantly readable and memorable
 - ALSO include a subtext with a clear action ("Acesse grátis", "Comece hoje", etc.)
 - Read ${project_dir}/knowledge/brand_identity.md to find the exact brand URL to use
@@ -206,7 +206,7 @@ Progression: Slide 1 (hook) → middle slides (benefits/story) → LAST slide (C
 
 CRITICAL — BRAND PRESENCE ON LAST SLIDE:
 - The LAST slide MUST prominently display the brand URL/name from brand_identity.md
-  Example: "INEMA.CLUB" as the largest text element
+  Example: "ARCKHÉ AI" as the largest text element
 - Include a clear action verb: "Acesse", "Comece agora", "Entre grátis"
 - The brand name must be instantly readable and memorable
 - Read ${project_dir}/knowledge/brand_identity.md to find the exact brand URL`;
@@ -383,7 +383,7 @@ After saving, print: [PROMPTS_DONE]`;
 
         // Final fallback if Claude failed
         if (sceneDescriptions.filter(Boolean).length === 0) {
-          const fallbackDesc = briefContext.includes('metaphor') ? 'professional cinematic scene' : 'modern tech workspace, dramatic lighting';
+          const fallbackDesc = briefContext.includes('metaphor') ? 'professional cARCKHÉtic scene' : 'modern tech workspace, dramatic lighting';
           for (let si = 0; si < image_count; si++) {
             const purposes = ['hook', 'solution', 'solution', 'social_proof', 'cta'];
             scenePurposes.push(purposes[si % purposes.length]);

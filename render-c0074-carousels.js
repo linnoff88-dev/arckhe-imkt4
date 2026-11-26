@@ -5,8 +5,8 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const ADS_DIR = '/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/c0074-claude_opus_47/ads';
-const IMGS_DIR = '/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/c0074-claude_opus_47/imgs';
+const ADS_DIR = '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/c0074-claude_opus_47/ads';
+const IMGS_DIR = '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/c0074-claude_opus_47/imgs';
 const PREFIX = 'c0074-claude_opus_47';
 
 fs.mkdirSync(ADS_DIR, { recursive: true });
@@ -347,11 +347,11 @@ const slides = [
   `)
 },
 
-// ─── 11 · DIFERENCIAÇêO INEMA ───────────────────────────────────────────────
+// ─── 11 · DIFERENCIAÇêO ARCKHÉ ───────────────────────────────────────────────
 {
   id: '11',
-  concept: 'Diferenciaçêo — INEMA explica a filosofia por trás',
-  headline: 'Enquanto outros recebem o update — a INEMA explica a filosofia',
+  concept: 'Diferenciaçêo — ARCKHÉ explica a filosofia por trás',
+  headline: 'Enquanto outros recebem o update — a ARCKHÉ explica a filosofia',
   copy_source: 'carousel_texts[3]',
   images_used: [img(18)],
   html: html('', `
@@ -365,7 +365,7 @@ const slides = [
         </div>
         <div>
           <p style="font-size:58px;font-weight:800;line-height:1.1;color:#FFF;margin-bottom:22px;">
-            a <span style="color:#0099FF;">INEMA</span> explica<br>a filosofia por trás.
+            a <span style="color:#0099FF;">ARCKHÉ</span> explica<br>a filosofia por trás.
           </p>
           <div style="width:80px;height:3px;background:linear-gradient(90deg,#0099FF,#00FF88);margin-bottom:26px;border-radius:2px;"></div>
           <p style="font-size:34px;font-weight:500;color:rgba(255,255,255,0.72);line-height:1.42;">Porque entender o modelo<br>vale mais que apenas usá-lo.</p>
@@ -458,7 +458,7 @@ const slides = [
           <div style="background:rgba(0,153,255,0.14);backdrop-filter:blur(12px);border:1px solid rgba(0,153,255,0.42);border-radius:16px;padding:36px 40px;margin-bottom:32px;">
             <div style="font-size:30px;font-weight:700;color:#0099FF;margin-bottom:14px;">GUIA COMPLETO</div>
             <div style="font-size:40px;font-weight:700;color:#FFF;line-height:1.2;">Migraçêo <span style="color:#FFA500;">4.6 → 4.7</span></div>
-            <div style="font-size:28px;color:rgba(255,255,255,0.68);margin-top:10px;">Em PT-BR. Só na inema.club.</div>
+            <div style="font-size:28px;color:rgba(255,255,255,0.68);margin-top:10px;">Em PT-BR. Só na ARCKHÉ AI.</div>
           </div>
           <div style="font-size:22px;color:rgba(255,255,255,0.38);letter-spacing:0.1em;">14 / 15</div>
         </div>
@@ -467,11 +467,11 @@ const slides = [
   `)
 },
 
-// ─── 15 · CTA FINAL (INEMA.CLUB hero) ───────────────────────────────────────
+// ─── 15 · CTA FINAL (ARCKHÉ AI hero) ───────────────────────────────────────
 {
   id: '15',
-  concept: 'CTA Final — INEMA.CLUB como hero text',
-  headline: 'INEMA.CLUB — Comece grátis agora',
+  concept: 'CTA Final — ARCKHÉ AI como hero text',
+  headline: 'ARCKHÉ AI — Comece grátis agora',
   copy_source: 'approved_ctas[1] + approved_ctas[5]',
   images_used: [img(25)],
   html: html('', `
@@ -489,7 +489,7 @@ const slides = [
         <!-- HERO brand -->
         <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;">
           <div style="font-size:142px;font-weight:800;letter-spacing:-0.03em;line-height:1.0;text-shadow:0 0 90px rgba(0,153,255,0.48),0 4px 48px rgba(0,0,0,0.95);">
-            <span style="color:#0099FF;">INEMA</span><span style="color:#FFF;">.</span><span style="color:#00FF88;">CLUB</span>
+            <span style="color:#0099FF;">ARCKHÉ</span><span style="color:#FFF;">.</span><span style="color:#00FF88;">CLUB</span>
           </div>
         </div>
         <!-- CTA button + tagline -->
@@ -538,7 +538,7 @@ const slides = [
     format: 'carousel',
     total_slides: slides.length,
     dimensions: '1080x1080',
-    brand_url: 'INEMA.CLUB',
+    brand_url: 'ARCKHÉ AI',
     colors: ['#0099FF', '#00FF88', '#0D0D0D', '#1A1A2E', '#FFFFFF'],
     fonts: ['Space Grotesk', 'Inter'],
     slides: slides.map(s => ({

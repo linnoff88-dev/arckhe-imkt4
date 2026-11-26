@@ -7,8 +7,8 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const OUTPUT_DIR = path.resolve(__dirname, 'prj/inema/outputs/c0043-gestores_ia_lideranca/ads');
-const IMG_DIR = path.resolve(__dirname, 'prj/inema/imgs/pascoa');
+const OUTPUT_DIR = path.resolve(__dirname, 'prj/ARCKHÉ/outputs/c0043-gestores_ia_lideranca/ads');
+const IMG_DIR = path.resolve(__dirname, 'prj/ARCKHÉ/imgs/pascoa');
 
 // Ensure output dir exists
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -63,8 +63,8 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <p class="subline">O mercado já se dividiu.<br>E você, de que lado está?</p>
 </div>
 <div class="cta-bar">
-  <span class="brand">INEMA</span>
-  <span class="handle">@inema.tds</span>
+  <span class="brand">ARCKHÉ</span>
+  <span class="handle">@ARCKHÉ.tds</span>
 </div>
 </body></html>`,
   },
@@ -107,7 +107,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <p class="subline">A divisêo nêo é entre<br>sênior e júnior. É entre<br>quem usa IA e quem espera.</p>
 </div>
 <div class="bottom-bar">
-  <span class="brand">INEMA</span>
+  <span class="brand">ARCKHÉ</span>
   <span class="slide-num">02 / 10</span>
 </div>
 </body></html>`,
@@ -146,7 +146,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <p class="statement">dos executivos globais<br>já usam <em>IA ativamente</em></p>
   <p class="question">E você?</p>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -189,7 +189,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <p class="detail">Cada mês sem IA é um mês<br>cedido ao seu concorrente.</p>
 </div>
 <div class="bottom-bar">
-  <span class="brand">INEMA</span>
+  <span class="brand">ARCKHÉ</span>
   <span class="slide-num">04 / 10</span>
 </div>
 </body></html>`,
@@ -233,7 +233,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <p class="sub1">Bons gestores com IA</p>
   <p class="sub2">ficam maiores, nêo menores.</p>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -280,7 +280,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <div class="result-line">Vantagem<br>Competitiva Real</div>
   <div class="result-sub">que seu concorrente ainda nêo tem</div>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -335,7 +335,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     </div>
   </div>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -374,17 +374,17 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <div class="divider"></div>
   <p class="sub">O mercado do próximo ciclo<br>pertence a quem age agora.</p>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
-  // ── SLIDE 9 — SOLUÇêO INEMA ──────────────────────────────────────────────────
+  // ── SLIDE 9 — SOLUÇêO ARCKHÉ ──────────────────────────────────────────────────
   {
     id: 9,
     filename: 'c0043-gestores_ia_lideranca_carousel_09',
     image: path.join(IMG_DIR, 'easter_tech_6990559.jpg'),
     imgFit: 'cover',
-    concept: 'solucao INEMA',
+    concept: 'solucao ARCKHÉ',
     copy_source: 'carousel_texts[8]',
     html: () => `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
 <style>
@@ -413,18 +413,18 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="content">
   <div class="logo-block">
-    <div class="logo-text">INEMA<span class="dot">.</span></div>
+    <div class="logo-text">ARCKHÉ<span class="dot">.</span></div>
     <div class="logo-sub">Formaçêo Executiva em IA</div>
   </div>
   <div class="divider"></div>
   <h2 class="headline">Onde gestores aprendem IA<br>de forma prática</h2>
   <div class="features">
-    <div class="feat"><div class="feat-dot"></div>100% gratuito no inema.club</div>
+    <div class="feat"><div class="feat-dot"></div>100% gratuito no ARCKHÉ AI</div>
     <div class="feat"><div class="feat-dot"></div>Sem jargêo técnico — foco em gestêo</div>
     <div class="feat"><div class="feat-dot"></div>No seu ritmo, na sua língua</div>
   </div>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -460,9 +460,9 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="glow-ring"></div>
 <div class="content">
-  <div class="logo">INEMA<span class="dot">.</span></div>
+  <div class="logo">ARCKHÉ<span class="dot">.</span></div>
   <h1 class="headline">Comece<br><span class="now">agora.</span></h1>
-  <div class="url">inema.club</div>
+  <div class="url">ARCKHÉ AI</div>
   <div class="cta-btn">Acessar Grátis</div>
   <div class="free-badge">100% gratuito · Sem cartêo de crédito</div>
 </div>

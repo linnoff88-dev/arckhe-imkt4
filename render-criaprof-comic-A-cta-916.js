@@ -2,8 +2,8 @@
  * Render CriaProf-CTA-916 versêo Comic Style A (Calvin & Hobbes).
  *
  * Mesmo render que render-criaprof-cta-916.js mas lê imgs de
- * prj/inema/videos/criaprof-comic-A/<slug>_<date>/imgs/ e escreve em
- * prj/inema/videos/criaprof-comic-A-cta-916/<slug>_<date>/video/.
+ * prj/ARCKHÉ/videos/criaprof-comic-A/<slug>_<date>/imgs/ e escreve em
+ * prj/ARCKHÉ/videos/criaprof-comic-A-cta-916/<slug>_<date>/video/.
  *
  * Reutiliza TTS+Whisper já existentes (texto narraçêo nêo muda).
  *
@@ -25,7 +25,7 @@ if (!slug || !['prof', 'generic'].includes(variant)) {
 const cta = getCtaConfig(slug, variant);
 
 // Procura imgs em qualquer pasta criaprof-comic-A/<slug>_*/imgs (data variável)
-const COMIC_BASE = path.join(__dirname, 'prj/inema/videos/criaprof-comic-A');
+const COMIC_BASE = path.join(__dirname, 'prj/ARCKHÉ/videos/criaprof-comic-A');
 let IMG_DIR = null;
 if (fs.existsSync(COMIC_BASE)) {
   const candidates = fs.readdirSync(COMIC_BASE)
@@ -41,7 +41,7 @@ if (!IMG_DIR) {
 }
 
 const today = new Date().toISOString().slice(0, 10);
-const OUT_DIR = path.join(__dirname, `prj/inema/videos/criaprof-comic-A-cta-916/${slug}_${today}/video`);
+const OUT_DIR = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof-comic-A-cta-916/${slug}_${today}/video`);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 const OUT_FILE = path.join(OUT_DIR, `${slug}-comicA-cta-${variant}-37s.mp4`);
 
@@ -84,7 +84,7 @@ const capChunks = whisperData.chunks
   .map((c) => ({
     t0: c.t0,
     t1: c.t1,
-    text: c.text.replace(/inema\.?(cube|clube)/gi, 'INEMA.CLUB').replace(/ponto/gi, '.'),
+    text: c.text.replace(/ARCKHÉ\.?(cube|clube)/gi, 'ARCKHÉ AI').replace(/ponto/gi, '.'),
   }))
   .filter((c) => c.t0 >= HOOK_DUR - 0.2);
 
@@ -162,7 +162,7 @@ const watermark = drawtext({
 });
 
 const rodape = drawtext({
-  text: 'INEMA.CLUB', t0: HOOK_DUR, t1: HOOK_DUR + IMG_TOTAL, y: '1500+(420-th)/2', size: 80,
+  text: 'ARCKHÉ AI', t0: HOOK_DUR, t1: HOOK_DUR + IMG_TOTAL, y: '1500+(420-th)/2', size: 80,
   color: 'white', bord: 5, bordColor: 'black@0.7',
 });
 
@@ -170,7 +170,7 @@ const ctaT0 = HOOK_DUR + IMG_TOTAL;
 const ctaOverlays = [
   drawtext({ text: 'TRANSFORME',          t0: ctaT0, t1: TOTAL_DUR, y: 480,  size: 110, color: 'white', bord: 8 }),
   drawtext({ text: 'SUA CARREIRA',        t0: ctaT0, t1: TOTAL_DUR, y: 620,  size: 110, color: '#FFEB3B', bord: 8 }),
-  drawtext({ text: 'INEMA.CLUB',          t0: ctaT0, t1: TOTAL_DUR, y: 900,  size: 200, color: '#FFEB3B', bord: 14 }),
+  drawtext({ text: 'ARCKHÉ AI',          t0: ctaT0, t1: TOTAL_DUR, y: 900,  size: 200, color: '#FFEB3B', bord: 14 }),
   drawtext({ text: 'LINK NA BIO',         t0: ctaT0, t1: TOTAL_DUR, y: 1280, size: 80,  color: 'white', bord: 5 }),
 ];
 

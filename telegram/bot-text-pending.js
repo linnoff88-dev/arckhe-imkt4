@@ -221,7 +221,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
 
       if (nextSource === 'folder') {
         if (!extra) {
-          await ctx.reply('Informe a pasta. Ex: <code>fonte pasta prj/inema/imgs</code>', { parse_mode: 'HTML' });
+          await ctx.reply('Informe a pasta. Ex: <code>fonte pasta prj/ARCKHÉ/imgs</code>', { parse_mode: 'HTML' });
           return true;
         }
         rerunPayload.image_folder = normalizeProjectFolder(rerunPayload.project_dir || s.projectDir, extra);
@@ -306,7 +306,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
       return true;
     }
 
-    // Adjust provider: "provider inemaimg", "provider kie"
+    // Adjust provider: "provider ARCKHÉimg", "provider kie"
     const provMatch = lower.match(/^(?:provider|provedor)\s+(.+)$/i);
     if (provMatch) {
       const prov = provMatch[1].trim().toLowerCase();

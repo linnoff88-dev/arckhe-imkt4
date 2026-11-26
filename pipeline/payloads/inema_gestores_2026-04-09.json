@@ -1,16 +1,16 @@
 {
   "task_name": "gestores",
   "task_date": "2026-04-09",
-  "business": "INEMA — Ecossistema de IA e Transformaçêo Digital",
-  "description": "Campanha para gestores, empresários e profissionais sênior que sentem que estêo correndo o tempo todo e ficando para trás. Problema: mercado mudou com IA, mas nêo têm tempo para cursos longos e técnicos. Soluçêo: INEMA — cursos diretos, imersões presenciais e comunidade inema.vip para quem precisa se atualizar sem parar a vida.",
+  "business": "ARCKHÉ — Ecossistema de IA e Transformaçêo Digital",
+  "description": "Campanha para gestores, empresários e profissionais sênior que sentem que estêo correndo o tempo todo e ficando para trás. Problema: mercado mudou com IA, mas nêo têm tempo para cursos longos e técnicos. Soluçêo: ARCKHÉ — cursos diretos, imersões presenciais e comunidade ARCKHÉ.vip para quem precisa se atualizar sem parar a vida.",
 
-  "script_content": "Hoje, muita gente sente que está correndo o tempo todo e, mesmo assim, ficando para trás. Sêo gestores, empresários e profissionais que têm responsabilidade, pressêo por resultado, família, compromissos e quase nenhum tempo sobrando. Ao mesmo tempo, o mercado mudou. A inteligência artificial, a automaçêo e a nova dinâmica dos negócios estêo mudando as regras do jogo.\n\nO problema é que essa pessoa sabe que precisa se atualizar, mas nêo consegue parar a vida para fazer cursos longos, técnicos e cansativos. Ela nêo quer teoria demais. Ela quer entender o que está acontecendo, o que isso muda no trabalho dela e como continuar sendo relevante.\n\nMuitos profissionais têm muito valor: conhecem o negócio, sabem decidir, têm atitude, experiência e visêo. Mas a rotina antiga já nêo será a mesma. Parte do trabalho será automatizada, estruturas vêo mudar e quem antes gerenciava pessoas também vai precisar aprender a lidar com tecnologia, inteligência artificial e agentes.\n\nÉ nesse ponto que o INEMA entra. O INEMA foi pensado para quem nêo tem tempo a perder e precisa aprender de forma simples, rápida e aplicável. No inema.club, os cursos online sêo diretos, resumidos e fáceis de entender, com visêo de negócios e conhecimento técnico, tanto para quem nêo sabe nada quanto para quem já sabe muito e quer acelerar.\n\nAlém disso, o INEMA oferece imersões presenciais para uma transformaçêo mais profunda e a comunidade inema.vip, onde o aprendizado continua com troca, atualizaçêo e conexêo com outras pessoas que também estêo vivendo essa mudança.\n\nO INEMA nêo é só conteúdo. É um caminho para ajudar as pessoas a nêo ficarem para trás.",
+  "script_content": "Hoje, muita gente sente que está correndo o tempo todo e, mesmo assim, ficando para trás. Sêo gestores, empresários e profissionais que têm responsabilidade, pressêo por resultado, família, compromissos e quase nenhum tempo sobrando. Ao mesmo tempo, o mercado mudou. A inteligência artificial, a automaçêo e a nova dinâmica dos negócios estêo mudando as regras do jogo.\n\nO problema é que essa pessoa sabe que precisa se atualizar, mas nêo consegue parar a vida para fazer cursos longos, técnicos e cansativos. Ela nêo quer teoria demais. Ela quer entender o que está acontecendo, o que isso muda no trabalho dela e como continuar sendo relevante.\n\nMuitos profissionais têm muito valor: conhecem o negócio, sabem decidir, têm atitude, experiência e visêo. Mas a rotina antiga já nêo será a mesma. Parte do trabalho será automatizada, estruturas vêo mudar e quem antes gerenciava pessoas também vai precisar aprender a lidar com tecnologia, inteligência artificial e agentes.\n\nÉ nesse ponto que o ARCKHÉ entra. O ARCKHÉ foi pensado para quem nêo tem tempo a perder e precisa aprender de forma simples, rápida e aplicável. No ARCKHÉ AI, os cursos online sêo diretos, resumidos e fáceis de entender, com visêo de negócios e conhecimento técnico, tanto para quem nêo sabe nada quanto para quem já sabe muito e quer acelerar.\n\nAlém disso, o ARCKHÉ oferece imersões presenciais para uma transformaçêo mais profunda e a comunidade ARCKHÉ.vip, onde o aprendizado continua com troca, atualizaçêo e conexêo com outras pessoas que também estêo vivendo essa mudança.\n\nO ARCKHÉ nêo é só conteúdo. É um caminho para ajudar as pessoas a nêo ficarem para trás.",
 
   "simulate_uploads": false,
   "dry_run": false,
 
-  "project_dir": "prj/inema",
-  "output_dir": "prj/inema/outputs/gestores_2026-04-09",
+  "project_dir": "prj/ARCKHÉ",
+  "output_dir": "prj/ARCKHÉ/outputs/gestores_2026-04-09",
 
   "platform_targets": ["instagram", "linkedin"],
 
@@ -26,9 +26,9 @@
   "skip_video": false,
 
   "knowledge_files": [
-    "prj/inema/knowledge/brand_identity.md",
-    "prj/inema/knowledge/product_campaign.md",
-    "prj/inema/knowledge/platform_guidelines.md"
+    "prj/ARCKHÉ/knowledge/brand_identity.md",
+    "prj/ARCKHÉ/knowledge/product_campaign.md",
+    "prj/ARCKHÉ/knowledge/platform_guidelines.md"
   ],
 
   "pipeline": {
@@ -49,9 +49,9 @@
       "script_source": "script_content",
       "pro": {
         "duration": "45-60s",
-        "style": "cinematic",
+        "style": "cARCKHÉtic",
         "framework": "PAS",
-        "focus": "problema (correndo o tempo todo, ficando para trás) → agitaçêo (mercado mudou, IA chegou, nêo há tempo para cursos longos) → soluçêo (INEMA: direto, simples, aplicável — inema.club, imersões, comunidade inema.vip)"
+        "focus": "problema (correndo o tempo todo, ficando para trás) → agitaçêo (mercado mudou, IA chegou, nêo há tempo para cursos longos) → soluçêo (ARCKHÉ: direto, simples, aplicável — ARCKHÉ AI, imersões, comunidade ARCKHÉ.vip)"
       }
     },
     "copywriting": {
@@ -61,7 +61,7 @@
         "topic": "transformaçêo digital para líderes — IA, automaçêo e o novo papel do gestor",
         "key_benefit": "aprender de forma simples, rápida e aplicável — sem parar a vida",
         "platforms": ["instagram", "linkedin"],
-        "cta_primary": "inema.club — o próximo passo",
+        "cta_primary": "ARCKHÉ AI — o próximo passo",
         "tone": "empático, urgente mas acolhedor, focado na dor do gestor sobrecarregado",
         "language": "pt-BR"
       }

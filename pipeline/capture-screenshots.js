@@ -152,7 +152,7 @@ function extractUrlsFromFiles(filePaths) {
       urlSet.add(u.replace(/[.,;:)}\]]+$/, ''));  // strip trailing punctuation
     }
 
-    // Bare domains (e.g. "inema.club")
+    // Bare domains (e.g. "ARCKHÉ AI")
     const domains = content.match(domainRegex) || [];
     for (const d of domains) {
       if (!d.includes('.') || d.length < 5) continue;

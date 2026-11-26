@@ -2,8 +2,8 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const OUTPUT_DIR = '/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/c0090-vibe_coding_negocios/ads';
-const IMGS_BASE = '/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/c0090-vibe_coding_negocios/imgs';
+const OUTPUT_DIR = '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/c0090-vibe_coding_negocios/ads';
+const IMGS_BASE = '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/c0090-vibe_coding_negocios/imgs';
 const PREFIX = 'c0090-vibe_coding_negocios';
 
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -46,7 +46,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:linear-gradient(135deg,rgba(0,0,0,.85) 0%,rgba(0,10,30,.78) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">01 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">01 / 10</div>
 <div class="c">
   <div class="tag">VIBE CODING &amp; IA NOS NEGÓCIOS</div>
   <div class="cmp">
@@ -85,7 +85,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:rgba(0,0,0,.82);"></div>
-<div class="brand">INEMA</div><div class="num">02 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">02 / 10</div>
 <div class="c">
   <div class="hl">O custo de experimentar<br>caiu absurdamente</div>
   <div class="grid">
@@ -122,7 +122,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:linear-gradient(to right,rgba(0,0,0,.9) 58%,rgba(0,0,0,.45) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">03 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">03 / 10</div>
 <div class="c">
   <div class="pill">⚡ Vantagem Competitiva</div>
   <div class="hl">Quem testa<br>mais ideias,<br><em>ganha.</em></div>
@@ -152,7 +152,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:rgba(0,0,0,.8);"></div>
-<div class="brand">INEMA</div><div class="num">04 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">04 / 10</div>
 <div class="c">
   <div class="big">41%</div>
   <div class="stat-l">do código global já é<br>gerado por IA</div>
@@ -185,7 +185,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:linear-gradient(to right,rgba(0,0,0,.92) 55%,rgba(0,0,0,.52) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">05 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">05 / 10</div>
 <div class="c">
   <div class="hl">O <span class="cm">código</span><br>virou<br><span class="vl">commodity.</span></div>
   <div class="sub">O valor está na decisêo:</div>
@@ -222,7 +222,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:linear-gradient(to bottom,rgba(0,0,0,.78) 0%,rgba(0,0,0,.88) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">06 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">06 / 10</div>
 <div class="c">
   <div class="lbl">Nova Realidade</div>
   <div class="hl">Prototipar virou<br><em>pensamento</em><br>estratégico.</div>
@@ -253,7 +253,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" style="filter:brightness(.72) contrast(1.1) saturate(.85);"/>
 <div class="ov" style="background:linear-gradient(135deg,rgba(18,0,0,.9) 0%,rgba(0,0,0,.78) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">07 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">07 / 10</div>
 <div class="c">
   <div class="wtag">⚠ Atençêo</div>
   <div class="hl">O <span class="rr">risco</span><br>que o hype<br>ignora.</div>
@@ -284,7 +284,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:rgba(0,0,0,.82);"></div>
-<div class="brand">INEMA</div><div class="num">08 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">08 / 10</div>
 <div class="c">
   <div class="lbl">O que NêO mudou</div>
   <div class="hl">Execuçêo consistente<br>ainda <em>vence.</em></div>
@@ -320,7 +320,7 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:linear-gradient(to bottom,rgba(0,0,0,.84) 0%,rgba(0,5,20,.9) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">09 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">09 / 10</div>
 <div class="c">
   <div class="hl">Clareza no<br><em>novo jogo</em><br>competitivo.</div>
   <div class="fw">
@@ -342,7 +342,7 @@ ${GF}${BASE}
 </div></body></html>`
   },
 
-  // ─── SLIDE 10: CTA — INEMA.CLUB ────────────────────────────────────────────
+  // ─── SLIDE 10: CTA — ARCKHÉ AI ────────────────────────────────────────────
   {
     id: '010', imgIndex: 10,
     html: (u) => `<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
@@ -358,10 +358,10 @@ ${GF}${BASE}
 <div class="slide">
 <img class="bg" src="${u}" />
 <div class="ov" style="background:linear-gradient(to bottom,rgba(0,0,0,.72) 0%,rgba(0,5,20,.92) 100%);"></div>
-<div class="brand">INEMA</div><div class="num">10 / 10</div>
+<div class="brand">ARCKHÉ</div><div class="num">10 / 10</div>
 <div class="c">
   <div class="top">Aprenda a tomar as decisões certas<br>no novo jogo competitivo.</div>
-  <div class="bu">INEMA<span>.CLUB</span></div>
+  <div class="bu">ARCKHÉ<span>.CLUB</span></div>
   <div class="tl">Trilha completa &nbsp;·&nbsp; 100% gratuita</div>
   <div class="btn">▶&nbsp; Comece agora</div>
   <div class="fb">✓ Sem cartêo · Sem truques · Acesso imediato</div>
@@ -410,7 +410,7 @@ async function render() {
     color_palette: { primary: '#0D0D0D', accent_blue: '#0099FF', accent_green: '#00FF88' },
     font: 'Space Grotesk',
     copy_source: 'narrative.json → carousel_texts + headlines + approved_ctas',
-    brand_url: 'INEMA.CLUB',
+    brand_url: 'ARCKHÉ AI',
     slides: results
   };
 

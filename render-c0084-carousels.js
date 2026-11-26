@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = path.resolve(__dirname);
-const IMGS_DIR = path.join(BASE, 'prj/inema/outputs/c0084-assistente_agente_agentic_ia/imgs');
-const ADS_DIR = path.join(BASE, 'prj/inema/outputs/c0084-assistente_agente_agentic_ia/ads');
+const IMGS_DIR = path.join(BASE, 'prj/ARCKHÉ/outputs/c0084-assistente_agente_agentic_ia/imgs');
+const ADS_DIR = path.join(BASE, 'prj/ARCKHÉ/outputs/c0084-assistente_agente_agentic_ia/ads');
 
 if (!fs.existsSync(ADS_DIR)) fs.mkdirSync(ADS_DIR, { recursive: true });
 
@@ -66,7 +66,7 @@ const slides = [
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.3) 40%,rgba(0,0,0,0.8) 100%);"></div>
   <div style="position:absolute;top:64px;left:64px;right:64px;">
     <div class="anim-fade" style="display:inline-block;background:${C.blue};color:#fff;font-size:24px;font-weight:700;letter-spacing:0.12em;padding:8px 24px;border-radius:9999px;margin-bottom:32px;text-transform:uppercase;">
-      INEMA.CLUB
+      ARCKHÉ AI
     </div>
   </div>
   <div style="position:absolute;bottom:0;left:0;right:0;padding:64px;background:linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.6) 60%,transparent 100%);">
@@ -466,7 +466,7 @@ const slides = [
     </div>
     <div class="anim-up delay1" style="width:100px;height:5px;background:linear-gradient(90deg,${C.blue},${C.green});border-radius:9999px;margin:24px auto 36px;"></div>
     <div class="anim-scale delay2" style="font-size:120px;font-weight:800;color:#fff;line-height:1.0;letter-spacing:-0.02em;text-shadow:0 0 80px rgba(0,153,255,0.4),0 4px 40px rgba(0,0,0,0.9);margin-bottom:12px;">
-      INEMA
+      ARCKHÉ
     </div>
     <div class="anim-scale delay2" style="font-size:120px;font-weight:800;color:${C.green};line-height:1.0;letter-spacing:-0.02em;text-shadow:0 0 80px rgba(0,255,136,0.4),0 4px 40px rgba(0,0,0,0.9);margin-bottom:40px;">
       .CLUB
@@ -531,7 +531,7 @@ async function render() {
         'AGENTIC — Exemplo real',
         'Comparativo 3 conceitos',
         'Por que isso importa',
-        'CTA — INEMA.CLUB',
+        'CTA — ARCKHÉ AI',
       ][i],
     })),
   };

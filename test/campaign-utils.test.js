@@ -13,7 +13,7 @@ test('resolveStageAlias maps known aliases', () => {
 });
 
 test('buildPayload uses sane defaults', () => {
-  const payload = buildPayload('Pascoa 2026', {}, 'prj/inema', '2026-04-02', {
+  const payload = buildPayload('Pascoa 2026', {}, 'prj/ARCKHÉ', '2026-04-02', {
     KIE_DEFAULT_MODEL: 'z-image-turbo',
     IMAGE_PROVIDER: 'kie',
   });
@@ -34,7 +34,7 @@ test('buildPayload uses sane defaults', () => {
 test('buildConfigTable includes skip flags when enabled', () => {
   const lines = buildConfigTable({
     task_name: 'c0001-demo',
-    project_dir: 'prj/inema',
+    project_dir: 'prj/ARCKHÉ',
     platform_targets: ['instagram'],
     image_source: 'brand',
     image_model: 'z-image',

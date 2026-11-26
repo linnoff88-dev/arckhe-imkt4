@@ -127,7 +127,7 @@ function parseCampaignEntry(raw, defaults, projectDir, outputRoot) {
     platform_targets: Array.isArray(entry.platform_targets ?? defaults.platform_targets)
       ? (entry.platform_targets ?? defaults.platform_targets)
       : ['instagram'],
-    style_preset: entry.style_preset ?? defaults.style_preset ?? 'inema_hightech',
+    style_preset: entry.style_preset ?? defaults.style_preset ?? 'ARCKHÉ_hightech',
     photo_quality: entry.photo_quality ?? defaults.photo_quality ?? 'simples',
     scene_quality: entry.scene_quality ?? defaults.scene_quality ?? 'simples',
     ...normalizeImageConfig(entry, defaults),
@@ -157,7 +157,7 @@ function parseManifest(batchDir) {
     quick_mode: manifest.defaults?.quick_mode ?? manifest.quick_mode ?? 'normal',
     tts_provider: manifest.defaults?.tts_provider ?? manifest.tts_provider ?? 'auto',
     platform_targets: manifest.defaults?.platform_targets ?? manifest.platform_targets ?? ['instagram'],
-    style_preset: manifest.defaults?.style_preset ?? manifest.style_preset ?? 'inema_hightech',
+    style_preset: manifest.defaults?.style_preset ?? manifest.style_preset ?? 'ARCKHÉ_hightech',
     photo_quality: manifest.defaults?.photo_quality ?? manifest.photo_quality ?? 'simples',
     scene_quality: manifest.defaults?.scene_quality ?? manifest.scene_quality ?? 'simples',
     image_source: manifest.defaults?.image_source ?? manifest.image_source ?? 'brand',

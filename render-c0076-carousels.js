@@ -8,8 +8,8 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = '/home/nmaldaner/projetos/timesmkt3';
-const OUTPUT_DIR = path.join(BASE, 'prj/inema/outputs/c0076-agentes_ia_advocacia/ads');
-const IMGS_DIR = path.join(BASE, 'prj/inema/outputs/c0076-agentes_ia_advocacia/imgs');
+const OUTPUT_DIR = path.join(BASE, 'prj/ARCKHÉ/outputs/c0076-agentes_ia_advocacia/ads');
+const IMGS_DIR = path.join(BASE, 'prj/ARCKHÉ/outputs/c0076-agentes_ia_advocacia/imgs');
 const CAMPAIGN = 'c0076-agentes_ia_advocacia';
 
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -38,7 +38,7 @@ function shell(slideNum, bgImage, overlayStyle, innerContent, extra = '') {
 <div class="wrap">
   <img class="bg" src="file://${bgImage}">
   <div class="overlay" style="${overlayStyle}"></div>
-  <div class="brand-mark"><div class="brand-dot"></div><div class="brand-name">INEMA.CLUB</div></div>
+  <div class="brand-mark"><div class="brand-dot"></div><div class="brand-name">ARCKHÉ AI</div></div>
   <div class="slide-num">${String(slideNum).padStart(2,'0')} / 15</div>
   <div class="content">${innerContent}</div>
 </div></body></html>`;
@@ -125,7 +125,7 @@ function agentSlide(num, imgNum, agentNum, agentColor, title, description, icon)
   </div>`;
   return `<!DOCTYPE html><html><head><meta charset="utf-8">${FONTS}<style>${BASE_CSS}${extra}</style></head><body>
 <div class="wrap">
-  <div class="brand-mark"><div class="brand-dot"></div><div class="brand-name">INEMA.CLUB</div></div>
+  <div class="brand-mark"><div class="brand-dot"></div><div class="brand-name">ARCKHÉ AI</div></div>
   <div class="slide-num">${String(num).padStart(2,'0')} / 15</div>
   <div class="content" style="padding:0">${inner}</div>
 </div></body></html>`;
@@ -364,7 +364,7 @@ function slide14() {
     <div class="s14-bullets">
       <div class="s14-bullet">5 agentes. Um pipeline. Liberdade estratégica.</div>
       <div class="s14-bullet">Aprende em horas, nêo em meses.</div>
-      <div class="s14-bullet">Formaçêo 100% gratuita no INEMA.CLUB</div>
+      <div class="s14-bullet">Formaçêo 100% gratuita no ARCKHÉ AI</div>
     </div>
   </div>`;
   return shell(14, img(14), 'background:linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.5) 55%,rgba(13,13,13,0.1) 100%)', inner, extra);
@@ -391,7 +391,7 @@ function slide15() {
   `;
   const inner = `<div class="s15-inner">
     <div class="s15-eyebrow">Formaçêo em IA Jurídica</div>
-    <div class="s15-brand">INEMA<span>.</span>CLUB</div>
+    <div class="s15-brand">ARCKHÉ<span>.</span>CLUB</div>
     <div class="s15-tagline">Aprenda rápido e fácil como</div>
     <div class="s15-cta">ACESSE GRÁTIS AGORA</div>
     <div class="s15-free">Trilha completa. <span>100% gratuita.</span> Sem truques.</div>

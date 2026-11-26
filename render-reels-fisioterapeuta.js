@@ -1,6 +1,6 @@
 /**
  * Reels 9:16 (1080x1920) do fisioterapeuta:
- *  - Topo (0-420px): watermark INEMA.CLUB + hook cronometrado (Bebas Neue)
+ *  - Topo (0-420px): watermark ARCKHÉ AI + hook cronometrado (Bebas Neue)
  *  - Meio (420-1500px): video 1:1 original (sem modificar)
  *  - Rodapé (1500-1920px): legendas cronometradas + CTA (Montserrat Black)
  */
@@ -9,8 +9,8 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const IN_VIDEO = path.join(__dirname, 'prj/inema/videos/fisioterapeuta_2026-04-22/video/fisioterapeuta-30s.mp4');
-const OUT_DIR = path.join(__dirname, 'prj/inema/videos/fisioterapeuta_2026-04-22/video');
+const IN_VIDEO = path.join(__dirname, 'prj/ARCKHÉ/videos/fisioterapeuta_2026-04-22/video/fisioterapeuta-30s.mp4');
+const OUT_DIR = path.join(__dirname, 'prj/ARCKHÉ/videos/fisioterapeuta_2026-04-22/video');
 const OUT_FILE = path.join(OUT_DIR, 'fisioterapeuta-30s-reels.mp4');
 const FONT_HOOK = '/home/nmaldaner/.local/share/fonts/BebasNeue-Regular.ttf';
 const FONT_CAPS = '/home/nmaldaner/.local/share/fonts/Montserrat-Black.ttf';
@@ -64,11 +64,11 @@ const capBlocks = [
   { t0: 28.3, t1: 30.0, text: 'Alívio virou ciência' },
 ];
 
-// Watermark INEMA.CLUB constante no topo-esquerda (dentro do topo 420)
-const watermark = `drawtext=fontfile=${FONT_HOOK}:text='INEMA.CLUB':fontcolor=white@0.85:fontsize=42:borderw=3:bordercolor=black@0.6:x=48:y=48`;
+// Watermark ARCKHÉ AI constante no topo-esquerda (dentro do topo 420)
+const watermark = `drawtext=fontfile=${FONT_HOOK}:text='ARCKHÉ AI':fontcolor=white@0.85:fontsize=42:borderw=3:bordercolor=black@0.6:x=48:y=48`;
 
 // Handle fixo no rodapé-centro
-const handle = `drawtext=fontfile=${FONT_CAPS}:text='@inema.club':fontcolor=white@0.78:fontsize=38:x=(w-tw)/2:y=1810`;
+const handle = `drawtext=fontfile=${FONT_CAPS}:text='@ARCKHÉ AI':fontcolor=white@0.78:fontsize=38:x=(w-tw)/2:y=1810`;
 
 // Monta cadeia de drawtext
 const drawtexts = [

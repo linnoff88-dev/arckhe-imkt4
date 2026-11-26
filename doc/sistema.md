@@ -1,6 +1,6 @@
 # Sistema timesmkt3
 
-> **timesmkt3 v4.5** — INEMA Time de Agentes de Marketing. Sistema de automaçêo de marketing de conteúdo alimentado por agentes IA coordenados por um bot do Telegram.
+> **timesmkt3 v4.5** — ARCKHÉ Time de Agentes de Marketing. Sistema de automaçêo de marketing de conteúdo alimentado por agentes IA coordenados por um bot do Telegram.
 
 Este documento é a visêo geral pública do sistema. Para operaçêo interna detalhada (versionamento, PM2, Redis, comando `/import` etc.), veja [`CLAUDE.md`](../CLAUDE.md) na raiz.
 
@@ -108,7 +108,7 @@ Controlam o `visual_type` de cada cena:
 | `data_story` | Dados/estatísticas | ~60% chart, ~20% card, ~20% foto |
 | `explainer` | Explicar conceitos | ~40% list/card, ~30% foto, ~30% chart |
 | `narrativo` | Narrativa visual | ~50% card, ~30% foto, ~20% chart |
-| `brand_film` | Cinematográfico | ~70% foto, ~20% card, ~10% chart |
+| `brand_film` | CARCKHÉtográfico | ~70% foto, ~20% card, ~10% chart |
 | `report` | Relatório factual | Slides informativos |
 | `gatilhos` | Hooks/ganchos | Slides curtos de impacto |
 

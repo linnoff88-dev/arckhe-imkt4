@@ -8,7 +8,7 @@ const path = require('path');
 // ─── SETUP ───────────────────────────────────────────────────────────────────
 
 const CAMPAIGN = 'c0097-dia_das_maes_2026';
-const BASE     = `/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/${CAMPAIGN}`;
+const BASE     = `/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/${CAMPAIGN}`;
 const ADS_DIR  = `${BASE}/ads`;
 const IMGS_DIR = `${BASE}/imgs`;
 
@@ -67,7 +67,7 @@ ${subtextCSS}
     <div class="hl">${linesHtml}</div>
     ${subtextHtml}
   </div>
-  <div class="brand-tag">INEMA</div>
+  <div class="brand-tag">ARCKHÉ</div>
   <div class="slide-num">${num} / 15</div>
 </div></body></html>`;
 }
@@ -97,7 +97,7 @@ ${BASE_CSS}
     <div class="hl">${linesHtml}</div>
     <div class="bar-b"></div>
   </div>
-  <div class="brand-tag">INEMA</div>
+  <div class="brand-tag">ARCKHÉ</div>
   <div class="slide-num">${num} / 15</div>
 </div></body></html>`;
 }
@@ -123,7 +123,7 @@ ${BASE_CSS}
     <div class="ctx">${ctxHtml}</div>
     <div class="rule"></div>
   </div>
-  <div class="brand-tag">INEMA</div>
+  <div class="brand-tag">ARCKHÉ</div>
   <div class="slide-num">${num} / 15</div>
 </div></body></html>`;
 }
@@ -154,12 +154,12 @@ ${BASE_CSS}
       <div class="hl">${linesHtml}</div>
     </div>
   </div>
-  <div class="brand-tag">INEMA</div>
+  <div class="brand-tag">ARCKHÉ</div>
   <div class="slide-num">${num} / 15</div>
 </div></body></html>`;
 }
 
-// CTA: full brand slide — INEMA.CLUB hero + glassmorphism CTA button
+// CTA: full brand slide — ARCKHÉ AI hero + glassmorphism CTA button
 function makeCTASlide(s) {
   const imgSrc = ip(s.imgN);
 
@@ -181,10 +181,10 @@ ${BASE_CSS}
     <div class="eyebrow">Dia das Mêes 2026</div>
     <div class="pre-head">Honre ela evoluindo.</div>
     <div class="divider"></div>
-    <div class="brand-hero">INEMA.CLUB</div>
+    <div class="brand-hero">ARCKHÉ AI</div>
     <div class="tagline">Evoluçêo. Formaçêo. Comunidade.</div>
-    <div class="cta-pill">Acesse → inema.vip</div>
-    <div class="url-hint">inema.vip</div>
+    <div class="cta-pill">Acesse → ARCKHÉ.vip</div>
+    <div class="url-hint">ARCKHÉ.vip</div>
   </div>
 </div></body></html>`;
 }
@@ -304,9 +304,9 @@ const SLIDES = [
     accentColor:'#F5C518', textColor:'#FFF8F0',
     concept:'Resoluçêo — evoluçêo pessoal como maior homenagem'
   },
-  // 15 — CTA: INEMA.CLUB hero
+  // 15 — CTA: ARCKHÉ AI hero
   { n:15, imgN:15, type:'cta',
-    concept:'CTA — INEMA.CLUB como destino da evoluçêo, inema.vip como URL'
+    concept:'CTA — ARCKHÉ AI como destino da evoluçêo, ARCKHÉ.vip como URL'
   },
 ];
 
@@ -356,7 +356,7 @@ async function main() {
     console.log(`✓ Slide ${s.n}/15 → ${path.basename(pngFile)}`);
 
     const carousel_text = s.type === 'cta'
-      ? 'Honre ela evoluindo. → inema.vip'
+      ? 'Honre ela evoluindo. → ARCKHÉ.vip'
       : s.type === 'stat'
         ? `${s.stat} ${(s.context || '').replace(/\n/g, ' ')}`
         : (s.text || '').replace(/\n/g, ' ');

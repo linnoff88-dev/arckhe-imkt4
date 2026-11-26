@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 const CAMPAIGN = 'c0077-ia_para_nutricao_e_academias';
-const BASE_DIR = `/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/${CAMPAIGN}`;
+const BASE_DIR = `/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/${CAMPAIGN}`;
 const ADS_DIR = path.join(BASE_DIR, 'ads');
 const IMGS_DIR = path.join(BASE_DIR, 'imgs');
 
@@ -71,8 +71,8 @@ function slide01() {
   <div class="sub">Quem respondeu<br>no seu consultório? 🧠</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -102,8 +102,8 @@ function slide02() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -128,8 +128,8 @@ function slide03() {
   <div class="sub">Ela substitui o que o nutricionista<br>odeia fazer.</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -158,8 +158,8 @@ function slide04() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -195,8 +195,8 @@ function slide05() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -228,8 +228,8 @@ function slide06() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -254,8 +254,8 @@ function slide07() {
   <div class="sub">Preserve o que é genuinamente humano no seu trabalho.</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -282,8 +282,8 @@ function slide08() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -307,8 +307,8 @@ function slide09() {
   <div class="sub">Resultados reais.</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -341,8 +341,8 @@ function slide10() {
   <div class="sub-center" style="margin-top:32px;">O toque humano fica com você.<br>O operacional vai para a máquina.</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -366,8 +366,8 @@ function slide11() {
   <div class="sub">Automatize o operacional. Mantenha o que só você pode entregar.</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -398,8 +398,8 @@ function slide12() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -425,8 +425,8 @@ function slide13() {
   <div class="sub">É coisa de quem quer<br>crescer sem se esgotar.</div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -464,8 +464,8 @@ function slide14() {
   </div>
 </div>
 <div class="brand-bar">
-  <span class="tag">@inema.tds</span>
-  <span class="url">inema.club</span>
+  <span class="tag">@ARCKHÉ.tds</span>
+  <span class="url">ARCKHÉ AI</span>
 </div>
 </div></body></html>`;
 }
@@ -486,12 +486,12 @@ function slide15() {
 <div class="vignette"></div>
 <div class="overlay"></div>
 <div class="content">
-  <div class="brand-name">INEMA.CLUB</div>
+  <div class="brand-name">ARCKHÉ AI</div>
   <div class="brand-sub">Educaçêo em IA para saúde &amp; fitness</div>
   <div class="divider"></div>
   <div class="tagline">Trilha completa. 100% gratuita.<br>Sem truques.</div>
   <div class="cta-btn">COMECE GRÁTIS AGORA</div>
-  <div class="cta-sub">inema.club — acesso imediato</div>
+  <div class="cta-sub">ARCKHÉ AI — acesso imediato</div>
 </div>
 </div></body></html>`;
 }

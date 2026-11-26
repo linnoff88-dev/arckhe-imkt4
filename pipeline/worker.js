@@ -34,7 +34,7 @@ const { createWorkerVideoProHandler } = require('./worker-video-pro');
 const kieProvider = require('./generate-image-kie');
 const pollinationsProvider = require('./generate-image-pollinations');
 const piramydProvider = require('./generate-image-piramyd');
-const inemaimgProvider = require('./generate-image-inemaimg');
+const ARCKHÉimgProvider = require('./generate-image-ARCKHÉimg');
 
 // Video renderer dispatcher — Remotion for Pro, ffmpeg for Quick (fallback)
 const RENDER_FFMPEG = path.resolve(__dirname, 'render-video-ffmpeg.js');
@@ -74,7 +74,7 @@ function getImageProvider(jobProvider) {
   const p = (jobProvider || IMAGE_PROVIDER || 'kie').toLowerCase();
   if (p === 'pollinations') return pollinationsProvider;
   if (p === 'piramyd') return piramydProvider;
-  if (p === 'inemaimg') return inemaimgProvider;
+  if (p === 'ARCKHÉimg') return ARCKHÉimgProvider;
   return kieProvider;
 }
 

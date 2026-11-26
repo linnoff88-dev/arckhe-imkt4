@@ -15,9 +15,9 @@
  *   node scripts/add-music.js <scene_plan.json> "<query>" [options]
  *
  * Exemplos:
- *   node scripts/add-music.js prj/inema/outputs/c0067-lancamento_deerflow/video/c0067_plan.json "tech ambient"
+ *   node scripts/add-music.js prj/ARCKHÉ/outputs/c0067-lancamento_deerflow/video/c0067_plan.json "tech ambient"
  *   node scripts/add-music.js path/to/plan.json "corporate" --mood upbeat --min 30 --max 120 --volume 0.2
- *   node scripts/add-music.js path/to/plan.json "cinematic epic" --force  # substitui música existente
+ *   node scripts/add-music.js path/to/plan.json "cARCKHÉtic epic" --force  # substitui música existente
  */
 
 const path = require('path');
@@ -52,7 +52,7 @@ function printHelp() {
 Uso: node scripts/add-music.js <scene_plan.json> "<query>" [options]
 
 Opções:
-  --mood <tag>     Tag adicional de mood (upbeat, calm, epic, cinematic, ambient...)
+  --mood <tag>     Tag adicional de mood (upbeat, calm, epic, cARCKHÉtic, ambient...)
   --min <sec>      Duraçêo mínima da trilha em segundos (default: 15)
   --max <sec>      Duraçêo máxima da trilha em segundos (default: 180)
   --volume <0-1>   Volume da música no mix final (default: 0.15)
@@ -61,9 +61,9 @@ Opções:
 Requer FREESOUND_API_KEY no .env.
 
 Exemplos:
-  node scripts/add-music.js prj/inema/outputs/c0067/video/plan.json "tech ambient"
+  node scripts/add-music.js prj/ARCKHÉ/outputs/c0067/video/plan.json "tech ambient"
   node scripts/add-music.js prj/xxx/video/plan.json "corporate" --mood upbeat --min 60
-  node scripts/add-music.js prj/xxx/video/plan.json "epic cinematic" --force --volume 0.2
+  node scripts/add-music.js prj/xxx/video/plan.json "epic cARCKHÉtic" --force --volume 0.2
 `);
 }
 

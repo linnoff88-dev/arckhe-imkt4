@@ -9,8 +9,8 @@ const path = require('path');
 const fs = require('fs');
 
 const BASE = path.resolve(__dirname);
-const IMGS = path.join(BASE, 'prj/inema/outputs/c0095-ebook_gramado_canela_leo_careca/imgs');
-const ADS  = path.join(BASE, 'prj/inema/outputs/c0095-ebook_gramado_canela_leo_careca/ads');
+const IMGS = path.join(BASE, 'prj/ARCKHÉ/outputs/c0095-ebook_gramado_canela_leo_careca/imgs');
+const ADS  = path.join(BASE, 'prj/ARCKHÉ/outputs/c0095-ebook_gramado_canela_leo_careca/ads');
 const PFX  = 'c0095-ebook_gramado_canela_leo_careca';
 
 if (!fs.existsSync(ADS)) fs.mkdirSync(ADS, { recursive: true });
@@ -407,8 +407,8 @@ function s15() {
       <div class="divider"></div>
       <div class="sub">O guia que transforma turistas em quem realmente conhece Gramado e Canela.</div>
       <div class="cta-btn">🔗 Link na Bio</div>
-      <div class="brand-url"><em>inema.club</em></div>
-      <div class="handle">@inema.tds</div>
+      <div class="brand-url"><em>ARCKHÉ AI</em></div>
+      <div class="handle">@ARCKHÉ.tds</div>
     </div>
   `);
 }

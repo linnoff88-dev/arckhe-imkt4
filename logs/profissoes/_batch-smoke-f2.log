@@ -10,10 +10,10 @@
 ▶ [cardiologista:gen-nostalgia] node gen-gertran-nostalgia.js cardiologista
 ✅ [cardiologista:gen-nostalgia] ok
 
-▶ [cardiologista:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-cardiologista.mp3 Você foi a criança que ouvia o coração da vó encostando no peito. Estudou cada batida, virou cardiologista, salvou milhares. Viu o eletro de papel virar digital, o exame virar remoto, o holter virar smartwatch. Agora a IA detecta arritmia antes do sintoma. Você continua sendo o que escuta com calma. Continue aprendendo no Inema ponto CLUB. bella
+▶ [cardiologista:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-cardiologista.mp3 Você foi a criança que ouvia o coração da vó encostando no peito. Estudou cada batida, virou cardiologista, salvou milhares. Viu o eletro de papel virar digital, o exame virar remoto, o holter virar smartwatch. Agora a IA detecta arritmia antes do sintoma. Você continua sendo o que escuta com calma. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [cardiologista:tts-criaprof] ok
 
-▶ [cardiologista:tts-gertran] node pipeline/generate-audio.js /tmp/narr/narr-gertran-cardiologista.mp3 Você viu o eletro de papel virar digital, o holter virar smartwatch, o diagnóstico virar AI. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no Inema ponto CLUB. bella
+▶ [cardiologista:tts-gertran] node pipeline/generate-audio.js /tmp/narr/narr-gertran-cardiologista.mp3 Você viu o eletro de papel virar digital, o holter virar smartwatch, o diagnóstico virar AI. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [cardiologista:tts-gertran] ok
 
 ▶ [cardiologista:whisper] sh: source /home/nmaldaner/miniconda3/etc/profile.d/conda.sh && conda activate chatterbox && python3 transcribe-words.py /tmp/narr/narr-criaprof-cardiologista.mp3 /tmp/narr/whisper-criaprof-cardiologista.json && python3 transcribe-words.py /tmp/narr/narr-gertran-cardiologista.mp3 /tmp/narr/whisper-gertran-cardiologista.json

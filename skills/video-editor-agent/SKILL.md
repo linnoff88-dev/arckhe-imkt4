@@ -127,7 +127,7 @@ Quando `scene_quality: "simples"`, o agente decide **APENAS conteúdo**. O siste
 8. **Cortes com texto ≥ 2.0s:** Mínimo para leitura confortável
 9. **Máximo 6 palavras por text_overlay:** Menos é mais
 10. **Text overlay complementa, nunca repete** a narraçêo
-11. **Video Pro: PROIBIDO usar imagens de carrossel, banners ou artes gráficas do ads/ como source.** O vídeo pro é cinematográfico — usar APENAS imagens fotográficas (assets de marca, imagens geradas via API, pexels). Exceçêo única: quando o payload contém `carousel_in_video: true` explicitamente. No Video Quick, carrossel é permitido.
+11. **Video Pro: PROIBIDO usar imagens de carrossel, banners ou artes gráficas do ads/ como source.** O vídeo pro é cARCKHÉtográfico — usar APENAS imagens fotográficas (assets de marca, imagens geradas via API, pexels). Exceçêo única: quando o payload contém `carousel_in_video: true` explicitamente. No Video Quick, carrossel é permitido.
 12. **Imagens com texto (banners, carrosseis — quando permitido): PROIBIDO zoom, crop ou qualquer motion que corte a imagem.** Usar `image_type: "banner"` e motion `static` ou `breathe` com intensidade minima. Estas imagens ja tem layout proprio e qualquer corte destrói a composicao.
 13. **NUNCA colocar text_overlay sobre imagens que ja contem texto** (banners, carrosseis, artes). O texto da imagem + overlay = poluicao visual. Para estas cenas: `text_overlay: ""`
 14. **Aspect ratio e crop de imagens:**
@@ -153,7 +153,7 @@ Com N imagens de marca e 30-50 cortes, cada imagem será reutilizada ~3-5x. Para
 - Gere no máximo 10-15 image_prompts únicos
 - Mapeie múltiplos cortes ao mesmo prompt gerado
 - Prompts em inglês, max 200 caracteres
-- Sempre inclua: "no text, no watermark, cinematic lighting"
+- Sempre inclua: "no text, no watermark, cARCKHÉtic lighting"
 
 **Para image_source = pexels:**
 - Gere queries de busca por seçêo temática

@@ -28,7 +28,7 @@ timesmkt3/
   "batch_id": "tg_lotequick_1775305296801_4d0556",
   "created_at": "2026-04-04T12:21:37.120Z",
   "command_text": "/lotequick campanhas c2,c44 fonte solido #0D0D0D modo enxuto",
-  "project_dir": "prj/inema",
+  "project_dir": "prj/ARCKHÉ",
   "scope": "campanhas",
   "source_spec": "solido #0D0D0D",
   "source_label": "sólido #0D0D0D",
@@ -67,7 +67,7 @@ timesmkt3/
 | `batch_id` | string | nêo | ID do lote, gerado automaticamente pelo bot |
 | `created_at` | string | nêo | Timestamp ISO de criaçêo |
 | `command_text` | string | nêo | Comando original que gerou o lote |
-| `project_dir` | string | sim | Projeto base, ex: `prj/inema` |
+| `project_dir` | string | sim | Projeto base, ex: `prj/ARCKHÉ` |
 | `scope` | string | nêo | `ativos`, `todos` ou `campanhas` |
 | `source_spec` | string | nêo | Texto cru da fonte no comando |
 | `source_label` | string | nêo | Rótulo já interpretado da fonte |

@@ -24,10 +24,10 @@
  *
  * Uso programático:
  *   const { addBackgroundMusic, addSceneSfx } = require('./audio-enrich');
- *   await addBackgroundMusic('prj/inema/outputs/c0050/scene_plan.json', {
+ *   await addBackgroundMusic('prj/ARCKHÉ/outputs/c0050/scene_plan.json', {
  *     query: 'tech ambient', mood: 'upbeat', minDuration: 30, maxDuration: 120,
  *   });
- *   await addSceneSfx('prj/inema/outputs/c0050/scene_plan.json', 0, {
+ *   await addSceneSfx('prj/ARCKHÉ/outputs/c0050/scene_plan.json', 0, {
  *     query: 'notification pop', volume: 0.6,
  *   });
  *

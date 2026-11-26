@@ -5,7 +5,7 @@ const { getEnv } = require('../config/env');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const camp = 'c0038-pascoa_2026';
-const campDir = path.join(PROJECT_ROOT, 'prj/inema/outputs', camp);
+const campDir = path.join(PROJECT_ROOT, 'prj/ARCKHÉ/outputs', camp);
 const imgsDir = path.join(campDir, 'imgs');
 const CHAT_ID = '7388953786';
 
@@ -76,16 +76,16 @@ const providers = [
 ];
 
 const prompts = [
-  'Executive conductor standing before holographic AI orchestra, low angle, dramatic blue backlight, dark futuristic command room. Cinematic, photorealistic. No text, no watermark.',
-  'Close-up hands holding glowing baton transforming into digital cursor, particles of light, dark background, cinematic depth of field. No text.',
+  'Executive conductor standing before holographic AI orchestra, low angle, dramatic blue backlight, dark futuristic command room. CARCKHÉtic, photorealistic. No text, no watermark.',
+  'Close-up hands holding glowing baton transforming into digital cursor, particles of light, dark background, cARCKHÉtic depth of field. No text.',
   'Easter egg cracking open revealing digital city of AI agents inside, neon blue and gold light spilling out, macro shot, dark background. No text.',
-  'Silhouette of business leader facing massive wall of AI dashboards, blue glow reflecting on face, dark room, wide angle from behind. Cinematic. No text.',
+  'Silhouette of business leader facing massive wall of AI dashboards, blue glow reflecting on face, dark room, wide angle from behind. CARCKHÉtic. No text.',
   'Professional woman orchestrating multiple AI screens with hand gestures, holographic interfaces floating, dark premium office. No text, no watermark.',
   'Golden Easter egg surrounded by circuit board patterns, glowing blue connections, dark background, product photography, centered. No text.',
   'Diverse team in modern dark auditorium watching AI presentation, screens reflecting on faces, warm and cool tones, wide shot. No text.',
-  'Close-up executive face illuminated by blue AI interface light, determined expression, shallow depth of field, cinematic portrait. No text.',
+  'Close-up executive face illuminated by blue AI interface light, determined expression, shallow depth of field, cARCKHÉtic portrait. No text.',
   'Futuristic classroom with professionals learning AI on holographic displays, dark premium environment, golden accents, wide angle. No text.',
-  'Abstract: digital phoenix rising from cracked golden egg, neon blue and gold particles, dark space background. Artistic, cinematic. No text.',
+  'Abstract: digital phoenix rising from cracked golden egg, neon blue and gold particles, dark space background. Artistic, cARCKHÉtic. No text.',
 ];
 
 async function main() {

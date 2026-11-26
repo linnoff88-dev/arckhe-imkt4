@@ -1,304 +1,304 @@
 
 === 2026-04-23T07:23:39.250Z node gen-criaprof.js ginecologista ===
 
-[criaprof:ginecologista] 50 imagens em /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs
+[criaprof:ginecologista] 50 imagens em /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs
 
 ── 1/50 ── cena01-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Cozy 1980s Brazilian home with a home where older women discuss health quietly in the kitchen, warm afternoon light spil...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Cozy 1980s Brazilian home with a home where older women discuss health quietly in the kitchen, warm afternoon light spil...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 2/50 ── cena01-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 3/50 ── cena02-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: 1980s brazilian bedroom with an anatomy picture book about the human body sitting on a bedspread, old wooden toy shelf b...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: 1980s brazilian bedroom with an anatomy picture book about the human body sitting on a bedspread, old wooden toy shelf b...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 4/50 ── cena02-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 5/50 ── cena03-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: 1980s brazilian public school classroom with wooden desks, chalkboard with a chalkboard with a female reproductive syste...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: 1980s brazilian public school classroom with wooden desks, chalkboard with a chalkboard with a female reproductive syste...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 6/50 ── cena03-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 7/50 ── cena04-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Warm family living room 1980s with a an old women's-health book with handwritten bookmarks on a crochet tablecloth, old ...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Warm family living room 1980s with a an old women's-health book with handwritten bookmarks on a crochet tablecloth, old ...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 8/50 ── cena04-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 9/50 ── cena05-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Early 1990s brazilian home scene with a friend scared before her first doctor's visit, muted afternoon light, familiar h...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Early 1990s brazilian home scene with a friend scared before her first doctor's visit, muted afternoon light, familiar h...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 10/50 ── cena05-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 11/50 ── cena06-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: 1990s brazilian classroom with a female anatomy poster on the wall, a notebook open on a wooden desk, afternoon sunlight...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: 1990s brazilian classroom with a female anatomy poster on the wall, a notebook open on a wooden desk, afternoon sunlight...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 12/50 ── cena06-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 13/50 ── cena07-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Late 1990s brazilian teen bedroom with women's-health pamphlets, biology books, notebooks, posters on wall, boombox ster...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Late 1990s brazilian teen bedroom with women's-health pamphlets, biology books, notebooks, posters on wall, boombox ster...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 14/50 ── cena07-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 15/50 ── cena08-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Late 1990s brazilian dining table with a medicine faculty brochure and women's-health residency pamphlet (course catalog...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Late 1990s brazilian dining table with a medicine faculty brochure and women's-health residency pamphlet (course catalog...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 16/50 ── cena08-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 17/50 ── cena09-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Early 2000s brazilian medical school hallway with bulletin board, backpacks on the floor, natural daylight through tall ...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Early 2000s brazilian medical school hallway with bulletin board, backpacks on the floor, natural daylight through tall ...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 18/50 ── cena09-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 19/50 ── cena10-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: University study room with gynecology textbooks and an anatomical pelvic model, notebooks piled, coffee cup, clean dayli...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: University study room with gynecology textbooks and an anatomical pelvic model, notebooks piled, coffee cup, clean dayli...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 20/50 ── cena10-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 21/50 ── cena11-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Small women's-health clinic with an exam table with privacy curtain and ultrasound cart, soft neutral daylight, early-ca...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Small women's-health clinic with an exam table with privacy curtain and ultrasound cart, soft neutral daylight, early-ca...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 22/50 ── cena11-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 23/50 ── cena12-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Early 2000s graduation scene, empty graduation cap and diploma on a table, family photograph nearby, soft warm light, ci...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Early 2000s graduation scene, empty graduation cap and diploma on a table, family photograph nearby, soft warm light, ci...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 24/50 ── cena12-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 25/50 ── cena13-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: warm modern women's-health clinic in 2000s with paper patient records and an ultrasound wand on a work surface, warm pro...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: warm modern women's-health clinic in 2000s with paper patient records and an ultrasound wand on a work surface, warm pro...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 26/50 ── cena13-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 27/50 ── cena14-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Well-organized warm modern women's-health clinic with ultrasound cart, privacy curtain, educational illustrations, soft ...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Well-organized warm modern women's-health clinic with ultrasound cart, privacy curtain, educational illustrations, soft ...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 28/50 ── cena14-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 29/50 ── cena15-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: warm modern women's-health clinic set up for a gynecology consultation, chairs or bed positioned, natural light, cinemat...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: warm modern women's-health clinic set up for a gynecology consultation, chairs or bed positioned, natural light, cARCKHÉt...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 30/50 ── cena15-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 31/50 ── cena16-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: warm modern women's-health clinic in 2010s with a desktop monitor showing gynecology EMR with ultrasound integration, ca...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: warm modern women's-health clinic in 2010s with a desktop monitor showing gynecology EMR with ultrasound integration, ca...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 32/50 ── cena16-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 33/50 ── cena17-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up on a smartphone running a menstrual-cycle and fertility tracking app next to paper patient records and an ultra...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up on a smartphone running a menstrual-cycle and fertility tracking app next to paper patient records and an ultra...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 34/50 ── cena17-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-fim.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 35/50 ── cena18-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: warm modern women's-health clinic with a tripod smartphone set up for women's-health educational video, ring light visib...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: warm modern women's-health clinic with a tripod smartphone set up for women's-health educational video, ring light visib...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 36/50 ── cena18-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 37/50 ── cena19-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Home office with a laptop showing a video-call remote gynecology consultation, soft daylight, 2020-era improvised worksp...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Home office with a laptop showing a video-call remote gynecology consultation, soft daylight, 2020-era improvised worksp...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 38/50 ── cena19-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 39/50 ── cena20-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of a monitor showing a patient cycle-history dashboard, modern clinical/professional UI, teal accents, soft amb...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of a monitor showing a patient cycle-history dashboard, modern clinical/professional UI, teal accents, soft amb...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 40/50 ── cena20-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 41/50 ── cena21-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Clean modern screen showing an AI ultrasound image-analysis tool with personalized output and progress charts, soft teal...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Clean modern screen showing an AI ultrasound image-analysis tool with personalized output and progress charts, soft teal...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 42/50 ── cena21-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 43/50 ── cena22-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: warm modern women's-health clinic with a an AI prenatal ultrasound-assistant on a clinic tablet subtly integrated into t...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: warm modern women's-health clinic with a an AI prenatal ultrasound-assistant on a clinic tablet subtly integrated into t...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 44/50 ── cena22-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 45/50 ── cena23-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: warm modern women's-health clinic with a junior colleague's notebook open, older mentor's hand gesturing to explain, sof...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: warm modern women's-health clinic with a junior colleague's notebook open, older mentor's hand gesturing to explain, sof...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 46/50 ── cena23-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, composed authoritative warmth, about...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 47/50 ── cena24-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Bright modern warm modern women's-health clinic space with equipment and tools in soft out-of-focus background, warm-coo...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Bright modern warm modern women's-health clinic space with equipment and tools in soft out-of-focus background, warm-coo...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-ini.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 48/50 ── cena24-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Heroic cinematic close-up portrait of the same Brazilian woman with warm light skin, mid-length dark brown hair, direct ...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Heroic cARCKHÉtic close-up portrait of the same Brazilian woman with warm light skin, mid-length dark brown hair, direct ...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 49/50 ── cena25-ini.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Wide cinematic shot of warm modern women's-health clinic bathed in golden-hour window light, equipment arranged, sense o...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Wide cARCKHÉtic shot of warm modern women's-health clinic bathed in golden-hour window light, equipment arranged, sense o...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-ini.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 50/50 ── cena25-fim.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Wide cinematic shot of the same Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, comp...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Wide cARCKHÉtic shot of the same Brazilian woman with warm light skin, mid-length dark brown hair, direct kind eyes, comp...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-fim.png  (server=2.12s wall=2.2s vram=32.3GB)
 
 [criaprof:ginecologista] ✅ 50/50 em 110.0s (fails=0)
 
 === 2026-04-23T07:25:29.304Z node gen-gertran-nostalgia.js ginecologista ===
 
-[gertran-nostalgia:ginecologista] 20 imagens em /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs
+[gertran-nostalgia:ginecologista] 20 imagens em /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs
 
 ── 1/20 ── nost01.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of 1980s hand-written gynecology patient card with carbon copy, shot on 35mm film, cinematic grading, warm tung...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost01.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of 1980s hand-written gynecology patient card with carbon copy, shot on 35mm film, cARCKHÉtic grading, warm tung...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost01.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 2/20 ── nost02.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Vintage women's-health clinic office with wooden desk and female anatomy poster, shot on 35mm film, cinematic grading, w...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost02.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Vintage women's-health clinic office with wooden desk and female anatomy poster, shot on 35mm film, cARCKHÉtic grading, w...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost02.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 3/20 ── nost03.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Early 2000s ultrasound machine showing a black-and-white fetal image, cinematic, shallow depth of field, natural light, ...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost03.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Early 2000s ultrasound machine showing a black-and-white fetal image, cARCKHÉtic, shallow depth of field, natural light, ...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost03.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 4/20 ── nost04.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of a smartphone menstrual-cycle app open beside a clinic notepad, cinematic, shallow depth of field, natural li...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost04.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of a smartphone menstrual-cycle app open beside a clinic notepad, cARCKHÉtic, shallow depth of field, natural li...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost04.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 5/20 ── nost05.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: A laptop showing a remote gynecology teleconsultation with patient visible, cinematic, shallow depth of field, natural l...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost05.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: A laptop showing a remote gynecology teleconsultation with patient visible, cARCKHÉtic, shallow depth of field, natural l...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost05.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 6/20 ── nost06.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Modern monitor displaying AI ultrasound analysis overlaid on a fetal 3D scan, neo-noir clinical lighting, soft glassmorp...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost06.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Modern monitor displaying AI ultrasound analysis overlaid on a fetal 3D scan, neo-noir clinical lighting, soft glassmorp...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost06.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 7/20 ── nost07.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Gynecologist reviewing an AI prenatal-assistant dashboard on a tablet, neo-noir clinical lighting, soft glassmorphism, t...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost07.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Gynecologist reviewing an AI prenatal-assistant dashboard on a tablet, neo-noir clinical lighting, soft glassmorphism, t...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost07.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 8/20 ── nost08.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Cinematic wide shot of a modern women's-health clinic integrating care and AI tools, neo-noir clinical lighting, soft gl...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost08.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: CARCKHÉtic wide shot of a modern women's-health clinic integrating care and AI tools, neo-noir clinical lighting, soft gl...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost08.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 9/20 ── nost09.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Cinematic wide shot of a modern warm modern women's-health clinic integrating classic expertise and AI technology, neo-n...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost09.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: CARCKHÉtic wide shot of a modern warm modern women's-health clinic integrating classic expertise and AI technology, neo-n...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost09.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 10/20 ── nost10.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Nostalgic 1980s brazilian warm modern women's-health clinic with analog tools and warm afternoon light, shot on 35mm fil...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost10.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Nostalgic 1980s brazilian warm modern women's-health clinic with analog tools and warm afternoon light, shot on 35mm fil...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost10.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 11/20 ── nost11.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of a hand-written note from the 1980s with blue ink, shot on 35mm film, cinematic grading, warm tungsten light,...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost11.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of a hand-written note from the 1980s with blue ink, shot on 35mm film, cARCKHÉtic grading, warm tungsten light,...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost11.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 12/20 ── nost12.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Vintage paper patient records and an ultrasound wand on a wooden surface, 1980s domestic warmth, shot on 35mm film, cine...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost12.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Vintage paper patient records and an ultrasound wand on a wooden surface, 1980s domestic warmth, shot on 35mm film, cine...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost12.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 13/20 ── nost13.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Early 2000s warm modern women's-health clinic with a desktop computer showing gynecology EMR with ultrasound integration...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost13.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Early 2000s warm modern women's-health clinic with a desktop computer showing gynecology EMR with ultrasound integration...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost13.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 14/20 ── nost14.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of a smartphone running a menstrual-cycle and fertility tracking app next to paper patient records and an ultra...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost14.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of a smartphone running a menstrual-cycle and fertility tracking app next to paper patient records and an ultra...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost14.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 15/20 ── nost15.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: A laptop showing a remote gynecology consultation session, 2020-era improvised home workspace, cinematic, shallow depth ...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost15.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: A laptop showing a remote gynecology consultation session, 2020-era improvised home workspace, cARCKHÉtic, shallow depth ...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost15.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 16/20 ── nost16.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Modern monitor showing a patient cycle-history dashboard with teal UI accents, neo-noir clinical lighting, soft glassmor...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost16.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Modern monitor showing a patient cycle-history dashboard with teal UI accents, neo-noir clinical lighting, soft glassmor...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost16.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 17/20 ── nost17.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of an AI prenatal ultrasound-assistant on a clinic tablet running on a tablet, professional hand swiping, neo-n...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost17.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of an AI prenatal ultrasound-assistant on a clinic tablet running on a tablet, professional hand swiping, neo-n...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost17.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 18/20 ── nost18.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Cinematic wide shot of a modern warm modern women's-health clinic integrating classic expertise and AI technology, neo-n...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost18.png  (server=2.12s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: CARCKHÉtic wide shot of a modern warm modern women's-health clinic integrating classic expertise and AI technology, neo-n...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost18.png  (server=2.12s wall=2.2s vram=32.3GB)
 ── 19/20 ── nost19.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Nostalgic 1980s brazilian warm modern women's-health clinic with analog tools and warm afternoon light, shot on 35mm fil...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost19.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Nostalgic 1980s brazilian warm modern women's-health clinic with analog tools and warm afternoon light, shot on 35mm fil...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost19.png  (server=2.13s wall=2.2s vram=32.3GB)
 ── 20/20 ── nost20.png
-[inemaimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
-[inemaimg] prompt: Close-up of a hand-written note from the 1980s with blue ink, shot on 35mm film, cinematic grading, warm tungsten light,...
-[inemaimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost20.png  (server=2.13s wall=2.2s vram=32.3GB)
+[ARCKHÉimg] model=flux2-klein quality=fast ratio=1:1 (512x512) steps=4
+[ARCKHÉimg] prompt: Close-up of a hand-written note from the 1980s with blue ink, shot on 35mm film, cARCKHÉtic grading, warm tungsten light,...
+[ARCKHÉimg] ✅ saved: /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost20.png  (server=2.13s wall=2.2s vram=32.3GB)
 
 [gertran-nostalgia:ginecologista] ✅ 20/20 em 44.1s (fails=0)
 
-=== 2026-04-23T07:26:13.424Z node pipeline/generate-audio.js /tmp/narr/narr-criaprof-ginecologista.mp3 Você foi a criança que já acolhia as primas mais novas. Estudou o corpo feminino inteiro, virou ginecologista. Viu o ultrassom virar 3D, a ficha virar digital, a consulta virar remota. Agora a IA ajuda a ler imagens em segundos. Você continua sendo a que escuta sem julgar. Continue aprendendo no Inema ponto CLUB. bella ===
+=== 2026-04-23T07:26:13.424Z node pipeline/generate-audio.js /tmp/narr/narr-criaprof-ginecologista.mp3 Você foi a criança que já acolhia as primas mais novas. Estudou o corpo feminino inteiro, virou ginecologista. Viu o ultrassom virar 3D, a ficha virar digital, a consulta virar remota. Agora a IA ajuda a ler imagens em segundos. Você continua sendo a que escuta sem julgar. Continue aprendendo no ARCKHÉ ponto CLUB. bella ===
   ✅ Chatterbox VC saved: /tmp/narr/narr-criaprof-ginecologista.mp3 (voice rachel, 314 chars)
 ✅ Audio saved: /tmp/narr/narr-criaprof-ginecologista.mp3
 Provider: chatterbox-vc
 
-=== 2026-04-23T07:26:17.715Z node pipeline/generate-audio.js /tmp/narr/narr-gertran-ginecologista.mp3 Você viu o ultrassom virar 3D, o prontuário virar digital, a consulta virar remota. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no Inema ponto CLUB. bella ===
+=== 2026-04-23T07:26:17.715Z node pipeline/generate-audio.js /tmp/narr/narr-gertran-ginecologista.mp3 Você viu o ultrassom virar 3D, o prontuário virar digital, a consulta virar remota. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no ARCKHÉ ponto CLUB. bella ===
   ✅ Chatterbox VC saved: /tmp/narr/narr-gertran-ginecologista.mp3 (voice rachel, 247 chars)
 ✅ Audio saved: /tmp/narr/narr-gertran-ginecologista.mp3
 Provider: chatterbox-vc
@@ -326,7 +326,7 @@ Provider: chatterbox-vc
 === 2026-04-23T07:26:51.182Z node render-criaprof.js ginecologista ===
 [ginecologista] detectou N_SCENES=25
 [ginecologista] 14 captions via whisper (offset +0.8s)
-[ginecologista] render -> /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/video/ginecologista-criaprof.mp4
+[ginecologista] render -> /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/video/ginecologista-criaprof.mp4
 ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
   built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
   configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
@@ -338,154 +338,154 @@ ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
   libswscale      7.  5.100 /  7.  5.100
   libswresample   4. 12.100 /  4. 12.100
   libpostproc    57.  3.100 / 57.  3.100
-Input #0, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-ini.png':
+Input #0, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #1, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-fim.png':
+Input #1, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena01-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #1:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #2, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-ini.png':
+Input #2, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #2:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #3, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-fim.png':
+Input #3, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena02-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #3:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #4, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-ini.png':
+Input #4, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #4:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #5, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-fim.png':
+Input #5, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena03-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #5:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #6, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-ini.png':
+Input #6, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #6:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #7, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-fim.png':
+Input #7, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena04-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #7:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #8, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-ini.png':
+Input #8, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #8:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #9, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-fim.png':
+Input #9, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena05-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #9:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #10, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-ini.png':
+Input #10, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #10:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #11, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-fim.png':
+Input #11, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena06-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #11:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #12, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-ini.png':
+Input #12, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #12:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #13, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-fim.png':
+Input #13, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena07-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #13:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #14, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-ini.png':
+Input #14, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #14:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #15, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-fim.png':
+Input #15, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena08-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #15:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #16, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-ini.png':
+Input #16, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #16:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #17, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-fim.png':
+Input #17, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena09-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #17:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #18, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-ini.png':
+Input #18, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #18:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #19, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-fim.png':
+Input #19, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena10-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #19:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #20, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-ini.png':
+Input #20, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #20:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #21, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-fim.png':
+Input #21, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena11-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #21:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #22, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-ini.png':
+Input #22, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #22:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #23, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-fim.png':
+Input #23, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena12-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #23:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #24, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-ini.png':
+Input #24, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #24:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #25, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-fim.png':
+Input #25, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena13-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #25:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #26, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-ini.png':
+Input #26, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #26:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #27, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-fim.png':
+Input #27, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena14-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #27:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #28, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-ini.png':
+Input #28, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #28:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #29, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-fim.png':
+Input #29, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena15-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #29:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #30, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-ini.png':
+Input #30, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #30:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #31, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-fim.png':
+Input #31, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena16-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #31:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #32, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-ini.png':
+Input #32, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #32:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #33, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-fim.png':
+Input #33, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena17-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #33:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #34, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-ini.png':
+Input #34, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #34:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #35, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-fim.png':
+Input #35, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena18-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #35:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #36, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-ini.png':
+Input #36, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #36:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #37, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-fim.png':
+Input #37, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena19-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #37:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #38, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-ini.png':
+Input #38, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #38:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #39, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-fim.png':
+Input #39, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena20-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #39:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #40, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-ini.png':
+Input #40, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #40:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #41, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-fim.png':
+Input #41, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena21-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #41:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #42, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-ini.png':
+Input #42, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #42:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #43, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-fim.png':
+Input #43, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena22-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #43:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #44, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-ini.png':
+Input #44, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #44:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #45, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-fim.png':
+Input #45, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena23-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #45:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #46, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-ini.png':
+Input #46, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #46:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #47, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-fim.png':
+Input #47, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena24-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #47:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #48, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-ini.png':
+Input #48, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-ini.png':
   Duration: N/A, bitrate: N/A
   Stream #48:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
-Input #49, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-fim.png':
+Input #49, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/imgs/cena25-fim.png':
   Duration: N/A, bitrate: N/A
   Stream #49:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 1 fps, 1 tbr, 1 tbn
 Input #50, mp3, from '/tmp/musica_video/mulheres/freesound_719036_Melancholy_Background_Piano__-_bpm_112_l.mp3':
@@ -559,7 +559,7 @@ Press [q] to stop, [?] for help
 [libx264 @ 0xca79b036c8a0] using cpu capabilities: ARMv8 NEON
 [libx264 @ 0xca79b036c8a0] profile High, level 3.2, 4:2:0, 8-bit
 [libx264 @ 0xca79b036c8a0] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=30 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=20.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/criaprof/ginecologista_2026-04-23/video/ginecologista-criaprof.mp4':
+Output #0, mp4, to '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/criaprof/ginecologista_2026-04-23/video/ginecologista-criaprof.mp4':
   Metadata:
     encoder         : Lavf60.16.100
   Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 1080x1080, q=2-31, 30 fps, 15360 tbn
@@ -595,7 +595,7 @@ frame= 1350 fps=260 q=-1.0 Lsize=   11312kB time=00:00:44.97 bitrate=2060.4kbits
 [ginecologista] ✅ 11.0 MB em 5.7s
 
 === 2026-04-23T07:26:56.875Z node render-gertran.js ginecologista ===
-[gertran ginecologista] render -> /home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran/ginecologista_2026-04-23/video/gertran-ginecologista-31s.mp4
+[gertran ginecologista] render -> /home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran/ginecologista_2026-04-23/video/gertran-ginecologista-31s.mp4
 ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
   built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
   configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
@@ -607,64 +607,64 @@ ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
   libswscale      7.  5.100 /  7.  5.100
   libswresample   4. 12.100 /  4. 12.100
   libpostproc    57.  3.100 / 57.  3.100
-Input #0, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost01.png':
+Input #0, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost01.png':
   Duration: N/A, bitrate: N/A
   Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #1, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost02.png':
+Input #1, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost02.png':
   Duration: N/A, bitrate: N/A
   Stream #1:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #2, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost03.png':
+Input #2, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost03.png':
   Duration: N/A, bitrate: N/A
   Stream #2:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #3, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost04.png':
+Input #3, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost04.png':
   Duration: N/A, bitrate: N/A
   Stream #3:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #4, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost05.png':
+Input #4, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost05.png':
   Duration: N/A, bitrate: N/A
   Stream #4:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #5, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost06.png':
+Input #5, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost06.png':
   Duration: N/A, bitrate: N/A
   Stream #5:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #6, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost07.png':
+Input #6, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost07.png':
   Duration: N/A, bitrate: N/A
   Stream #6:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #7, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost08.png':
+Input #7, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost08.png':
   Duration: N/A, bitrate: N/A
   Stream #7:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #8, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost09.png':
+Input #8, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost09.png':
   Duration: N/A, bitrate: N/A
   Stream #8:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #9, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost10.png':
+Input #9, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost10.png':
   Duration: N/A, bitrate: N/A
   Stream #9:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #10, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost11.png':
+Input #10, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost11.png':
   Duration: N/A, bitrate: N/A
   Stream #10:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #11, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost12.png':
+Input #11, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost12.png':
   Duration: N/A, bitrate: N/A
   Stream #11:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #12, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost13.png':
+Input #12, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost13.png':
   Duration: N/A, bitrate: N/A
   Stream #12:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #13, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost14.png':
+Input #13, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost14.png':
   Duration: N/A, bitrate: N/A
   Stream #13:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #14, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost15.png':
+Input #14, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost15.png':
   Duration: N/A, bitrate: N/A
   Stream #14:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #15, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost16.png':
+Input #15, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost16.png':
   Duration: N/A, bitrate: N/A
   Stream #15:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #16, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost17.png':
+Input #16, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost17.png':
   Duration: N/A, bitrate: N/A
   Stream #16:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #17, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost18.png':
+Input #17, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost18.png':
   Duration: N/A, bitrate: N/A
   Stream #17:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #18, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost19.png':
+Input #18, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost19.png':
   Duration: N/A, bitrate: N/A
   Stream #18:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
-Input #19, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost20.png':
+Input #19, png_pipe, from '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran-nostalgia/ginecologista_2026-04-23/imgs/nost20.png':
   Duration: N/A, bitrate: N/A
   Stream #19:0: Video: png, rgb24(pc, gbr/unknown/unknown), 512x512, 30 fps, 30 tbr, 30 tbn
 Input #20, mp3, from '/tmp/musica_video/mulheres/freesound_719036_Melancholy_Background_Piano__-_bpm_112_l.mp3':
@@ -709,7 +709,7 @@ Press [q] to stop, [?] for help
 [libx264 @ 0xc0ed89f5b0a0] using cpu capabilities: ARMv8 NEON
 [libx264 @ 0xc0ed89f5b0a0] profile High, level 4.0, 4:2:0, 8-bit
 [libx264 @ 0xc0ed89f5b0a0] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=30 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=20.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/home/nmaldaner/projetos/timesmkt3/prj/inema/videos/gertran/ginecologista_2026-04-23/video/gertran-ginecologista-31s.mp4':
+Output #0, mp4, to '/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/videos/gertran/ginecologista_2026-04-23/video/gertran-ginecologista-31s.mp4':
   Metadata:
     encoder         : Lavf60.16.100
   Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn

@@ -117,7 +117,7 @@ registerRerunCommands(bot, {
 
 registerImportCommand(bot, { projectRoot: PROJECT_ROOT, session });
 
-const BOT_ACK = 'inemamkt >';
+const BOT_ACK = 'ARCKHÉmkt >';
 
 function listProjectCampaignFolders(projectDir, { includeArchived = false } = {}) {
   const outputsDir = path.join(PROJECT_ROOT, projectDir, 'outputs');
@@ -497,7 +497,7 @@ bot.command('helpvideos', async (ctx) => {
     `  <code>data_story</code> — graficos e dados\n` +
     `  <code>explainer</code> — passos e listas\n` +
     `  <code>narrativo</code> — texto de impacto\n` +
-    `  <code>brand_film</code> — cinematografico\n\n` +
+    `  <code>brand_film</code> — cARCKHÉtografico\n\n` +
     `Uso: <code>/rerun c63 3 pro gatilhos</code>\n` +
     `Detalhes: /helptemplates\n\n` +
 
@@ -546,7 +546,7 @@ bot.command('helptemplates', async (ctx) => {
     `<b>narrativo</b> — Narrativa de impacto\n` +
     `Frases gigantes centralizadas, emocional, Bebas Neue\n\n` +
 
-    `<b>brand_film</b> — Cinematografico\n` +
+    `<b>brand_film</b> — CARCKHÉtografico\n` +
     `Foto domina, texto minimo elegante, lower third\n\n` +
 
     `<b>Como usar:</b>\n` +
@@ -721,7 +721,7 @@ bot.command('lotequick', async (ctx) => {
       + '<code>/lotequick todos 5 fonte brand modo normal</code>\n'
       + '<code>/lotequick campanhas c1,c2,c3 fonte solido #0D0D0D modo enxuto</code>\n'
       + '<code>/lotequick c1,c2,c3 fonte brand modo normal</code>\n'
-      + '<code>/lotequick ativos fonte pasta prj/inema/imgs/lote_abril modo normal</code>\n\n'
+      + '<code>/lotequick ativos fonte pasta prj/ARCKHÉ/imgs/lote_abril modo normal</code>\n\n'
       + 'Regras:\n'
       + '• <b>campanhas</b> e lista explícita respeitam os IDs informados, incluindo arquivadas\n'
       + '• <b>modo enxuto</b> usa quick otimizado para lote\n'
@@ -927,7 +927,7 @@ bot.command('lote', async (ctx) => {
     + '• <code>fonte brand</code>\n'
     + '• <code>fonte api</code>\n'
     + '• <code>fonte free</code>\n'
-    + '• <code>fonte pasta prj/inema/imgs/lote</code>\n\n'
+    + '• <code>fonte pasta prj/ARCKHÉ/imgs/lote</code>\n\n'
     + 'Modos:\n'
     + '• <code>modo enxuto</code> — lote rápido, quick otimizado\n'
     + '• <code>modo normal</code> — quick completo\n\n'
@@ -936,7 +936,7 @@ bot.command('lote', async (ctx) => {
     + '<code>/lotequick todos 5 fonte brand modo normal</code>\n'
     + '<code>/lotequick campanhas c1,c2,c3 fonte solido #0D0D0D modo enxuto</code>\n'
     + '<code>/lotequick c1,c2,c3 fonte brand modo normal</code>\n'
-    + '<code>/lotequick ativos fonte pasta prj/inema/imgs/lote_abril modo normal</code>\n'
+    + '<code>/lotequick ativos fonte pasta prj/ARCKHÉ/imgs/lote_abril modo normal</code>\n'
     + '<code>/lotecontinue tg_lotequick_1775305296801_4d0556</code>',
     { parse_mode: 'HTML' },
   );

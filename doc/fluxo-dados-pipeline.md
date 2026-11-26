@@ -127,7 +127,7 @@ O campo `image_source` no payload define de onde vêm as imagens. **Default: `br
 |---|---|---|---|
 | `brand` | `marca` | Usa `assets/` + `imgs/` do projeto. Scanneia subpastas 1 nível. Inclui dimensões e tipo no prompt do agente. | **Default.** Sempre que nêo especificar. Usa fotos reais da marca. |
 | `screenshot` | `captura` | Captura screenshots via Playwright das URLs mencionadas no brief/research/product_campaign + `screenshot_urls` do payload. Combina com assets da marca. | Quando mencionar "screenshot", "captura de site", "print da página" |
-| `folder` | `pasta` | Usa imagens de uma pasta específica (ex: `prj/inema/outputs/c0016/imgs/tema-x/`) | Quando quer direcionar o agente para um conjunto específico de imagens |
+| `folder` | `pasta` | Usa imagens de uma pasta específica (ex: `prj/ARCKHÉ/outputs/c0016/imgs/tema-x/`) | Quando quer direcionar o agente para um conjunto específico de imagens |
 | `api` | — | Gera imagens via Pollinations/z-image. Agente escreve `image_prompt` no scene plan, pipeline gera depois. | Só quando pedir explicitamente "gerar imagens com IA" |
 | `free` | `gratis` | Baixa de Pexels/Unsplash/Pixabay via API | Só quando pedir "banco de imagens" ou "stock photos" |
 
@@ -152,17 +152,17 @@ Essas informações sêo passadas no prompt do agente para que ele faça escolha
    - `creative/creative_brief.json` (todas as URLs e domínios mencionados)
    - `research_results.json` (URLs de pesquisa)
    - `knowledge/product_campaign.md` (URL do produto)
-2. Adiciona URLs explícitas do payload (`screenshot_urls: ['https://inema.club/cursos']`)
+2. Adiciona URLs explícitas do payload (`screenshot_urls: ['https://ARCKHÉ AI/cursos']`)
 3. Usa Playwright para capturar cada URL em viewport mobile (1080x1920) e desktop (1920x1080)
-4. Salva em `imgs/screenshots/screenshot_01_mobile_inema.club.png`
+4. Salva em `imgs/screenshots/screenshot_01_mobile_ARCKHÉ AI.png`
 5. Combina screenshots + assets da marca no prompt do agente
 6. Agente prioriza screenshots (interface real do produto) e complementa com fotos da marca
 
 ```
 imgs/screenshots/
-├── screenshot_01_mobile_inema.club.png     ← 1080x1920
-├── screenshot_01_desktop_inema.club.png    ← 1920x1080
-├── screenshot_02_mobile_inema.club_cursos.png
+├── screenshot_01_mobile_ARCKHÉ AI.png     ← 1080x1920
+├── screenshot_01_desktop_ARCKHÉ AI.png    ← 1920x1080
+├── screenshot_02_mobile_ARCKHÉ AI_cursos.png
 └── ...
 ```
 
@@ -195,10 +195,10 @@ getFolderAssets(folderPath) scanneia:
 As subpastas dentro de `imgs/` ajudam o agente a selecionar imagens por contexto:
 
 ```
-prj/inema/outputs/<campanha>/imgs/
+prj/ARCKHÉ/outputs/<campanha>/imgs/
 ├── tema-lancamento/     ← imagens específicas do tema
 ├── tema-comunidade/     ← fotos de comunidade
-├── screenshots/         ← capturas do site inema.club
+├── screenshots/         ← capturas do site ARCKHÉ AI
 └── *.jpg                ← imagens soltas (geradas por API, etc.)
 ```
 

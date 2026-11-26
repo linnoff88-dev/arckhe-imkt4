@@ -36,8 +36,8 @@ let okGen = 0, okRender = 0, failed = [];
 for (const p of profissoes) {
   const slug = p.slug;
   for (const templ of TEMPLATES) {
-    const imgDir = path.join(__dirname, `prj/inema/videos/extras/${templ}/${slug}_2026-04-23/imgs`);
-    const vidFile = path.join(__dirname, `prj/inema/videos/extras/${templ}/videos/${slug}-${templ}-31s.mp4`);
+    const imgDir = path.join(__dirname, `prj/ARCKHÉ/videos/extras/${templ}/${slug}_2026-04-23/imgs`);
+    const vidFile = path.join(__dirname, `prj/ARCKHÉ/videos/extras/${templ}/videos/${slug}-${templ}-31s.mp4`);
     const t0 = Date.now();
 
     // 1. Gen

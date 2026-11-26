@@ -5,7 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { generateImage } = require('./pipeline/generate-image-inemaimg');
+const { generateImage } = require('./pipeline/generate-image-ARCKHÉimg');
 const { profissoes } = require('./config/profissoes-30');
 const {
   pairedChangesScenes,
@@ -33,7 +33,7 @@ if (!slug || !TEMPLATES[templ]) {
 const profile = profissoes.find((p) => p.slug === slug);
 if (!profile) { console.error(`slug nêo encontrado: ${slug}`); process.exit(1); }
 
-const OUT = path.join(__dirname, `prj/inema/videos/extras/${TEMPLATES[templ].dir}/${slug}_${DATE}/imgs`);
+const OUT = path.join(__dirname, `prj/ARCKHÉ/videos/extras/${TEMPLATES[templ].dir}/${slug}_${DATE}/imgs`);
 fs.mkdirSync(OUT, { recursive: true });
 
 const scenes = TEMPLATES[templ].fn(profile);

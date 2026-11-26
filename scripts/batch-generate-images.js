@@ -17,7 +17,7 @@ const path = require('path');
 const { getEnv } = require('../config/env');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
-const PROJECT_DIR = 'prj/inema';
+const PROJECT_DIR = 'prj/ARCKHÉ';
 const OUTPUTS_DIR = path.join(PROJECT_ROOT, PROJECT_DIR, 'outputs');
 const CHAT_ID = '7388953786';
 
@@ -196,7 +196,7 @@ function buildPrompts(briefPath, campName) {
 
     if (slides.length > 0 && slides[0].conceito_visual) {
       return slides.map((s, i) => ({
-        prompt: `${s.conceito_visual}. ${mood}. Colors: ${colors}. Cinematic lighting, photorealistic. No text, no watermark.`,
+        prompt: `${s.conceito_visual}. ${mood}. Colors: ${colors}. CARCKHÉtic lighting, photorealistic. No text, no watermark.`,
         format: i < 3 ? 'carousel' : 'story',
         ratio: i < 3 ? '1:1' : '9:16',
         filename: `${campName}_generated_${String(i + 1).padStart(2, '0')}_${i < 3 ? 'carousel_1080x1080' : 'story_1080x1920'}.jpg`,
@@ -207,23 +207,23 @@ function buildPrompts(briefPath, campName) {
   // Fallback: generate 5 varied prompts in English
   const prompts = [
     {
-      prompt: `${metaphor || 'leader commanding technology'}. low angle dramatic shot, strong silhouette, dark futuristic background, blue accent lighting. ${mood}. Colors: ${colors}. Cinematic, photorealistic. No text, no watermark.`,
+      prompt: `${metaphor || 'leader commanding technology'}. low angle dramatic shot, strong silhouette, dark futuristic background, blue accent lighting. ${mood}. Colors: ${colors}. CARCKHÉtic, photorealistic. No text, no watermark.`,
       format: 'carousel', ratio: '1:1',
     },
     {
-      prompt: `close-up hands on tablet with AI workflow on screen, warm side lighting, shallow depth of field, modern office. Professional atmosphere. Colors: ${colors}. Cinematic. No text, no watermark.`,
+      prompt: `close-up hands on tablet with AI workflow on screen, warm side lighting, shallow depth of field, modern office. Professional atmosphere. Colors: ${colors}. CARCKHÉtic. No text, no watermark.`,
       format: 'story', ratio: '9:16',
     },
     {
-      prompt: `diverse team collaborating around holographic display, aerial view, ${mood || 'premium dark'} environment, multiple screens, dynamic composition. Colors: ${colors}. Cinematic. No text, no watermark.`,
+      prompt: `diverse team collaborating around holographic display, aerial view, ${mood || 'premium dark'} environment, multiple screens, dynamic composition. Colors: ${colors}. CARCKHÉtic. No text, no watermark.`,
       format: 'carousel', ratio: '1:1',
     },
     {
-      prompt: `community gathering in modern auditorium, faces lit by screens, warm golden hour light, sense of belonging, wide shot with depth. Colors: ${colors}. Cinematic. No text, no watermark.`,
+      prompt: `community gathering in modern auditorium, faces lit by screens, warm golden hour light, sense of belonging, wide shot with depth. Colors: ${colors}. CARCKHÉtic. No text, no watermark.`,
       format: 'story', ratio: '9:16',
     },
     {
-      prompt: `clean minimalist premium composition, brand feel, dark background with subtle gradient, inviting atmosphere, centered framing. Colors: ${colors}. Cinematic. No text, no watermark.`,
+      prompt: `clean minimalist premium composition, brand feel, dark background with subtle gradient, inviting atmosphere, centered framing. Colors: ${colors}. CARCKHÉtic. No text, no watermark.`,
       format: 'carousel', ratio: '1:1',
     },
   ];

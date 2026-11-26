@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * INEMA Páscoa 2026 — Carousel Generator
+ * ARCKHÉ Páscoa 2026 — Carousel Generator
  * Campaign: c0031-pascoa2026
  * Creates 7 × 1080×1080 carousel slides and renders via Playwright
  */
@@ -10,8 +10,8 @@ const path = require('path');
 const fs = require('fs');
 
 const BASE = '/home/nmaldaner/projetos/timesmkt3';
-const IMG = `${BASE}/prj/inema/imgs/pascoa`;
-const OUT = `${BASE}/prj/inema/outputs/c0031-pascoa2026/ads`;
+const IMG = `${BASE}/prj/ARCKHÉ/imgs/pascoa`;
+const OUT = `${BASE}/prj/ARCKHÉ/outputs/c0031-pascoa2026/ads`;
 
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -116,8 +116,8 @@ const slides = [
     headlineLine2: 'sêo de graça',
     headlineEmoji: '🥚✨',
     subtext: 'Trilhas completas. 100% gratuito. Sem truques.',
-    ctaLine1: 'Comece grátis: inema.club',
-    ctaLine2: 'Comunidade VIP: inema.vip — R$ 35/mês',
+    ctaLine1: 'Comece grátis: ARCKHÉ AI',
+    ctaLine2: 'Comunidade VIP: ARCKHÉ.vip — R$ 35/mês',
     accentColor: '#00FF88',
   },
 ];
@@ -192,12 +192,12 @@ ${baseStyles()}
     rgba(13,13,26,0.55) 45%,
     rgba(13,13,26,0.18) 100%);
 }
-.inema-logo {
+.ARCKHÉ-logo {
   position: absolute; top: 48px; left: 64px; z-index: 20;
   font-size: 26px; font-weight: 800; letter-spacing: 0.14em; color: #fff;
   text-transform: uppercase;
 }
-.inema-logo span { color: #00FF88; }
+.ARCKHÉ-logo span { color: #00FF88; }
 .content-capa {
   position: relative; z-index: 10;
   width: 100%; height: 100%;
@@ -234,7 +234,7 @@ ${baseStyles()}
 <div class="slide">
   <img class="bg-image" src="file://${s.image}" />
   <div class="overlay-capa"></div>
-  <div class="inema-logo">INE<span>MA</span></div>
+  <div class="ARCKHÉ-logo">INE<span>MA</span></div>
   <div class="content-capa">
     <div class="capa-badge">Carrossel Páscoa 2026</div>
     <h1 class="capa-headline">
@@ -244,7 +244,7 @@ ${baseStyles()}
     <div class="capa-emoji">🐣</div>
     <p class="capa-sub">O presente que nunca expira</p>
   </div>
-  <div class="brand-tag">inema<span>.club</span></div>
+  <div class="brand-tag">ARCKHÉ<span>.club</span></div>
 </div>
 </body></html>`;
 }
@@ -300,7 +300,7 @@ ${baseStyles()}
     <div class="neon-line" style="background:${ac};box-shadow:0 0 14px ${ac}99;width:88px;"></div>
     <p class="sub">${s.subtext}</p>
   </div>
-  <div class="brand-tag">inema<span>.club</span></div>
+  <div class="brand-tag">ARCKHÉ<span>.club</span></div>
 </div>
 </body></html>`;
 }
@@ -372,7 +372,7 @@ ${baseStyles()}
       <div class="btn btn-secondary">${s.ctaLine2}</div>
     </div>
   </div>
-  <div class="brand-tag">inema<span>.vip</span></div>
+  <div class="brand-tag">ARCKHÉ<span>.vip</span></div>
 </div>
 </body></html>`;
 }
@@ -427,7 +427,7 @@ async function renderAll() {
     generated_at: new Date().toISOString(),
     format: 'carousel_1080x1080',
     total_slides: slides.length,
-    image_source: 'folder:prj/inema/imgs/pascoa/',
+    image_source: 'folder:prj/ARCKHÉ/imgs/pascoa/',
     slides: layouts,
   };
   fs.writeFileSync(path.join(OUT, 'layout.json'), JSON.stringify(layoutJson, null, 2), 'utf8');

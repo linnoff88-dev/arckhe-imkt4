@@ -10,10 +10,10 @@
 ▶ [fisioterapeuta:gen-nostalgia] node gen-gertran-nostalgia.js fisioterapeuta
 ✅ [fisioterapeuta:gen-nostalgia] ok
 
-▶ [fisioterapeuta:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-fisioterapeuta.mp3 Você era a criança que cuidava de quem tinha dor. Estudou o corpo humano, escolheu fisioterapia, cuidou com as mãos. Aprendeu bola, pilates, TENS, videochamada. Hoje a IA personaliza cada protocolo. Você continua sendo a que cura. Continue aprendendo no Inema ponto CLUB. bella
+▶ [fisioterapeuta:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-fisioterapeuta.mp3 Você era a criança que cuidava de quem tinha dor. Estudou o corpo humano, escolheu fisioterapia, cuidou com as mãos. Aprendeu bola, pilates, TENS, videochamada. Hoje a IA personaliza cada protocolo. Você continua sendo a que cura. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [fisioterapeuta:tts-criaprof] ok
 
-▶ [fisioterapeuta:tts-gertran] node pipeline/generate-audio.js /tmp/narr/narr-gertran-fisioterapeuta.mp3 Você viu o manual virar TENS, a bola virar PILATES, a videochamada salvar sua profissão. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no Inema ponto CLUB. bella
+▶ [fisioterapeuta:tts-gertran] node pipeline/generate-audio.js /tmp/narr/narr-gertran-fisioterapeuta.mp3 Você viu o manual virar TENS, a bola virar PILATES, a videochamada salvar sua profissão. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [fisioterapeuta:tts-gertran] ok
 
 ▶ [fisioterapeuta:whisper] sh: source /home/nmaldaner/miniconda3/etc/profile.d/conda.sh && conda activate chatterbox && python3 transcribe-words.py /tmp/narr/narr-criaprof-fisioterapeuta.mp3 /tmp/narr/whisper-criaprof-fisioterapeuta.json && python3 transcribe-words.py /tmp/narr/narr-gertran-fisioterapeuta.mp3 /tmp/narr/whisper-gertran-fisioterapeuta.json
@@ -38,10 +38,10 @@
 ▶ [crianca-medica:gen-nostalgia] node gen-gertran-nostalgia.js crianca-medica
 ✅ [crianca-medica:gen-nostalgia] ok
 
-▶ [crianca-medica:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-crianca-medica.mp3 Você foi a criança do kit médico. Estudou o corpo inteiro, virou médica, examinou milhares. Viu o filme virar raio-X digital, a ficha virar prontuário, a distância virar telemedicina. Agora a IA sugere diagnósticos. Você continua sendo a que cura com presença. Continue aprendendo no Inema ponto CLUB. bella
+▶ [crianca-medica:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-crianca-medica.mp3 Você foi a criança do kit médico. Estudou o corpo inteiro, virou médica, examinou milhares. Viu o filme virar raio-X digital, a ficha virar prontuário, a distância virar telemedicina. Agora a IA sugere diagnósticos. Você continua sendo a que cura com presença. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [crianca-medica:tts-criaprof] ok
 
-▶ [crianca-medica:tts-gertran] node pipeline/generate-audio.js /tmp/narr/narr-gertran-crianca-medica.mp3 Você viu o filme virar raio-X digital, a ficha virar prontuário, a distância virar telemedicina. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no Inema ponto CLUB. bella
+▶ [crianca-medica:tts-gertran] node pipeline/generate-audio.js /tmp/narr/narr-gertran-crianca-medica.mp3 Você viu o filme virar raio-X digital, a ficha virar prontuário, a distância virar telemedicina. Você se adaptou sempre. Agora chegou a inteligência artificial. E você sabe o que fazer. Você é da geração que transforma. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [crianca-medica:tts-gertran] ok
 
 ▶ [crianca-medica:whisper] sh: source /home/nmaldaner/miniconda3/etc/profile.d/conda.sh && conda activate chatterbox && python3 transcribe-words.py /tmp/narr/narr-criaprof-crianca-medica.mp3 /tmp/narr/whisper-criaprof-crianca-medica.json && python3 transcribe-words.py /tmp/narr/narr-gertran-crianca-medica.mp3 /tmp/narr/whisper-gertran-crianca-medica.json
@@ -66,7 +66,7 @@
 ▶ [enfermeira:gen-nostalgia] node gen-gertran-nostalgia.js enfermeira
 ✅ [enfermeira:gen-nostalgia] ok
 
-▶ [enfermeira:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-enfermeira.mp3 Você cuidou antes de aprender. Cuidou da vó, cuidou da vizinha, virou enfermeira. Atendeu antes da internet, viu ficha virar prontuário, leito virar telemetria. Agora a IA prioriza o que é urgente. Você continua sendo a que está ao lado do paciente. Continue aprendendo no Inema ponto CLUB. bella
+▶ [enfermeira:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-enfermeira.mp3 Você cuidou antes de aprender. Cuidou da vó, cuidou da vizinha, virou enfermeira. Atendeu antes da internet, viu ficha virar prontuário, leito virar telemetria. Agora a IA prioriza o que é urgente. Você continua sendo a que está ao lado do paciente. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [enfermeira:tts-criaprof] ok
 ⏭ [enfermeira] tts-gertran já existe
 
@@ -92,7 +92,7 @@
 ▶ [psicologa:gen-nostalgia] node gen-gertran-nostalgia.js psicologa
 ✅ [psicologa:gen-nostalgia] ok
 
-▶ [psicologa:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-psicologa.mp3 Você escutou desde pequena. Escutou a amiga chorar, escutou o silêncio do outro, virou psicóloga. Aprendeu escuta, diário, videochamada. Agora a IA ajuda a ver padrões que antes escapavam. Você continua sendo a que acolhe. Continue aprendendo no Inema ponto CLUB. bella
+▶ [psicologa:tts-criaprof] node pipeline/generate-audio.js /tmp/narr/narr-criaprof-psicologa.mp3 Você escutou desde pequena. Escutou a amiga chorar, escutou o silêncio do outro, virou psicóloga. Aprendeu escuta, diário, videochamada. Agora a IA ajuda a ver padrões que antes escapavam. Você continua sendo a que acolhe. Continue aprendendo no ARCKHÉ ponto CLUB. bella
 ✅ [psicologa:tts-criaprof] ok
 ⏭ [psicologa] tts-gertran já existe
 

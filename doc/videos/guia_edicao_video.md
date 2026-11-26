@@ -1,12 +1,12 @@
 # 🎬 Guia de Direçêo e Ediçêo – 10 Modelos de Clipes Publicitários
 
-## 1. Cinematográfico de Marca (Hero Film)
+## 1. CARCKHÉtográfico de Marca (Hero Film)
 - movimentos principais: tracking suave, órbita lenta, push-in dramático, reveal progressivo  
 - ritmo de corte: começa lento e elegante, evolui para clímax  
 - intensidade do movimento: controlada e fluida  
 - tipo de transiçêo: cortes limpos, fades sutis, whip pan leve  
 - intençêo emocional: desejo, imponência, sofisticaçêo  
-- cor / look: cinematográfico, contraste refinado, sombras frias  
+- cor / look: cARCKHÉtográfico, contraste refinado, sombras frias  
 - speed ramp: apenas em momentos-chave  
 - camera shake: mínimo  
 - foco da ediçêo: valorizaçêo máxima do produto/marca  
@@ -66,7 +66,7 @@
 - intensidade do movimento: suave  
 - tipo de transiçêo: cortes suaves e naturais  
 - intençêo emocional: desejo e identificaçêo  
-- cor / look: natural, golden hour ou leve cinematic  
+- cor / look: natural, golden hour ou leve cARCKHÉtic  
 - speed ramp: leve ou nêo usar  
 - camera shake: mínimo  
 - foco da ediçêo: experiência e ambiente  

@@ -25,7 +25,7 @@ function slugify(str) {
 async function generateReport(opts) {
   const {
     projectRoot, outputDir, projectDir, taskName,
-    stylePreset = 'inema_hightech',
+    stylePreset = 'ARCKHÉ_hightech',
     videoAudio = 'narration', // 'narration' | 'none' | 'music'
     narrator = 'rachel',
     ttsProvider = 'auto',
@@ -65,7 +65,7 @@ async function generateReport(opts) {
 
   const scenes = [];
   const brandRaw = research.brand || research.empresa_origem || '';
-  const brand = brandRaw ? brandRaw.toUpperCase() : 'INEMA';
+  const brand = brandRaw ? brandRaw.toUpperCase() : 'ARCKHÉ';
   const brandUrl = `${brand}.CLUB`;
   const audience = research.target_audience || research.niche || '';
 
@@ -127,7 +127,7 @@ async function generateReport(opts) {
   // ── Scene 5: What competitors are missing — your advantage ─────────
   if (r.competitors?.length > 0) {
     const comp = r.competitors[0];
-    const gap = comp.weakness || comp.fraqueza || comp.gap || comp.lacuna || comp.inema_gap || '';
+    const gap = comp.weakness || comp.fraqueza || comp.gap || comp.lacuna || comp.ARCKHÉ_gap || '';
     const compName = comp.competitor || comp.concorrente || comp.competitor_type || comp.tipo || 'a concorrência';
     scenes.push({
       id: 'advantage_01', type: 'insight', visual_type: 'text_card',

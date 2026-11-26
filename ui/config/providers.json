@@ -40,8 +40,8 @@
         ]
       },
       {
-        "value": "inemaimg",
-        "label": "inemaimg local",
+        "value": "ARCKHÉimg",
+        "label": "ARCKHÉimg local",
         "models": [
           "flux2-klein",
           "flux-2"

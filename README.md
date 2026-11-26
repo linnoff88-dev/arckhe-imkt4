@@ -28,7 +28,7 @@ O sistema pesquisa, cria narrativa, gera imagens, produz videos, adapta copy par
 ê¢âÅê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢âÂ¤
 ê¢ââ  STAGE 3 ê¢â¬â Video                                        ê¢ââ
 ê¢ââ  Quick: slideshow 10-20s (sempre roda)                  ê¢ââ
-ê¢ââ  Pro: 30-70s cinematografico (sob demanda)              ê¢ââ
+ê¢ââ  Pro: 30-70s cARCKHÉtografico (sob demanda)              ê¢ââ
 ê¢ââ    Narracao ê¢â â Photography Dir ê¢â â Scene Plan ê¢â â Render     ê¢ââ
 ê¢ââ  [APROVACAO]                                            ê¢ââ
 ê¢âÅê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢ââ¬ê¢âÂ¤
@@ -426,7 +426,7 @@ Config       Atual         Opcoes
   Pro        nao            pro
   Narrador   rachel         rachel / bella / domi / antoni / josh / arnold
   Duracao    60s            30 / 60
-  Estilo     inema_hightech inema_hightech / 01_hero_film
+  Estilo     ARCKHÉ_hightech ARCKHÉ_hightech / 01_hero_film
   Dir.Foto   simples        simples / premium
   Scene plan simples        simples / premium
   Fundo quick escuro        escuro / blur
@@ -517,8 +517,8 @@ sim
 Outros exemplos:
 
 ```text
-fonte pasta prj/inema/imgs/site
-fonte screenshot https://inema.com.br https://app.inema.club
+fonte pasta prj/ARCKHÉ/imgs/site
+fonte screenshot https://ARCKHÉ.com.br https://app.ARCKHÉ AI
 fonte brand
 ```
 
@@ -526,7 +526,7 @@ fonte brand
 
 ## Templates Standalone (Factory CLI)
 
-VêÂ­deos autorais INEMA gerados via scripts CLI dedicados ê¢â¬â **nêÂ£o passam pelo bot/pipeline**. Rodam diretos no terminal e usam config prêÂ³pria em `config/profissoes-30.js` (90 profissêÂµes cadastradas).
+VêÂ­deos autorais ARCKHÉ gerados via scripts CLI dedicados ê¢â¬â **nêÂ£o passam pelo bot/pipeline**. Rodam diretos no terminal e usam config prêÂ³pria em `config/profissoes-30.js` (90 profissêÂµes cadastradas).
 
 | Template | Script render | Formato | DuraêÂ§êÂ£o | Mensagem |
 |---|---|---|---|---|
@@ -567,7 +567,7 @@ node gen-narrations-multi.js fisioterapeuta
 
 # Renderizar versêÂ£o especêÂ­fica
 node render-criaprof-cta-916.js fisioterapeuta prof 3
-# ê¢â â prj/inema/videos/criaprof-cta-916/.../fisioterapeuta-cta-prof-v3-32s.mp4
+# ê¢â â prj/ARCKHÉ/videos/criaprof-cta-916/.../fisioterapeuta-cta-prof-v3-32s.mp4
 ```
 
 6 estilos narrativos para audience self-select ê¢â¬â o hook êÂ© sempre `"{PROFISSêÆO} MUDOU. E AGORA?"`:
@@ -577,9 +577,9 @@ node render-criaprof-cta-916.js fisioterapeuta prof 3
 | v0 | Original cronolêÂ³gica | narraêÂ§êÂ£o padrêÂ£o criaprof | pad ambient (freesound 569920) |
 | v1 | MemêÂ³ria nostêÂ¡lgica | "VocêÂª lembra quando tudo era manual?" | violêÂ£o fingerpicking acêÂºstico (CC0) |
 | v2 | Confidente conversacional | "Lembra como tudo era diferente quando vocêÂª comeêÂ§ou?" | lo-fi jazz warm (CC0) |
-| v3 | ProvocaêÂ§êÂ£o direta | "Pensa rêÂ¡pido: quantas vezes essa profissêÂ£o mudou?" | percussêÂ£o cinematic build (CC-BY) |
+| v3 | ProvocaêÂ§êÂ£o direta | "Pensa rêÂ¡pido: quantas vezes essa profissêÂ£o mudou?" | percussêÂ£o cARCKHÉtic build (CC-BY) |
 | v4 | Intimista contagem | "VocêÂª consegue lembrar quantas vezes essa profissêÂ£o se reinventou?" | orchestral warm strings (CC-BY) |
-| v5 | RevelaêÂ§êÂ£o | "E se eu te disser que vocêÂª jêÂ¡ viveu isso antes?" | bgm_v1 cinematogrêÂ¡fico |
+| v5 | RevelaêÂ§êÂ£o | "E se eu te disser que vocêÂª jêÂ¡ viveu isso antes?" | bgm_v1 cARCKHÉtogrêÂ¡fico |
 
 As narraêÂ§êÂµes v1-v5 sêÂ£o geradas via template engine por categoria de profissêÂ£o (`config/profissoes-narrations-multi.js` ê¢â¬â `getNarration(slug, version)`). A trilha muda automaticamente por versêÂ£o via `getMusicForVariantAndVersion(variant, version)`.
 
@@ -589,10 +589,10 @@ DistribuiêÂ§êÂ£o planejada: YouTube Shorts ê¢â¬â audience s
 ### Outputs
 
 ```
-prj/inema/videos/criaprof/<slug>_<date>/video/<slug>-30s.mp4
-prj/inema/videos/gertran/<slug>_<date>/video/gertran-<slug>-31s.mp4
-prj/inema/videos/criaprof-cta-916/<slug>_<date>/video/<slug>-cta-{prof|generic}-37s.mp4
-prj/inema/videos/criaprof-cta-916/<slug>_<date>/video/<slug>-cta-{prof|generic}-v{1-5}-<dur>s.mp4
+prj/ARCKHÉ/videos/criaprof/<slug>_<date>/video/<slug>-30s.mp4
+prj/ARCKHÉ/videos/gertran/<slug>_<date>/video/gertran-<slug>-31s.mp4
+prj/ARCKHÉ/videos/criaprof-cta-916/<slug>_<date>/video/<slug>-cta-{prof|generic}-37s.mp4
+prj/ARCKHÉ/videos/criaprof-cta-916/<slug>_<date>/video/<slug>-cta-{prof|generic}-v{1-5}-<dur>s.mp4
 ```
 
 ### Adicionar nova profissêÂ£o
@@ -771,10 +771,10 @@ node pipeline/orchestrator.js --file pipeline/payloads/coldbrew_demo.json
 
 ```bash
 # Dry run (sem publicar de verdade)
-node pipeline/publish_now.js prj/inema/outputs/pascoa_2026-04-20 --dry-run
+node pipeline/publish_now.js prj/ARCKHÉ/outputs/pascoa_2026-04-20 --dry-run
 
 # Publicar
-node pipeline/publish_now.js prj/inema/outputs/pascoa_2026-04-20
+node pipeline/publish_now.js prj/ARCKHÉ/outputs/pascoa_2026-04-20
 ```
 
 ### 7. Ver providers ativos

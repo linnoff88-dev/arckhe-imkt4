@@ -7,8 +7,8 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const OUTPUT_DIR = path.resolve(__dirname, 'prj/inema/outputs/c0082-arquiteturas_agentes_inteligentes/ads');
-const IMGS_DIR = path.resolve(__dirname, 'prj/inema/outputs/c0082-arquiteturas_agentes_inteligentes/imgs');
+const OUTPUT_DIR = path.resolve(__dirname, 'prj/ARCKHÉ/outputs/c0082-arquiteturas_agentes_inteligentes/ads');
+const IMGS_DIR = path.resolve(__dirname, 'prj/ARCKHÉ/outputs/c0082-arquiteturas_agentes_inteligentes/imgs');
 const CAMPAIGN = 'c0082-arquiteturas_agentes_inteligentes';
 
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -70,8 +70,8 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     <p class="subtext">Todo agente inteligente tem uma arquitetura.<br>A maioria só vê o resultado.</p>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
-    <span class="handle">@inema.tds</span>
+    <span class="brand">ARCKHÉ</span>
+    <span class="handle">@ARCKHÉ.tds</span>
   </div>
 </div>
 </body></html>`,
@@ -132,7 +132,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   </div>
   <div class="conclusion">Entender esse loop muda tudo.</div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">02 / 15</span>
   </div>
 </div>
@@ -210,7 +210,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.mid};font-family:
     </div>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">03 / 15</span>
   </div>
 </div>
@@ -259,7 +259,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     <div class="bar" style="height:160px;width:32px"></div>
   </div>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -306,7 +306,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     <div class="conclusion">O que define tudo é a <strong>arquitetura</strong>.</div>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">05 / 15</span>
   </div>
 </div>
@@ -378,7 +378,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     <div class="tag">Com Comunidade</div>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">06 / 15</span>
   </div>
 </div>
@@ -421,9 +421,9 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <div class="and-text">e</div>
   <div class="cta-text">Comece a<br>construir.</div>
   <div class="divider"></div>
-  <div class="cta-btn">Acesse: inema.club</div>
+  <div class="cta-btn">Acesse: ARCKHÉ AI</div>
 </div>
-<div class="brand">INEMA</div>
+<div class="brand">ARCKHÉ</div>
 </body></html>`,
   },
 
@@ -486,7 +486,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   </div>
   <div class="bottom-text">Formalizado por Russell & Norvig.<br>Hoje potencializado por LLMs.</div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">08 / 15</span>
   </div>
 </div>
@@ -534,7 +534,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     <p class="sub">GPT. Claude. Gemini.<br>Entenda como eles <em>decidem</em>, nêo só como respondem.</p>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">09 / 15</span>
   </div>
 </div>
@@ -581,7 +581,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   </div>
   <div class="question">Você está preparado para<br>entender <em>por dentro</em>? ⚡</div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">10 / 15</span>
   </div>
 </div>
@@ -658,7 +658,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     </div>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">11 / 15</span>
   </div>
 </div>
@@ -698,7 +698,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="bg"><img src="file://${imgPath}"></div>
 <div class="overlay"></div>
 <div class="content">
-  <div class="eyebrow">INEMA ✦ Diferencial</div>
+  <div class="eyebrow">ARCKHÉ ✦ Diferencial</div>
   <div class="main">
     <div class="pre">A arquitetura separa quem</div>
     <div class="vs-row">
@@ -709,7 +709,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     <p class="sub">Em 2026, essa diferença<br>define <em>quem lidera projetos</em><br>e quem executa tarefas.</p>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">12 / 15</span>
   </div>
 </div>
@@ -721,7 +721,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     id: 13,
     filename: `${CAMPAIGN}_carousel_13`,
     image: img(13),
-    concept: 'diferencial INEMA — PT-BR gratuito comunidade',
+    concept: 'diferencial ARCKHÉ — PT-BR gratuito comunidade',
     copy_source: 'key_phrases[7]',
     html: (imgPath) => `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
 <style>
@@ -755,7 +755,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="content">
   <div class="header">
-    <div class="eyebrow">Por que a INEMA é diferente</div>
+    <div class="eyebrow">Por que a ARCKHÉ é diferente</div>
     <div class="headline">Em PT-BR.<br>De graça.<br><em>Com comunidade.</em></div>
     <div class="divider"></div>
   </div>
@@ -778,12 +778,12 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
       <div class="feat-icon">🧠</div>
       <div class="feat-content">
         <div class="feat-title">Comunidade de +500K</div>
-        <div class="feat-sub">ecossistema INEMA ativo e colaborativo</div>
+        <div class="feat-sub">ecossistema ARCKHÉ ativo e colaborativo</div>
       </div>
     </div>
   </div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">13 / 15</span>
   </div>
 </div>
@@ -846,19 +846,19 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   </div>
   <div class="sub">Nêo basta usar — você precisa<br>entender a arquitetura por baixo.</div>
   <div class="footer">
-    <span class="brand">INEMA</span>
+    <span class="brand">ARCKHÉ</span>
     <span class="slide-num">14 / 15</span>
   </div>
 </div>
 </body></html>`,
   },
 
-  // ── SLIDE 15 — CTA FINAL: INEMA.CLUB (BRAND-FORWARD) ─────────────────────────
+  // ── SLIDE 15 — CTA FINAL: ARCKHÉ AI (BRAND-FORWARD) ─────────────────────────
   {
     id: 15,
     filename: `${CAMPAIGN}_carousel_15`,
     image: img(15),
-    concept: 'cta final — INEMA.CLUB brand-forward',
+    concept: 'cta final — ARCKHÉ AI brand-forward',
     copy_source: 'approved_ctas[0]',
     html: (imgPath) => `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
 <style>
@@ -872,7 +872,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:64px 72px}
 .top-tag{font-family:'Inter',sans-serif;font-size:26px;font-weight:700;color:rgba(255,255,255,0.45);letter-spacing:0.18em;text-transform:uppercase;animation:fadeUp 0.4s both}
 .main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
-.brand-inema{font-family:'Montserrat',sans-serif;font-size:168px;font-weight:900;line-height:0.9;letter-spacing:-0.02em;color:#fff;text-shadow:0 0 80px rgba(0,153,255,0.5),0 4px 40px rgba(0,0,0,0.8);animation:fadeUp 0.5s 0.05s both}
+.brand-ARCKHÉ{font-family:'Montserrat',sans-serif;font-size:168px;font-weight:900;line-height:0.9;letter-spacing:-0.02em;color:#fff;text-shadow:0 0 80px rgba(0,153,255,0.5),0 4px 40px rgba(0,0,0,0.8);animation:fadeUp 0.5s 0.05s both}
 .brand-club{font-family:'Montserrat',sans-serif;font-size:96px;font-weight:900;letter-spacing:0.06em;color:${B.blue};text-shadow:0 0 60px rgba(0,153,255,0.6);animation:fadeUp 0.5s 0.1s both}
 .brand-sub{font-family:'Inter',sans-serif;font-size:30px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:0.08em;margin-top:16px;animation:fadeUp 0.5s 0.18s both}
 .cta-block{display:flex;flex-direction:column;align-items:center;gap:16px;animation:scaleIn 0.5s 0.3s both}
@@ -887,7 +887,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="content">
   <div class="top-tag">Trilha Completa · 100% Gratuita · Arquitetura de Agentes</div>
   <div class="main">
-    <div class="brand-inema">INEMA</div>
+    <div class="brand-ARCKHÉ">ARCKHÉ</div>
     <div class="brand-club">.CLUB</div>
     <div class="brand-sub">Em PT-BR · Gratuito · Com Comunidade</div>
   </div>
@@ -951,7 +951,7 @@ async function main() {
     format: 'carousel',
     slides_count: 15,
     dimensions: '1080x1080',
-    brand_url: 'inema.club',
+    brand_url: 'ARCKHÉ AI',
     copy_source: 'narrative.json + creative_brief.json',
     slides: results,
   };

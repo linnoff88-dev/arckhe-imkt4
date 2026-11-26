@@ -1,15 +1,15 @@
 /**
  * Render script — c0093-metodo_seis_chapeus Carousel Slides
  * 15 slides — single carousel narrative
- * Output: prj/inema/outputs/c0093-metodo_seis_chapeus/ads/
+ * Output: prj/ARCKHÉ/outputs/c0093-metodo_seis_chapeus/ads/
  */
 
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const OUT_DIR = path.resolve('prj/inema/outputs/c0093-metodo_seis_chapeus/ads');
-const IMG_DIR = path.resolve('prj/inema/outputs/c0093-metodo_seis_chapeus/imgs');
+const OUT_DIR = path.resolve('prj/ARCKHÉ/outputs/c0093-metodo_seis_chapeus/ads');
+const IMG_DIR = path.resolve('prj/ARCKHÉ/outputs/c0093-metodo_seis_chapeus/imgs');
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const FONTS = `
@@ -67,7 +67,7 @@ function slide01() {
     </div>
     <!-- bottom brand -->
     <div style="display:flex;justify-content:space-between;align-items:flex-end;">
-      <span style="font-size:20px;font-weight:700;color:rgba(255,255,255,0.35);letter-spacing:0.15em;">INEMA.CLUB</span>
+      <span style="font-size:20px;font-weight:700;color:rgba(255,255,255,0.35);letter-spacing:0.15em;">ARCKHÉ AI</span>
       <span style="font-size:16px;font-weight:500;color:rgba(255,255,255,0.25);letter-spacing:0.1em;">01 / 15</span>
     </div>
   </div>
@@ -100,7 +100,7 @@ function slide02() {
     <p style="font-size:22px;font-weight:400;line-height:1.6;color:rgba(255,255,255,0.4);max-width:460px;margin-top:20px;">
       Você busca informações que confirmam o que já acredita — e ignora o restante.
     </p>
-    <div style="margin-top:60px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</div>
+    <div style="margin-top:60px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</div>
   </div>
 </div>`);
 }
@@ -145,7 +145,7 @@ function slide03() {
     </div>
     <!-- bottom -->
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:28px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">03 / 15</span>
     </div>
   </div>
@@ -173,7 +173,7 @@ function slide04() {
       Começa depois que o viés já contaminou tudo.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:52px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">04 / 15</span>
     </div>
   </div>
@@ -198,7 +198,7 @@ function slide05() {
       <div style="padding:6px 18px;background:rgba(0,153,255,0.15);border:1px solid rgba(0,153,255,0.5);border-radius:9999px;">
         <span style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.2em;text-transform:uppercase;">FASE 0</span>
       </div>
-      <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.3);letter-spacing:0.15em;text-transform:uppercase;">Exclusivo INEMA.CLUB</span>
+      <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.3);letter-spacing:0.15em;text-transform:uppercase;">Exclusivo ARCKHÉ AI</span>
     </div>
     <h1 style="font-size:110px;font-weight:900;line-height:0.88;letter-spacing:-0.03em;text-transform:uppercase;margin-bottom:32px;text-shadow:0 4px 40px rgba(0,153,255,0.3);">
       ANTI-<br><span style="color:#0099FF;">ÂNCORA.</span>
@@ -208,7 +208,7 @@ function slide05() {
       Vem antes de qualquer chapéu.<br>Nenhum livro cobre isso.<br>Nenhum concorrente entrega.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:56px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">05 / 15</span>
     </div>
   </div>
@@ -254,7 +254,7 @@ function slide06() {
     </h1>
     <div style="width:48px;height:3px;background:#0099FF;margin-bottom:24px;"></div>
     ${stepItems}
-    <div style="margin-top:24px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB · 06 / 15</div>
+    <div style="margin-top:24px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI · 06 / 15</div>
   </div>
 </div>`);
 }
@@ -294,7 +294,7 @@ function slide07() {
     <!-- free badge -->
     <div style="display:inline-flex;align-items:center;gap:12px;background:rgba(0,153,255,0.12);border:1px solid rgba(0,153,255,0.4);border-radius:9999px;padding:14px 36px;animation:scaleIn 0.5s 0.3s both;">
       <div style="width:10px;height:10px;border-radius:50%;background:#00CC44;box-shadow:0 0 10px #00CC44;"></div>
-      <span style="font-size:26px;font-weight:700;color:#FFFFFF;letter-spacing:0.05em;">100% GRATUITO · INEMA.CLUB</span>
+      <span style="font-size:26px;font-weight:700;color:#FFFFFF;letter-spacing:0.05em;">100% GRATUITO · ARCKHÉ AI</span>
     </div>
     <div style="margin-top:36px;font-size:15px;font-weight:500;color:rgba(255,255,255,0.2);">07 / 15</div>
   </div>
@@ -317,10 +317,10 @@ function slide08() {
     </h1>
     <div style="width:80px;height:4px;background:#FFD700;border-radius:2px;margin-bottom:24px;"></div>
     <p style="font-size:32px;font-weight:400;line-height:1.5;color:rgba(255,255,255,0.7);max-width:780px;text-shadow:0 2px 16px rgba(0,0,0,0.8);">
-      Edward de Bono criou os chapéus.<br>O INEMA.CLUB ensina o passo que faltava.
+      Edward de Bono criou os chapéus.<br>O ARCKHÉ AI ensina o passo que faltava.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:44px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">08 / 15</span>
     </div>
   </div>
@@ -349,7 +349,7 @@ function slide09() {
     <p style="font-size:30px;font-weight:400;line-height:1.6;color:rgba(255,255,255,0.6);max-width:680px;">
       Antes de qualquer chapéu —<br>você precisa quebrar o que já está<br>na sua cabeça.
     </p>
-    <div style="margin-top:52px;font-size:15px;font-weight:500;color:rgba(255,255,255,0.2);">INEMA.CLUB · 09 / 15</div>
+    <div style="margin-top:52px;font-size:15px;font-weight:500;color:rgba(255,255,255,0.2);">ARCKHÉ AI · 09 / 15</div>
   </div>
 </div>`);
 }
@@ -386,7 +386,7 @@ function slide10() {
       Tudo no meio é estrutura. O Azul é o maestro<br>que abre e fecha o processo — e quase ninguém explica por quê.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:40px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">10 / 15</span>
     </div>
   </div>
@@ -416,7 +416,7 @@ function slide11() {
       <p style="font-size:30px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);">
         Nêo com viés.<br>Nêo com suposiçêo.<br>Com método.
       </p>
-      <div style="margin-top:52px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB · 11 / 15</div>
+      <div style="margin-top:52px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI · 11 / 15</div>
     </div>
   </div>
 </div>`);
@@ -443,7 +443,7 @@ function slide12() {
       Decisêo sem conflito.<br>Todos pensando na mesma direçêo —<br>de modos diferentes.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:56px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">12 / 15</span>
     </div>
   </div>
@@ -473,7 +473,7 @@ function slide13() {
       A diferença entre decidir bem e decidir mal<br>é um processo — nêo experiência, nêo intuiçêo.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:44px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">13 / 15</span>
     </div>
   </div>
@@ -501,14 +501,14 @@ function slide14() {
         <span style="font-size:14px;font-weight:700;color:#CC0000;letter-spacing:0.1em;">Outros cursos: só os 6 chapéus</span>
       </div>
       <div style="padding:8px 20px;background:rgba(0,153,255,0.15);border:1px solid rgba(0,153,255,0.4);border-radius:9999px;">
-        <span style="font-size:14px;font-weight:700;color:#0099FF;letter-spacing:0.1em;">INEMA.CLUB: 8 passos completos</span>
+        <span style="font-size:14px;font-weight:700;color:#0099FF;letter-spacing:0.1em;">ARCKHÉ AI: 8 passos completos</span>
       </div>
     </div>
     <p style="font-size:30px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);max-width:800px;">
       Com Anti-Âncora, variantes de conflito interpessoal, pre-mortem, e UMA recomendaçêo final + Plano B.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:40px;">
-      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
+      <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ AI</span>
       <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.2);">14 / 15</span>
     </div>
   </div>
@@ -516,7 +516,7 @@ function slide14() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SLIDE 15 — CTA FINAL: INEMA.CLUB + curso gratuito
+// SLIDE 15 — CTA FINAL: ARCKHÉ AI + curso gratuito
 // ─────────────────────────────────────────────────────────────────────────────
 function slide15() {
   return wrap(`
@@ -533,9 +533,9 @@ function slide15() {
   <div style="position:absolute;inset:0;padding:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;animation:fadeUp 0.5s both;">
     <!-- pre-headline -->
     <div style="font-size:15px;font-weight:700;color:rgba(0,153,255,0.8);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:32px;animation:fadeIn 0.5s 0.1s both;">CURSO COMPLETO · 100% GRATUITO</div>
-    <!-- INEMA.CLUB big -->
+    <!-- ARCKHÉ AI big -->
     <h1 style="font-size:160px;font-weight:900;line-height:0.85;letter-spacing:-0.04em;color:#FFFFFF;text-shadow:0 0 80px rgba(0,153,255,0.4),0 4px 40px rgba(0,0,0,0.9);margin-bottom:16px;animation:scaleIn 0.5s 0.1s both;">
-      INEMA<span style="color:#0099FF;">.</span>CLUB
+      ARCKHÉ<span style="color:#0099FF;">.</span>CLUB
     </h1>
     <!-- tagline -->
     <p style="font-size:32px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.5;max-width:760px;margin-bottom:52px;animation:fadeUp 0.5s 0.2s both;">
@@ -547,7 +547,7 @@ function slide15() {
       <span style="font-size:20px;">→</span>
     </a>
     <!-- URL -->
-    <div style="margin-top:28px;font-size:22px;font-weight:600;color:rgba(255,255,255,0.45);letter-spacing:0.08em;animation:fadeIn 0.5s 0.4s both;">inema.club</div>
+    <div style="margin-top:28px;font-size:22px;font-weight:600;color:rgba(255,255,255,0.45);letter-spacing:0.08em;animation:fadeIn 0.5s 0.4s both;">ARCKHÉ AI</div>
   </div>
 </div>`);
 }
@@ -613,7 +613,7 @@ const slides = [
       total_slides: slides.length,
       format: 'carousel_1080x1080',
       copy_source: 'narrative.json',
-      brand: 'INEMA.CLUB',
+      brand: 'ARCKHÉ AI',
       slides: layout.slides,
     }, null, 2),
     'utf8'

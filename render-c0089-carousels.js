@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
  * Carousel renderer — c0089-vibe_code_cursos_gratuitos
- * 10 slides × 1080×1080 px — INEMA Vibe Code campaign
+ * 10 slides × 1080×1080 px — ARCKHÉ Vibe Code campaign
  */
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
 const CAMPAIGN = 'c0089-vibe_code_cursos_gratuitos';
-const OUT = `/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/${CAMPAIGN}/ads`;
-const IMGS = `/home/nmaldaner/projetos/timesmkt3/prj/inema/outputs/${CAMPAIGN}/imgs`;
+const OUT = `/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/${CAMPAIGN}/ads`;
+const IMGS = `/home/nmaldaner/projetos/timesmkt3/prj/ARCKHÉ/outputs/${CAMPAIGN}/imgs`;
 
 function imgSrc(n) {
   const num = String(n).padStart(2, '0');
@@ -83,7 +83,7 @@ function slide01() {
   <div class="sub fu" style="animation-delay: 0.2s;">A nova era da programaçêo com IA</div>
 </div>
 <div class="slide-num">01 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -120,7 +120,7 @@ function slide02() {
   <div class="reveal fu" style="animation-delay: 0.2s;">Isso tem<br>nome.</div>
 </div>
 <div class="slide-num">02 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -164,7 +164,7 @@ function slide03() {
   </div>
 </div>
 <div class="slide-num">03 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -207,7 +207,7 @@ function slide04() {
   </div>
 </div>
 <div class="slide-num">04 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -246,10 +246,10 @@ function slide05() {
   <div class="warn-headline fu" style="animation-delay: 0.1s;">Sem estrutura,</div>
   <div class="warn-impact fu" style="animation-delay: 0.15s;">vira caos.</div>
   <div class="warn-sub fu" style="animation-delay: 0.2s;">O vibe code tem dois lados —<br>e você precisa conhecer os dois.</div>
-  <div class="warn-resolve fu" style="animation-delay: 0.25s;">A INEMA ensina os dois lados. →</div>
+  <div class="warn-resolve fu" style="animation-delay: 0.25s;">A ARCKHÉ ensina os dois lados. →</div>
 </div>
 <div class="slide-num">05 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -303,14 +303,14 @@ function slide06() {
   </div>
 </div>
 <div class="slide-num">06 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
 function slide07() {
   return `<!DOCTYPE html><html><head><meta charset="utf-8">${FONTS}
 <style>${BASE_CSS}
-.inema-badge-text {
+.ARCKHÉ-badge-text {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 28px; font-weight: 700; color: #0099FF; letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -349,7 +349,7 @@ function slide07() {
 <div class="overlay" style="background: linear-gradient(to top, rgba(13,13,13,0.96) 0%, rgba(13,13,13,0.6) 50%, rgba(13,13,13,0.4) 100%);"></div>
 <div class="content" style="justify-content: space-between;">
   <div style="display: flex; flex-direction: column; gap: 10px;">
-    <div class="badge fu" style="background: rgba(0,153,255,0.15); border: 1.5px solid rgba(0,153,255,0.6); color: #0099FF; align-self: flex-start; animation-delay: 0s;">🧠 INEMA</div>
+    <div class="badge fu" style="background: rgba(0,153,255,0.15); border: 1.5px solid rgba(0,153,255,0.6); color: #0099FF; align-self: flex-start; animation-delay: 0s;">🧠 ARCKHÉ</div>
     <div class="intro-text fu" style="animation-delay: 0.1s;">ensina vibe coding</div>
   </div>
   <div style="display: flex; flex-direction: column; gap: 12px;">
@@ -362,7 +362,7 @@ function slide07() {
   </div>
 </div>
 <div class="slide-num">07 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -404,7 +404,7 @@ function slide08() {
 <div class="overlay" style="background: rgba(13,13,13,0.88);"></div>
 <div class="content" style="justify-content: space-between;">
   <div style="display: flex; flex-direction: column; gap: 12px;">
-    <div class="badge fu" style="background: rgba(0,153,255,0.15); border: 1.5px solid rgba(0,153,255,0.5); color: #0099FF; align-self: flex-start; animation-delay:0s;">📚 NO INEMA.CLUB</div>
+    <div class="badge fu" style="background: rgba(0,153,255,0.15); border: 1.5px solid rgba(0,153,255,0.5); color: #0099FF; align-self: flex-start; animation-delay:0s;">📚 NO ARCKHÉ AI</div>
     <div class="catalog-title fu" style="animation-delay:0.05s;">Trilhas disponíveis agora:</div>
   </div>
   <div style="display: flex; flex-direction: column; gap: 16px;">
@@ -424,7 +424,7 @@ function slide08() {
   </div>
 </div>
 <div class="slide-num">08 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -471,7 +471,7 @@ function slide09() {
   <div class="manifesto-detail fu" style="animation-delay:0.28s;">Essa é a filosofia — aqui e lá.</div>
 </div>
 <div class="slide-num">09 / 10</div>
-<div class="handle">@inema.tds</div>
+<div class="handle">@ARCKHÉ.tds</div>
 </body></html>`;
 }
 
@@ -518,10 +518,10 @@ function slide10() {
 <div class="content" style="justify-content: flex-end; gap: 22px; padding-bottom: 96px;">
   <div class="badge fu" style="background: rgba(0,255,136,0.12); border: 1.5px solid rgba(0,255,136,0.5); color: #00FF88; align-self: flex-start; animation-delay:0s; font-size: 24px;">🚀 COMECE AGORA</div>
   <div class="cta-tagline fu" style="animation-delay:0.1s;">Trilha completa. 100% gratuita. Sem truques.</div>
-  <div class="brand-url fu" style="animation-delay:0.15s;">INEMA.CLUB</div>
+  <div class="brand-url fu" style="animation-delay:0.15s;">ARCKHÉ AI</div>
   <div class="cta-btn si" style="animation-delay:0.25s;">Acesse grátis →</div>
   <div class="free-detail fu" style="animation-delay:0.3s;">Vibe Coding · Claude Code · IA Generativa · em PT-BR</div>
-  <div class="cta-social fu" style="animation-delay:0.35s;">Siga @inema.tds para mais conteúdo</div>
+  <div class="cta-social fu" style="animation-delay:0.35s;">Siga @ARCKHÉ.tds para mais conteúdo</div>
 </div>
 <div class="slide-num">10 / 10</div>
 </body></html>`;
@@ -597,10 +597,10 @@ const slides = [
       'Slide 04 — Positivo: velocidade total, ideia hoje, produto amanhê',
       'Slide 05 — Tensêo: sem estrutura vira caos — dois lados',
       'Slide 06 — Comunidade: quem usa — devs, designers, PMs, empreendedores',
-      'Slide 07 — INEMA 1 ano: antes do hype, em português, de graça',
-      'Slide 08 — Catálogo: trilhas disponíveis no inema.club, tudo gratuito',
+      'Slide 07 — ARCKHÉ 1 ano: antes do hype, em português, de graça',
+      'Slide 08 — Catálogo: trilhas disponíveis no ARCKHÉ AI, tudo gratuito',
       'Slide 09 — Manifesto: quem programa no vibe code, aprende no vibe code',
-      'Slide 10 — CTA: INEMA.CLUB enorme + botêo Acesse grátis',
+      'Slide 10 — CTA: ARCKHÉ AI enorme + botêo Acesse grátis',
     ],
     copy_source: 'narrative.json — carousel_texts + headlines + approved_ctas',
     slides: layoutSlides,

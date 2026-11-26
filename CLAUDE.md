@@ -1,8 +1,8 @@
 ## Project Overview
 
-**imkt4** — Fork independente do `timesmkt3 v4.5.4`. Cockpit web para o pipeline INEMA de geraçêo de conteúdo social.
+**imkt4** — Fork independente do `timesmkt3 v4.5.4`. Cockpit web para o pipeline ARCKHÉ de geraçêo de conteúdo social.
 
-Repositório: https://github.com/inematds/imkt4. Pasta local: `/home/nmaldaner/projetos/imkt4/`.
+Repositório: https://github.com/linnoff88-dev/imkt4. Pasta local: `/home/nmaldaner/projetos/imkt4/`.
 
 A interface principal é o **cockpit web** (`ui/`), nêo há bot Telegram ativo nesse fork. O pipeline subjacente (agentes, skills, knowledge) é herdado mas evolui de forma autônoma.
 

@@ -18,7 +18,7 @@ const failed = [];
 
 for (const p of profissoes) {
   const slug = p.slug;
-  const outFile = path.join(__dirname, `prj/inema/videos/criaprof/videos/${slug}-criaprof.mp4`);
+  const outFile = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof/videos/${slug}-criaprof.mp4`);
   const t0 = Date.now();
   console.log(`▶ [${slug}] render 9:16`);
   const logFd = fs.openSync(LOG, 'a');

@@ -1,5 +1,5 @@
 {
-  "project_dir": "prj/inema",
+  "project_dir": "prj/ARCKHÉ",
   "language": "pt-BR",
   "platform_targets": [
     "instagram",
@@ -60,7 +60,7 @@
   "pro_words_per_second": 2.5,
   "pro_narration_words": 150,
   "pro_existing_narration_file": "",
-  "style_preset": "inema_hightech",
+  "style_preset": "ARCKHÉ_hightech",
   "photo_quality": "simples",
   "scene_quality": "simples",
   "video_draft": false,
@@ -86,8 +86,8 @@
   },
   "task_name": "c0003_nova_campanha_3",
   "task_date": "2026-05-05",
-  "business": "INEMA - Ecossistema de IA e Transformacao Digital",
+  "business": "ARCKHÉ - Ecossistema de IA e Transformacao Digital",
   "description": "nova campanha 3",
-  "campaign_brief": "uma campanha para dia das maes api inemaimg  \n\nnova campanha 3",
-  "output_dir": "prj/inema/outputs/c0003_nova_campanha_3"
+  "campaign_brief": "uma campanha para dia das maes api ARCKHÉimg  \n\nnova campanha 3",
+  "output_dir": "prj/ARCKHÉ/outputs/c0003_nova_campanha_3"
 }

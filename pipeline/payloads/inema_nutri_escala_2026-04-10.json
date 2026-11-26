@@ -1,16 +1,16 @@
 {
   "task_name": "c0060-nutri_escala",
   "task_date": "2026-04-10",
-  "business": "INEMA — Ecossistema de IA e Transformaçêo Digital",
+  "business": "ARCKHÉ — Ecossistema de IA e Transformaçêo Digital",
   "description": "Campanha para nutricionistas. Ângulo: o problema nêo é falta de conhecimento — é excesso de demanda e pouco tempo. A IA nêo vai substituir o nutricionista, vai dar escala ao cuidado personalizado. Mensagem central: atenda melhor em menos tempo, sem perder o toque humano.",
 
-  "script_content": "O nutricionista moderno enfrenta um paradoxo: quanto mais cresce, menos tempo tem para cuidar de cada paciente como merece.\n\nMontagem de planos alimentares consome horas. Responder pacientes fora da consulta desgasta. Produzir conteúdo para atrair clientes compete com a agenda lotada. E no fim do dia, a pergunta é: dá para crescer sem perder a qualidade?\n\nA resposta é sim — com IA aplicada do jeito certo.\n\nNêo é sobre virar técnico. É sobre usar IA para:\n1. Organizar anamneses e informações do paciente com mais rapidez\n2. Estruturar planos alimentares sem começar do zero toda vez\n3. Criar materiais de orientaçêo e responder dúvidas recorrentes com eficiência\n4. Produzir conteúdo para redes sociais sem esgotar a criatividade\n5. Acompanhar a evoluçêo dos pacientes com mais organizaçêo\n\nO resultado? Mais produtividade, mais tempo para o paciente, mais consistência no atendimento — e crescimento sem aumentar o caos.\n\nO INEMA entrega isso de forma simples, prática e aplicável. Nêo um curso longo de tecnologia. Mas conteúdo direto para o nutricionista que quer atender melhor em menos tempo.",
+  "script_content": "O nutricionista moderno enfrenta um paradoxo: quanto mais cresce, menos tempo tem para cuidar de cada paciente como merece.\n\nMontagem de planos alimentares consome horas. Responder pacientes fora da consulta desgasta. Produzir conteúdo para atrair clientes compete com a agenda lotada. E no fim do dia, a pergunta é: dá para crescer sem perder a qualidade?\n\nA resposta é sim — com IA aplicada do jeito certo.\n\nNêo é sobre virar técnico. É sobre usar IA para:\n1. Organizar anamneses e informações do paciente com mais rapidez\n2. Estruturar planos alimentares sem começar do zero toda vez\n3. Criar materiais de orientaçêo e responder dúvidas recorrentes com eficiência\n4. Produzir conteúdo para redes sociais sem esgotar a criatividade\n5. Acompanhar a evoluçêo dos pacientes com mais organizaçêo\n\nO resultado? Mais produtividade, mais tempo para o paciente, mais consistência no atendimento — e crescimento sem aumentar o caos.\n\nO ARCKHÉ entrega isso de forma simples, prática e aplicável. Nêo um curso longo de tecnologia. Mas conteúdo direto para o nutricionista que quer atender melhor em menos tempo.",
 
   "simulate_uploads": false,
   "dry_run": false,
 
-  "project_dir": "prj/inema",
-  "output_dir": "prj/inema/outputs/c0060-nutri_escala_2026-04-10",
+  "project_dir": "prj/ARCKHÉ",
+  "output_dir": "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10",
 
   "platform_targets": ["instagram"],
 
@@ -34,9 +34,9 @@
   },
 
   "knowledge_files": [
-    "prj/inema/knowledge/brand_identity.md",
-    "prj/inema/knowledge/product_campaign.md",
-    "prj/inema/knowledge/platform_guidelines.md"
+    "prj/ARCKHÉ/knowledge/brand_identity.md",
+    "prj/ARCKHÉ/knowledge/product_campaign.md",
+    "prj/ARCKHÉ/knowledge/platform_guidelines.md"
   ],
 
   "pipeline": {
@@ -52,7 +52,7 @@
     "static_ad": {
       "enabled": true,
       "inputs": {
-        "product": "INEMA — IA para Nutricionistas",
+        "product": "ARCKHÉ — IA para Nutricionistas",
         "campaign_goal": "atrair nutricionistas que querem produtividade e escala sem perder a personalizaçêo do atendimento",
         "platform": "instagram",
         "format": "square",
@@ -68,7 +68,7 @@
         "copy": {
           "headline": "Atenda mais, esgote menos",
           "subtext": "IA para nutricionistas que querem crescer sem perder o cuidado",
-          "cta": "Aprenda em inema.club"
+          "cta": "Aprenda em ARCKHÉ AI"
         },
         "design_notes": "Dark-first com toque de saúde e bem-estar. Tipografia bold mas acolhedora. Imagem evoca profissional de saúde + tecnologia de forma suave. Sem estética clínica fria — warm tech."
       }
@@ -81,7 +81,7 @@
       "dimensions": "1080x1080",
       "image_source": "api",
       "slide_count": 7,
-      "design_notes": "Dark-first com identidade INEMA: fundo #0D0D0D, azul #0099FF, verde neon #00FF88. Tipografia bold (Montserrat/Space Grotesk). Numeraçêo de slide visível. Linha de acento lateral. Handle @inema.tds no rodapé. Cada slide tem imagem gerada via API limpa de texto — copy sobreposto via HTML/CSS. Tema: nutriçêo + tecnologia, warm tech, sem estética clínica fria.",
+      "design_notes": "Dark-first com identidade ARCKHÉ: fundo #0D0D0D, azul #0099FF, verde neon #00FF88. Tipografia bold (Montserrat/Space Grotesk). Numeraçêo de slide visível. Linha de acento lateral. Handle @ARCKHÉ.tds no rodapé. Cada slide tem imagem gerada via API limpa de texto — copy sobreposto via HTML/CSS. Tema: nutriçêo + tecnologia, warm tech, sem estética clínica fria.",
       "slides": [
         {
           "id": 1,
@@ -132,10 +132,10 @@
         },
         {
           "id": 7,
-          "concept": "cta — INEMA",
+          "concept": "cta — ARCKHÉ",
           "headline": "Atenda melhor em menos tempo",
           "subtext": "Sem perder o toque humano que faz diferença",
-          "cta": "inema.club",
+          "cta": "ARCKHÉ AI",
           "image_prompt": "nutritionist smiling with patient, warmth and professionalism, technology in background, success, dark warm atmosphere, no text"
         }
       ]
@@ -149,9 +149,9 @@
       "script_source": "script_content",
       "pro": {
         "duration": "45-60s",
-        "style": "cinematic",
+        "style": "cARCKHÉtic",
         "framework": "PAS",
-        "focus": "problema (excesso de demanda, tempo escasso) → agitaçêo (crescer cria mais caos, pacientes perdem qualidade) → soluçêo (IA que dá escala sem perder personalizaçêo — INEMA)"
+        "focus": "problema (excesso de demanda, tempo escasso) → agitaçêo (crescer cria mais caos, pacientes perdem qualidade) → soluçêo (IA que dá escala sem perder personalizaçêo — ARCKHÉ)"
       }
     },
 
@@ -162,7 +162,7 @@
         "topic": "produtividade, escala e personalizaçêo no atendimento nutricional com IA",
         "key_benefit": "atender mais pacientes com mais qualidade e menos esforço operacional",
         "platforms": ["instagram"],
-        "cta_primary": "inema.club — cursos rápidos e aplicáveis",
+        "cta_primary": "ARCKHÉ AI — cursos rápidos e aplicáveis",
         "tone": "acolhedor, prático, empoderador — sem jargêo técnico, sem hype",
         "language": "pt-BR"
       }
@@ -174,17 +174,17 @@
         "simulate_uploads": false,
         "publish_immediately": false,
         "media_sources": {
-          "instagram_image": "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/instagram_ad.png",
+          "instagram_image": "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/instagram_ad.png",
           "instagram_carousel": [
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_01.png",
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_02.png",
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_03.png",
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_04.png",
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_05.png",
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_06.png",
-            "prj/inema/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_07.png"
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_01.png",
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_02.png",
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_03.png",
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_04.png",
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_05.png",
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_06.png",
+            "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/ads/carousel_07.png"
           ],
-          "video_pro": "prj/inema/outputs/c0060-nutri_escala_2026-04-10/video/ad_pro.mp4"
+          "video_pro": "prj/ARCKHÉ/outputs/c0060-nutri_escala_2026-04-10/video/ad_pro.mp4"
         }
       }
     }

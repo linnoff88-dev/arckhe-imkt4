@@ -6,7 +6,7 @@
  *   2. Whisper word-level em cada narraçêo
  *   3. Render prof + generic (render-criaprof-cta-916.js)
  *
- * Reutiliza as 50 imgs CriaProf já existentes em prj/inema/videos/criaprof/<slug>_2026-04-23/imgs/.
+ * Reutiliza as 50 imgs CriaProf já existentes em prj/ARCKHÉ/videos/criaprof/<slug>_2026-04-23/imgs/.
  *
  * Uso: node batch-criaprof-cta.js <slugs_csv | all | new>
  *   all      = todas 90 profissões cadastradas
@@ -29,7 +29,7 @@ else if (arg === 'new') {
   selected = profissoes
     .map((p) => p.slug)
     .filter((slug) => {
-      const dir = path.join(__dirname, `prj/inema/videos/criaprof-cta-916/${slug}_${today}/video`);
+      const dir = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof-cta-916/${slug}_${today}/video`);
       return !fs.existsSync(path.join(dir, `${slug}-cta-prof-37s.mp4`)) ||
              !fs.existsSync(path.join(dir, `${slug}-cta-generic-37s.mp4`));
     });
@@ -78,8 +78,8 @@ for (const slug of selected) {
   if (!profile) { console.error(`! slug desconhecido: ${slug}`); failed.push(slug); continue; }
 
   const imgCandidates = [
-    path.join(__dirname, `prj/inema/videos/criaprof/${slug}_2026-04-23/imgs`),
-    path.join(__dirname, `prj/inema/videos/old/criaprof/${slug}_2026-04-23/imgs`),
+    path.join(__dirname, `prj/ARCKHÉ/videos/criaprof/${slug}_2026-04-23/imgs`),
+    path.join(__dirname, `prj/ARCKHÉ/videos/old/criaprof/${slug}_2026-04-23/imgs`),
   ];
   if (!imgCandidates.some((p) => fs.existsSync(p))) {
     console.error(`! imgs criaprof faltando para ${slug} em:\n  ${imgCandidates.join('\n  ')}`);
@@ -103,7 +103,7 @@ for (const slug of selected) {
     const fullNarr = `${cta.narrPrefix} ${profile.narr_criaprof}`;
     const narrFile = `/tmp/narr/narr-criaprof-cta-${variant}-${slug}.mp3`;
     const whisperFile = `/tmp/narr/whisper-criaprof-cta-${variant}-${slug}.json`;
-    const outDir = path.join(__dirname, `prj/inema/videos/criaprof-cta-916/${slug}_${today}/video`);
+    const outDir = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof-cta-916/${slug}_${today}/video`);
     const outFile = path.join(outDir, `${slug}-cta-${variant}-37s.mp4`);
 
     // Skip se já renderizado

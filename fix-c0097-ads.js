@@ -7,7 +7,7 @@ const path = require('path');
 const fs = require('fs');
 const { chromium } = require('playwright');
 
-const ADS_DIR = path.resolve(__dirname, 'prj/inema/outputs/c0097-dia_das_maes_2026/ads');
+const ADS_DIR = path.resolve(__dirname, 'prj/ARCKHÉ/outputs/c0097-dia_das_maes_2026/ads');
 
 // Carousels com img quebrada (PNG ~100KB) — confirmado por inspeçêo
 const BROKEN = [1, 2, 4, 5, 6, 10, 12, 13, 14, 15];

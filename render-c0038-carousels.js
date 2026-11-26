@@ -1,14 +1,14 @@
 /**
  * Render script — c0038-pascoa_2026 Carousel Slides
  * 14 slides: Carousel 1 (slides 01–07) + Carousel 2 (slides 08–14)
- * Output: prj/inema/outputs/c0038-pascoa_2026/ads/
+ * Output: prj/ARCKHÉ/outputs/c0038-pascoa_2026/ads/
  */
 
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const OUT_DIR = path.resolve('prj/inema/outputs/c0038-pascoa_2026/ads');
+const OUT_DIR = path.resolve('prj/ARCKHÉ/outputs/c0038-pascoa_2026/ads');
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const FONTS = `
@@ -48,7 +48,7 @@ function slide01() {
   <div style="position:relative;z-index:1;animation:fadeUp 0.5s both;">
     <!-- Badge -->
     <div style="display:inline-block;border:1px solid rgba(200,160,74,0.45);padding:10px 28px;border-radius:9999px;margin-bottom:44px;animation:scaleIn 0.5s 0.1s both;">
-      <span style="font-size:16px;font-weight:700;color:#C8A04A;letter-spacing:0.2em;text-transform:uppercase;">PÁSCOA 2026 · INEMA</span>
+      <span style="font-size:16px;font-weight:700;color:#C8A04A;letter-spacing:0.2em;text-transform:uppercase;">PÁSCOA 2026 · ARCKHÉ</span>
     </div>
     <!-- Main headline -->
     <h1 style="font-size:96px;font-weight:900;line-height:0.95;letter-spacing:-0.03em;text-transform:uppercase;margin-bottom:36px;">
@@ -60,10 +60,10 @@ function slide01() {
     <p style="font-size:32px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);max-width:760px;margin:0 auto 52px;animation:fadeUp 0.5s 0.2s both;">
       Renascer na era da IA nêo é espiritual —<br>é estratégico.
     </p>
-    <!-- INEMA dot marker -->
+    <!-- ARCKHÉ dot marker -->
     <div style="display:inline-flex;align-items:center;gap:12px;animation:fadeIn 0.5s 0.3s both;">
       <div style="width:8px;height:8px;background:#C8A04A;border-radius:50%;"></div>
-      <span style="font-size:18px;font-weight:700;letter-spacing:0.15em;color:rgba(255,255,255,0.3);">INEMA.VIP</span>
+      <span style="font-size:18px;font-weight:700;letter-spacing:0.15em;color:rgba(255,255,255,0.3);">ARCKHÉ.VIP</span>
       <div style="width:8px;height:8px;background:#C8A04A;border-radius:50%;"></div>
     </div>
   </div>
@@ -95,7 +95,7 @@ function slide02() {
     <p style="font-size:30px;font-weight:400;line-height:1.6;color:rgba(255,255,255,0.65);max-width:620px;animation:fadeUp 0.5s 0.2s both;">
       O líder moderno orquestra agentes de IA —<br>nêo os opera.
     </p>
-    <div style="margin-top:64px;font-size:15px;font-weight:700;color:rgba(255,255,255,0.2);letter-spacing:0.15em;">INEMA.VIP</div>
+    <div style="margin-top:64px;font-size:15px;font-weight:700;color:rgba(255,255,255,0.2);letter-spacing:0.15em;">ARCKHÉ.VIP</div>
   </div>
 </div>`);
 }
@@ -120,7 +120,7 @@ function slide03() {
     <div style="font-size:56px;font-weight:900;color:#FFFFFF;margin-bottom:20px;letter-spacing:-0.01em;text-transform:uppercase;">E VOCÊ VAI LIDERAR?</div>
     <div style="font-size:28px;font-weight:400;color:rgba(255,255,255,0.5);line-height:1.6;">A questêo nêo é se sua empresa vai ter.<br>É se <strong style="color:white;font-weight:700;">você</strong> vai orquestrar.</div>
   </div>
-  <div style="position:absolute;bottom:48px;font-size:14px;font-weight:700;color:rgba(255,255,255,0.18);letter-spacing:0.15em;">INEMA</div>
+  <div style="position:absolute;bottom:48px;font-size:14px;font-weight:700;color:rgba(255,255,255,0.18);letter-spacing:0.15em;">ARCKHÉ</div>
 </div>`);
 }
 
@@ -141,7 +141,7 @@ function slide04() {
     <p style="font-size:26px;font-weight:400;line-height:1.6;color:rgba(255,255,255,0.6);">
       O novo superpoder<br>do C-level.<br>Sem linha de código.
     </p>
-    <div style="margin-top:48px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.VIP</div>
+    <div style="margin-top:48px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">ARCKHÉ.VIP</div>
   </div>
   <!-- Center divider -->
   <div style="position:absolute;top:10%;bottom:10%;left:50%;width:1px;background:linear-gradient(to bottom,transparent,rgba(0,255,136,0.2),transparent);"></div>
@@ -196,7 +196,7 @@ function slide05() {
       <p style="font-size:24px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.55;">Decisões que os<br>outros simplesmente<br>nêo conseguem ver.</p>
     </div>
   </div>
-  <div style="position:absolute;bottom:28px;right:56px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.18);letter-spacing:0.12em;">INEMA.VIP</div>
+  <div style="position:absolute;bottom:28px;right:56px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.18);letter-spacing:0.12em;">ARCKHÉ.VIP</div>
 </div>`);
 }
 
@@ -223,7 +223,7 @@ function slide06() {
   <div style="position:absolute;top:calc(50% - 250px);left:calc(50% - 120px);transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.15);"></div>
   <!-- Top content -->
   <div style="position:relative;z-index:10;width:100%;animation:fadeUp 0.5s both;">
-    <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:18px;">INEMA VIP</div>
+    <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:18px;">ARCKHÉ VIP</div>
     <h1 style="font-size:70px;font-weight:900;line-height:1.02;letter-spacing:-0.02em;text-transform:uppercase;max-width:880px;margin:0 auto 0;">
       A COMUNIDADE DOS<br>LÍDERES QUE<br><span style="color:#0099FF;">ENTENDERAM</span>
     </h1>
@@ -258,7 +258,7 @@ function slide07() {
   <div style="position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(to right,transparent,#C8A04A,transparent);"></div>
   <!-- Content -->
   <div style="position:relative;z-index:1;animation:fadeUp 0.5s both;">
-    <div style="font-size:15px;font-weight:700;color:rgba(200,160,74,0.75);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:32px;">INEMA VIP · PÁSCOA 2026</div>
+    <div style="font-size:15px;font-weight:700;color:rgba(200,160,74,0.75);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:32px;">ARCKHÉ VIP · PÁSCOA 2026</div>
     <h1 style="font-size:104px;font-weight:900;line-height:0.93;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:20px;text-shadow:0 0 60px rgba(200,160,74,0.25);">
       RENASÇA.<br><span style="color:#C8A04A;">ORQUESTRE.</span><br>LIDERE.
     </h1>
@@ -268,7 +268,7 @@ function slide07() {
     </p>
     <!-- CTA -->
     <div style="animation:scaleIn 0.5s 0.2s both;">
-      <div style="display:inline-block;background:#C8A04A;color:#0D0D0D;padding:22px 68px;border-radius:9999px;font-size:26px;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;box-shadow:0 4px 36px rgba(200,160,74,0.5);">INEMA.VIP</div>
+      <div style="display:inline-block;background:#C8A04A;color:#0D0D0D;padding:22px 68px;border-radius:9999px;font-size:26px;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;box-shadow:0 4px 36px rgba(200,160,74,0.5);">ARCKHÉ.VIP</div>
       <div style="margin-top:16px;font-size:19px;font-weight:600;color:rgba(255,255,255,0.35);">R$ 35/mês · Sem desculpas para ficar para trás</div>
     </div>
   </div>
@@ -310,7 +310,7 @@ function slide08() {
         <span style="color:rgba(200,160,74,0.9);font-weight:600;">Do usuário para o maestro.</span>
       </p>
     </div>
-    <div style="margin-top:52px;font-size:15px;font-weight:700;color:rgba(255,255,255,0.18);letter-spacing:0.15em;">INEMA.VIP</div>
+    <div style="margin-top:52px;font-size:15px;font-weight:700;color:rgba(255,255,255,0.18);letter-spacing:0.15em;">ARCKHÉ.VIP</div>
   </div>
 </div>`);
 }
@@ -417,7 +417,7 @@ function slide10() {
       Tudo em paralelo, conduzido por você.<br>
       <strong style="color:rgba(255,255,255,0.85);">Você é o maestro da orquestra.</strong>
     </p>
-    <div style="margin-top:18px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.18);letter-spacing:0.12em;">INEMA.VIP</div>
+    <div style="margin-top:18px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.18);letter-spacing:0.12em;">ARCKHÉ.VIP</div>
   </div>
 </div>`);
 }
@@ -445,7 +445,7 @@ function slide11() {
     <div style="font-size:50px;font-weight:900;color:#FFFFFF;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:16px;line-height:1.0;">NEM TODO LÍDER VAI<br>FAZER ESSA PASSAGEM</div>
     <div style="font-size:30px;font-weight:800;color:#FF8C00;text-transform:uppercase;letter-spacing:0.05em;">O GAP ESTÁ CRESCENDO.</div>
   </div>
-  <div style="position:absolute;bottom:44px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.15);letter-spacing:0.15em;">INEMA.VIP</div>
+  <div style="position:absolute;bottom:44px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.15);letter-spacing:0.15em;">ARCKHÉ.VIP</div>
 </div>`);
 }
 
@@ -503,7 +503,7 @@ function slide12() {
       <div style="width:44px;height:44px;border-radius:50%;background:rgba(200,160,74,0.18);border:1px solid rgba(200,160,74,0.4);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#C8A04A;">N</div>
       <div>
         <div style="font-size:17px;font-weight:700;color:rgba(255,255,255,0.75);">Nei Maldaner</div>
-        <div style="font-size:14px;font-weight:400;color:rgba(255,255,255,0.3);">Fundador da INEMA · inema.vip</div>
+        <div style="font-size:14px;font-weight:400;color:rgba(255,255,255,0.3);">Fundador da ARCKHÉ · ARCKHÉ.vip</div>
       </div>
     </div>
   </div>
@@ -544,7 +544,7 @@ function slide13() {
   <!-- Bottom row -->
   <div style="margin-top:28px;display:flex;align-items:center;justify-content:space-between;flex:0 0 auto;animation:fadeUp 0.5s 0.3s both;">
     <div style="font-size:22px;font-weight:600;color:rgba(255,255,255,0.45);">Networking com líderes que já estêo do outro lado</div>
-    <div style="font-size:16px;font-weight:800;color:rgba(0,153,255,0.7);letter-spacing:0.1em;white-space:nowrap;">INEMA.VIP →</div>
+    <div style="font-size:16px;font-weight:800;color:rgba(0,153,255,0.7);letter-spacing:0.1em;white-space:nowrap;">ARCKHÉ.VIP →</div>
   </div>
 </div>`);
 }
@@ -570,7 +570,7 @@ function slide14() {
   <div style="position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(to right,transparent,#C8A04A,transparent);"></div>
   <!-- Content -->
   <div style="position:relative;z-index:1;animation:fadeUp 0.5s both;">
-    <div style="font-size:14px;font-weight:700;color:rgba(200,160,74,0.65);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:28px;">PÁSCOA 2026 · INEMA</div>
+    <div style="font-size:14px;font-weight:700;color:rgba(200,160,74,0.65);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:28px;">PÁSCOA 2026 · ARCKHÉ</div>
     <h1 style="font-size:92px;font-weight:900;line-height:0.93;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:24px;text-shadow:0 0 60px rgba(200,160,74,0.18);">
       RENASÇA<br>COMO<br><span style="color:#C8A04A;">LÍDER</span>
     </h1>
@@ -580,7 +580,7 @@ function slide14() {
     </p>
     <!-- Mega URL CTA -->
     <div style="animation:scaleIn 0.5s 0.2s both;">
-      <div style="font-size:56px;font-weight:900;color:#C8A04A;text-transform:uppercase;letter-spacing:0.05em;text-shadow:0 0 32px rgba(200,160,74,0.4);">INEMA.VIP</div>
+      <div style="font-size:56px;font-weight:900;color:#C8A04A;text-transform:uppercase;letter-spacing:0.05em;text-shadow:0 0 32px rgba(200,160,74,0.4);">ARCKHÉ.VIP</div>
       <div style="font-size:20px;font-weight:600;color:rgba(255,255,255,0.32);margin-top:14px;letter-spacing:0.06em;text-transform:uppercase;">Entre agora · R$ 35/mês</div>
     </div>
   </div>
@@ -654,7 +654,7 @@ async function renderAll() {
   // Save layout.json
   const layout = {
     campaign: 'c0038-pascoa_2026',
-    brand: 'INEMA',
+    brand: 'ARCKHÉ',
     generated_at: new Date().toISOString(),
     total_slides: slides.length,
     carousels: {

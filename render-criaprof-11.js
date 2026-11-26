@@ -11,10 +11,10 @@ const profession = process.argv[2];
 if (!profession) { console.error('Usage: node render-criaprof-11.js <slug>'); process.exit(1); }
 
 const folder = `${profession}_2026-04-23`;
-const IMG_DIR = path.join(__dirname, `prj/inema/videos/criaprof/${folder}/imgs`);
+const IMG_DIR = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof/${folder}/imgs`);
 if (!fs.existsSync(IMG_DIR)) { console.error(`imgs: ${IMG_DIR}`); process.exit(1); }
 
-const OUT_DIR = path.join(__dirname, `prj/inema/videos/criaprof/videos`);
+const OUT_DIR = path.join(__dirname, `prj/ARCKHÉ/videos/criaprof/videos`);
 const OUT_FILE = path.join(OUT_DIR, `${profession}-criaprof-11.mp4`);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -50,7 +50,7 @@ const whisperData = JSON.parse(fs.readFileSync(WHISPER_JSON, 'utf8'));
 const capChunks = whisperData.chunks.map((c) => ({
   t0: c.t0 + NARR_OFFSET,
   t1: c.t1 + NARR_OFFSET,
-  text: c.text.replace(/inema\.?(cube|clube)/gi, 'INEMA.CLUB').replace(/ponto/gi, '.'),
+  text: c.text.replace(/ARCKHÉ\.?(cube|clube)/gi, 'ARCKHÉ AI').replace(/ponto/gi, '.'),
 }));
 
 const ascii = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -99,7 +99,7 @@ const captions = capChunks.map((b) => drawtext({
 }));
 
 const outro = drawtext({
-  text: 'INEMA.CLUB', t0: TOTAL_DUR - 3, t1: TOTAL_DUR, y: '(h-th)/2', size: 140,
+  text: 'ARCKHÉ AI', t0: TOTAL_DUR - 3, t1: TOTAL_DUR, y: '(h-th)/2', size: 140,
   color: 'white', bord: 4, bordColor: 'black@0.5',
 });
 

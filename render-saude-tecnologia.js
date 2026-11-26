@@ -1,5 +1,5 @@
 /**
- * Renderiza "Saúde e Tecnologia — 30s" com narraçêo + música suave + INEMA.CLUB final.
+ * Renderiza "Saúde e Tecnologia — 30s" com narraçêo + música suave + ARCKHÉ AI final.
  * 30 imagens x 1s cada = 30s total.
  */
 
@@ -7,8 +7,8 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const IMG_DIR = path.join(__dirname, 'prj/inema/outputs/saude-tecnologia_2026-04-22/imgs');
-const OUT_DIR = path.join(__dirname, 'prj/inema/outputs/saude-tecnologia_2026-04-22/video');
+const IMG_DIR = path.join(__dirname, 'prj/ARCKHÉ/outputs/saude-tecnologia_2026-04-22/imgs');
+const OUT_DIR = path.join(__dirname, 'prj/ARCKHÉ/outputs/saude-tecnologia_2026-04-22/video');
 const MUSIC = '/tmp/musica_video/mulheres/freesound_719036_Melancholy_Background_Piano__-_bpm_112_l.mp3';
 const NARR = '/tmp/narr/narr-saude.mp3';
 const FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf';
@@ -61,7 +61,7 @@ imgs.forEach((_, idx) => {
 const concatInputs = imgs.map((_, i) => `[v${i}]`).join('');
 filters.push(`${concatInputs}concat=n=${imgs.length}:v=1:a=0[vconc]`);
 filters.push(
-  `[vconc]drawtext=fontfile=${FONT}:text='INEMA.CLUB':fontcolor=white:fontsize=140:borderw=4:bordercolor=black@0.5:x=(w-tw)/2:y=(h-th)/2:alpha='if(lt(t\\,27.5)\\,(t-27)*2\\,if(gt(t\\,29.5)\\,(30-t)*2\\,1))':enable='between(t,27,30)'[vout]`
+  `[vconc]drawtext=fontfile=${FONT}:text='ARCKHÉ AI':fontcolor=white:fontsize=140:borderw=4:bordercolor=black@0.5:x=(w-tw)/2:y=(h-th)/2:alpha='if(lt(t\\,27.5)\\,(t-27)*2\\,if(gt(t\\,29.5)\\,(30-t)*2\\,1))':enable='between(t,27,30)'[vout]`
 );
 
 const musicIdx = imgs.length;
