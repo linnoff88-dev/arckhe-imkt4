@@ -31,7 +31,7 @@ function validateScenePlan(plan, opts = {}) {
   const totalDur = scenes.reduce((sum, s) => sum + (s.duration || 0), 0);
   if (Math.abs(totalDur - videoDur) > 2) {
     violations.push(
-      `Duração total ${totalDur.toFixed(1)}s != video_length ${videoDur}s (tolerância ±2s). Redistribua as durações.`
+      `Duraçêo total ${totalDur.toFixed(1)}s != video_length ${videoDur}s (tolerância ±2s). Redistribua as durações.`
     );
   }
 
@@ -40,7 +40,7 @@ function validateScenePlan(plan, opts = {}) {
   if (first) {
     if (first.duration > 1.5) {
       violations.push(
-        `Cena 1 "${first.id}": duração ${first.duration}s > 1.5s. Hook deve ser rápido (≤1.5s).`
+        `Cena 1 "${first.id}": duraçêo ${first.duration}s > 1.5s. Hook deve ser rápido (≤1.5s).`
       );
     }
     if (!simplesMode) {
@@ -63,7 +63,7 @@ function validateScenePlan(plan, opts = {}) {
   const last = scenes[scenes.length - 1];
   if (last && last.duration < 3) {
     violations.push(
-      `Última cena "${last.id}": duração ${last.duration}s < 3s. CTA precisa de ≥3s para o espectador absorver.`
+      `Última cena "${last.id}": duraçêo ${last.duration}s < 3s. CTA precisa de ≥3s para o espectador absorver.`
     );
   }
 
@@ -85,14 +85,14 @@ function validateScenePlan(plan, opts = {}) {
       }
     }
 
-    // 4b. Posição de texto 3x consecutiva (skip in simples — system handles layout)
+    // 4b. Posiçêo de texto 3x consecutiva (skip in simples — system handles layout)
     if (i >= 2 && vt === 'photo' && !simplesMode) {
       const p1 = scenes[i - 2].text_layout?.position;
       const p2 = scenes[i - 1].text_layout?.position;
       const p3 = scene.text_layout?.position;
       if (p1 && p2 && p3 && p1 === p2 && p2 === p3) {
         violations.push(
-          `Cena ${i + 1} "${id}": posição "${p3}" repetida 3x seguidas. Alterne entre top/center.`
+          `Cena ${i + 1} "${id}": posiçêo "${p3}" repetida 3x seguidas. Alterne entre top/center.`
         );
       }
     }
@@ -105,7 +105,7 @@ function validateScenePlan(plan, opts = {}) {
 
       if (!text && !isSilentClosing && dur >= 0.8) {
         violations.push(
-          `Cena ${i + 1} "${id}": text_overlay vazio em cena photo de ${dur}s. Adicione texto (max 6 palavras) que reforce a narração.`
+          `Cena ${i + 1} "${id}": text_overlay vazio em cena photo de ${dur}s. Adicione texto (max 6 palavras) que reforce a narraçêo.`
         );
       }
 
@@ -120,7 +120,7 @@ function validateScenePlan(plan, opts = {}) {
       const isHook = i === 0 || (scene.type || '').includes('hook');
       if (text && dur < 2.0 && !isHook) {
         violations.push(
-          `Cena ${i + 1} "${id}": duração ${dur}s com texto "${text}" — mínimo 2.0s para leitura.`
+          `Cena ${i + 1} "${id}": duraçêo ${dur}s com texto "${text}" — mínimo 2.0s para leitura.`
         );
       }
     }
@@ -140,7 +140,7 @@ function validateScenePlan(plan, opts = {}) {
     // 4g. Narration field obrigatório
     if (scene.narration === undefined) {
       violations.push(
-        `Cena ${i + 1} "${id}": campo "narration" ausente. Adicione o trecho exato da narração (ou "" para silêncio).`
+        `Cena ${i + 1} "${id}": campo "narration" ausente. Adicione o trecho exato da narraçêo (ou "" para silêncio).`
       );
     }
 
@@ -179,7 +179,7 @@ function validateScenePlan(plan, opts = {}) {
         : path.resolve(projectRoot, scene.image);
       if (!fs.existsSync(imgPath)) {
         violations.push(
-          `Cena ${i + 1} "${id}": imagem não encontrada: ${scene.image}. Use um path existente.`
+          `Cena ${i + 1} "${id}": imagem nêo encontrada: ${scene.image}. Use um path existente.`
         );
       }
     }
@@ -189,7 +189,7 @@ function validateScenePlan(plan, opts = {}) {
       const format = plan.format || `${plan.width || 1080}x${plan.height || 1920}`;
       if (format.includes('1920') || (plan.height && plan.height > plan.width)) {
         violations.push(
-          `Cena ${i + 1} "${id}": posição "bottom" proibida em formato 9:16 (UI cobre). Use "top" ou "center".`
+          `Cena ${i + 1} "${id}": posiçêo "bottom" proibida em formato 9:16 (UI cobre). Use "top" ou "center".`
         );
       }
     }

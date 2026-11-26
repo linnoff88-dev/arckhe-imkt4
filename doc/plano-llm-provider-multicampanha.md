@@ -1,15 +1,15 @@
 # Plano: LLM Provider Switching + Multi-Campaign Queue
 
 **Data:** 2026-04-06  
-**Versão alvo:** timesmkt3 v4.4.x
+**Versêo alvo:** timesmkt3 v4.4.x
 
 ---
 
 ## Feature 1 — LLM Provider Abstraction
 
-### Situação atual
+### Situaçêo atual
 
-Em `pipeline/worker-runtime.js:84-93`, o runner hardcoda `claude` como comando e passa `--model sonnet|opus` via flag CLI. Não existe abstração — o sistema só fala Claude.
+Em `pipeline/worker-runtime.js:84-93`, o runner hardcoda `claude` como comando e passa `--model sonnet|opus` via flag CLI. Nêo existe abstraçêo — o sistema só fala Claude.
 
 ### Arquitetura proposta
 
@@ -65,7 +65,7 @@ export function getLLMRunner(provider = process.env.LLM_PROVIDER || 'claude') {
 }
 ```
 
-### Configuração via `.env`
+### Configuraçêo via `.env`
 
 ```env
 LLM_PROVIDER=claude          # claude | openai | gemini
@@ -89,15 +89,15 @@ Isso vira `tier: 'fast'|'premium'`. O runner resolve o modelo real baseado no pr
 
 **Nenhuma mudança nos agent handlers** — eles só chamam `runClaude(prompt, agentName, ...)`, que passa a ser `runLLM(prompt, agentName, ...)`.
 
-> **Nota importante:** Providers não-Claude não usam CLI subprocess — usam API diretamente via SDK. O `providers/openai.js` chama `openai.chat.completions.create()` e formata o prompt como mensagem de sistema. Isso significa que as skills (arquivos `.md`) continuam sendo o "system prompt" mas são injetadas diferentemente por cada provider.
+> **Nota importante:** Providers nêo-Claude nêo usam CLI subprocess — usam API diretamente via SDK. O `providers/openai.js` chama `openai.chat.completions.create()` e formata o prompt como mensagem de sistema. Isso significa que as skills (arquivos `.md`) continuam sendo o "system prompt" mas sêo injetadas diferentemente por cada provider.
 
 ---
 
 ## Feature 2 — Multi-Campaign Queue (Fila de Campanhas)
 
-### Situação atual
+### Situaçêo atual
 
-Hoje cada campanha é startada individualmente pelo bot. Não existe conceito de "lote de campanhas". O `orchestrator.js` gerencia a fila de **agents dentro de uma campanha**, mas não de campanhas entre si.
+Hoje cada campanha é startada individualmente pelo bot. Nêo existe conceito de "lote de campanhas". O `orchestrator.js` gerencia a fila de **agents dentro de uma campanha**, mas nêo de campanhas entre si.
 
 ### Arquitetura proposta
 
@@ -138,7 +138,7 @@ class CampaignQueue {
 ### Formato do comando no bot
 
 ```
-# Fila em série (padrão)
+# Fila em série (padrêo)
 /batch coldbrew-coffee-co pascoa_2026 verao_2026 lancamento_produto
 
 # Fila paralela (até 2 simultâneas)
@@ -197,7 +197,7 @@ Modo: Série | 1/3 concluídas
 
 ---
 
-## Sequência de implementação
+## Sequência de implementaçêo
 
 ### Sprint 1 — LLM Abstraction (menor risco, maior valor)
 
@@ -221,9 +221,9 @@ Modo: Série | 1/3 concluídas
 
 ## Riscos e decisões abertas
 
-| Item | Risco | Decisão sugerida |
+| Item | Risco | Decisêo sugerida |
 |---|---|---|
-| Providers não-Claude não têm CLI — usam API | Skills (`.md`) precisam virar system prompts | Cada `providers/X.js` injeta o skill como `role: system` |
+| Providers nêo-Claude nêo têm CLI — usam API | Skills (`.md`) precisam virar system prompts | Cada `providers/X.js` injeta o skill como `role: system` |
 | Paralelo pode saturar Redis/CPU | Muitas campanhas simultâneas | Limitar `concurrency` default a 2, máximo 3 |
 | Aprovações manuais bloqueiam série | Campanha q2 aguarda q1 aprovar stage por stage | Bot notifica por campanha individualmente; usuário aprova cada uma |
-| LLM não-Claude pode não entender o formato de output esperado | Agentes esperam JSON estruturado | Adicionar instruções de formato explícitas no system prompt de cada provider |
+| LLM nêo-Claude pode nêo entender o formato de output esperado | Agentes esperam JSON estruturado | Adicionar instruções de formato explícitas no system prompt de cada provider |

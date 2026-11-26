@@ -41,7 +41,7 @@ function createPendingTextHandlers(deps) {
   }
 
   function describePendingRerun(payload, rerunStages) {
-    const stageLabels = { 1: 'Brief', 2: 'Imagens', 3: 'Vídeo', 4: 'Plataformas', 5: 'Distribuição' };
+    const stageLabels = { 1: 'Brief', 2: 'Imagens', 3: 'Vídeo', 4: 'Plataformas', 5: 'Distribuiçêo' };
     const stageText = rerunStages.map((n) => stageLabels[n] || `Etapa ${n}`).join(', ');
     const source = normalizeImageSource(payload.image_source);
     const provLabel = (payload.image_provider || '').toUpperCase() || 'default';
@@ -68,7 +68,7 @@ function createPendingTextHandlers(deps) {
     }
     lines.push('');
     lines.push('Ajustes: <code>imagens N</code>, <code>provider X</code>, <code>modelo X</code>, <code>fonte X</code>');
-    lines.push('Responda <b>sim</b> para confirmar ou <b>não</b> para cancelar.');
+    lines.push('Responda <b>sim</b> para confirmar ou <b>nêo</b> para cancelar.');
     return lines.join('\n');
   }
 
@@ -83,7 +83,7 @@ function createPendingTextHandlers(deps) {
     let newSource = null;
     if (/^(avan[çc]|avanc|continuar|sem imagem)/.test(lower)) action = 'advance';
     else if (/^(tentar|retry|repetir|novamente)/.test(lower)) action = 'retry';
-    else if (/^(cancel|cancelar|nao|não|para)/.test(lower)) action = 'cancel';
+    else if (/^(cancel|cancelar|nao|nêo|para)/.test(lower)) action = 'cancel';
     else if (/^(outra|trocar|mudar|fonte|source)/.test(lower) || /^(api|free|gratis|brand|marca|folder|pasta|solido|solid)/.test(lower)) {
       if (/api/.test(lower)) newSource = 'api';
       else if (/free|gratis|stock/.test(lower)) newSource = 'free';
@@ -131,7 +131,7 @@ function createPendingTextHandlers(deps) {
     }
 
     await ctx.reply(
-      'Responda:\n• <b>avançar</b> — continuar sem imagens (CSS)\n• <b>tentar novamente</b> — repetir a geração\n• <b>outra fonte</b> — trocar: api, free, brand, pasta xxx, solido #111111\n• <b>cancelar</b>',
+      'Responda:\n• <b>avançar</b> — continuar sem imagens (CSS)\n• <b>tentar novamente</b> — repetir a geraçêo\n• <b>outra fonte</b> — trocar: api, free, brand, pasta xxx, solido #111111\n• <b>cancelar</b>',
       { parse_mode: 'HTML' },
     );
     return true;
@@ -146,13 +146,13 @@ function createPendingTextHandlers(deps) {
     const timedOutPath = path.join(videoDir, 'timed_out.json');
     if (fs.existsSync(timedOutPath) || !fs.existsSync(approvalSignal)) {
       session.clearPendingVideoApproval(chatId);
-      await ctx.reply('Essa aprovação expirou. O fluxo já seguiu adiante.');
+      await ctx.reply('Essa aprovaçêo expirou. O fluxo já seguiu adiante.');
       return true;
     }
 
     const lower = text.toLowerCase().trim();
     const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda|rodar|renderiza|renderizar)/.test(lower);
-    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+    const isCancel = /^(nao|nêo|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
 
     if (isConfirm) {
       const { outputDir } = s.pendingVideoApproval;
@@ -204,7 +204,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
 
     const lower = text.toLowerCase().trim();
     const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda)/.test(lower);
-    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+    const isCancel = /^(nao|nêo|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
 
     if (isCancel) {
       session.clearPendingRerun(chatId);
@@ -501,7 +501,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
 
     const lower = text.toLowerCase().trim();
     const isConfirm = /^(sim|s|yes|ok|confirma|confirmar)$/.test(lower);
-    const isCancel = /^(n[aã]o|nao|n|cancel|cancelar|não)$/.test(lower);
+    const isCancel = /^(n[aê]o|nao|n|cancel|cancelar|nêo)$/.test(lower);
 
     if (!isConfirm && !isCancel) return false;
 
@@ -561,7 +561,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
 
     const lower = text.toLowerCase().trim();
     const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda|rodar)/.test(lower);
-    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+    const isCancel = /^(nao|nêo|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
 
     if (isConfirm) {
       const payload = s.pendingCampaign;
@@ -614,7 +614,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
       await replyAndRefresh('✅ Todas as aprovações definidas como <b>humano</b>.');
       return true;
     }
-    if (/^(notif|notifica).*(off|desativ|nao|não)/.test(lower)) {
+    if (/^(notif|notifica).*(off|desativ|nao|nêo)/.test(lower)) {
       s.pendingCampaign.notifications = false;
       await replyAndRefresh('🔇 Notificações desativadas.');
       return true;
@@ -644,7 +644,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
     }
     if (/^pular\s+(imagens?|image)$/i.test(lower)) {
       s.pendingCampaign.skip_image = true;
-      await replyAndRefresh('✅ Imagens serão puladas.');
+      await replyAndRefresh('✅ Imagens serêo puladas.');
       return true;
     }
     if (/^fundo\s+(blur|desfoque|desfocado)/i.test(lower)) {
@@ -667,8 +667,8 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
       await replyAndRefresh(`✅ Narrador: <b>${s.pendingCampaign.narrator}</b>`);
       return true;
     }
-    if (/^(tts|voz|narrac(?:ao|ão))\s+(auto|elevenlabs|minimax|openai)$/i.test(lower)) {
-      const provider = lower.match(/^(?:tts|voz|narrac(?:ao|ão))\s+(auto|elevenlabs|minimax|openai)$/i)[1].trim();
+    if (/^(tts|voz|narrac(?:ao|êo))\s+(auto|elevenlabs|minimax|openai)$/i.test(lower)) {
+      const provider = lower.match(/^(?:tts|voz|narrac(?:ao|êo))\s+(auto|elevenlabs|minimax|openai)$/i)[1].trim();
       s.pendingCampaign.tts_provider = provider === 'openai' ? 'openai' : provider;
       await replyAndRefresh(`✅ Provider de TTS: <b>${s.pendingCampaign.tts_provider}</b>`);
       return true;
@@ -678,9 +678,9 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
       await replyAndRefresh(`✅ Estilo visual: <b>${s.pendingCampaign.style_preset}</b>`);
       return true;
     }
-    if (/^dura[çc][aã]o\s+(\d+)/i.test(lower)) {
-      s.pendingCampaign.video_duration = parseInt(lower.match(/^dura[çc][aã]o\s+(\d+)/i)[1], 10);
-      await replyAndRefresh(`✅ Duração do vídeo Pro: <b>${s.pendingCampaign.video_duration}s</b>`);
+    if (/^dura[çc][aê]o\s+(\d+)/i.test(lower)) {
+      s.pendingCampaign.video_duration = parseInt(lower.match(/^dura[çc][aê]o\s+(\d+)/i)[1], 10);
+      await replyAndRefresh(`✅ Duraçêo do vídeo Pro: <b>${s.pendingCampaign.video_duration}s</b>`);
       return true;
     }
     if (/^(provider|provedor)\s+(.+)$/i.test(lower)) {
@@ -723,7 +723,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
         s.pendingCampaign.video_template = tpl;
         await replyAndRefresh(`✅ Template: <b>${tpl}</b>`);
       } else {
-        await ctx.reply(`Template "${tpl}" não reconhecido. Opções: ${validTemplates.join(', ')}`);
+        await ctx.reply(`Template "${tpl}" nêo reconhecido. Opções: ${validTemplates.join(', ')}`);
       }
       return true;
     }
@@ -734,18 +734,18 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
         s.pendingCampaign.typography = typo;
         await replyAndRefresh(`✅ Tipografia: <b>${typo}</b>`);
       } else {
-        await ctx.reply(`Tipografia "${typo}" não reconhecida. Opções: ${validTypo.join(', ')}`);
+        await ctx.reply(`Tipografia "${typo}" nêo reconhecida. Opções: ${validTypo.join(', ')}`);
       }
       return true;
     }
-    if (/^m[uú]sica\s+(sim|nao|não|auto)$/i.test(lower)) {
-      const val = lower.match(/^m[uú]sica\s+(.+)$/i)[1].trim().replace('não', 'nao');
+    if (/^m[uú]sica\s+(sim|nao|nêo|auto)$/i.test(lower)) {
+      const val = lower.match(/^m[uú]sica\s+(.+)$/i)[1].trim().replace('nêo', 'nao');
       s.pendingCampaign.video_music = val;
       await replyAndRefresh(`✅ Música: <b>${val}</b>`);
       return true;
     }
-    if (/^sfx\s+(sim|nao|não|auto)$/i.test(lower)) {
-      const val = lower.match(/^sfx\s+(.+)$/i)[1].trim().replace('não', 'nao');
+    if (/^sfx\s+(sim|nao|nêo|auto)$/i.test(lower)) {
+      const val = lower.match(/^sfx\s+(.+)$/i)[1].trim().replace('nêo', 'nao');
       s.pendingCampaign.video_sfx = val;
       await replyAndRefresh(`✅ SFX: <b>${val}</b>`);
       return true;
@@ -783,7 +783,7 @@ Keep the same JSON structure. Only modify what the feedback requests.`;
 
     const lower = text.toLowerCase().trim();
     const isConfirm = /^(sim|s|yes|ok|confirma|confirmar)$/.test(lower);
-    const isCancel = /^(n[aã]o|nao|n|cancel|cancelar|não)$/.test(lower);
+    const isCancel = /^(n[aê]o|nao|n|cancel|cancelar|nêo)$/.test(lower);
 
     if (!isConfirm && !isCancel) return false;
 

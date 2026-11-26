@@ -66,7 +66,7 @@ function slide01() {
 <div class="vignette"></div>
 <div class="overlay"></div>
 <div class="content">
-  <div class="eyebrow">NUTRIÇÃO &amp; FITNESS + IA</div>
+  <div class="eyebrow">NUTRIÇêO &amp; FITNESS + IA</div>
   <div class="headline">ÀS 22H,<br>UM LEAD<br><em>CHEGOU.</em></div>
   <div class="sub">Quem respondeu<br>no seu consultório? 🧠</div>
 </div>
@@ -123,7 +123,7 @@ function slide03() {
 <div class="overlay"></div>
 <div class="content">
   <div class="icon">🔥</div>
-  <div class="headline-lg">IA NÃO SUBSTITUI<br>O NUTRICIONISTA.</div>
+  <div class="headline-lg">IA NêO SUBSTITUI<br>O NUTRICIONISTA.</div>
   <div class="divider"></div>
   <div class="sub">Ela substitui o que o nutricionista<br>odeia fazer.</div>
 </div>
@@ -191,7 +191,7 @@ function slide05() {
     <div class="step-arrow">↓</div>
     <div class="step"><div class="step-num">3</div><div class="step-text">Escrever um prompt para cada etapa</div></div>
     <div class="step-arrow">↓</div>
-    <div class="step"><div class="step-num">4</div><div class="step-text">Testar uma automação de cada vez</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-text">Testar uma automaçêo de cada vez</div></div>
   </div>
 </div>
 <div class="brand-bar">
@@ -223,7 +223,7 @@ function slide06() {
     <div class="check-item"><span class="check">✅</span><span class="check-text">Responder leads 24/7</span></div>
     <div class="check-item"><span class="check">✅</span><span class="check-text">Triagem de pacientes</span></div>
     <div class="check-item"><span class="check">✅</span><span class="check-text">Follow-up automático</span></div>
-    <div class="check-item"><span class="check">✅</span><span class="check-text">Criação de planos personalizados</span></div>
+    <div class="check-item"><span class="check">✅</span><span class="check-text">Criaçêo de planos personalizados</span></div>
     <div class="check-item"><span class="check">✅</span><span class="check-text">Conteúdo de marketing</span></div>
   </div>
 </div>
@@ -276,7 +276,7 @@ function slide08() {
 <div class="overlay"></div>
 <div class="content">
   <div class="eyebrow">DESMISTIFICANDO A IA</div>
-  <div class="headline">VOCÊ NÃO<br>PRECISA <em>PROGRAMAR.</em></div>
+  <div class="headline">VOCÊ NêO<br>PRECISA <em>PROGRAMAR.</em></div>
   <div class="sub-box">
     <div class="sub-text">Você precisa aprender o método.<br>Sem código. Sem mistério.</div>
   </div>
@@ -389,12 +389,12 @@ function slide12() {
 <div class="vignette"></div>
 <div class="overlay"></div>
 <div class="content">
-  <div class="eyebrow">TRANSFORMAÇÃO</div>
+  <div class="eyebrow">TRANSFORMAÇêO</div>
   <div class="headline">SEU<br><span class="cyan">CONHECIMENTO</span><br>VIRA SISTEMA.</div>
   <div class="arrow-line">
     <div class="arrow-from">Expertise clínica</div>
     <div class="arrow-icon">→</div>
-    <div class="arrow-to">Automação funcional</div>
+    <div class="arrow-to">Automaçêo funcional</div>
   </div>
 </div>
 <div class="brand-bar">
@@ -420,7 +420,7 @@ function slide13() {
 <div class="overlay"></div>
 <div class="content">
   <div class="icon-row">🧠</div>
-  <div class="headline">IA NÃO É<br><span class="strike-line">COISA DE TI.</span></div>
+  <div class="headline">IA NêO É<br><span class="strike-line">COISA DE TI.</span></div>
   <div class="divider"></div>
   <div class="sub">É coisa de quem quer<br>crescer sem se esgotar.</div>
 </div>
@@ -450,7 +450,7 @@ function slide14() {
 <div class="vignette"></div>
 <div class="overlay"></div>
 <div class="content">
-  <div class="eyebrow">A DIVISÃO PERFEITA</div>
+  <div class="eyebrow">A DIVISêO PERFEITA</div>
   <div class="headline">O TOQUE <span class="cyan">HUMANO</span><br>FICA COM VOCÊ.</div>
   <div class="two-col">
     <div class="col-box">
@@ -487,7 +487,7 @@ function slide15() {
 <div class="overlay"></div>
 <div class="content">
   <div class="brand-name">INEMA.CLUB</div>
-  <div class="brand-sub">Educação em IA para saúde &amp; fitness</div>
+  <div class="brand-sub">Educaçêo em IA para saúde &amp; fitness</div>
   <div class="divider"></div>
   <div class="tagline">Trilha completa. 100% gratuita.<br>Sem truques.</div>
   <div class="cta-btn">COMECE GRÁTIS AGORA</div>

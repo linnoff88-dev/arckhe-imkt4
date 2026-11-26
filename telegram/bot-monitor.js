@@ -50,10 +50,10 @@ function startContinuousMonitor(deps) {
             session.setPendingImageError(chatId, { outputDir: relDir });
             bot.api.sendMessage(
               chatId,
-              `⚠️ <b>Erro na geração de imagens</b>\n\n<code>${errorMsg}</code>\n\n`
+              `⚠️ <b>Erro na geraçêo de imagens</b>\n\n<code>${errorMsg}</code>\n\n`
                 + `O que deseja fazer?\n`
                 + `• <b>avançar</b> — continuar sem imagens (CSS)\n`
-                + `• <b>tentar novamente</b> — repetir a geração\n`
+                + `• <b>tentar novamente</b> — repetir a geraçêo\n`
                 + `• <b>outra fonte</b> — trocar: api, free, brand, pasta xxx\n`
                 + `• <b>cancelar</b> — cancelar a campanha`,
               { parse_mode: 'HTML' },
@@ -113,7 +113,7 @@ function startContinuousMonitor(deps) {
           const audioKey = `stage3_audio_missing:${relDir}`;
           if (!monitoredSignals.has(audioKey)) {
             monitoredSignals.add(audioKey);
-            let reason = 'Narração indisponível';
+            let reason = 'Narraçêo indisponível';
             try {
               const report = JSON.parse(fs.readFileSync(audioMissingFile, 'utf-8'));
               if (report.reason) reason = report.reason;
@@ -158,7 +158,7 @@ function startContinuousMonitor(deps) {
           const logsDir = path.join(campDir, 'logs');
           const phaseNotifs = [
             { file: 'video_pro.log', phases: [
-              { key: 'Generating narration', msg: '🎙️ <b>Pro:</b> Gerando narração...', order: 1 },
+              { key: 'Generating narration', msg: '🎙️ <b>Pro:</b> Gerando narraçêo...', order: 1 },
               { key: 'Analyzing narration', msg: '⏱️ <b>Pro:</b> Analisando timing do áudio...', order: 2 },
               { key: 'Photography Director', msg: '📷 <b>Pro:</b> Diretor de Fotografia...', order: 3 },
               { key: 'using fallback plan', msg: '⚠️ <b>Pro:</b> Dir. Foto timeout — usando plano fallback', order: 3.5 },
@@ -166,7 +166,7 @@ function startContinuousMonitor(deps) {
               { key: 'Validation loop', msg: '🔍 <b>Pro:</b> Validando plano...', order: 4.5 },
               { key: 'violations to agent', msg: '🔄 <b>Pro:</b> Ajustando plano (violações encontradas)...', order: 4.6 },
               { key: 'Plan validated', msg: '✅ <b>Pro:</b> Plano validado!', order: 4.7 },
-              { key: 'max attempts reached', msg: '⚠️ <b>Pro:</b> Validação: max tentativas — prosseguindo', order: 4.8 },
+              { key: 'max attempts reached', msg: '⚠️ <b>Pro:</b> Validaçêo: max tentativas — prosseguindo', order: 4.8 },
               { key: 'falling back to ffmpeg', msg: '⚠️ <b>Pro:</b> Remotion falhou — usando FFmpeg', order: 5.5 },
               { key: 'Starting video render', msg: '🎥 <b>Pro:</b> Renderizando...', order: 6 },
               { key: 'Completed successfully', msg: '✅ <b>Pro:</b> Concluído!', order: 7 },
@@ -301,7 +301,7 @@ function startContinuousMonitor(deps) {
           console.log(`[monitor] Stage ${num} completed for ${relDir}`);
 
           if (cv.notifications !== false) {
-            const stageNames = { 1: 'Brief & Narrativa', 2: 'Imagens', 3: 'Video', 4: 'Plataformas', 5: 'Distribuição' };
+            const stageNames = { 1: 'Brief & Narrativa', 2: 'Imagens', 3: 'Video', 4: 'Plataformas', 5: 'Distribuiçêo' };
             await bot.api.sendMessage(chatId, `✅ Etapa ${num} concluída — ${stageNames[num]}`, { parse_mode: 'HTML' }).catch(() => {});
           }
 
@@ -374,7 +374,7 @@ function startContinuousMonitor(deps) {
                 session.setCampaignV3Stage(chatId, nextStage);
                 enqueueStage(cv.payload, nextAgents)
                   .then(() => {
-                    const stageNames = { 2: 'Imagens', 3: 'Video', 4: 'Plataformas', 5: 'Distribuição' };
+                    const stageNames = { 2: 'Imagens', 3: 'Video', 4: 'Plataformas', 5: 'Distribuiçêo' };
                     if (cv.notifications !== false) {
                       bot.api.sendMessage(chatId, `▶️ Etapa ${nextStage} iniciando — ${stageNames[nextStage]}`, { parse_mode: 'HTML' }).catch(() => {});
                     }

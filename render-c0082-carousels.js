@@ -198,7 +198,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.mid};font-family:
       <div class="arch-num">02</div>
       <div class="arch-info">
         <div class="arch-name">Deliberativo</div>
-        <div class="arch-desc">planejamento simbólico + tomada de decisão</div>
+        <div class="arch-desc">planejamento simbólico + tomada de decisêo</div>
       </div>
     </div>
     <div class="arch-item">
@@ -416,7 +416,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="glow-center"></div>
 <div class="content">
-  <div class="badge">✅ Ação</div>
+  <div class="badge">✅ Açêo</div>
   <div class="strike-text">Pare de usar.</div>
   <div class="and-text">e</div>
   <div class="cta-text">Comece a<br>construir.</div>
@@ -427,12 +427,12 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 </body></html>`,
   },
 
-  // ── SLIDE 08 — LOOP CIRCLES (PERCEPÇÃO-DECISÃO-AÇÃO) ─────────────────────────
+  // ── SLIDE 08 — LOOP CIRCLES (PERCEPÇêO-DECISêO-AÇêO) ─────────────────────────
   {
     id: 8,
     filename: `${CAMPAIGN}_carousel_08`,
     image: img(8),
-    concept: 'percepção-decisão-ação loop visual',
+    concept: 'percepçêo-decisêo-açêo loop visual',
     copy_source: 'key_phrases[0]',
     html: (imgPath) => `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
 <style>
@@ -466,7 +466,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="content">
   <div class="headline-block">
     <div class="eyebrow">Arquitetura Fundamental</div>
-    <div class="headline">Percepção, decisão, ação —<br><span>o loop que move tudo</span></div>
+    <div class="headline">Percepçêo, decisêo, açêo —<br><span>o loop que move tudo</span></div>
   </div>
   <div class="circles-row">
     <div class="circle c1">
@@ -526,12 +526,12 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="quote-bg">"</div>
 <div class="content">
-  <div class="eyebrow">Redefinição Técnica</div>
+  <div class="eyebrow">Redefiniçêo Técnica</div>
   <div class="main">
-    <div class="before-text">LLMs não são</div>
+    <div class="before-text">LLMs nêo sêo</div>
     <div class="striked">ferramentas.</div>
-    <div class="after-text">São motores<br>de raciocínio.</div>
-    <p class="sub">GPT. Claude. Gemini.<br>Entenda como eles <em>decidem</em>, não só como respondem.</p>
+    <div class="after-text">Sêo motores<br>de raciocínio.</div>
+    <p class="sub">GPT. Claude. Gemini.<br>Entenda como eles <em>decidem</em>, nêo só como respondem.</p>
   </div>
   <div class="footer">
     <span class="brand">INEMA</span>
@@ -593,7 +593,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     id: 11,
     filename: `${CAMPAIGN}_carousel_11`,
     image: img(11),
-    concept: 'evolução — russell & norvig ao langgraph',
+    concept: 'evoluçêo — russell & norvig ao langgraph',
     copy_source: 'key_phrases[4]',
     html: (imgPath) => `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
 <style>
@@ -627,7 +627,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="content">
   <div>
-    <div class="eyebrow">Evolução dos Agentes</div>
+    <div class="eyebrow">Evoluçêo dos Agentes</div>
     <div class="headline">Russell & Norvig<br>escreveu o mapa.<br><em>LangGraph é o veículo.</em></div>
   </div>
   <div class="timeline">
@@ -771,7 +771,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
       <div class="feat-icon">🆓</div>
       <div class="feat-content">
         <div class="feat-title">Trilha totalmente gratuita</div>
-        <div class="feat-sub">sem cartão de crédito, sem paywall</div>
+        <div class="feat-sub">sem cartêo de crédito, sem paywall</div>
       </div>
     </div>
     <div class="feat">
@@ -844,7 +844,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
       <div class="chip-desc">agentes conversacionais autônomos</div>
     </div>
   </div>
-  <div class="sub">Não basta usar — você precisa<br>entender a arquitetura por baixo.</div>
+  <div class="sub">Nêo basta usar — você precisa<br>entender a arquitetura por baixo.</div>
   <div class="footer">
     <span class="brand">INEMA</span>
     <span class="slide-num">14 / 15</span>

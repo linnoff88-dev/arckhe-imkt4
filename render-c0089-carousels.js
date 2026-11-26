@@ -78,9 +78,9 @@ function slide01() {
 <img class="bg" src="file://${imgSrc(1)}">
 <div class="overlay" style="background: linear-gradient(to top, rgba(13,13,13,0.96) 0%, rgba(13,13,13,0.65) 55%, rgba(13,13,13,0.35) 100%);"></div>
 <div class="content" style="justify-content: flex-end; gap: 20px; padding-bottom: 100px;">
-  <div class="badge fu" style="background: rgba(0,153,255,0.15); border: 1.5px solid rgba(0,153,255,0.6); color: #0099FF; align-self: flex-start; animation-delay: 0s;">⚡ NOVA ERA DA PROGRAMAÇÃO</div>
+  <div class="badge fu" style="background: rgba(0,153,255,0.15); border: 1.5px solid rgba(0,153,255,0.6); color: #0099FF; align-self: flex-start; animation-delay: 0s;">⚡ NOVA ERA DA PROGRAMAÇêO</div>
   <div class="word-vibe fu" style="animation-delay: 0.1s;">VIBE<br>CODE</div>
-  <div class="sub fu" style="animation-delay: 0.2s;">A nova era da programação com IA</div>
+  <div class="sub fu" style="animation-delay: 0.2s;">A nova era da programaçêo com IA</div>
 </div>
 <div class="slide-num">01 / 10</div>
 <div class="handle">@inema.tds</div>
@@ -201,7 +201,7 @@ function slide04() {
       <div class="badge fu" style="background: rgba(0,255,136,0.12); border: 1.5px solid rgba(0,255,136,0.6); color: #00FF88; align-self: flex-start; animation-delay: 0s;">✅ O LADO POSITIVO</div>
       <div class="headline-line fu" style="color: #FFFFFF; animation-delay: 0.1s;">Velocidade total.</div>
       <div class="headline-line fu" style="color: #00FF88; animation-delay: 0.15s;">Ideia hoje.</div>
-      <div class="headline-line fu" style="color: #0099FF; font-size: 80px; animation-delay: 0.2s;">Produto amanhã.</div>
+      <div class="headline-line fu" style="color: #0099FF; font-size: 80px; animation-delay: 0.2s;">Produto amanhê.</div>
       <div class="sub-text fu" style="animation-delay: 0.25s;">Prototipagem sem burocracia, sem espera.</div>
     </div>
   </div>
@@ -242,7 +242,7 @@ function slide05() {
 <img class="bg" src="file://${imgSrc(5)}">
 <div class="overlay" style="background: linear-gradient(160deg, rgba(30,10,5,0.85) 0%, rgba(13,13,13,0.5) 50%, rgba(13,13,13,0.92) 100%);"></div>
 <div class="content" style="justify-content: flex-end; gap: 16px; padding-bottom: 90px;">
-  <div class="badge fu" style="background: rgba(255,107,43,0.15); border: 1.5px solid rgba(255,107,43,0.7); color: #FF6B2B; align-self: flex-start; animation-delay: 0s;">⚠️ PONTO DE ATENÇÃO</div>
+  <div class="badge fu" style="background: rgba(255,107,43,0.15); border: 1.5px solid rgba(255,107,43,0.7); color: #FF6B2B; align-self: flex-start; animation-delay: 0s;">⚠️ PONTO DE ATENÇêO</div>
   <div class="warn-headline fu" style="animation-delay: 0.1s;">Sem estrutura,</div>
   <div class="warn-impact fu" style="animation-delay: 0.15s;">vira caos.</div>
   <div class="warn-sub fu" style="animation-delay: 0.2s;">O vibe code tem dois lados —<br>e você precisa conhecer os dois.</div>
@@ -591,16 +591,16 @@ const slides = [
       typography: 'Space Grotesk (headlines 800-900) + Inter (body 400-500)',
     },
     narrative_arc: [
-      'Slide 01 — Hook: VIBE CODE, a nova era da programação com IA',
+      'Slide 01 — Hook: VIBE CODE, a nova era da programaçêo com IA',
       'Slide 02 — Conceito: o que é programar no feeling, e isso tem nome',
       'Slide 03 — Dados: Karpathy fev/2025, 25% YC = código por IA',
-      'Slide 04 — Positivo: velocidade total, ideia hoje, produto amanhã',
-      'Slide 05 — Tensão: sem estrutura vira caos — dois lados',
+      'Slide 04 — Positivo: velocidade total, ideia hoje, produto amanhê',
+      'Slide 05 — Tensêo: sem estrutura vira caos — dois lados',
       'Slide 06 — Comunidade: quem usa — devs, designers, PMs, empreendedores',
       'Slide 07 — INEMA 1 ano: antes do hype, em português, de graça',
       'Slide 08 — Catálogo: trilhas disponíveis no inema.club, tudo gratuito',
       'Slide 09 — Manifesto: quem programa no vibe code, aprende no vibe code',
-      'Slide 10 — CTA: INEMA.CLUB enorme + botão Acesse grátis',
+      'Slide 10 — CTA: INEMA.CLUB enorme + botêo Acesse grátis',
     ],
     copy_source: 'narrative.json — carousel_texts + headlines + approved_ctas',
     slides: layoutSlides,

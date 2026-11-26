@@ -1,5 +1,5 @@
 /**
- * Renderiza "Mulheres e Tecnologia — 30s" com narração e texto INEMA.CLUB no final.
+ * Renderiza "Mulheres e Tecnologia — 30s" com narraçêo e texto INEMA.CLUB no final.
  * 30 imagens x 1s cada = 30s total.
  */
 
@@ -65,11 +65,11 @@ filters.push(
   `[vconc]drawtext=fontfile=${FONT}:text='INEMA.CLUB':fontcolor=white:fontsize=140:borderw=4:bordercolor=black@0.5:x=(w-tw)/2:y=(h-th)/2:alpha='if(lt(t\\,27.5)\\,(t-27)*2\\,if(gt(t\\,29.5)\\,(30-t)*2\\,1))':enable='between(t,27,30)'[vout]`
 );
 
-// Áudio: música baixa (narração alta). Narração começa em 2s.
+// Áudio: música baixa (narraçêo alta). Narraçêo começa em 2s.
 const musicIdx = imgs.length;
 const narrIdx = imgs.length + 1;
-// Música: 0.35 fora da narração, 0.06 durante. Fade out 2s no final.
-// Narração: +1.9x (bem alta), começa em 2s (delay 2000ms)
+// Música: 0.35 fora da narraçêo, 0.06 durante. Fade out 2s no final.
+// Narraçêo: +1.9x (bem alta), começa em 2s (delay 2000ms)
 filters.push(
   `[${musicIdx}:a]atrim=0:${TOTAL_DUR},asetpts=PTS-STARTPTS,volume='if(between(t\\,1.7\\,27)\\,0.06\\,0.35)':eval=frame,afade=t=out:st=${TOTAL_DUR - 2}:d=2[music]`
 );

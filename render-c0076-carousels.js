@@ -83,7 +83,7 @@ function slide02() {
     .s2-body{animation:fadeUp 0.5s ease 0.3s both}
   `;
   const inner = `<div class="s2-inner">
-    <div class="s2-label">🧠 A SOLUÇÃO EXISTE</div>
+    <div class="s2-label">🧠 A SOLUÇêO EXISTE</div>
     <div class="s2-headline"><span>5</span> AGENTES<br>DE IA</div>
     <div class="s2-divider"></div>
     <div class="s2-sub">Um pipeline que transforma<br>seu escritório</div>
@@ -154,7 +154,7 @@ function slide08() {
     <div class="s8-headline">DO CAOS AO<br>CASO <span>ESTRUTURADO</span></div>
     <div class="s8-items">
       <div class="s8-item"><div class="s8-check">✓</div>Caso estruturado e organizado</div>
-      <div class="s8-item"><div class="s8-check">✓</div>Peças jurídicas prontas para revisão</div>
+      <div class="s8-item"><div class="s8-check">✓</div>Peças jurídicas prontas para revisêo</div>
       <div class="s8-item"><div class="s8-check">✓</div>Insights estratégicos do caso</div>
     </div>
     <div class="s8-footer"><strong>Você foca na estratégia.</strong><br>A IA cuida do resto.</div>
@@ -185,7 +185,7 @@ function slide09() {
     <div class="s9-headline">LEGITIMIDADE<br>OFICIAL</div>
     <div class="s9-date">Novembro de 2024</div>
     <div class="s9-sub">A OAB regulamentou o uso de<br>IA na advocacia.</div>
-    <div class="s9-body">Sem precisar saber programar.<br>Aprende em horas, não em meses.</div>
+    <div class="s9-body">Sem precisar saber programar.<br>Aprende em horas, nêo em meses.</div>
   </div>`;
   return shell(9, img(9), 'background:linear-gradient(135deg,rgba(0,0,0,0.9) 45%,rgba(0,255,136,0.06) 100%)', inner, extra);
 }
@@ -210,7 +210,7 @@ function slide10() {
   `;
   const inner = `<div class="s10-inner">
     <div class="s10-pre">A VERDADE SOBRE IA</div>
-    <div class="s10-headline">IA NÃO</div>
+    <div class="s10-headline">IA NêO</div>
     <div class="s10-dash">SUBSTITUI</div>
     <div class="s10-release">— ela libera</div>
     <div class="s10-divider"></div>
@@ -328,7 +328,7 @@ function slide13() {
     <div class="stat-row">
       <div class="stat-card off">
         <div class="stat-num">69%</div>
-        <div class="stat-label">dos advogados<br>ainda não usa IA</div>
+        <div class="stat-label">dos advogados<br>ainda nêo usa IA</div>
       </div>
       <div class="stat-card on">
         <div class="stat-num">31%</div>
@@ -363,8 +363,8 @@ function slide14() {
     <div class="s14-sub">Sem custo. Sem código.<br>Sem precisar ser técnico.</div>
     <div class="s14-bullets">
       <div class="s14-bullet">5 agentes. Um pipeline. Liberdade estratégica.</div>
-      <div class="s14-bullet">Aprende em horas, não em meses.</div>
-      <div class="s14-bullet">Formação 100% gratuita no INEMA.CLUB</div>
+      <div class="s14-bullet">Aprende em horas, nêo em meses.</div>
+      <div class="s14-bullet">Formaçêo 100% gratuita no INEMA.CLUB</div>
     </div>
   </div>`;
   return shell(14, img(14), 'background:linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.5) 55%,rgba(13,13,13,0.1) 100%)', inner, extra);
@@ -390,7 +390,7 @@ function slide15() {
     .s15-free{animation:fadeUp 0.4s ease 0.38s both}
   `;
   const inner = `<div class="s15-inner">
-    <div class="s15-eyebrow">Formação em IA Jurídica</div>
+    <div class="s15-eyebrow">Formaçêo em IA Jurídica</div>
     <div class="s15-brand">INEMA<span>.</span>CLUB</div>
     <div class="s15-tagline">Aprenda rápido e fácil como</div>
     <div class="s15-cta">ACESSE GRÁTIS AGORA</div>
@@ -410,10 +410,10 @@ function slide15() {
 const slides = [
   { num: 1,  fn: slide01 },
   { num: 2,  fn: slide02 },
-  { num: 3,  fn: () => agentSlide(3,  3,  1, '#0099FF', 'ORGANIZAÇÃO',           'Recebe documentos caóticos e classifica tudo automaticamente.', '📁') },
-  { num: 4,  fn: () => agentSlide(4,  4,  2, '#00FF88', 'CLASSIFICAÇÃO',         'Identifica tipo de caso, partes envolvidas e prioridade.', '🏷️') },
-  { num: 5,  fn: () => agentSlide(5,  5,  3, '#FFB400', 'ANÁLISE E\nCONCILIAÇÃO', 'Avalia precedentes, riscos e alternativas de acordo.', '🔍') },
-  { num: 6,  fn: () => agentSlide(6,  6,  4, '#0099FF', 'REDAÇÃO\nJURÍDICA',     'Gera petições, contratos e minutas prontos para revisão.', '✍️') },
+  { num: 3,  fn: () => agentSlide(3,  3,  1, '#0099FF', 'ORGANIZAÇêO',           'Recebe documentos caóticos e classifica tudo automaticamente.', '📁') },
+  { num: 4,  fn: () => agentSlide(4,  4,  2, '#00FF88', 'CLASSIFICAÇêO',         'Identifica tipo de caso, partes envolvidas e prioridade.', '🏷️') },
+  { num: 5,  fn: () => agentSlide(5,  5,  3, '#FFB400', 'ANÁLISE E\nCONCILIAÇêO', 'Avalia precedentes, riscos e alternativas de acordo.', '🔍') },
+  { num: 6,  fn: () => agentSlide(6,  6,  4, '#0099FF', 'REDAÇêO\nJURÍDICA',     'Gera petições, contratos e minutas prontos para revisêo.', '✍️') },
   { num: 7,  fn: () => agentSlide(7,  7,  5, '#00FF88', 'INSIGHTS\nESTRATÉGICOS', 'Sugere a melhor estratégia com base em dados do caso.', '🎯') },
   { num: 8,  fn: slide08 },
   { num: 9,  fn: slide09 },

@@ -4,18 +4,18 @@ const envData = fs.readFileSync('.env', 'utf-8');
 const TAVILY_API_KEY = envData.match(/TAVILY_API_KEY=(.*)/)[1].trim();
 
 if (!TAVILY_API_KEY) {
-  console.error("TAVILY_API_KEY não encontrada no arquivo .env.");
+  console.error("TAVILY_API_KEY nêo encontrada no arquivo .env.");
   process.exit(1);
 }
 
 const client = tavily({ apiKey: TAVILY_API_KEY });
 
 const queries = [
-  "Dia das Mães 2026 tendências marketing digital inteligência artificial educação online Brasil",
-  "campanhas Dia das Mães concorrentes educação IA automação estratégias marketing 2025",
-  "mães empreendedoras dores desejos equilíbrio tempo carreira família IA produtividade",
-  "melhores hooks anúncios Dia das Mães empreendedoras tecnologia IA empoderamento feminino",
-  "conteúdo viral Dia das Mães redes sociais instagram 2025 2026 mães profissionais"
+  "Dia das Mêes 2026 tendências marketing digital inteligência artificial educaçêo online Brasil",
+  "campanhas Dia das Mêes concorrentes educaçêo IA automaçêo estratégias marketing 2025",
+  "mêes empreendedoras dores desejos equilíbrio tempo carreira família IA produtividade",
+  "melhores hooks anúncios Dia das Mêes empreendedoras tecnologia IA empoderamento feminino",
+  "conteúdo viral Dia das Mêes redes sociais instagram 2025 2026 mêes profissionais"
 ];
 
 async function runSearches() {

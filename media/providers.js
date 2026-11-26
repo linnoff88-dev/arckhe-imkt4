@@ -22,7 +22,7 @@ const PROVIDERS = {
     quality: 'high',
     formats: ['1:1', '4:3', '3:4', '16:9', '9:16'],
     envKeys: ['KIE_API_KEY'],
-    description: 'Modelo Z-Image (Alibaba). Fotorrealista, rápido, bilíngue. API assíncrona via Kie.ai. Provider padrão do projeto.',
+    description: 'Modelo Z-Image (Alibaba). Fotorrealista, rápido, bilíngue. API assíncrona via Kie.ai. Provider padrêo do projeto.',
   },
   'dalle': {
     name: 'DALL-E 3 (OpenAI)',
@@ -33,7 +33,7 @@ const PROVIDERS = {
     quality: 'high',
     formats: ['1024x1024', '1024x1792', '1792x1024'],
     envKeys: ['OPENAI_API_KEY'],
-    description: 'Geração de imagens por prompt textual. Ideal para ilustrações, personagens, cenas conceituais.',
+    description: 'Geraçêo de imagens por prompt textual. Ideal para ilustrações, personagens, cenas conceituais.',
   },
   'stability': {
     name: 'Stability AI (SDXL)',
@@ -53,9 +53,9 @@ const PROVIDERS = {
     type: 'image',
     subtype: 'stock-free',
     cost: 'free',
-    priceNote: 'Gratuito, atribuição obrigatória',
+    priceNote: 'Gratuito, atribuiçêo obrigatória',
     quality: 'high',
-    formats: ['qualquer resolução'],
+    formats: ['qualquer resoluçêo'],
     envKeys: ['UNSPLASH_ACCESS_KEY'],
     description: 'Fotos profissionais gratuitas. Busca por keyword. Ótimo para backgrounds e lifestyle.',
   },
@@ -64,9 +64,9 @@ const PROVIDERS = {
     type: 'image',
     subtype: 'stock-free',
     cost: 'free',
-    priceNote: 'Gratuito, sem atribuição',
+    priceNote: 'Gratuito, sem atribuiçêo',
     quality: 'high',
-    formats: ['qualquer resolução'],
+    formats: ['qualquer resoluçêo'],
     envKeys: ['PEXELS_API_KEY'],
     description: 'Fotos e vídeos gratuitos. Sem necessidade de crédito. Busca por keyword.',
   },
@@ -105,7 +105,7 @@ const PROVIDERS = {
     quality: 'high',
     formats: ['mp3'],
     envKeys: ['SUNO_API_KEY'],
-    description: 'Geração de música por prompt. Cria tracks completas com vocal ou instrumental.',
+    description: 'Geraçêo de música por prompt. Cria tracks completas com vocal ou instrumental.',
   },
   'pixabay-music': {
     name: 'Pixabay Music',
@@ -116,7 +116,7 @@ const PROVIDERS = {
     quality: 'good',
     formats: ['mp3'],
     envKeys: [],
-    description: 'Música royalty-free. Filtros por mood, gênero, duração.',
+    description: 'Música royalty-free. Filtros por mood, gênero, duraçêo.',
   },
 
   // ── NARRATION / TTS ────────────────────────────
@@ -154,7 +154,7 @@ const PROVIDERS = {
     formats: ['wav'],
     languages: ['pt-BR', 'en', 'es', '+20 idiomas'],
     envKeys: [],
-    description: 'TTS local via Piper. Sem custo, sem internet. Qualidade boa para narração simples.',
+    description: 'TTS local via Piper. Sem custo, sem internet. Qualidade boa para narraçêo simples.',
   },
   'fish': {
     name: 'Fish Audio',

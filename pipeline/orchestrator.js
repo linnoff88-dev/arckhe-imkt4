@@ -257,13 +257,13 @@ function buildFallbackResearchArtifacts(payload, sourceFolder) {
     source_assets: sourceAssets,
     summary: `Pesquisa simulada a partir do briefing e dos assets disponíveis para ${campaignLabel}.`,
     industry_trends: [
-      `Conteúdo orientado a ${campaignLabel} com foco em relevância prática e aplicação imediata.`,
+      `Conteúdo orientado a ${campaignLabel} com foco em relevância prática e aplicaçêo imediata.`,
       'Materiais visuais e narrativas curtas tendem a performar melhor em social.',
-      'A clareza do benefício e o CTA direto são mais importantes que volume de informação.',
+      'A clareza do benefício e o CTA direto sêo mais importantes que volume de informaçêo.',
     ],
     audience_insights: [
       `O público precisa entender rapidamente o valor central de ${campaignLabel}.`,
-      'Tom humano, claro e orientado a resultado reduz fricção na primeira interação.',
+      'Tom humano, claro e orientado a resultado reduz fricçêo na primeira interaçêo.',
       'Provas visuais, contexto real e consistência de marca aumentam confiança.',
     ],
     competitor_gaps: [
@@ -274,7 +274,7 @@ function buildFallbackResearchArtifacts(payload, sourceFolder) {
     emotional_hooks: [
       'clareza',
       'pertencimento',
-      'transformação prática',
+      'transformaçêo prática',
     ],
     winning_angles: [
       campaignBrief,
@@ -284,7 +284,7 @@ function buildFallbackResearchArtifacts(payload, sourceFolder) {
     content_topics: [
       `${campaignLabel} explicado de forma objetiva`,
       'prova visual do benefício',
-      'CTA orientado à ação',
+      'CTA orientado à açêo',
     ],
     keywords: [
       payload.task_name,
@@ -328,9 +328,9 @@ function buildFallbackResearchArtifacts(payload, sourceFolder) {
     visual_direction: {
       mood: 'premium, claro e direto',
       dominant_colors: ['#0D0D0D', '#0099FF'],
-      photography_style: sourceAssets.length > 0 ? 'usar assets reais disponíveis como base visual' : 'lifestyle e produto com composição limpa',
+      photography_style: sourceAssets.length > 0 ? 'usar assets reais disponíveis como base visual' : 'lifestyle e produto com composiçêo limpa',
       typography_mood: 'bold e legível',
-      key_visual_metaphor: 'transformação visível com benefício em destaque',
+      key_visual_metaphor: 'transformaçêo visível com benefício em destaque',
     },
     carousel_structure: {
       slide_1: {
@@ -367,7 +367,7 @@ function buildFallbackResearchArtifacts(payload, sourceFolder) {
       ],
       youtube: [
         `Explicar ${campaignLabel} com contexto`,
-        'Mostrar problema, solução e prova',
+        'Mostrar problema, soluçêo e prova',
         'Encerrar com CTA objetivo',
       ],
       threads: [
@@ -404,7 +404,7 @@ Pesquisa simulada porque \`skip_research\` foi ativado.
 ## Ângulo da Campanha
 ${campaignBrief}
 
-## Direção Visual
+## Direçêo Visual
 - Mood: ${creativeBrief.visual_direction.mood}
 - Fotografia: ${creativeBrief.visual_direction.photography_style}
 - Tipografia: ${creativeBrief.visual_direction.typography_mood}

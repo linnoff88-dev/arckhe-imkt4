@@ -70,7 +70,7 @@ function formatStoryboardMessage(projectRoot, outputDir, escapeHtml) {
       const pacing = plan.pacing || '';
 
       lines.push(`<b>${plan.titulo || file}</b>`);
-      lines.push(`Voz: ${voiceLabel[plan.voice] || plan.voice || 'padrão'} | ${totalDur}s | ${sceneCount} cortes${pacing ? ` | ${pacing}` : ''}\n`);
+      lines.push(`Voz: ${voiceLabel[plan.voice] || plan.voice || 'padrêo'} | ${totalDur}s | ${sceneCount} cortes${pacing ? ` | ${pacing}` : ''}\n`);
 
       if (plan.narration_script) {
         const preview = plan.narration_script.slice(0, 150);
@@ -108,7 +108,7 @@ function formatStoryboardMessage(projectRoot, outputDir, escapeHtml) {
     } catch {}
   }
 
-  lines.push('Responda <b>sim</b> para renderizar ou <b>não</b> para cancelar.');
+  lines.push('Responda <b>sim</b> para renderizar ou <b>nêo</b> para cancelar.');
   lines.push('Ou descreva ajustes e eu reescrevo o roteiro.');
   return lines.join('\n');
 }
@@ -142,13 +142,13 @@ async function sendImageApprovalRequest({ projectRoot, botApi, session, chatId, 
     try {
       await botApi.sendPhoto(chatId, new InputFile(imgPath), { caption: path.basename(imgPath) });
     } catch {
-      await botApi.sendMessage(chatId, `(não foi possível enviar ${path.basename(imgPath)})`).catch(() => {});
+      await botApi.sendMessage(chatId, `(nêo foi possível enviar ${path.basename(imgPath)})`).catch(() => {});
     }
   }
 
   await botApi.sendMessage(chatId,
     `Responda <b>sim</b> para usar estas imagens e continuar.\n` +
-    `<b>não</b> para cancelar.\n` +
+    `<b>nêo</b> para cancelar.\n` +
     `Ou descreva o que ajustar e vou regenerar.`,
     { parse_mode: 'HTML' }
   );
@@ -203,7 +203,7 @@ async function scanPendingApprovals({ projectRoot, targetChatId, ctx, botApi, se
   }
 
   if (pending.length === 0) {
-    if (ctx) await ctx.reply('Nenhuma aprovação pendente encontrada.');
+    if (ctx) await ctx.reply('Nenhuma aprovaçêo pendente encontrada.');
     return;
   }
 

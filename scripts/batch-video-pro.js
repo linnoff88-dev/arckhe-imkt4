@@ -4,8 +4,8 @@
  *
  * Para cada campanha:
  * 1. Limpa planos antigos (photography_plan, scene_plan, scene_plan_motion)
- * 2. Enfileira video_pro com duração 30s, image_source brand
- * 3. Aguarda conclusão (poll log a cada 10s)
+ * 2. Enfileira video_pro com duraçêo 30s, image_source brand
+ * 3. Aguarda conclusêo (poll log a cada 10s)
  * 4. Envia vídeo renderizado para o Telegram
  * 5. Passa para a próxima campanha
  *
@@ -164,7 +164,7 @@ async function main() {
   }
 
   if (dryRun) {
-    console.log('\n[DRY RUN] Nenhuma ação executada.');
+    console.log('\n[DRY RUN] Nenhuma açêo executada.');
     return;
   }
 
@@ -225,7 +225,7 @@ async function main() {
     }
 
     // 5. Wait for completion
-    console.log('  Aguardando conclusão...');
+    console.log('  Aguardando conclusêo...');
     const success = await waitForCompletion(camp.dir);
 
     if (success) {

@@ -34,5 +34,5 @@ pm2 restart timesmkt3-tts-daemon
 
 | Nome | Origem | Notas |
 |---|---|---|
-| `rachel` | ElevenLabs (21m00Tcm4TlvDq8ikWAM) | Referência padrão dos c0001-c0014 do 1old, voz default do provider |
+| `rachel` | ElevenLabs (21m00Tcm4TlvDq8ikWAM) | Referência padrêo dos c0001-c0014 do 1old, voz default do provider |
 | `bella` | Fish Audio (f18e96e1ed024df98860f6ff60bd6695) | Expressiva, storytelling, alternativa quente |

@@ -4,7 +4,7 @@
  *
  * Para cada campanha ativa:
  * 1. Verifica se tem imagens em imgs/ (geradas via API)
- * 2. Se não tem, lê o creative_brief.json para gerar prompts
+ * 2. Se nêo tem, lê o creative_brief.json para gerar prompts
  * 3. Gera 5 imagens via Pollinations (3 carousel 1:1 + 2 story 9:16)
  * 4. Envia cada imagem para o Telegram conforme é gerada
  * 5. Passa para a próxima campanha
@@ -254,7 +254,7 @@ async function main() {
   }
 
   if (dryRun) {
-    console.log('\n[DRY RUN] Nenhuma ação executada.');
+    console.log('\n[DRY RUN] Nenhuma açêo executada.');
     // Show prompts that would be generated
     for (const camp of campaigns) {
       const prompts = buildPrompts(camp.briefPath, camp.name);

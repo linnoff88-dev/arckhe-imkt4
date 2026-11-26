@@ -1,6 +1,6 @@
 # Import Worker — Lote de Campanhas
 
-Qualquer sistema externo pode disparar geração em lote copiando uma pasta para `imports/`
+Qualquer sistema externo pode disparar geraçêo em lote copiando uma pasta para `imports/`
 com um `manifest.json`.
 
 ---
@@ -61,40 +61,40 @@ timesmkt3/
 
 ## Campos raiz
 
-| Campo | Tipo | Obrigatório | Descrição |
+| Campo | Tipo | Obrigatório | Descriçêo |
 |---|---|---:|---|
-| `titulo` | string | não | Nome do lote |
-| `batch_id` | string | não | ID do lote, gerado automaticamente pelo bot |
-| `created_at` | string | não | Timestamp ISO de criação |
-| `command_text` | string | não | Comando original que gerou o lote |
+| `titulo` | string | nêo | Nome do lote |
+| `batch_id` | string | nêo | ID do lote, gerado automaticamente pelo bot |
+| `created_at` | string | nêo | Timestamp ISO de criaçêo |
+| `command_text` | string | nêo | Comando original que gerou o lote |
 | `project_dir` | string | sim | Projeto base, ex: `prj/inema` |
-| `scope` | string | não | `ativos`, `todos` ou `campanhas` |
-| `source_spec` | string | não | Texto cru da fonte no comando |
-| `source_label` | string | não | Rótulo já interpretado da fonte |
-| `quick_mode` | string | não | `enxuto` ou `normal` |
-| `selected_campaigns` | array | não | Campanhas selecionadas no momento da criação |
-| `auto_approve_video` | boolean | não | Se `true`, autoaprova `video_pro` |
-| `cleanup_import` | boolean | não | Se `true`, remove a pasta do lote ao terminar |
-| `defaults` | object | não | Defaults aplicados às campanhas |
-| `campaigns` | array \| `"all"` | não | Campanhas escolhidas. Se ausente ou `"all"`, usa todas as campanhas ativas do projeto |
+| `scope` | string | nêo | `ativos`, `todos` ou `campanhas` |
+| `source_spec` | string | nêo | Texto cru da fonte no comando |
+| `source_label` | string | nêo | Rótulo já interpretado da fonte |
+| `quick_mode` | string | nêo | `enxuto` ou `normal` |
+| `selected_campaigns` | array | nêo | Campanhas selecionadas no momento da criaçêo |
+| `auto_approve_video` | boolean | nêo | Se `true`, autoaprova `video_pro` |
+| `cleanup_import` | boolean | nêo | Se `true`, remove a pasta do lote ao terminar |
+| `defaults` | object | nêo | Defaults aplicados às campanhas |
+| `campaigns` | array \| `"all"` | nêo | Campanhas escolhidas. Se ausente ou `"all"`, usa todas as campanhas ativas do projeto |
 
 ---
 
 ## Campos por campanha
 
-| Campo | Tipo | Obrigatório | Descrição |
+| Campo | Tipo | Obrigatório | Descriçêo |
 |---|---|---:|---|
 | `campaign_id` | string | sim | Nome da campanha existente em `project_dir/outputs/` |
-| `output_name` | string | não | Nome da subpasta de saída |
-| `output_dir` | string | não | Sobrescreve a pasta final dessa campanha |
-| `targets` | array \| string | não | `ads`, `video_quick`, `video_pro`, `both` |
-| `quick_mode` | string | não | `enxuto` ou `normal` |
-| `image_source` | string | não | `brand`, `api`, `free`, `screenshot`, `folder`, `solid` |
-| `image_folder` | string | não | Pasta para `image_source: "folder"` |
-| `image_background_color` | string | não | Cor para `image_source: "solid"` |
-| `video_duration` | number | não | Duração do vídeo |
-| `narrator` | string | não | Voz do vídeo |
-| `platform_targets` | array | não | Plataformas do payload |
+| `output_name` | string | nêo | Nome da subpasta de saída |
+| `output_dir` | string | nêo | Sobrescreve a pasta final dessa campanha |
+| `targets` | array \| string | nêo | `ads`, `video_quick`, `video_pro`, `both` |
+| `quick_mode` | string | nêo | `enxuto` ou `normal` |
+| `image_source` | string | nêo | `brand`, `api`, `free`, `screenshot`, `folder`, `solid` |
+| `image_folder` | string | nêo | Pasta para `image_source: "folder"` |
+| `image_background_color` | string | nêo | Cor para `image_source: "solid"` |
+| `video_duration` | number | nêo | Duraçêo do vídeo |
+| `narrator` | string | nêo | Voz do vídeo |
+| `platform_targets` | array | nêo | Plataformas do payload |
 
 ---
 
@@ -110,7 +110,7 @@ timesmkt3/
 - No `solid`, o batch força `ad_creative_designer` antes do `video_quick` para gerar slides tipográficos em `ads/`; o quick usa esses PNGs.
 - O processamento roda na campanha original em `project_dir/outputs/<campanha>`.
 - Quando um vídeo final é gerado, ele também é copiado para a pasta agregada `imports/<batch>/videos/`.
-- A cópia agregada não remove o arquivo original da campanha.
+- A cópia agregada nêo remove o arquivo original da campanha.
 
 ---
 

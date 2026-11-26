@@ -31,7 +31,7 @@
  * SFX opt-in: cada cena pode declarar um array `sfx` com um ou mais efeitos.
  * O `offset_s` é relativo ao início da cena (o render soma as durações anteriores
  * para calcular o timestamp absoluto no vídeo final). Se `scene.sfx` estiver
- * ausente ou vazio, o render não adiciona SFX algum — comportamento identico ao
+ * ausente ou vazio, o render nêo adiciona SFX algum — comportamento identico ao
  * default antigo. Use pipeline/audio-enrich.js:addSceneSfx() para popular esse
  * campo, ou scripts/add-sfx.js como CLI.
  */

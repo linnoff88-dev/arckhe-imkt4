@@ -49,7 +49,7 @@ function createV3Flow(deps) {
     const cv = session.getCampaignV3(chatId);
     if (!cv) return;
 
-    const stageLabels = { 1: 'Brief & Narrativa', 2: 'Visuais (Imagens & Vídeo)', 3: 'Copy de Plataforma', 4: 'Distribuição' };
+    const stageLabels = { 1: 'Brief & Narrativa', 2: 'Visuais (Imagens & Vídeo)', 3: 'Copy de Plataforma', 4: 'Distribuiçêo' };
 
     const prompt = `You are the Agente Revisor. Follow the skill defined in skills/agente-revisor/SKILL.md exactly.
 
@@ -63,13 +63,13 @@ Then print your decision in exactly the required format: [AGENTE_APROVADO] or [A
 
     runClaude(prompt, 'agente_revisor', (code, stdout) => {
       if (code !== 0) {
-        ctx.reply(`Agente Revisor encontrou um erro na etapa ${stage}. Enviando para revisão humana...`)
+        ctx.reply(`Agente Revisor encontrou um erro na etapa ${stage}. Enviando para revisêo humana...`)
           .then(() => sendStageApprovalRequestRef.current(ctx, chatId, stage))
           .catch(() => {});
         return;
       }
 
-      const approvedMatch = stdout.match(/\[AGENTE_APROVADO\][^\n]*\nRaz[ãa]o:\s*(.+)/i);
+      const approvedMatch = stdout.match(/\[AGENTE_APROVADO\][^\n]*\nRaz[êa]o:\s*(.+)/i);
       const adjustMatch = stdout.match(/\[AGENTE_AJUSTE\][^\n]*\nFeedback:\s*([\s\S]+)/i);
 
       if (approvedMatch) {
@@ -83,14 +83,14 @@ Then print your decision in exactly the required format: [AGENTE_APROVADO] or [A
         ctx.reply(
           `<b>Agente Revisor — Etapa ${stage} precisa de ajustes</b>\n\n` +
           `<i>${escapeHtml(feedback)}</i>\n\n` +
-          `Responda <b>sim</b> para ignorar e continuar, <b>não</b> para cancelar, ` +
+          `Responda <b>sim</b> para ignorar e continuar, <b>nêo</b> para cancelar, ` +
           `ou descreva como corrigir.`,
           { parse_mode: 'HTML' }
         ).then(() => {
           session.setPendingStageApproval(chatId, { stage, type: 'agente_feedback', feedback });
         }).catch(() => {});
       } else {
-        ctx.reply(`Agente Revisor não retornou decisão clara na etapa ${stage}. Enviando para revisão humana...`)
+        ctx.reply(`Agente Revisor nêo retornou decisêo clara na etapa ${stage}. Enviando para revisêo humana...`)
           .then(() => sendStageApprovalRequestRef.current(ctx, chatId, stage))
           .catch(() => {});
       }
@@ -103,7 +103,7 @@ Then print your decision in exactly the required format: [AGENTE_APROVADO] or [A
 
     const lower = text.toLowerCase().trim();
     const isConfirm = /^(sim|ok|confirmar|confirma|aprovado|aprovar|vai|bora|yes|roda)/.test(lower);
-    const isCancel = /^(nao|não|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
+    const isCancel = /^(nao|nêo|cancela|cancelar|cancel|para|parar|no\b)/.test(lower);
     const stage = cv.pendingApproval.stage;
 
     if (stage === 3) {
@@ -188,7 +188,7 @@ Read each, apply feedback, save to same paths. Keep same JSON structure.`;
           sendStageApprovalRequestRef.current(ctx, chatId, 3).catch(() => {});
         });
       } else if (stage === 4) {
-        await ctx.reply('Responda <b>sim</b> para distribuir ou <b>não</b> para cancelar.', { parse_mode: 'HTML' });
+        await ctx.reply('Responda <b>sim</b> para distribuir ou <b>nêo</b> para cancelar.', { parse_mode: 'HTML' });
       }
       return true;
     }

@@ -309,7 +309,7 @@ function registerImportCommand(bot, { projectRoot, session }) {
     // Find first source token — anything before is campaigns
     const firstSourceIdx = tokens.findIndex(t => VALID_SOURCES.includes(t.toLowerCase()));
     if (firstSourceIdx === -1) {
-      return ctx.reply(`Origem não encontrada. Use: ${VALID_SOURCES.join(', ')}`);
+      return ctx.reply(`Origem nêo encontrada. Use: ${VALID_SOURCES.join(', ')}`);
     }
 
     const campaignTokens = tokens.slice(0, firstSourceIdx);

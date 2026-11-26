@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Transcreve audio em chunks pequenos (word-level) para sincronização de legendas.
+Transcreve audio em chunks pequenos (word-level) para sincronizaçêo de legendas.
 Saída: JSON com {t0, t1, text} por chunk (3-6 palavras cada).
 
 Uso: python3 transcribe-words.py <audio.mp3> <output.json>

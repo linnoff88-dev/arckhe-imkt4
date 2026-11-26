@@ -1,4 +1,4 @@
-// ── Versão do cockpit: v3.RECURSO.BUG
+// ── Versêo do cockpit: v3.RECURSO.BUG
 // RECURSO: incrementa a cada nova feature; BUG: incrementa a cada fix, NUNCA zera ao mudar RECURSO.
 // Só zera BUG quando MAJOR (3) muda. Atualizar aqui e em index.html (.brand-version) a cada mudança.
 const UI_VERSION = 'v3.9.0';
@@ -547,7 +547,7 @@ function renderConfig() {
         <div class="csec-head">Projeto e idioma</div>
         <div class="form-grid">
           <label class="field">
-            <span>Projeto padrão</span>
+            <span>Projeto padrêo</span>
             <select name="project_dir">${projectOptions(config.project_dir)}</select>
           </label>
           <label class="field">
@@ -575,7 +575,7 @@ function renderConfig() {
             <input name="batch_prefix" value="${escapeHtml(config.batch?.name_prefix || 'c')}">
           </label>
           <label class="field">
-            <span>Tamanho padrão</span>
+            <span>Tamanho padrêo</span>
             <input type="number" min="1" max="50" name="batch_count" value="${escapeHtml(config.batch?.default_count || 3)}">
           </label>
           <label class="field">
@@ -675,7 +675,7 @@ function renderConfig() {
       </div>
 
       <div class="csec">
-        <div class="csec-head">Formatos e sobreposição</div>
+        <div class="csec-head">Formatos e sobreposiçêo</div>
         <div class="form-grid">
           <div class="field full">
             <span class="label">Formatos de imagem</span>
@@ -724,7 +724,7 @@ function renderConfig() {
           <label class="field">
             <span>Preset visual</span>
             <select name="style_preset">
-              ${optionList([['inema_hightech','INEMA hightech'],['01_hero_film','Hero film'],['02_product_demo','Product demo'],['03_explainer','Explainer'],['10_problem_solution','Problema e solução'],['13_kinetic_typography','Kinetic typography'],['14_short_vertical','Short vertical'],['20_performance_ad','Performance ad']], config.style_preset || 'inema_hightech')}
+              ${optionList([['inema_hightech','INEMA hightech'],['01_hero_film','Hero film'],['02_product_demo','Product demo'],['03_explainer','Explainer'],['10_problem_solution','Problema e soluçêo'],['13_kinetic_typography','Kinetic typography'],['14_short_vertical','Short vertical'],['20_performance_ad','Performance ad']], config.style_preset || 'inema_hightech')}
             </select>
           </label>
           <div class="field full">
@@ -733,7 +733,7 @@ function renderConfig() {
           </div>
         </div>
         <div class="csec" style="margin-top:16px">
-          <div class="csec-head">Áudio e voz padrão (fallback para Quick e Pro)</div>
+          <div class="csec-head">Áudio e voz padrêo (fallback para Quick e Pro)</div>
           <div class="tts-hierarchy">
             <label class="field">
               <span>Modo de áudio</span>
@@ -756,7 +756,7 @@ function renderConfig() {
               </div>
             </div>
             <label class="field" style="margin-top:10px;max-width:360px">
-              <span>Narração existente</span>
+              <span>Narraçêo existente</span>
               <input name="existing_narration_file" placeholder="prj/inema/outputs/.../audio/narration.mp3" value="${escapeHtml(config.existing_narration_file || '')}">
             </label>
           </div>
@@ -786,7 +786,7 @@ function renderConfig() {
           <label class="field">
             <span>Fonte do roteiro</span>
             <select name="quick_narration_source">
-              ${optionList([['narrative_short','Narrativa resumida'],['copywriter_video_narration','video_narration Copywriter'],['creative_brief','Creative brief'],['manual_existing','Arquivo de narração']], config.quick_narration_source || 'narrative_short')}
+              ${optionList([['narrative_short','Narrativa resumida'],['copywriter_video_narration','video_narration Copywriter'],['creative_brief','Creative brief'],['manual_existing','Arquivo de narraçêo']], config.quick_narration_source || 'narrative_short')}
             </select>
           </label>
           <label class="field">
@@ -802,11 +802,11 @@ function renderConfig() {
             </select>
           </label>
           <label class="field">
-            <span>Duração (s)</span>
+            <span>Duraçêo (s)</span>
             <input type="number" min="10" max="60" name="quick_duration" value="${escapeHtml(config.quick_duration || 18)}">
           </label>
           <label class="field">
-            <span>Narração (s)</span>
+            <span>Narraçêo (s)</span>
             <input type="number" min="5" max="55" name="quick_narration_seconds" value="${escapeHtml(config.quick_narration_seconds || 15)}">
           </label>
           <label class="field">
@@ -822,7 +822,7 @@ function renderConfig() {
             <input type="number" min="0" max="10" name="quick_hold_seconds" value="${escapeHtml(config.quick_hold_seconds || 3)}">
           </label>
           <label class="field full">
-            <span>Narração existente</span>
+            <span>Narraçêo existente</span>
             <input name="quick_existing_narration_file" placeholder="prj/inema/outputs/.../audio/quick.mp3" value="${escapeHtml(config.quick_existing_narration_file || '')}">
           </label>
         </div>
@@ -851,11 +851,11 @@ function renderConfig() {
           <label class="field">
             <span>Fonte do roteiro</span>
             <select name="pro_narration_source">
-              ${optionList([['creative_brief','Creative brief + marca'],['copywriter_video_narration','video_narration Copywriter'],['research_brief','Pesquisa + creative brief'],['manual_existing','Arquivo de narração']], config.pro_narration_source || 'creative_brief')}
+              ${optionList([['creative_brief','Creative brief + marca'],['copywriter_video_narration','video_narration Copywriter'],['research_brief','Pesquisa + creative brief'],['manual_existing','Arquivo de narraçêo']], config.pro_narration_source || 'creative_brief')}
             </select>
           </label>
           <label class="field">
-            <span>Duração (s)</span>
+            <span>Duraçêo (s)</span>
             <input type="number" min="10" max="180" name="pro_duration" value="${escapeHtml(config.pro_duration || config.video_duration || 60)}">
           </label>
           <label class="field">
@@ -885,7 +885,7 @@ function renderConfig() {
             </select>
           </label>
           <label class="field full">
-            <span>Narração existente</span>
+            <span>Narraçêo existente</span>
             <input name="pro_existing_narration_file" placeholder="prj/inema/outputs/.../audio/pro.mp3" value="${escapeHtml(config.pro_existing_narration_file || '')}">
           </label>
           <div class="field full">
@@ -904,7 +904,7 @@ function renderConfig() {
   if (tab === 'pipeline') {
     tabContent = `
       <div class="csec">
-        <div class="csec-head">Plataformas padrão</div>
+        <div class="csec-head">Plataformas padrêo</div>
         <div class="check-row">${platformChecks(config.platform_targets || [], 'config_platform')}</div>
       </div>
       <div class="csec">
@@ -1053,7 +1053,7 @@ function collectConfigForm(form) {
 }
 
 const STAGE_ICONS = { stage1: '✦', stage2: '◈', stage3: '▶', stage4: '◉', stage5: '↑' };
-const STAGE_LABELS_SHORT = { stage1: 'Estratégia', stage2: 'Imagens', stage3: 'Vídeo', stage4: 'Plataformas', stage5: 'Distribuição' };
+const STAGE_LABELS_SHORT = { stage1: 'Estratégia', stage2: 'Imagens', stage3: 'Vídeo', stage4: 'Plataformas', stage5: 'Distribuiçêo' };
 
 function stageProgress(stages) {
   const done = stages.filter((s) => s.status === 'done').length;
@@ -1500,7 +1500,7 @@ function renderGenerator() {
         </div>
 
         <details class="form-details">
-          <summary>Direção visual <em>(override do Creative Director)</em></summary>
+          <summary>Direçêo visual <em>(override do Creative Director)</em></summary>
           <p class="form-details-hint">Vazio = agente decide pelo tema. Preenchido = vira hard constraint no <code>creative_brief.visual_direction</code> antes do Ad Creative Designer rodar. Use para forçar consistência entre campanhas.</p>
           <div class="form-grid">
             <label class="field">
@@ -2067,7 +2067,7 @@ const PARAM_LABELS = {
   // Geral
   task_name: 'Nome da tarefa', task_date: 'Data', project_dir: 'Projeto',
   campaign_brief: 'Brief', business: 'Negócio', language: 'Idioma',
-  platform_targets: 'Plataformas', approval_modes: 'Modos de aprovação',
+  platform_targets: 'Plataformas', approval_modes: 'Modos de aprovaçêo',
   notifications: 'Notificações',
   skip_research: 'Pular research', skip_image: 'Pular imagens', skip_video: 'Pular vídeo',
   // Imagens
@@ -2081,25 +2081,25 @@ const PARAM_LABELS = {
   // Vídeo geral
   video_mode: 'Modo', video_quick: 'Quick ativo', video_pro: 'Pro ativo',
   video_count: 'Qtd. vídeos', video_format: 'Formato', video_formats: 'Formatos',
-  video_duration: 'Duração (s)', video_audio: 'Áudio', video_template: 'Template',
+  video_duration: 'Duraçêo (s)', video_audio: 'Áudio', video_template: 'Template',
   scene_quality: 'Qualidade cenas', video_draft: 'Modo rascunho',
   // Quick
   quick_mode: 'Quick — modo', quick_video_audio: 'Quick — áudio',
   quick_tts_provider: 'Quick — TTS provider', quick_narrator: 'Quick — narrador',
-  quick_narration_source: 'Quick — fonte narração', quick_duration: 'Quick — duração (s)',
-  quick_scene_count: 'Quick — nº cenas', quick_narration_words: 'Quick — palavras narração',
-  quick_narration_seconds: 'Quick — seg. narração', quick_hold_seconds: 'Quick — hold (s)',
-  quick_existing_narration_file: 'Quick — narração existente',
+  quick_narration_source: 'Quick — fonte narraçêo', quick_duration: 'Quick — duraçêo (s)',
+  quick_scene_count: 'Quick — nº cenas', quick_narration_words: 'Quick — palavras narraçêo',
+  quick_narration_seconds: 'Quick — seg. narraçêo', quick_hold_seconds: 'Quick — hold (s)',
+  quick_existing_narration_file: 'Quick — narraçêo existente',
   // Pro
   pro_video_audio: 'Pro — áudio', pro_tts_provider: 'Pro — TTS provider',
-  pro_narrator: 'Pro — narrador', pro_narration_source: 'Pro — fonte narração',
-  pro_duration: 'Pro — duração (s)', pro_words_per_second: 'Pro — palavras/s',
-  pro_narration_words: 'Pro — palavras narração', pro_existing_narration_file: 'Pro — narração existente',
+  pro_narrator: 'Pro — narrador', pro_narration_source: 'Pro — fonte narraçêo',
+  pro_duration: 'Pro — duraçêo (s)', pro_words_per_second: 'Pro — palavras/s',
+  pro_narration_words: 'Pro — palavras narraçêo', pro_existing_narration_file: 'Pro — narraçêo existente',
   // Legados / outros
   tts_provider: 'TTS provider', narrator: 'Narrador', voice: 'Voz',
   music_mode: 'Modo música', audio_mode: 'Modo áudio', music_volume: 'Volume música',
-  existing_narration_file: 'Narração existente',
-  // Distribuição
+  existing_narration_file: 'Narraçêo existente',
+  // Distribuiçêo
   simulate_uploads: 'Simular uploads', dry_run: 'Dry run',
 };
 
@@ -2193,7 +2193,7 @@ async function openStageParams(label, stageKey, payloadPath) {
 
   try {
     const raw = await fetch(`/api/file?path=${encodeURIComponent(payloadPath)}`).then((r) => (r.ok ? r.text() : null));
-    if (!raw) { qs('#paramsDialogBody').innerHTML = '<p class="params-empty">Payload não disponível.</p>'; return; }
+    if (!raw) { qs('#paramsDialogBody').innerHTML = '<p class="params-empty">Payload nêo disponível.</p>'; return; }
 
     const payload = JSON.parse(raw);
     const keys = STAGE_PAYLOAD_KEYS[stageKey] || [];
@@ -2421,7 +2421,7 @@ document.addEventListener('click', async (event) => {
     }
     if (action === 'cad-remove-provider') {
       const { group, key } = actionNode.dataset;
-      if (!confirm(`Remover provider "${key}"? Todos os modelos/vozes cadastrados serão perdidos.`)) return;
+      if (!confirm(`Remover provider "${key}"? Todos os modelos/vozes cadastrados serêo perdidos.`)) return;
       const p = state.providers;
       if (group === 'img_api') p.image.api = p.image.api.filter((x) => x.value !== key);
       else if (group === 'tts') p.tts.providers = p.tts.providers.filter((x) => x.value !== key);
@@ -2429,7 +2429,7 @@ document.addEventListener('click', async (event) => {
       return;
     }
     if (action === 'reset-config') {
-      if (!confirm('Resetar todos os campos para os valores padrão de defaults.json?')) return;
+      if (!confirm('Resetar todos os campos para os valores padrêo de defaults.json?')) return;
       const defaults = await api('/api/config/defaults');
       state.dashboard.config = defaults;
       renderConfig();
@@ -2639,7 +2639,7 @@ document.addEventListener('submit', async (event) => {
         method: 'POST',
         body: JSON.stringify({ path: scriptPath, args }),
       });
-      toast(`Execução iniciada — ${result.command}`);
+      toast(`Execuçêo iniciada — ${result.command}`);
       // Collapse the form
       const form = event.target;
       const panel = form.closest('[id$="-panel"]');

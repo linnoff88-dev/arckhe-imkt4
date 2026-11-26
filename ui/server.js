@@ -320,13 +320,13 @@ async function queueAction(op, id, statusFilter) {
   try {
     if (op === 'retry') {
       const job = await queue.getJob(id);
-      if (!job) return { ok: false, error: 'Job não encontrado' };
+      if (!job) return { ok: false, error: 'Job nêo encontrado' };
       await job.retry();
       return { ok: true };
     }
     if (op === 'remove') {
       const job = await queue.getJob(id);
-      if (!job) return { ok: false, error: 'Job não encontrado' };
+      if (!job) return { ok: false, error: 'Job nêo encontrado' };
       await job.remove();
       return { ok: true };
     }
@@ -337,7 +337,7 @@ async function queueAction(op, id, statusFilter) {
   } catch (err) {
     return { ok: false, error: err.message };
   }
-  return { ok: false, error: 'Operação desconhecida' };
+  return { ok: false, error: 'Operaçêo desconhecida' };
 }
 
 function getEnvStatus() {
@@ -816,7 +816,7 @@ function inemaVideoTemplateServices() {
       command: 'node gen-criaprof-comic-A.js <slug> && node render-criaprof-comic-A-cta-916.js <slug>',
       path: 'gen-criaprof-comic-A.js',
       outputRoot: 'prj/inema/videos/criaprof-comic-A/ e criaprof-comic-A-cta-916/',
-      description: 'Variação em quadrinho americano do template CriaProf CTA.',
+      description: 'Variaçêo em quadrinho americano do template CriaProf CTA.',
     },
   ];
 }

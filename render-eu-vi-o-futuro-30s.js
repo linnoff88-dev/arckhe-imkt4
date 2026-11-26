@@ -1,5 +1,5 @@
 /**
- * Versão 30s do "Eu Vi o Futuro Chegar".
+ * Versêo 30s do "Eu Vi o Futuro Chegar".
  * 60 imagens x 0.5s cada = 30s total. Música trimada nos primeiros 30s.
  */
 

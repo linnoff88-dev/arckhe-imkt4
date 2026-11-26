@@ -1,5 +1,5 @@
 /**
- * Renderiza "Saúde e Tecnologia — 30s" com narração + música suave + INEMA.CLUB final.
+ * Renderiza "Saúde e Tecnologia — 30s" com narraçêo + música suave + INEMA.CLUB final.
  * 30 imagens x 1s cada = 30s total.
  */
 
@@ -66,7 +66,7 @@ filters.push(
 
 const musicIdx = imgs.length;
 const narrIdx = imgs.length + 1;
-// Narração começa em 0.8s. Música 0.35 nas bordas, 0.06 durante a fala (0.5–29.3).
+// Narraçêo começa em 0.8s. Música 0.35 nas bordas, 0.06 durante a fala (0.5–29.3).
 filters.push(
   `[${musicIdx}:a]atrim=0:${TOTAL_DUR},asetpts=PTS-STARTPTS,volume='if(between(t\\,0.5\\,29.3)\\,0.06\\,0.35)':eval=frame,afade=t=out:st=${TOTAL_DUR - 2}:d=2[music]`
 );

@@ -251,7 +251,7 @@ async function generateGatilhos(opts) {
     const trendDetail = findProp(trend, 'detail', 'descricao', 'description', 'detalhe');
 
     // Extract a keyword from the hook (first 2-3 impactful words)
-    const hookWords = h.hook.split(/\s+/).filter(w => w.length > 3).slice(0, 2).join(' ').toUpperCase() || 'ATENÇÃO';
+    const hookWords = h.hook.split(/\s+/).filter(w => w.length > 3).slice(0, 2).join(' ').toUpperCase() || 'ATENÇêO';
 
     // Build 5 scene mini-plan (<30s) — hook → dor → prova → CTA → hold
     const scenes = [
@@ -281,7 +281,7 @@ async function generateGatilhos(opts) {
         card_body: trendDetail.slice(0, 100) || '',
         narration: '',
       },
-      // Scene 4: CTA — marca + ação clara
+      // Scene 4: CTA — marca + açêo clara
       {
         id: 'cta', type: 'cta', visual_type: 'cta',
         keyword: 'COMECE AGORA', duration: 4,

@@ -10,7 +10,7 @@ Mapa simples de todos os módulos do `pipeline/` e das specs de agentes em `skil
 
 | Arquivo | O que faz |
 |---|---|
-| `redis.js` | Conexão com Redis |
+| `redis.js` | Conexêo com Redis |
 | `queues.js` | Define as filas BullMQ |
 | `orchestrator.js` | Recebe o payload e enfileira os jobs |
 
@@ -21,14 +21,14 @@ Mapa simples de todos os módulos do `pipeline/` e das specs de agentes em `skil
 | `worker.js` | Worker principal; roda os agentes de texto (pesquisa, criativo, copywriter) |
 | `worker-ad-creative.js` | Gera o HTML do ad + screenshot PNG |
 | `worker-video.js` | Vídeo quick (slideshow ffmpeg) |
-| `worker-video-pro.js` | Vídeo pro (Remotion, narração, templates) |
+| `worker-video-pro.js` | Vídeo pro (Remotion, narraçêo, templates) |
 | `worker-video-report.js` | Vídeo do relatório de resultados |
 | `worker-video-gatilhos.js` | Vídeo de gatilhos mentais |
-| `worker-platforms.js` | Agentes de distribuição (IG, YT, TikTok...) |
+| `worker-platforms.js` | Agentes de distribuiçêo (IG, YT, TikTok...) |
 | `worker-assets.js` | Montagem de assets auxiliares |
 | `worker-runtime.js` | Utilitários compartilhados pelos workers |
 
-### Geração de Imagem
+### Geraçêo de Imagem
 
 | Arquivo | O que faz |
 |---|---|
@@ -37,14 +37,14 @@ Mapa simples de todos os módulos do `pipeline/` e das specs de agentes em `skil
 | `generate-image-piramyd.js` | Provider Piramyd |
 | `generate-image-pollinations.js` | Provider Pollinations (gratuito) |
 
-### Renderização
+### Renderizaçêo
 
 | Arquivo | O que faz |
 |---|---|
 | `render-slide-png.js` | Renderiza slides PNG via Playwright |
 | `render-visual-png.js` | Renderiza visuais de cena (chart, text_card, etc.) via Playwright |
 | `render-video-ffmpeg.js` | Monta vídeo final via ffmpeg |
-| `render-video.js` / `render-video-remotion.js` | Renderização Remotion |
+| `render-video.js` / `render-video-remotion.js` | Renderizaçêo Remotion |
 
 ### Áudio
 
@@ -69,7 +69,7 @@ Mapa simples de todos os módulos do `pipeline/` e das specs de agentes em `skil
 
 ## Skills (`skills/`)
 
-São as **specs dos agentes** — prompts, responsabilidades e outputs esperados. Cada pasta tem um `SKILL.md`.
+Sêo as **specs dos agentes** — prompts, responsabilidades e outputs esperados. Cada pasta tem um `SKILL.md`.
 
 | Skill | O que faz |
 |---|---|
@@ -78,16 +78,16 @@ São as **specs dos agentes** — prompts, responsabilidades e outputs esperados
 | `copywriter-agent` | Gera os textos finais (legenda, headline, CTA) |
 | `ad-creative-designer` | Layout HTML do anúncio |
 | `video-editor-agent` | Roteiro e cenas do vídeo (quick e pro) |
-| `distribution-agent` | Upload + publicação nas plataformas |
+| `distribution-agent` | Upload + publicaçêo nas plataformas |
 | `agente-revisor` | Avalia saídas e aprova/rejeita automaticamente |
-| `image-generation` | Guia de prompts para geração de imagem |
-| `photography-director` | Direção de fotografia para as cenas |
+| `image-generation` | Guia de prompts para geraçêo de imagem |
+| `photography-director` | Direçêo de fotografia para as cenas |
 | `video-art-direction` | 12 presets visuais (cinematic, bold, minimal...) |
-| `video-composition` | Regras de composição de cena |
+| `video-composition` | Regras de composiçêo de cena |
 | `video-quick` | Spec específica do modo quick |
-| `video-engineering` | Detalhes técnicos de renderização |
+| `video-engineering` | Detalhes técnicos de renderizaçêo |
 | `typography-on-image` | Regras de tipografia sobreposta em imagem |
-| `providers` | Configuração dos providers de imagem/TTS |
+| `providers` | Configuraçêo dos providers de imagem/TTS |
 | `orchestrator` | Spec do orquestrador |
 | `media-help` | Auxiliar de mídia |
 | `remotion-best-practices` | Boas práticas Remotion |

@@ -79,7 +79,7 @@ function buildConfigTable(payload, title, env = process.env) {
     { setting: 'Pro', current: vPro ? 'sim' : 'nao', def: 'nao', opts: 'pro' },
     { setting: 'Narrador', current: payload.narrator || 'rachel', def: DEFAULTS.narrator, opts: 'rachel / bella / domi / antoni / josh / arnold' },
     { setting: 'TTS', current: payload.tts_provider || 'auto', def: DEFAULTS.tts_provider, opts: 'auto / chatterbox / fish / elevenlabs / openai' },
-    { setting: 'Duração', current: `${payload.video_duration || 60}s`, def: '60s', opts: '30 / 60' },
+    { setting: 'Duraçêo', current: `${payload.video_duration || 60}s`, def: '60s', opts: '30 / 60' },
     { setting: 'Estilo', current: payload.style_preset || 'inema_hightech', def: DEFAULTS.style_preset, opts: 'inema_hightech / neon_futurista / premium_minimal / energetico / emocional / corporate / streetwear / nature / retro / bold_pop / dark_dramatic / playful / editorial' },
     { setting: 'Tipografia', current: payload.typography || 'auto', def: 'auto', opts: 'auto / serif / sans / condensed / mono' },
     { setting: 'Dir.Foto', current: payload.photo_quality || 'simples', def: DEFAULTS.photo_quality, opts: 'simples / premium' },
@@ -89,7 +89,7 @@ function buildConfigTable(payload, title, env = process.env) {
     { setting: 'SFX', current: payload.video_sfx || 'nao', def: 'nao', opts: 'nao / sim / auto' },
     { setting: 'Fundo quick', current: bgLabel, def: 'escuro', opts: 'escuro / blur' },
     { setting: 'Idioma', current: payload.language || 'pt-BR', def: DEFAULTS.language, opts: 'pt-BR / en' },
-    { setting: 'Aprovação', current: approvalLabel, def: DEFAULTS.approval, opts: 'humano / auto' },
+    { setting: 'Aprovaçêo', current: approvalLabel, def: DEFAULTS.approval, opts: 'humano / auto' },
     { setting: 'Notif', current: payload.notifications === false ? 'off' : 'on', def: 'on', opts: 'on / off' },
   ];
 
@@ -137,7 +137,7 @@ async function showCampaignConfirmation({ ctx, chatId, payload, session, env = p
   lines.push(`\n<i>• = alterado do default</i>`);
   lines.push(`\nResponda <b>sim</b> para rodar ou ajuste antes.`);
   lines.push(`Digite o comando pra alterar (ex: <code>pro</code>, <code>narrador bella</code>, <code>modelo flux</code>)`);
-  lines.push(`<code>não</code> — cancelar`);
+  lines.push(`<code>nêo</code> — cancelar`);
 
   session.setPendingCampaign(chatId, nextPayload);
   await ctx.reply(lines.join('\n'), { parse_mode: 'HTML' });
@@ -209,9 +209,9 @@ Rules:
 - image_source: "brand" (or "marca") if user mentions brand images, project images, fotos da marca; "free" (or "gratis") if user mentions free stock photos, banco de imagens, pexels, unsplash, pixabay; "api" if user mentions AI generation, gerar imagens, criar imagens com IA; "folder" (or "pasta") if user specifies a folder path; "screenshot" (or "captura") if user mentions screenshot, captura de site, print do site, capturar pagina; "solid" (or "solido") if user wants no images, only solid/flat background. When screenshot, also populate "screenshot_urls" with any URLs mentioned. Default "brand".
 - image_background_color: only relevant when image_source is "solid". If user says just "solido", default to "#0D0D0D". If they specify a color, preserve it (e.g. "#112233").
 - image_model: only relevant when image_source is "api". Default is ALWAYS "${getDefaultImageModel(env.IMAGE_PROVIDER)}" (derived from IMAGE_PROVIDER + per-provider defaults in .env). Only change if the user explicitly requests a different model. Options depend on provider: inemaimg → "flux2-klein", "qwen-edit-2511", "ernie", "flux2-dev"; kie → "z-image", "z-image-turbo", "flux-kontext-pro", "flux-kontext-max", "gpt-image-1"; pollinations → "flux".
-- approval_modes: each stage can be "humano" (user must approve), "agente" (AI reviewer decides), or "auto" (advance automatically). Default "auto" for all. Set to "humano" if user explicitly asks for approval before each stage. Set to "agente" if user says "aprovação por agente", "agente revisa".
-- notifications: false only if user explicitly says "sem notificações", "silencioso", "não notificar".
-- video_audio: "narration" if user wants voiceover/narração (default), "music" if user wants background music only, "both" if user wants narration + music, "none" for silent/no audio.
+- approval_modes: each stage can be "humano" (user must approve), "agente" (AI reviewer decides), or "auto" (advance automatically). Default "auto" for all. Set to "humano" if user explicitly asks for approval before each stage. Set to "agente" if user says "aprovaçêo por agente", "agente revisa".
+- notifications: false only if user explicitly says "sem notificações", "silencioso", "nêo notificar".
+- video_audio: "narration" if user wants voiceover/narraçêo (default), "music" if user wants background music only, "both" if user wants narration + music, "none" for silent/no audio.
 - tts_provider: "auto" by default (uses chatterbox-vc local daemon, falls back to fish then elevenlabs). Set to "chatterbox", "fish", "elevenlabs", or "openai" only if the user explicitly asks for that TTS provider.
 - campaign_brief: comprehensive summary of everything the user described
 - Return ONLY the JSON object, no markdown, no explanation`;

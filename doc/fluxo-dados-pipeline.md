@@ -1,6 +1,6 @@
 # Fluxo de Dados do Pipeline timesmkt3
 
-## Visão Geral
+## Visêo Geral
 
 Cada campanha gera uma pasta em `<project_dir>/outputs/<campaign>/` onde todos os agentes gravam e leem dados. O `creative_brief.json` é o hub central — todos os stages downstream dependem dele.
 
@@ -40,7 +40,7 @@ prj/<projeto>/
 └── assets/                    ← imagens da marca (banners, logos, fotos)
 ```
 
-Todos os agentes leem `knowledge/`. Os assets são usados quando `image_source = brand`.
+Todos os agentes leem `knowledge/`. Os assets sêo usados quando `image_source = brand`.
 
 ---
 
@@ -57,7 +57,7 @@ Todos os agentes leem `knowledge/`. Os assets são usados quando `image_source =
 - **Lê:** `research_results.json` + `knowledge/*`
 - **Grava:**
   - `creative/creative_brief.json` — **arquivo central**: ângulo, visual direction, cores, tipografia, assets
-  - `creative/creative_brief.md` — versão legível para aprovação humana
+  - `creative/creative_brief.md` — versêo legível para aprovaçêo humana
 
 ### Copywriter
 - **Lê:** `creative/creative_brief.json` + `knowledge/*`
@@ -79,7 +79,7 @@ Todos os agentes leem `knowledge/`. Os assets são usados quando `image_source =
 
 ## Stage 3: Vídeo
 
-### Phase 1 — Narração (Sonnet, rápido)
+### Phase 1 — Narraçêo (Sonnet, rápido)
 - **Lê:** `knowledge/brand_identity.md` + `creative/creative_brief.json`
 - **Grava:** `audio/<campaign>_video_01_narration.mp3` via ElevenLabs
 - **Pula** se o mp3 já existe (rerun)
@@ -109,13 +109,13 @@ Todos os agentes leem `knowledge/`. Os assets são usados quando `image_source =
 
 ---
 
-## Stage 5: Distribuição
+## Stage 5: Distribuiçêo
 
 ### Distribution Agent
 - **Lê:** tudo acima + `platforms/*.json`
 - **Grava:**
   - `media_urls.json` — URLs públicas no Supabase
-  - `Publish <campaign> <date>.md` — guia de publicação
+  - `Publish <campaign> <date>.md` — guia de publicaçêo
 
 ---
 
@@ -125,7 +125,7 @@ O campo `image_source` no payload define de onde vêm as imagens. **Default: `br
 
 | Valor | Aliases | O que faz | Quando usar |
 |---|---|---|---|
-| `brand` | `marca` | Usa `assets/` + `imgs/` do projeto. Scanneia subpastas 1 nível. Inclui dimensões e tipo no prompt do agente. | **Default.** Sempre que não especificar. Usa fotos reais da marca. |
+| `brand` | `marca` | Usa `assets/` + `imgs/` do projeto. Scanneia subpastas 1 nível. Inclui dimensões e tipo no prompt do agente. | **Default.** Sempre que nêo especificar. Usa fotos reais da marca. |
 | `screenshot` | `captura` | Captura screenshots via Playwright das URLs mencionadas no brief/research/product_campaign + `screenshot_urls` do payload. Combina com assets da marca. | Quando mencionar "screenshot", "captura de site", "print da página" |
 | `folder` | `pasta` | Usa imagens de uma pasta específica (ex: `prj/inema/outputs/c0016/imgs/tema-x/`) | Quando quer direcionar o agente para um conjunto específico de imagens |
 | `api` | — | Gera imagens via Pollinations/z-image. Agente escreve `image_prompt` no scene plan, pipeline gera depois. | Só quando pedir explicitamente "gerar imagens com IA" |
@@ -141,10 +141,10 @@ getProjectAssets(projectDir) scanneia:
 
 Para cada imagem encontrada, detecta:
 - Dimensões (width × height)
-- Orientação (landscape/portrait/square)
+- Orientaçêo (landscape/portrait/square)
 - Tipo (banner, photo, logo, clip)
 
-Essas informações são passadas no prompt do agente para que ele faça escolhas inteligentes de crop, composição e reuso.
+Essas informações sêo passadas no prompt do agente para que ele faça escolhas inteligentes de crop, composiçêo e reuso.
 
 ### Como funciona `screenshot`
 
@@ -176,7 +176,7 @@ getFolderAssets(folderPath) scanneia:
 
 ### Como funciona `api`
 
-1. Agente escreve `image_prompt` (descrição em inglês, max 200 chars) para cada cut
+1. Agente escreve `image_prompt` (descriçêo em inglês, max 200 chars) para cada cut
 2. Agente também gera `unique_images` — lista de prompts únicos (max 15)
 3. Pipeline gera uma imagem por prompt único via Pollinations API
 4. Mapeia a mesma imagem para múltiplos cuts (com crop_focus e motion diferentes)
@@ -202,14 +202,14 @@ prj/inema/outputs/<campanha>/imgs/
 └── *.jpg                ← imagens soltas (geradas por API, etc.)
 ```
 
-O `getProjectAssets()` scanneia recursivamente 1 nível, então subpastas são incluídas automaticamente no prompt do agente com seus caminhos completos.
+O `getProjectAssets()` scanneia recursivamente 1 nível, entêo subpastas sêo incluídas automaticamente no prompt do agente com seus caminhos completos.
 
 ---
 
-## Regra de Seleção
+## Regra de Seleçêo
 
 1. Se o usuário diz "screenshot", "captura de site", "print da página" → `image_source: screenshot`
 2. Se o usuário diz "api", "gerar imagens", "IA" → `image_source: api`
 3. Se o usuário diz "free", "stock", "pexels", "banco de imagens" → `image_source: free`
 4. Se o usuário diz "pasta X", "usar imagens de X" → `image_source: folder`, `image_folder: X`
-5. **Se não diz nada** → `image_source: brand` → usa `assets/` + `imgs/` do projeto
+5. **Se nêo diz nada** → `image_source: brand` → usa `assets/` + `imgs/` do projeto

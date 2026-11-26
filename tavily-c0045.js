@@ -7,9 +7,9 @@ const key = envData.match(/TAVILY_API_KEY=(.*)/)[1].trim();
 const client = tavily({ apiKey: key });
 
 const queries = [
-  "inteligência artificial iniciantes empresas tendências 2025 transformação digital",
+  "inteligência artificial iniciantes empresas tendências 2025 transformaçêo digital",
   "concorrentes cursos IA empresas gestores estratégias marketing Brasil 2025",
-  "dores gestores empresas processos manuais automação IA resistência mudança",
+  "dores gestores empresas processos manuais automaçêo IA resistência mudança",
   "melhores hooks anúncios IA iniciantes aprender inteligência artificial rápido",
   "conteúdo viral IA iniciantes empresas redes sociais tópicos 2025"
 ];

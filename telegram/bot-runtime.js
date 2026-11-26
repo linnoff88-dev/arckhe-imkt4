@@ -109,7 +109,7 @@ Be concise and helpful. You have full access to the codebase.`;
 
       const worker = ensureWorker();
       if (!worker) {
-        ctx.reply('Worker já rodando — jobs serão processados automaticamente.');
+        ctx.reply('Worker já rodando — jobs serêo processados automaticamente.');
         return;
       }
 
@@ -142,7 +142,7 @@ Be concise and helpful. You have full access to the codebase.`;
         if (text.includes('[VIDEO_APPROVAL_NEEDED]')) {
           const match = text.match(/\[VIDEO_APPROVAL_NEEDED\]\s*(\S+)/);
           if (match) {
-            ctx.reply('Roteiro de vídeo pronto. Preparando para revisão...').then(() => {
+            ctx.reply('Roteiro de vídeo pronto. Preparando para revisêo...').then(() => {
               sendVideoApprovalRequest(ctx, chatId, match[1]).catch((err) => {
                 console.error('Error sending video approval:', err.message);
               });
@@ -153,7 +153,7 @@ Be concise and helpful. You have full access to the codebase.`;
         if (text.includes('[VIDEO_QUICK_AUDIO_MISSING]')) {
           const match = text.match(/\[VIDEO_QUICK_AUDIO_MISSING\]\s*(\S+)\s+(\S+)/);
           if (match) {
-            ctx.reply(`⚠️ Video Quick parou por falta de narração reaproveitável (${match[2]}). Refaça a TTS ou gere novo áudio antes do rerun.`);
+            ctx.reply(`⚠️ Video Quick parou por falta de narraçêo reaproveitável (${match[2]}). Refaça a TTS ou gere novo áudio antes do rerun.`);
           }
         }
       });
@@ -263,10 +263,10 @@ Be concise and helpful. You have full access to the codebase.`;
             session.setPendingImageError(chatId, { outputDir: failingOutputDir });
             bot.api.sendMessage(
               chatId,
-              `⚠️ <b>Erro na geração de imagens</b>\n\n<code>${errorMsg}</code>\n\n`
+              `⚠️ <b>Erro na geraçêo de imagens</b>\n\n<code>${errorMsg}</code>\n\n`
                 + `O que deseja fazer?\n`
                 + `• <b>avançar</b> — continuar sem imagens (CSS)\n`
-                + `• <b>tentar novamente</b> — repetir a geração\n`
+                + `• <b>tentar novamente</b> — repetir a geraçêo\n`
                 + `• <b>outra fonte</b> — trocar: api, free, brand, pasta xxx\n`
                 + `• <b>cancelar</b> — cancelar a campanha`,
               { parse_mode: 'HTML' },
@@ -312,7 +312,7 @@ Be concise and helpful. You have full access to the codebase.`;
           if (match) {
             bot.api.sendMessage(
               chatId,
-              `⚠️ <b>Video Quick parado</b>\nSem narração reaproveitável para <code>${match[2]}</code>.\nRefaça a TTS ou gere novo áudio antes do rerun.`,
+              `⚠️ <b>Video Quick parado</b>\nSem narraçêo reaproveitável para <code>${match[2]}</code>.\nRefaça a TTS ou gere novo áudio antes do rerun.`,
               { parse_mode: 'HTML' },
             ).catch(() => {});
           }
@@ -323,7 +323,7 @@ Be concise and helpful. You have full access to the codebase.`;
           if (match) {
             bot.api.sendMessage(
               chatId,
-              `⚠️ <b>Etapa 3 bloqueada</b>\nÁudio é obrigatório para <code>${match[2]}</code>.\nSe quiser seguir sem áudio, peça explicitamente <code>video_audio none</code>.\nMotivo: <code>${match[3] || 'sem provider ou sem narração disponível'}</code>`,
+              `⚠️ <b>Etapa 3 bloqueada</b>\nÁudio é obrigatório para <code>${match[2]}</code>.\nSe quiser seguir sem áudio, peça explicitamente <code>video_audio none</code>.\nMotivo: <code>${match[3] || 'sem provider ou sem narraçêo disponível'}</code>`,
               { parse_mode: 'HTML' },
             ).catch(() => {});
           }

@@ -5,7 +5,7 @@
  *
  * Usage:
  *   const { generateSpeech } = require('./tts-generator');
- *   await generateSpeech('Bom dia, mãe.', 'output.mp3', { provider: 'elevenlabs', language: 'pt-BR' });
+ *   await generateSpeech('Bom dia, mêe.', 'output.mp3', { provider: 'elevenlabs', language: 'pt-BR' });
  */
 
 const fs = require('fs');
@@ -229,7 +229,7 @@ async function generateSpeechSingle(text, outputPath, options = {}) {
 
 /**
  * Gera fala com fallback automático. Se o provider primário falhar (ex.: daemon
- * Chatterbox não responde), tenta o fallback mapeado em TTS_FALLBACK.
+ * Chatterbox nêo responde), tenta o fallback mapeado em TTS_FALLBACK.
  * Desabilita com options.noFallback = true.
  */
 async function generateSpeech(text, outputPath, options = {}) {

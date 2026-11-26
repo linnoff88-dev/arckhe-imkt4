@@ -177,7 +177,7 @@ const slides = [
       Raciocínio dinâmico<br>é a arquitetura de agora.
     </div>
     <div class="anim-up delay3" style="font-size:32px;font-weight:400;color:rgba(255,255,255,0.5);line-height:1.4;font-style:italic;">
-      If/else não vai te levar para 2030.
+      If/else nêo vai te levar para 2030.
     </div>
   </div>
 
@@ -292,7 +292,7 @@ const slides = [
 
     <!-- Headline -->
     <div class="anim-up" style="font-size:92px;font-weight:800;color:${C.white};line-height:0.98;letter-spacing:-0.02em;text-shadow:0 4px 24px rgba(0,0,0,0.8);margin-bottom:28px;">
-      Não é<br>ficção<br><span style="color:${C.blue};">científica.</span>
+      Nêo é<br>ficçêo<br><span style="color:${C.blue};">científica.</span>
     </div>
 
     <!-- Subtext -->

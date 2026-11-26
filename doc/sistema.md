@@ -1,8 +1,8 @@
 # Sistema timesmkt3
 
-> **timesmkt3 v4.5** — INEMA Time de Agentes de Marketing. Sistema de automação de marketing de conteúdo alimentado por agentes IA coordenados por um bot do Telegram.
+> **timesmkt3 v4.5** — INEMA Time de Agentes de Marketing. Sistema de automaçêo de marketing de conteúdo alimentado por agentes IA coordenados por um bot do Telegram.
 
-Este documento é a visão geral pública do sistema. Para operação interna detalhada (versionamento, PM2, Redis, comando `/import` etc.), veja [`CLAUDE.md`](../CLAUDE.md) na raiz.
+Este documento é a visêo geral pública do sistema. Para operaçêo interna detalhada (versionamento, PM2, Redis, comando `/import` etc.), veja [`CLAUDE.md`](../CLAUDE.md) na raiz.
 
 ---
 
@@ -11,7 +11,7 @@ Este documento é a visão geral pública do sistema. Para operação interna de
 Transforma um briefing em linguagem natural em conteúdo publicável em 6 plataformas, passando por 5 etapas com aprovações humanas configuráveis:
 
 ```
-Briefing → Pesquisa → Estratégia → Copy → Imagens → Vídeo → Plataformas → Distribuição
+Briefing → Pesquisa → Estratégia → Copy → Imagens → Vídeo → Plataformas → Distribuiçêo
 ```
 
 13+ agentes especializados, cada um rodando como subprocesso `claude -p` com acesso total a ferramentas (Read, Write, Bash, Playwright, ffmpeg, Remotion, APIs de mídia).
@@ -24,23 +24,23 @@ Briefing → Pesquisa → Estratégia → Copy → Imagens → Vídeo → Plataf
 ┌─────────────────────────────────────────────────────────────┐
 │  Stage 1: Estratégia & Narrativa                            │
 │  Research Agent → Diretor Criativo → Copywriter             │
-│                          [APROVAÇÃO 1 — brief + narrativa]  │
+│                          [APROVAÇêO 1 — brief + narrativa]  │
 ├─────────────────────────────────────────────────────────────┤
 │  Stage 2: Imagens                                           │
 │  Ad Creative Designer                                       │
-│                          [APROVAÇÃO 2 — imagens estáticas]  │
+│                          [APROVAÇêO 2 — imagens estáticas]  │
 ├─────────────────────────────────────────────────────────────┤
 │  Stage 3: Vídeo                                             │
 │  Video Quick (ffmpeg) + Video Pro (Remotion, sob demanda)   │
-│                          [APROVAÇÃO 3 — vídeo + plataformas]│
+│                          [APROVAÇêO 3 — vídeo + plataformas]│
 ├─────────────────────────────────────────────────────────────┤
 │  Stage 4: Plataformas                                       │
 │  6 agentes nativos: IG + YT + TikTok + FB + Threads + LI    │
-│                          [APROVAÇÃO 4 — copy nativo]        │
+│                          [APROVAÇêO 4 — copy nativo]        │
 ├─────────────────────────────────────────────────────────────┤
-│  Stage 5: Distribuição                                      │
+│  Stage 5: Distribuiçêo                                      │
 │  Upload Supabase + Agendar + Publicar via APIs oficiais     │
-│                          [APROVAÇÃO 5 — publicar]           │
+│                          [APROVAÇêO 5 — publicar]           │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -50,7 +50,7 @@ Detalhamento por etapa em [`fluxo-pipeline-v4.md`](fluxo-pipeline-v4.md) e manua
 - [Stage 2 — Imagens](manual-stage2-imagens.md)
 - [Stage 3 — Vídeo](manual-stage3-video.md)
 - [Stage 4 — Plataformas](manual-stage4-plataformas.md)
-- [Stage 5 — Distribuição](manual-stage5-distribuicao.md)
+- [Stage 5 — Distribuiçêo](manual-stage5-distribuicao.md)
 
 ---
 
@@ -64,13 +64,13 @@ Detalhamento por etapa em [`fluxo-pipeline-v4.md`](fluxo-pipeline-v4.md) e manua
 | **BullMQ + Redis** | Fila de jobs com persistência |
 | **PM2** | Process manager — mantém bot + worker + TTS daemon rodando |
 
-### Modos de aprovação por etapa
+### Modos de aprovaçêo por etapa
 
 Configurável via `approval_modes` no payload:
 
 | Modo | Comportamento |
 |---|---|
-| `humano` | Bot envia resultado e aguarda confirmação (padrão) |
+| `humano` | Bot envia resultado e aguarda confirmaçêo (padrêo) |
 | `auto` | Avança automaticamente |
 | `agente` | Agente Revisor avalia e decide |
 
@@ -80,21 +80,21 @@ Detalhes em [`pipeline-aprovacoes.md`](pipeline-aprovacoes.md).
 
 ## Agentes
 
-### Criação
+### Criaçêo
 - **Marketing Research Agent** — 5 buscas Tavily (tendências, concorrentes, audiência, hooks, virais); gera JSON + Markdown + HTML interativo
-- **Creative Director** — escolhe UM ângulo estratégico; define direção visual e guardrails
+- **Creative Director** — escolhe UM ângulo estratégico; define direçêo visual e guardrails
 - **Copywriter Agent** — narrativa central consumida pelos agentes de plataforma
 - **Ad Creative Designer** — gera JSON de layout, renderiza HTML → PNG 1080×1080 via Playwright
 - **Video Quick** — slideshow 10-20s com Ken Burns + transições via ffmpeg
-- **Video Pro** — vídeo profissional 30-60s com narração + música + scene plan via Remotion
+- **Video Pro** — vídeo profissional 30-60s com narraçêo + música + scene plan via Remotion
 
 Specs completas em [`agentes-criacao.md`](agentes-criacao.md).
 
 ### Plataformas (Stage 4)
 6 agentes nativos (um por plataforma) que adaptam a narrativa central ao formato específico. Só rodam as plataformas listadas em `platform_targets`. Specs em [`agentes-distribuicao.md`](agentes-distribuicao.md).
 
-### Distribuição (Stage 5)
-Upload para Supabase (bucket `campaign-uploads`), gera `media_urls.json`, monta `Publish <campanha>.md` advisory. Publicação real só ocorre quando o usuário referencia o MD pelo nome.
+### Distribuiçêo (Stage 5)
+Upload para Supabase (bucket `campaign-uploads`), gera `media_urls.json`, monta `Publish <campanha>.md` advisory. Publicaçêo real só ocorre quando o usuário referencia o MD pelo nome.
 
 ---
 
@@ -104,7 +104,7 @@ Controlam o `visual_type` de cada cena:
 
 | Template | Foco | Mix visual |
 |---|---|---|
-| `auto` | Agente decide (padrão) | Livre |
+| `auto` | Agente decide (padrêo) | Livre |
 | `data_story` | Dados/estatísticas | ~60% chart, ~20% card, ~20% foto |
 | `explainer` | Explicar conceitos | ~40% list/card, ~30% foto, ~30% chart |
 | `narrativo` | Narrativa visual | ~50% card, ~30% foto, ~20% chart |
@@ -119,7 +119,7 @@ Múltiplos templates podem rodar em paralelo: `/rerun c13 video pro data_story e
 ## Comandos do Bot
 
 ### Pipeline
-| Comando | Função |
+| Comando | Funçêo |
 |---|---|
 | `/campanha <nome>` | Roda pipeline completo (5 etapas) |
 | `/rerun <campanha> <etapas> [flags]` | Reprocessar etapas específicas |
@@ -128,7 +128,7 @@ Múltiplos templates podem rodar em paralelo: `/rerun c13 video pro data_story e
 | `/status` | Status detalhado por etapa |
 
 ### Lotes
-| Comando | Função |
+| Comando | Funçêo |
 |---|---|
 | `/lotequick <campanhas> fonte ...` | Batch video quick (uma campanha por vez) |
 | `/loterun <c1,c2,...> <etapas>` | Batch rerun em série (ex: vários Pro) |
@@ -142,7 +142,7 @@ Exemplos:
 ```
 
 ### Saídas
-| Comando | Função |
+| Comando | Funçêo |
 |---|---|
 | `/outputs` | Listar campanhas |
 | `/relatorio <campanha>` | Resumo + arquivos disponíveis |
@@ -180,7 +180,7 @@ prj/
             ├── ads/            ← layouts + PNG 1080×1080
             ├── imgs/           ← imagens geradas (API ou assets)
             ├── video/          ← MP4 Quick + Pro
-            ├── audio/          ← narração (Chatterbox/Fish/ElevenLabs)
+            ├── audio/          ← narraçêo (Chatterbox/Fish/ElevenLabs)
             ├── platforms/      ← copy nativo por plataforma
             ├── logs/           ← log por agente
             └── Publish <campanha> <data>.md
@@ -201,7 +201,7 @@ Todos os agentes consultam esses arquivos como fonte de verdade do projeto.
 |---|---|
 | Node.js + Telegraf | Bot e orchestrator |
 | BullMQ + Redis | Fila de jobs |
-| Claude CLI (`claude -p`) | Execução de agentes |
+| Claude CLI (`claude -p`) | Execuçêo de agentes |
 | Tavily AI SDK | Pesquisa de mercado |
 | Playwright (Chromium) | HTML → PNG 1080×1080 |
 | ffmpeg | Render video Quick |
@@ -209,15 +209,15 @@ Todos os agentes consultam esses arquivos como fonte de verdade do projeto.
 | Chatterbox VC (local) | TTS default, gratuito |
 | Fish Audio / ElevenLabs | TTS fallback |
 | Supabase Storage | Hospedagem de mídia |
-| Instagram Graph API | Publicação IG |
-| YouTube Data API | Publicação YT |
-| Threads API | Publicação Threads |
+| Instagram Graph API | Publicaçêo IG |
+| YouTube Data API | Publicaçêo YT |
+| Threads API | Publicaçêo Threads |
 
 ---
 
 ## Fluxo de Dados
 
-Do payload inicial à publicação, cada etapa consome JSONs da etapa anterior:
+Do payload inicial à publicaçêo, cada etapa consome JSONs da etapa anterior:
 
 ```
 campaign_payload.json
@@ -237,7 +237,7 @@ Detalhes em [`fluxo-dados-pipeline.md`](fluxo-dados-pipeline.md).
 
 ## Aprovações
 
-Por padrão cada etapa pede confirmação humana via Telegram. O usuário pode:
+Por padrêo cada etapa pede confirmaçêo humana via Telegram. O usuário pode:
 - Responder `sim` para aprovar
 - Dar feedback em texto livre → agente ajusta e re-envia
 - Responder `auto`/`humano`/`agente` via `/modos` para mudar o modo
@@ -246,14 +246,14 @@ Gate interno de imagens (`[IMAGE_APPROVAL_NEEDED]`) é separado do gate de stage
 
 ---
 
-## Documentação Relacionada
+## Documentaçêo Relacionada
 
 **Manuais por etapa:**
 - [Stage 1 — Estratégia](manual-stage1-estrategia.md)
 - [Stage 2 — Imagens](manual-stage2-imagens.md)
 - [Stage 3 — Vídeo](manual-stage3-video.md)
 - [Stage 4 — Plataformas](manual-stage4-plataformas.md)
-- [Stage 5 — Distribuição](manual-stage5-distribuicao.md)
+- [Stage 5 — Distribuiçêo](manual-stage5-distribuicao.md)
 
 **Temas específicos:**
 - [Fluxo completo v4](fluxo-pipeline-v4.md)
@@ -265,13 +265,13 @@ Gate interno de imagens (`[IMAGE_APPROVAL_NEEDED]`) é separado do gate de stage
 - [Remotion — componentes](manual-remotion-componentes.md)
 - [TTS daemon (Chatterbox)](tts-daemon-notas.md)
 - [Import worker (lotes)](import-worker-campanhas.md)
-- [Agentes de criação](agentes-criacao.md)
-- [Agentes de distribuição](agentes-distribuicao.md)
+- [Agentes de criaçêo](agentes-criacao.md)
+- [Agentes de distribuiçêo](agentes-distribuicao.md)
 
 **Decisões arquiteturais:**
-- [Migração CLI → API](migracao-cli-para-api.md)
+- [Migraçêo CLI → API](migracao-cli-para-api.md)
 - [LLM Provider multi-campanha](plano-llm-provider-multicampanha.md)
 - [Plano Remotion renderer](plano-remotion-renderer.md)
 
-**Interno (operação diária):**
+**Interno (operaçêo diária):**
 - [`CLAUDE.md`](../CLAUDE.md) — versionamento, PM2, Redis, comando `/import`, regras de comportamento

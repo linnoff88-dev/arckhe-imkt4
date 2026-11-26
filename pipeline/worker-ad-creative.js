@@ -122,12 +122,12 @@ function createAdCreativeHandler({
 
       const decisionPath = path.resolve(projectRoot, outputDir, 'imgs', 'error_decision.json');
       const decided = await waitForFile(decisionPath, 600000);
-      if (!decided) throw new Error('Timeout aguardando decisão do usuário sobre erro de imagens');
+      if (!decided) throw new Error('Timeout aguardando decisêo do usuário sobre erro de imagens');
 
       const decision = JSON.parse(fs.readFileSync(decisionPath, 'utf-8'));
       fs.unlinkSync(decisionPath);
 
-      if (decision.action === 'cancel') throw new Error('Geração de imagens cancelada pelo usuário');
+      if (decision.action === 'cancel') throw new Error('Geraçêo de imagens cancelada pelo usuário');
       if (decision.action === 'retry') {
         log(outputDir, 'api_image_gen', 'Retrying image generation by user request...');
         return generateApiImages(outputDir, projectDir, model, count, formats, brief, useBrandOverlay, scenePurposes);

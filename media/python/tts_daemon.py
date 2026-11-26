@@ -2,7 +2,7 @@
 """
 tts_daemon.py — Daemon TTS do timesmkt3 (Chatterbox VC + Edge TTS)
 
-Pipeline por requisição:
+Pipeline por requisiçêo:
   1. edge_tts (pt-BR-FranciscaNeural) gera fala nativa PT-BR em mp3
   2. ChatterboxVC converte o timbre para a voz do voice-ref escolhido
   3. ffmpeg converte wav → mp3 e devolve os bytes na resposta HTTP
@@ -10,7 +10,7 @@ Pipeline por requisição:
 Por que um daemon em vez de subprocess por chamada:
   O batch de narrações do timesmkt3 roda várias gerações em série. Cada
   `python3 -c "import torch; ChatterboxVC.from_pretrained(...)"` custa ~10s
-  de cold start. O daemon carrega o modelo uma vez na inicialização e
+  de cold start. O daemon carrega o modelo uma vez na inicializaçêo e
   mantém em VRAM, baixando o overhead por chamada para ~3s.
 
 Uso:
@@ -36,7 +36,7 @@ import torch
 from fastapi import FastAPI, HTTPException, Response
 from pydantic import BaseModel
 
-# ── Configuração ────────────────────────────────────────────────────────────
+# ── Configuraçêo ────────────────────────────────────────────────────────────
 
 THIS_DIR = Path(__file__).resolve().parent
 VOICE_REFS_DIR = THIS_DIR.parent / "voice-refs"

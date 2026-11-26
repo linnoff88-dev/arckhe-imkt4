@@ -730,7 +730,7 @@ IMPORTANT: Output ONLY the photography_plan.json file. Do NOT create scene plans
       } else {
         const readFileCompact = (filePath) => {
           const abs = path.resolve(projectRoot, filePath);
-          if (!fs.existsSync(abs)) return '(arquivo não encontrado)';
+          if (!fs.existsSync(abs)) return '(arquivo nêo encontrado)';
           return fs.readFileSync(abs, 'utf-8').slice(0, 4000);
         };
         const brandIdentity = readFileCompact(`${project_dir}/knowledge/brand_identity.md`);
@@ -939,7 +939,7 @@ CRITICAL: This is a cinematic template — photos MUST have varied motion (zoom_
 
     let scenePlanPrompt;
     if (sceneQuality === 'premium') {
-      scenePlanPrompt = `You are the Video Editor Agent (Diretor de Edição). Follow the skill defined in skills/video-editor-agent/SKILL.md exactly.
+      scenePlanPrompt = `You are the Video Editor Agent (Diretor de Ediçêo). Follow the skill defined in skills/video-editor-agent/SKILL.md exactly.
 
 You think like a PROFESSIONAL VIDEO EDITOR. You create 30-50 rapid cuts — NOT a 5-scene slideshow.
 The Photography Director has already defined the visual language. Your job is to create the EDIT TIMELINE following those decisions.
@@ -1076,7 +1076,7 @@ JSON structure:
   "narration_file": "${narrationTimings[0]?.file || 'null'}", "music": null, "music_volume": 0.15,
   "scenes": [
     { "id": "hook_01", "type": "hook", "visual_type": "photo",
-      "keyword": "TRANSFORMAÇÃO", "duration": 1.5,
+      "keyword": "TRANSFORMAÇêO", "duration": 1.5,
       "narration": "E se sua empresa pudesse crescer enquanto você dorme?" },
     { "id": "data_01", "type": "data", "visual_type": "chart",
       "keyword": "ROI DE IA", "duration": 6,
@@ -1084,17 +1084,17 @@ JSON structure:
       "chart_data": [{"label":"Atendimento","value":31},{"label":"Vendas","value":24}],
       "narration": "O ROI médio de IA hoje está em dezesseis por cento." },
     { "id": "insight_01", "type": "insight", "visual_type": "text_card",
-      "keyword": "AUTOMAÇÃO", "duration": 5,
-      "card_title": "Cada gargalo é uma automação vendável",
+      "keyword": "AUTOMAÇêO", "duration": 5,
+      "card_title": "Cada gargalo é uma automaçêo vendável",
       "card_body": "O mercado já está pagando por isso.",
-      "narration": "Cada gargalo que você enxerga é uma automação vendável." }
+      "narration": "Cada gargalo que você enxerga é uma automaçêo vendável." }
   ]
 }
 
 RULES:
 - 15-25 scenes. Sum of durations MUST equal ${videoDur}s exactly
 - First scene: "photo" with impactful keyword, ≤1.5s
-- Second-to-last scene: visual_type "cta" with cta_brand (URL/marca) + cta_action (texto de ação), ≥3s
+- Second-to-last scene: visual_type "cta" with cta_brand (URL/marca) + cta_action (texto de açêo), ≥3s
 - Last scene: silent hold, visual_type "cta" with same cta_brand, duration 3s, narration ""
 - When narration mentions numbers/percentages → use "chart"
 - When narration lists steps/features → use "list"
@@ -1382,9 +1382,9 @@ ${violationsList}
 ${violations.length > 15 ? `\n... e mais ${violations.length - 15} violações.\n` : ''}
 INSTRUÇÕES:
 1. Leia o arquivo ${planPath}
-2. Corrija CADA violação listada acima
+2. Corrija CADA violaçêo listada acima
 3. Salve o arquivo corrigido no MESMO path
-4. NÃO mude cenas que não têm violação
+4. NêO mude cenas que nêo têm violaçêo
 5. Mantenha a estrutura JSON intacta
 ${errorPatternsHint}
 

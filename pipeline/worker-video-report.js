@@ -132,7 +132,7 @@ async function generateReport(opts) {
     scenes.push({
       id: 'advantage_01', type: 'insight', visual_type: 'text_card',
       keyword: 'SUA VANTAGEM', duration: 6,
-      card_title: `O que ${compName} não oferece`,
+      card_title: `O que ${compName} nêo oferece`,
       card_body: gap,
       narration: `${compName} ${gap}`,
     });
@@ -142,7 +142,7 @@ async function generateReport(opts) {
   if (r.angles?.length > 0) {
     scenes.push({
       id: 'solution_01', type: 'solution', visual_type: 'list',
-      keyword: 'A SOLUÇÃO', duration: 8,
+      keyword: 'A SOLUÇêO', duration: 8,
       list_title: `O que ${brand} oferece para você`,
       list_items: r.angles.slice(0, 4).map(a => a.angle || a.angulo || a.positioning || a.posicionamento || ''),
       list_numbered: true,

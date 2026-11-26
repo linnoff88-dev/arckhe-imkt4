@@ -33,8 +33,8 @@ const slides = [
 // ─── 01 · HOOK ──────────────────────────────────────────────────────────────
 {
   id: '01',
-  concept: 'Hook — A IA que a Anthropic decidiu não liberar',
-  headline: 'A IA que a Anthropic decidiu não liberar',
+  concept: 'Hook — A IA que a Anthropic decidiu nêo liberar',
+  headline: 'A IA que a Anthropic decidiu nêo liberar',
   copy_source: 'headlines[0]',
   images_used: [img(16)],
   html: html('', `
@@ -49,7 +49,7 @@ const slides = [
           <h1 style="font-size:106px;font-weight:800;line-height:1.0;letter-spacing:-0.025em;color:#FFF;text-shadow:0 4px 32px rgba(0,0,0,0.85),0 0 60px rgba(0,0,0,0.4);max-width:940px;">
             A IA que a<br>
             <span style="color:#0099FF;">Anthropic</span><br>
-            decidiu <span style="color:#00FF88;">não liberar</span>
+            decidiu <span style="color:#00FF88;">nêo liberar</span>
           </h1>
         </div>
         <!-- BOTTOM -->
@@ -62,10 +62,10 @@ const slides = [
   `)
 },
 
-// ─── 02 · REVELAÇÃO ─────────────────────────────────────────────────────────
+// ─── 02 · REVELAÇêO ─────────────────────────────────────────────────────────
 {
   id: '02',
-  concept: 'Revelação — Mythos Preview existe mas não será liberado',
+  concept: 'Revelaçêo — Mythos Preview existe mas nêo será liberado',
   headline: 'A Anthropic tem um modelo mais avançado que o Opus 4.7',
   copy_source: 'carousel_texts[0]',
   images_used: [img(18)],
@@ -75,13 +75,13 @@ const slides = [
       <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.38) 50%,rgba(0,0,0,0.72) 100%);"></div>
       <div style="position:relative;z-index:2;width:100%;height:100%;padding:72px;display:flex;flex-direction:column;justify-content:space-between;">
         <div>
-          <div style="font-size:20px;font-weight:700;letter-spacing:0.2em;color:#0099FF;text-transform:uppercase;margin-bottom:32px;">A REVELAÇÃO</div>
+          <div style="font-size:20px;font-weight:700;letter-spacing:0.2em;color:#0099FF;text-transform:uppercase;margin-bottom:32px;">A REVELAÇêO</div>
           <h1 style="font-size:72px;font-weight:800;line-height:1.08;color:#FFF;text-shadow:0 4px 24px rgba(0,0,0,0.85);max-width:960px;">
             A Anthropic tem um modelo<br><span style="color:#0099FF;">mais avançado</span><br>que o Opus 4.7.
           </h1>
         </div>
         <div>
-          <p style="font-size:52px;font-weight:700;color:#FFF;text-shadow:0 2px 16px rgba(0,0,0,0.8);margin-bottom:20px;">Não vai te dar acesso.</p>
+          <p style="font-size:52px;font-weight:700;color:#FFF;text-shadow:0 2px 16px rgba(0,0,0,0.8);margin-bottom:20px;">Nêo vai te dar acesso.</p>
           <div style="width:80px;height:3px;background:linear-gradient(90deg,#0099FF,#00FF88);margin-bottom:24px;border-radius:2px;"></div>
           <p style="font-size:38px;font-weight:500;color:rgba(255,255,255,0.78);text-shadow:0 2px 8px rgba(0,0,0,0.7);line-height:1.35;">Isso importa mais que qualquer benchmark.</p>
           <div style="margin-top:40px;font-size:22px;color:rgba(255,255,255,0.38);letter-spacing:0.1em;">02 / 15</div>
@@ -94,8 +94,8 @@ const slides = [
 // ─── 03 · POSICIONAMENTO (split) ─────────────────────────────────────────────
 {
   id: '03',
-  concept: 'Posicionamento — Não o mais poderoso, o mais responsável',
-  headline: 'Não é o mais poderoso. É o mais responsável.',
+  concept: 'Posicionamento — Nêo o mais poderoso, o mais responsável',
+  headline: 'Nêo é o mais poderoso. É o mais responsável.',
   copy_source: 'headlines[2]',
   images_used: [img(20)],
   html: html('', `
@@ -103,7 +103,7 @@ const slides = [
       <!-- LEFT: solid dark -->
       <div style="width:510px;height:1080px;background:#0D0D0D;padding:72px 56px;display:flex;flex-direction:column;justify-content:center;z-index:2;position:relative;">
         <div style="font-size:19px;font-weight:700;letter-spacing:0.18em;color:#00FF88;text-transform:uppercase;margin-bottom:36px;">POSICIONAMENTO</div>
-        <p style="font-size:74px;font-weight:800;line-height:1.05;color:#FFF;letter-spacing:-0.02em;margin-bottom:0;">Não é o mais poderoso.</p>
+        <p style="font-size:74px;font-weight:800;line-height:1.05;color:#FFF;letter-spacing:-0.02em;margin-bottom:0;">Nêo é o mais poderoso.</p>
         <div style="width:72px;height:4px;background:linear-gradient(90deg,#0099FF,#00FF88);margin:32px 0;border-radius:2px;"></div>
         <p style="font-size:74px;font-weight:800;line-height:1.05;color:#00FF88;letter-spacing:-0.02em;">É o mais responsável.</p>
         <div style="margin-top:auto;padding-top:48px;font-size:22px;color:rgba(255,255,255,0.38);letter-spacing:0.1em;">03 / 15</div>
@@ -151,7 +151,7 @@ const slides = [
 // ─── 05 · MODELO PONTE — benefícios ─────────────────────────────────────────
 {
   id: '05',
-  concept: 'Modelo ponte — benefícios reais, não hype',
+  concept: 'Modelo ponte — benefícios reais, nêo hype',
   headline: 'O Opus 4.7 é o modelo ponte. Melhorias reais.',
   copy_source: 'carousel_texts[1]',
   images_used: [img(23)],
@@ -165,9 +165,9 @@ const slides = [
           <h2 style="font-size:72px;font-weight:800;line-height:1.05;color:#FFF;text-shadow:0 4px 24px rgba(0,0,0,0.85);">O Opus 4.7<br>é o modelo ponte.</h2>
         </div>
         <div>
-          <p style="font-size:40px;font-weight:600;color:rgba(255,255,255,0.8);margin-bottom:28px;">Melhorias reais — não hype:</p>
+          <p style="font-size:40px;font-weight:600;color:rgba(255,255,255,0.8);margin-bottom:28px;">Melhorias reais — nêo hype:</p>
           <div style="display:flex;flex-direction:column;gap:22px;">
-            ${['Memória em sessões longas','Visão avançada','Código mais preciso','Melhor em finanças e direito'].map(it=>`
+            ${['Memória em sessões longas','Visêo avançada','Código mais preciso','Melhor em finanças e direito'].map(it=>`
               <div style="display:flex;align-items:center;gap:22px;">
                 <div style="width:10px;height:10px;background:#00FF88;border-radius:50%;flex-shrink:0;"></div>
                 <span style="font-size:40px;font-weight:600;color:#FFF;text-shadow:0 2px 8px rgba(0,0,0,0.6);">${it}</span>
@@ -211,10 +211,10 @@ const slides = [
   `)
 },
 
-// ─── 07 · CÓDIGO + VISÃO (glassmorphism cards) ──────────────────────────────
+// ─── 07 · CÓDIGO + VISêO (glassmorphism cards) ──────────────────────────────
 {
   id: '07',
-  concept: 'Features — Código mais preciso e visão avançada',
+  concept: 'Features — Código mais preciso e visêo avançada',
   headline: 'Duas melhorias que mudam o fluxo',
   copy_source: 'carousel_texts[1]',
   images_used: [img(26)],
@@ -235,7 +235,7 @@ const slides = [
           </div>
           <div style="flex:1;background:rgba(0,255,136,0.1);backdrop-filter:blur(12px);border:1px solid rgba(0,255,136,0.32);border-radius:16px;padding:40px 34px;">
             <div style="font-size:46px;margin-bottom:14px;">🌐</div>
-            <div style="font-size:36px;font-weight:700;color:#00FF88;margin-bottom:12px;line-height:1.1;">VISÃO<br>AVANÇADA</div>
+            <div style="font-size:36px;font-weight:700;color:#00FF88;margin-bottom:12px;line-height:1.1;">VISêO<br>AVANÇADA</div>
             <div style="font-size:26px;color:rgba(255,255,255,0.72);line-height:1.4;">Análise de imagens mais sofisticada que o Claude 4.6.</div>
           </div>
         </div>
@@ -260,12 +260,12 @@ const slides = [
         <div>
           <div style="display:inline-flex;align-items:center;gap:12px;background:rgba(255,165,0,0.14);border:1.5px solid rgba(255,165,0,0.52);padding:10px 26px;border-radius:6px;margin-bottom:32px;">
             <span style="font-size:22px;">💡</span>
-            <span style="font-size:20px;font-weight:700;letter-spacing:0.13em;color:#FFA500;text-transform:uppercase;">ATENÇÃO — CUSTO OCULTO</span>
+            <span style="font-size:20px;font-weight:700;letter-spacing:0.13em;color:#FFA500;text-transform:uppercase;">ATENÇêO — CUSTO OCULTO</span>
           </div>
           <h2 style="font-size:76px;font-weight:800;line-height:1.05;color:#FFF;text-shadow:0 4px 24px rgba(0,0,0,0.88);">Mesmo preço<br>por token que o 4.6.</h2>
         </div>
         <div>
-          <p style="font-size:46px;font-weight:600;color:rgba(255,255,255,0.85);line-height:1.3;margin-bottom:20px;text-shadow:0 2px 8px rgba(0,0,0,0.72);">Mas atenção:</p>
+          <p style="font-size:46px;font-weight:600;color:rgba(255,255,255,0.85);line-height:1.3;margin-bottom:20px;text-shadow:0 2px 8px rgba(0,0,0,0.72);">Mas atençêo:</p>
           <p style="font-size:42px;font-weight:500;color:rgba(255,255,255,0.78);line-height:1.42;text-shadow:0 2px 8px rgba(0,0,0,0.65);">
             tokenizer novo + mais raciocínio<br>
             <span style="color:#FFA500;font-weight:700;">= pode sair mais caro na prática</span>
@@ -307,7 +307,7 @@ const slides = [
             <div style="flex:1;background:rgba(0,255,136,0.09);border:1px solid rgba(0,255,136,0.22);border-radius:0 12px 12px 0;padding:26px 30px;opacity:0.78;">
               <div style="font-size:22px;font-weight:700;color:#00FF88;letter-spacing:0.1em;margin-bottom:10px;">EM BREVE</div>
               <div style="font-size:34px;font-weight:700;color:#FFF;margin-bottom:6px;">Mythos Preview</div>
-              <div style="font-size:24px;color:rgba(255,255,255,0.62);">Retido. Aguardando aprovação.</div>
+              <div style="font-size:24px;color:rgba(255,255,255,0.62);">Retido. Aguardando aprovaçêo.</div>
             </div>
           </div>
           <div style="font-size:22px;color:rgba(255,255,255,0.38);letter-spacing:0.1em;">09 / 15</div>
@@ -320,8 +320,8 @@ const slides = [
 // ─── 10 · FILOSOFIA (split invertido) ───────────────────────────────────────
 {
   id: '10',
-  concept: 'Filosofia — Segurança não é limitação, é engenharia',
-  headline: 'Segurança não é limitação — é engenharia',
+  concept: 'Filosofia — Segurança nêo é limitaçêo, é engenharia',
+  headline: 'Segurança nêo é limitaçêo — é engenharia',
   copy_source: 'headlines[7]',
   images_used: [img(16)],
   html: html('', `
@@ -335,7 +335,7 @@ const slides = [
       <div style="width:550px;height:1080px;background:#0D0D0D;padding:72px 60px;display:flex;flex-direction:column;justify-content:center;z-index:2;">
         <div style="font-size:19px;font-weight:700;letter-spacing:0.18em;color:#0099FF;text-transform:uppercase;margin-bottom:32px;">FILOSOFIA</div>
         <h2 style="font-size:68px;font-weight:800;line-height:1.06;color:#FFF;margin-bottom:32px;">
-          Segurança não é<br><span style="color:#00FF88;">limitação.</span>
+          Segurança nêo é<br><span style="color:#00FF88;">limitaçêo.</span>
         </h2>
         <div style="width:64px;height:3.5px;background:linear-gradient(90deg,#0099FF,#00FF88);margin-bottom:32px;border-radius:2px;"></div>
         <h2 style="font-size:68px;font-weight:800;line-height:1.06;color:#FFF;">
@@ -347,10 +347,10 @@ const slides = [
   `)
 },
 
-// ─── 11 · DIFERENCIAÇÃO INEMA ───────────────────────────────────────────────
+// ─── 11 · DIFERENCIAÇêO INEMA ───────────────────────────────────────────────
 {
   id: '11',
-  concept: 'Diferenciação — INEMA explica a filosofia por trás',
+  concept: 'Diferenciaçêo — INEMA explica a filosofia por trás',
   headline: 'Enquanto outros recebem o update — a INEMA explica a filosofia',
   copy_source: 'carousel_texts[3]',
   images_used: [img(18)],
@@ -360,7 +360,7 @@ const slides = [
       <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(26,26,46,0.96) 0%,rgba(26,26,46,0.68) 50%,rgba(0,0,0,0.92) 100%);"></div>
       <div style="position:relative;z-index:2;width:100%;height:100%;padding:72px;display:flex;flex-direction:column;justify-content:space-between;">
         <div>
-          <div style="font-size:20px;font-weight:700;letter-spacing:0.16em;color:#0099FF;text-transform:uppercase;margin-bottom:28px;">DIFERENCIAÇÃO</div>
+          <div style="font-size:20px;font-weight:700;letter-spacing:0.16em;color:#0099FF;text-transform:uppercase;margin-bottom:28px;">DIFERENCIAÇêO</div>
           <h2 style="font-size:72px;font-weight:800;line-height:1.05;color:#FFF;text-shadow:0 4px 24px rgba(0,0,0,0.88);">Enquanto outros<br>recebem o update —</h2>
         </div>
         <div>
@@ -441,7 +441,7 @@ const slides = [
 // ─── 14 · SALVA O POST ──────────────────────────────────────────────────────
 {
   id: '14',
-  concept: 'Salva o post — guia de migração 4.6 → 4.7',
+  concept: 'Salva o post — guia de migraçêo 4.6 → 4.7',
   headline: 'Você vai precisar quando for migrar',
   copy_source: 'carousel_texts[5]',
   images_used: [img(23)],
@@ -457,7 +457,7 @@ const slides = [
         <div>
           <div style="background:rgba(0,153,255,0.14);backdrop-filter:blur(12px);border:1px solid rgba(0,153,255,0.42);border-radius:16px;padding:36px 40px;margin-bottom:32px;">
             <div style="font-size:30px;font-weight:700;color:#0099FF;margin-bottom:14px;">GUIA COMPLETO</div>
-            <div style="font-size:40px;font-weight:700;color:#FFF;line-height:1.2;">Migração <span style="color:#FFA500;">4.6 → 4.7</span></div>
+            <div style="font-size:40px;font-weight:700;color:#FFF;line-height:1.2;">Migraçêo <span style="color:#FFA500;">4.6 → 4.7</span></div>
             <div style="font-size:28px;color:rgba(255,255,255,0.68);margin-top:10px;">Em PT-BR. Só na inema.club.</div>
           </div>
           <div style="font-size:22px;color:rgba(255,255,255,0.38);letter-spacing:0.1em;">14 / 15</div>

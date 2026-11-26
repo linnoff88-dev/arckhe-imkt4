@@ -470,7 +470,7 @@ function registerRerunCommands(bot, deps) {
     }
     configLines.push('\n<i>• = alterado do default</i>');
     configLines.push('Responda <b>sim</b> para iniciar ou ajuste antes.');
-    configLines.push('<code>não</code> — cancelar');
+    configLines.push('<code>nêo</code> — cancelar');
 
     await ctx.reply(configLines.join('\n'), { parse_mode: 'HTML' });
     session.setPendingRerun(chatId, { payloads, stages: sortedStages, campaignFolder });
@@ -568,10 +568,10 @@ function registerRerunCommands(bot, deps) {
     const more = resolved.length > 10 ? `\n<i>...e mais ${resolved.length - 10}</i>` : '';
     configLines.push(`\n<b>Campanhas (${resolved.length}):</b>\n${preview}${more}`);
     if (missing.length > 0) {
-      configLines.push(`\n<b>Não encontradas:</b> ${missing.join(', ')}`);
+      configLines.push(`\n<b>Nêo encontradas:</b> ${missing.join(', ')}`);
     }
     configLines.push('\n<i>Roda em série. Se uma falhar, segue a próxima.</i>');
-    configLines.push('Responda <b>sim</b> para iniciar ou <b>não</b> para cancelar.');
+    configLines.push('Responda <b>sim</b> para iniciar ou <b>nêo</b> para cancelar.');
 
     await ctx.reply(configLines.join('\n'), { parse_mode: 'HTML' });
     session.setPendingLoterun(chatId, { items: resolved });

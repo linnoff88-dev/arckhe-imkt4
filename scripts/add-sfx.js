@@ -2,16 +2,16 @@
 /**
  * add-sfx.js — CLI opt-in para adicionar SFX a uma cena específica de um scene plan.
  *
- * **Não é parte do fluxo default** do pipeline. Você chama isso explicitamente
+ * **Nêo é parte do fluxo default** do pipeline. Você chama isso explicitamente
  * quando decide que uma cena de um vídeo merece um efeito sonoro. O scene plan
  * é atualizado em-place: o campo `scene.sfx[]` é acrescentado (ou adicionado),
  * e o render-video-ffmpeg.js mixa via adelay no filter_complex do ffmpeg.
  *
- * Múltiplos SFX por cena: cada invocação adiciona ao array — não substitui.
+ * Múltiplos SFX por cena: cada invocaçêo adiciona ao array — nêo substitui.
  * O offset_s é relativo ao início da cena (0 = entrada, 2 = 2s depois de começar).
  * O render calcula o timestamp absoluto somando as durações das cenas anteriores.
  *
- * Fonte: Freesound (via Pixabay fallback que hoje retorna imagens, então só
+ * Fonte: Freesound (via Pixabay fallback que hoje retorna imagens, entêo só
  * Freesound funciona na prática — ver ivox2/fontes-audio-catalogo.md).
  *
  * Uso:
@@ -61,7 +61,7 @@ Argumentos:
 Opções:
   --offset <sec>   Offset do SFX dentro da cena em segundos (default: 0 = início)
   --volume <0-1>   Volume do SFX no mix final (default: 0.5)
-  --max <sec>      Duração máxima do SFX em segundos (default: 5)
+  --max <sec>      Duraçêo máxima do SFX em segundos (default: 5)
   --provider <p>   Provider preferido: pixabay-sfx (default, fallback freesound) ou freesound
 
 Requer FREESOUND_API_KEY ou PIXABAY_API_KEY no .env.
@@ -83,7 +83,7 @@ async function main() {
   }
   const [scenePlanPath, sceneRef, query] = positional;
 
-  // Tenta interpretar sceneRef como índice numérico primeiro; senão usa como id
+  // Tenta interpretar sceneRef como índice numérico primeiro; senêo usa como id
   const sceneIndexOrId = /^\d+$/.test(sceneRef) ? parseInt(sceneRef, 10) : sceneRef;
 
   try {

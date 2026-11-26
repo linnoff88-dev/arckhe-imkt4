@@ -104,7 +104,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <div class="eyebrow">O problema</div>
   <h1 class="headline">Liderança<br>sem IA<span class="highlight">fica para trás</span></h1>
   <div class="divider"></div>
-  <p class="subline">A divisão não é entre<br>sênior e júnior. É entre<br>quem usa IA e quem espera.</p>
+  <p class="subline">A divisêo nêo é entre<br>sênior e júnior. É entre<br>quem usa IA e quem espera.</p>
 </div>
 <div class="bottom-bar">
   <span class="brand">INEMA</span>
@@ -228,16 +228,16 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="glow"></div>
 <div class="content">
   <div class="tag">Reframe estratégico</div>
-  <h1 class="headline"><span class="green">IA</span><br><span class="blue">amplifica.</span><br>Não substitui.</h1>
+  <h1 class="headline"><span class="green">IA</span><br><span class="blue">amplifica.</span><br>Nêo substitui.</h1>
   <div class="divider"></div>
   <p class="sub1">Bons gestores com IA</p>
-  <p class="sub2">ficam maiores, não menores.</p>
+  <p class="sub2">ficam maiores, nêo menores.</p>
 </div>
 <div class="brand">INEMA</div>
 </body></html>`,
   },
 
-  // ── SLIDE 6 — EQUAÇÃO DO SUCESSO ────────────────────────────────────────────
+  // ── SLIDE 6 — EQUAÇêO DO SUCESSO ────────────────────────────────────────────
   {
     id: 6,
     filename: 'c0043-gestores_ia_lideranca_carousel_06',
@@ -272,19 +272,19 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="content">
   <div class="formula">
-    <div class="formula-item blue"><div class="fi-label c-blue">Gestão</div></div>
+    <div class="formula-item blue"><div class="fi-label c-blue">Gestêo</div></div>
     <div class="op">+</div>
     <div class="formula-item green"><div class="fi-label c-green">IA</div></div>
     <div class="op">=</div>
   </div>
   <div class="result-line">Vantagem<br>Competitiva Real</div>
-  <div class="result-sub">que seu concorrente ainda não tem</div>
+  <div class="result-sub">que seu concorrente ainda nêo tem</div>
 </div>
 <div class="brand">INEMA</div>
 </body></html>`,
   },
 
-  // ── SLIDE 7 — APLICAÇÃO PRÁTICA ─────────────────────────────────────────────
+  // ── SLIDE 7 — APLICAÇêO PRÁTICA ─────────────────────────────────────────────
   {
     id: 7,
     filename: 'c0043-gestores_ia_lideranca_carousel_07',
@@ -318,7 +318,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="bg"><img src="file://${path.join(IMG_DIR, 'easter_tech_3972147.jpg')}"></div>
 <div class="overlay"></div>
 <div class="content">
-  <div class="eyebrow">Aplicação imediata</div>
+  <div class="eyebrow">Aplicaçêo imediata</div>
   <h1 class="headline"><span class="num">3</span> áreas onde<br>IA economiza<br>tempo hoje</h1>
   <div class="items">
     <div class="item">
@@ -327,11 +327,11 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
     </div>
     <div class="item">
       <div class="item-icon">🤝</div>
-      <div><div class="item-text">Reuniões e Decisões</div><div class="item-sub">Síntese, resumos e preparação automática</div></div>
+      <div><div class="item-text">Reuniões e Decisões</div><div class="item-sub">Síntese, resumos e preparaçêo automática</div></div>
     </div>
     <div class="item">
       <div class="item-icon">📈</div>
-      <div><div class="item-text">Gestão de Equipes</div><div class="item-sub">Processos e comunicação em escala</div></div>
+      <div><div class="item-text">Gestêo de Equipes</div><div class="item-sub">Processos e comunicaçêo em escala</div></div>
     </div>
   </div>
 </div>
@@ -339,7 +339,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 </body></html>`,
   },
 
-  // ── SLIDE 8 — ASPIRAÇÃO ─────────────────────────────────────────────────────
+  // ── SLIDE 8 — ASPIRAÇêO ─────────────────────────────────────────────────────
   {
     id: 8,
     filename: 'c0043-gestores_ia_lideranca_carousel_08',
@@ -369,8 +369,8 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="overlay"></div>
 <div class="glow-bottom"></div>
 <div class="content">
-  <div class="badge">🚀 Visão de futuro</div>
-  <h1 class="headline">Quem aprende<br>IA hoje<br><span class="future">lidera amanhã</span></h1>
+  <div class="badge">🚀 Visêo de futuro</div>
+  <h1 class="headline">Quem aprende<br>IA hoje<br><span class="future">lidera amanhê</span></h1>
   <div class="divider"></div>
   <p class="sub">O mercado do próximo ciclo<br>pertence a quem age agora.</p>
 </div>
@@ -378,7 +378,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 </body></html>`,
   },
 
-  // ── SLIDE 9 — SOLUÇÃO INEMA ──────────────────────────────────────────────────
+  // ── SLIDE 9 — SOLUÇêO INEMA ──────────────────────────────────────────────────
   {
     id: 9,
     filename: 'c0043-gestores_ia_lideranca_carousel_09',
@@ -414,13 +414,13 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
 <div class="content">
   <div class="logo-block">
     <div class="logo-text">INEMA<span class="dot">.</span></div>
-    <div class="logo-sub">Formação Executiva em IA</div>
+    <div class="logo-sub">Formaçêo Executiva em IA</div>
   </div>
   <div class="divider"></div>
   <h2 class="headline">Onde gestores aprendem IA<br>de forma prática</h2>
   <div class="features">
     <div class="feat"><div class="feat-dot"></div>100% gratuito no inema.club</div>
-    <div class="feat"><div class="feat-dot"></div>Sem jargão técnico — foco em gestão</div>
+    <div class="feat"><div class="feat-dot"></div>Sem jargêo técnico — foco em gestêo</div>
     <div class="feat"><div class="feat-dot"></div>No seu ritmo, na sua língua</div>
   </div>
 </div>
@@ -464,7 +464,7 @@ body{width:1080px;height:1080px;overflow:hidden;background:${B.dark};font-family
   <h1 class="headline">Comece<br><span class="now">agora.</span></h1>
   <div class="url">inema.club</div>
   <div class="cta-btn">Acessar Grátis</div>
-  <div class="free-badge">100% gratuito · Sem cartão de crédito</div>
+  <div class="free-badge">100% gratuito · Sem cartêo de crédito</div>
 </div>
 </body></html>`,
   },

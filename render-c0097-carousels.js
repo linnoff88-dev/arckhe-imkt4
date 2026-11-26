@@ -178,11 +178,11 @@ ${BASE_CSS}
   <img class="bg-img" src="file://${imgSrc}">
   <div class="overlay" style="background:linear-gradient(to bottom, rgba(10,4,2,0.91) 0%, rgba(44,24,16,0.84) 100%)"></div>
   <div class="content">
-    <div class="eyebrow">Dia das Mães 2026</div>
+    <div class="eyebrow">Dia das Mêes 2026</div>
     <div class="pre-head">Honre ela evoluindo.</div>
     <div class="divider"></div>
     <div class="brand-hero">INEMA.CLUB</div>
-    <div class="tagline">Evolução. Formação. Comunidade.</div>
+    <div class="tagline">Evoluçêo. Formaçêo. Comunidade.</div>
     <div class="cta-pill">Acesse → inema.vip</div>
     <div class="url-hint">inema.vip</div>
   </div>
@@ -193,13 +193,13 @@ ${BASE_CSS}
 // Text source: narrative.json → carousel_texts (15 entries)
 
 const SLIDES = [
-  // 1 — HOOK: "Ela não tinha sala de aula..."
+  // 1 — HOOK: "Ela nêo tinha sala de aula..."
   { n:1, imgN:1, type:'top',
-    text:'Ela não tinha\nsala de aula...',
+    text:'Ela nêo tinha\nsala de aula...',
     fontSize:96, italic:true,
     overlay:'linear-gradient(to bottom, rgba(44,24,16,0.08) 0%, rgba(44,24,16,0.58) 55%, rgba(44,24,16,0.96) 100%)',
     accentColor:'#F5C518', textColor:'#FFF8F0',
-    concept:'Hook — abertura emocional, abre o carrossel com tensão poética'
+    concept:'Hook — abertura emocional, abre o carrossel com tensêo poética'
   },
   // 2 — "Mas foi a maior professora da sua vida."
   { n:2, imgN:2, type:'top',
@@ -207,7 +207,7 @@ const SLIDES = [
     fontSize:80, italic:true,
     overlay:'linear-gradient(to bottom, rgba(44,24,16,0.12) 0%, rgba(44,24,16,0.65) 58%, rgba(44,24,16,0.97) 100%)',
     accentColor:'#F5C518', textColor:'#FFF8F0',
-    concept:'Resolução do hook — identidade materna como educadora'
+    concept:'Resoluçêo do hook — identidade materna como educadora'
   },
   // 3 — "Ela acordou cedo enquanto você dormia."
   { n:3, imgN:3, type:'top',
@@ -215,11 +215,11 @@ const SLIDES = [
     fontSize:78, italic:true,
     overlay:'linear-gradient(160deg, rgba(44,24,16,0.82) 0%, rgba(44,24,16,0.28) 44%, rgba(44,24,16,0.72) 100%)',
     accentColor:'#E8956D', textColor:'#FFF8F0',
-    concept:'Sacrifício silencioso — dedicação cotidiana'
+    concept:'Sacrifício silencioso — dedicaçêo cotidiana'
   },
-  // 4 — "Abriu mão de sonhos para que você realizasse os seus."
+  // 4 — "Abriu mêo de sonhos para que você realizasse os seus."
   { n:4, imgN:4, type:'top',
-    text:'Abriu mão de sonhos\npara que você realizasse\nos seus.',
+    text:'Abriu mêo de sonhos\npara que você realizasse\nos seus.',
     fontSize:66, italic:true,
     overlay:'linear-gradient(to bottom, rgba(44,24,16,0.18) 0%, rgba(44,24,16,0.70) 60%, rgba(44,24,16,0.97) 100%)',
     accentColor:'#E8956D', textColor:'#FFF8F0',
@@ -241,13 +241,13 @@ const SLIDES = [
     accentColor:'#E8956D', textColor:'#F5C518',
     concept:'Herança materna — identidade formada pelo amor (texto dourado)'
   },
-  // 7 — "As mãos que trabalharam por você."
+  // 7 — "As mêos que trabalharam por você."
   { n:7, imgN:7, type:'center',
-    text:'As mãos que\ntrabalharam por você.',
+    text:'As mêos que\ntrabalharam por você.',
     fontSize:88, italic:true,
     overlay:'radial-gradient(ellipse at center, rgba(44,24,16,0.08) 0%, rgba(44,24,16,0.74) 100%)',
     accentColor:'#E8956D', textColor:'#FFF8F0',
-    concept:'Mãos como símbolo do trabalho materno — layout centralizado'
+    concept:'Mêos como símbolo do trabalho materno — layout centralizado'
   },
   // 8 — "Os abraços que curavam qualquer dor."
   { n:8, imgN:8, type:'center',
@@ -268,9 +268,9 @@ const SLIDES = [
   // 10 — STAT: "88% dos brasileiros..."
   { n:10, imgN:10, type:'stat',
     stat:'88%',
-    context:'dos brasileiros têm\na melhor relação da vida\ncom a mãe.',
+    context:'dos brasileiros têm\na melhor relaçêo da vida\ncom a mêe.',
     overlay:'linear-gradient(to bottom, rgba(44,24,16,0.48) 0%, rgba(44,24,16,0.90) 100%)',
-    concept:'Dado emocional — 88% dos brasileiros e a mãe'
+    concept:'Dado emocional — 88% dos brasileiros e a mêe'
   },
   // 11 — "Porque amor que forma, transforma para sempre." (left-aligned)
   { n:11, imgN:11, type:'left',
@@ -286,27 +286,27 @@ const SLIDES = [
     fontSize:76, italic:true,
     overlay:'linear-gradient(to bottom, rgba(44,24,16,0.28) 0%, rgba(44,24,16,0.78) 65%, rgba(44,24,16,0.97) 100%)',
     accentColor:'#E8956D', textColor:'#FFF8F0',
-    concept:'Tensão — construção dramática antes da virada'
+    concept:'Tensêo — construçêo dramática antes da virada'
   },
-  // 13 — "Não vem numa caixa." (IMPACTFUL, large, center)
+  // 13 — "Nêo vem numa caixa." (IMPACTFUL, large, center)
   { n:13, imgN:13, type:'center',
-    text:'Não vem\nnuma caixa.',
+    text:'Nêo vem\nnuma caixa.',
     fontSize:120, italic:false, fontWeight:900,
     overlay:'linear-gradient(to bottom, rgba(28,8,4,0.60) 0%, rgba(28,8,4,0.90) 100%)',
     accentColor:'#E8956D', textColor:'#FFF8F0',
-    concept:'Virada — homenagem não é produto, é evolução (bold 900, máximo impacto)'
+    concept:'Virada — homenagem nêo é produto, é evoluçêo (bold 900, máximo impacto)'
   },
-  // 14 — "É você se tornando a melhor versão de si mesmo."
+  // 14 — "É você se tornando a melhor versêo de si mesmo."
   { n:14, imgN:14, type:'top',
-    text:'É você se tornando\na melhor versão\nde si mesmo.',
+    text:'É você se tornando\na melhor versêo\nde si mesmo.',
     fontSize:72, italic:true,
     overlay:'linear-gradient(to bottom, rgba(44,24,16,0.10) 0%, rgba(44,24,16,0.55) 55%, rgba(44,24,16,0.92) 100%)',
     accentColor:'#F5C518', textColor:'#FFF8F0',
-    concept:'Resolução — evolução pessoal como maior homenagem'
+    concept:'Resoluçêo — evoluçêo pessoal como maior homenagem'
   },
   // 15 — CTA: INEMA.CLUB hero
   { n:15, imgN:15, type:'cta',
-    concept:'CTA — INEMA.CLUB como destino da evolução, inema.vip como URL'
+    concept:'CTA — INEMA.CLUB como destino da evoluçêo, inema.vip como URL'
   },
 ];
 

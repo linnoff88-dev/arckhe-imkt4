@@ -1,10 +1,10 @@
 {
   "task_name": "c0060-nutri_escala",
   "task_date": "2026-04-10",
-  "business": "INEMA — Ecossistema de IA e Transformação Digital",
-  "description": "Campanha para nutricionistas. Ângulo: o problema não é falta de conhecimento — é excesso de demanda e pouco tempo. A IA não vai substituir o nutricionista, vai dar escala ao cuidado personalizado. Mensagem central: atenda melhor em menos tempo, sem perder o toque humano.",
+  "business": "INEMA — Ecossistema de IA e Transformaçêo Digital",
+  "description": "Campanha para nutricionistas. Ângulo: o problema nêo é falta de conhecimento — é excesso de demanda e pouco tempo. A IA nêo vai substituir o nutricionista, vai dar escala ao cuidado personalizado. Mensagem central: atenda melhor em menos tempo, sem perder o toque humano.",
 
-  "script_content": "O nutricionista moderno enfrenta um paradoxo: quanto mais cresce, menos tempo tem para cuidar de cada paciente como merece.\n\nMontagem de planos alimentares consome horas. Responder pacientes fora da consulta desgasta. Produzir conteúdo para atrair clientes compete com a agenda lotada. E no fim do dia, a pergunta é: dá para crescer sem perder a qualidade?\n\nA resposta é sim — com IA aplicada do jeito certo.\n\nNão é sobre virar técnico. É sobre usar IA para:\n1. Organizar anamneses e informações do paciente com mais rapidez\n2. Estruturar planos alimentares sem começar do zero toda vez\n3. Criar materiais de orientação e responder dúvidas recorrentes com eficiência\n4. Produzir conteúdo para redes sociais sem esgotar a criatividade\n5. Acompanhar a evolução dos pacientes com mais organização\n\nO resultado? Mais produtividade, mais tempo para o paciente, mais consistência no atendimento — e crescimento sem aumentar o caos.\n\nO INEMA entrega isso de forma simples, prática e aplicável. Não um curso longo de tecnologia. Mas conteúdo direto para o nutricionista que quer atender melhor em menos tempo.",
+  "script_content": "O nutricionista moderno enfrenta um paradoxo: quanto mais cresce, menos tempo tem para cuidar de cada paciente como merece.\n\nMontagem de planos alimentares consome horas. Responder pacientes fora da consulta desgasta. Produzir conteúdo para atrair clientes compete com a agenda lotada. E no fim do dia, a pergunta é: dá para crescer sem perder a qualidade?\n\nA resposta é sim — com IA aplicada do jeito certo.\n\nNêo é sobre virar técnico. É sobre usar IA para:\n1. Organizar anamneses e informações do paciente com mais rapidez\n2. Estruturar planos alimentares sem começar do zero toda vez\n3. Criar materiais de orientaçêo e responder dúvidas recorrentes com eficiência\n4. Produzir conteúdo para redes sociais sem esgotar a criatividade\n5. Acompanhar a evoluçêo dos pacientes com mais organizaçêo\n\nO resultado? Mais produtividade, mais tempo para o paciente, mais consistência no atendimento — e crescimento sem aumentar o caos.\n\nO INEMA entrega isso de forma simples, prática e aplicável. Nêo um curso longo de tecnologia. Mas conteúdo direto para o nutricionista que quer atender melhor em menos tempo.",
 
   "simulate_uploads": false,
   "dry_run": false,
@@ -43,17 +43,17 @@
     "research": {
       "enabled": true,
       "inputs": {
-        "niche": "IA aplicada à nutrição clínica — produtividade e escala no atendimento nutricional",
+        "niche": "IA aplicada à nutriçêo clínica — produtividade e escala no atendimento nutricional",
         "target_audience": "nutricionistas clínicos, autônomos e de clínicas que querem atender mais pacientes com menos esforço operacional",
-        "campaign_goal": "educação + conversão: mostrar como a IA pode dar escala ao atendimento nutricional sem perder personalização",
-        "script_summary": "IA para nutricionistas: organizar anamneses, estruturar planos alimentares, criar conteúdo, responder dúvidas recorrentes e acompanhar evolução. Mensagem: mais pacientes, mais qualidade, menos caos."
+        "campaign_goal": "educaçêo + conversêo: mostrar como a IA pode dar escala ao atendimento nutricional sem perder personalizaçêo",
+        "script_summary": "IA para nutricionistas: organizar anamneses, estruturar planos alimentares, criar conteúdo, responder dúvidas recorrentes e acompanhar evoluçêo. Mensagem: mais pacientes, mais qualidade, menos caos."
       }
     },
     "static_ad": {
       "enabled": true,
       "inputs": {
         "product": "INEMA — IA para Nutricionistas",
-        "campaign_goal": "atrair nutricionistas que querem produtividade e escala sem perder a personalização do atendimento",
+        "campaign_goal": "atrair nutricionistas que querem produtividade e escala sem perder a personalizaçêo do atendimento",
         "platform": "instagram",
         "format": "square",
         "dimensions": "1080x1080",
@@ -81,7 +81,7 @@
       "dimensions": "1080x1080",
       "image_source": "api",
       "slide_count": 7,
-      "design_notes": "Dark-first com identidade INEMA: fundo #0D0D0D, azul #0099FF, verde neon #00FF88. Tipografia bold (Montserrat/Space Grotesk). Numeração de slide visível. Linha de acento lateral. Handle @inema.tds no rodapé. Cada slide tem imagem gerada via API limpa de texto — copy sobreposto via HTML/CSS. Tema: nutrição + tecnologia, warm tech, sem estética clínica fria.",
+      "design_notes": "Dark-first com identidade INEMA: fundo #0D0D0D, azul #0099FF, verde neon #00FF88. Tipografia bold (Montserrat/Space Grotesk). Numeraçêo de slide visível. Linha de acento lateral. Handle @inema.tds no rodapé. Cada slide tem imagem gerada via API limpa de texto — copy sobreposto via HTML/CSS. Tema: nutriçêo + tecnologia, warm tech, sem estética clínica fria.",
       "slides": [
         {
           "id": 1,
@@ -110,16 +110,16 @@
         {
           "id": 4,
           "concept": "virada — o que a IA muda",
-          "headline": "IA não substitui você",
+          "headline": "IA nêo substitui você",
           "subtext": "Ela multiplica o seu cuidado",
           "image_prompt": "nutritionist confidently using laptop, modern clinic, technology and health, dark with warm light, no text"
         },
         {
           "id": 5,
-          "concept": "benefício — escala com personalização",
+          "concept": "benefício — escala com personalizaçêo",
           "number": "03",
           "headline": "Mais pacientes, mesma qualidade",
-          "subtext": "Organização, planos e conteúdo — mais rápido",
+          "subtext": "Organizaçêo, planos e conteúdo — mais rápido",
           "image_prompt": "organized digital workflow, health data, patient records, productivity, dark tech aesthetic, no text"
         },
         {
@@ -151,7 +151,7 @@
         "duration": "45-60s",
         "style": "cinematic",
         "framework": "PAS",
-        "focus": "problema (excesso de demanda, tempo escasso) → agitação (crescer cria mais caos, pacientes perdem qualidade) → solução (IA que dá escala sem perder personalização — INEMA)"
+        "focus": "problema (excesso de demanda, tempo escasso) → agitaçêo (crescer cria mais caos, pacientes perdem qualidade) → soluçêo (IA que dá escala sem perder personalizaçêo — INEMA)"
       }
     },
 
@@ -159,11 +159,11 @@
       "enabled": true,
       "inputs": {
         "campaign_angle": "IA para nutricionistas que querem crescer sem aumentar o caos",
-        "topic": "produtividade, escala e personalização no atendimento nutricional com IA",
+        "topic": "produtividade, escala e personalizaçêo no atendimento nutricional com IA",
         "key_benefit": "atender mais pacientes com mais qualidade e menos esforço operacional",
         "platforms": ["instagram"],
         "cta_primary": "inema.club — cursos rápidos e aplicáveis",
-        "tone": "acolhedor, prático, empoderador — sem jargão técnico, sem hype",
+        "tone": "acolhedor, prático, empoderador — sem jargêo técnico, sem hype",
         "language": "pt-BR"
       }
     },

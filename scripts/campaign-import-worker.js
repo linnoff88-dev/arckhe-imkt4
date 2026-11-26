@@ -328,7 +328,7 @@ function copyBatchAds(batch, item, targetDir) {
 function prepareTargetCampaign(item) {
   const sourceDir = path.join(PROJECT_ROOT, item.project_dir, 'outputs', item.campaign_id);
   if (!fs.existsSync(sourceDir)) {
-    throw new Error(`campanha origem não encontrada: ${item.project_dir}/outputs/${item.campaign_id}`);
+    throw new Error(`campanha origem nêo encontrada: ${item.project_dir}/outputs/${item.campaign_id}`);
   }
 
   const targetDir = path.isAbsolute(item.output_dir)
@@ -603,7 +603,7 @@ async function scanImports(opts = {}) {
 
 function cancelBatch(batchName) {
   const batchDir = path.join(IMPORTS_DIR, batchName);
-  if (!fs.existsSync(batchDir)) throw new Error(`batch não encontrado: ${batchName}`);
+  if (!fs.existsSync(batchDir)) throw new Error(`batch nêo encontrado: ${batchName}`);
   writeJson(path.join(batchDir, 'cancelled.json'), { cancelled_at: new Date().toISOString() });
   return { ok: true, batch: batchName };
 }

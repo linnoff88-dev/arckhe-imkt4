@@ -9,7 +9,7 @@ const { chromium } = require('playwright');
 
 const ADS_DIR = path.resolve(__dirname, 'prj/inema/outputs/c0097-dia_das_maes_2026/ads');
 
-// Carousels com img quebrada (PNG ~100KB) — confirmado por inspeção
+// Carousels com img quebrada (PNG ~100KB) — confirmado por inspeçêo
 const BROKEN = [1, 2, 4, 5, 6, 10, 12, 13, 14, 15];
 
 (async () => {
@@ -18,7 +18,7 @@ const BROKEN = [1, 2, 4, 5, 6, 10, 12, 13, 14, 15];
     const num = String(n).padStart(2, '0');
     const html = path.join(ADS_DIR, `c0097-dia_das_maes_2026_carousel_${num}.html`);
     const png = path.join(ADS_DIR, `c0097-dia_das_maes_2026_carousel_${num}.png`);
-    if (!fs.existsSync(html)) { console.error(`! ${html} não existe`); continue; }
+    if (!fs.existsSync(html)) { console.error(`! ${html} nêo existe`); continue; }
 
     const before = fs.existsSync(png) ? fs.statSync(png).size : 0;
 

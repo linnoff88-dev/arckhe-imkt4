@@ -36,7 +36,7 @@ function imgPath(n) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SLIDE 01 — HOOK: "Você não está decidindo. Está confirmando o que já decidiu."
+// SLIDE 01 — HOOK: "Você nêo está decidindo. Está confirmando o que já decidiu."
 // ─────────────────────────────────────────────────────────────────────────────
 function slide01() {
   return wrap(`
@@ -56,7 +56,7 @@ function slide01() {
       </div>
       <!-- main headline -->
       <h1 style="font-size:120px;font-weight:900;line-height:0.92;letter-spacing:-0.03em;text-transform:uppercase;text-shadow:0 4px 40px rgba(0,0,0,0.9);">
-        VOCÊ NÃO<br>ESTÁ<br><span style="color:#0099FF;">DECIDINDO.</span>
+        VOCÊ NêO<br>ESTÁ<br><span style="color:#0099FF;">DECIDINDO.</span>
       </h1>
       <!-- rule -->
       <div style="width:90px;height:4px;background:#0099FF;border-radius:2px;margin:32px 0;animation:scaleIn 0.5s 0.2s both;"></div>
@@ -75,7 +75,7 @@ function slide01() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SLIDE 02 — PROBLEM: viés de confirmação
+// SLIDE 02 — PROBLEM: viés de confirmaçêo
 // ─────────────────────────────────────────────────────────────────────────────
 function slide02() {
   return wrap(`
@@ -91,11 +91,11 @@ function slide02() {
   <div style="position:absolute;inset:0;padding:72px 56%;72px 80px;padding-left:80px;padding-right:56%;padding-top:72px;padding-bottom:72px;display:flex;flex-direction:column;justify-content:center;animation:fadeUp 0.5s both;">
     <div style="font-size:13px;font-weight:700;color:#CC0000;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:24px;">02 · O PROBLEMA</div>
     <h1 style="font-size:84px;font-weight:900;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:32px;">
-      VIÉS DE<br>CONFIRMA<br><span style="color:#CC0000;">ÇÃO.</span>
+      VIÉS DE<br>CONFIRMA<br><span style="color:#CC0000;">ÇêO.</span>
     </h1>
     <div style="width:56px;height:3px;background:#CC0000;margin-bottom:28px;animation:scaleIn 0.5s 0.2s both;"></div>
     <p style="font-size:28px;font-weight:400;line-height:1.65;color:rgba(255,255,255,0.65);max-width:480px;animation:fadeUp 0.5s 0.2s both;">
-      Contamina toda decisão<br>antes de ela começar.
+      Contamina toda decisêo<br>antes de ela começar.
     </p>
     <p style="font-size:22px;font-weight:400;line-height:1.6;color:rgba(255,255,255,0.4);max-width:460px;margin-top:20px;">
       Você busca informações que confirmam o que já acredita — e ignora o restante.
@@ -114,8 +114,8 @@ function slide03() {
     { color: '#FFD700', bg: 'rgba(255,215,0,0.08)', border: 'rgba(255,215,0,0.35)', label: 'AMARELO', desc: 'Benefícios' },
     { color: '#CC0000', bg: 'rgba(204,0,0,0.08)', border: 'rgba(204,0,0,0.35)', label: 'PRETO', desc: 'Riscos e cuidados' },
     { color: '#00CC44', bg: 'rgba(0,204,68,0.08)', border: 'rgba(0,204,68,0.35)', label: 'VERDE', desc: 'Alternativas' },
-    { color: '#FF4444', bg: 'rgba(255,68,68,0.08)', border: 'rgba(255,68,68,0.35)', label: 'VERMELHO', desc: 'Intuição' },
-    { color: '#0099FF', bg: 'rgba(0,153,255,0.08)', border: 'rgba(0,153,255,0.35)', label: 'AZUL', desc: 'Organização' },
+    { color: '#FF4444', bg: 'rgba(255,68,68,0.08)', border: 'rgba(255,68,68,0.35)', label: 'VERMELHO', desc: 'Intuiçêo' },
+    { color: '#0099FF', bg: 'rgba(0,153,255,0.08)', border: 'rgba(0,153,255,0.35)', label: 'AZUL', desc: 'Organizaçêo' },
   ];
   const hatCards = hats.map(h => `
     <div style="background:${h.bg};border:1px solid ${h.border};border-radius:12px;padding:20px 22px;display:flex;align-items:center;gap:14px;animation:scaleIn 0.5s both;">
@@ -267,7 +267,7 @@ function slide07() {
     { num: '3', label: 'Trilhas' },
     { num: '18', label: 'Módulos' },
     { num: '108', label: 'Tópicos' },
-    { num: '~9h', label: 'Duração' },
+    { num: '~9h', label: 'Duraçêo' },
   ];
   const statCards = stats.map(s => `
     <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 24px;text-align:center;animation:scaleIn 0.5s both;">
@@ -394,7 +394,7 @@ function slide10() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SLIDE 11 — "Decida com clareza. Não com viés."
+// SLIDE 11 — "Decida com clareza. Nêo com viés."
 // ─────────────────────────────────────────────────────────────────────────────
 function slide11() {
   return wrap(`
@@ -414,7 +414,7 @@ function slide11() {
       </h1>
       <div style="width:60px;height:3px;background:#00CC44;margin-bottom:24px;margin-left:auto;"></div>
       <p style="font-size:30px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);">
-        Não com viés.<br>Não com suposição.<br>Com método.
+        Nêo com viés.<br>Nêo com suposiçêo.<br>Com método.
       </p>
       <div style="margin-top:52px;font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB · 11 / 15</div>
     </div>
@@ -423,7 +423,7 @@ function slide11() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SLIDE 12 — "Pensamento paralelo, decisão sem conflito"
+// SLIDE 12 — "Pensamento paralelo, decisêo sem conflito"
 // ─────────────────────────────────────────────────────────────────────────────
 function slide12() {
   return wrap(`
@@ -440,7 +440,7 @@ function slide12() {
     </h1>
     <div style="width:72px;height:4px;background:#FFD700;border-radius:2px;margin-bottom:28px;animation:scaleIn 0.5s 0.2s both;"></div>
     <p style="font-size:36px;font-weight:400;line-height:1.45;color:rgba(255,255,255,0.75);max-width:760px;text-shadow:0 2px 16px rgba(0,0,0,0.8);">
-      Decisão sem conflito.<br>Todos pensando na mesma direção —<br>de modos diferentes.
+      Decisêo sem conflito.<br>Todos pensando na mesma direçêo —<br>de modos diferentes.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:56px;">
       <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
@@ -464,13 +464,13 @@ function slide13() {
   <div style="position:absolute;top:40px;right:220px;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle,rgba(0,204,68,0.15) 0%,transparent 70%);"></div>
   <!-- content -->
   <div style="position:absolute;inset:0;padding:72px;display:flex;flex-direction:column;justify-content:flex-end;animation:fadeUp 0.5s both;">
-    <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:24px;">13 · TRANSFORMAÇÃO</div>
+    <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:24px;">13 · TRANSFORMAÇêO</div>
     <h1 style="font-size:96px;font-weight:900;line-height:0.92;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:24px;text-shadow:0 4px 40px rgba(0,0,0,0.9);">
       APRENDA A<br><span style="color:#0099FF;">PENSAR</span><br>ANTES DE<br>DECIDIR.
     </h1>
     <div style="width:72px;height:4px;background:#0099FF;border-radius:2px;margin-bottom:24px;"></div>
     <p style="font-size:30px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);max-width:760px;">
-      A diferença entre decidir bem e decidir mal<br>é um processo — não experiência, não intuição.
+      A diferença entre decidir bem e decidir mal<br>é um processo — nêo experiência, nêo intuiçêo.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:44px;">
       <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>
@@ -505,7 +505,7 @@ function slide14() {
       </div>
     </div>
     <p style="font-size:30px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);max-width:800px;">
-      Com Anti-Âncora, variantes de conflito interpessoal, pre-mortem, e UMA recomendação final + Plano B.
+      Com Anti-Âncora, variantes de conflito interpessoal, pre-mortem, e UMA recomendaçêo final + Plano B.
     </p>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-top:40px;">
       <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.2);letter-spacing:0.12em;">INEMA.CLUB</span>

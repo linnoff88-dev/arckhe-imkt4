@@ -58,7 +58,7 @@ function slide01() {
     <div style="width:80px;height:3px;background:#C8A04A;margin:0 auto 36px;"></div>
     <!-- Subtext -->
     <p style="font-size:32px;font-weight:400;line-height:1.55;color:rgba(255,255,255,0.65);max-width:760px;margin:0 auto 52px;animation:fadeUp 0.5s 0.2s both;">
-      Renascer na era da IA não é espiritual —<br>é estratégico.
+      Renascer na era da IA nêo é espiritual —<br>é estratégico.
     </p>
     <!-- INEMA dot marker -->
     <div style="display:inline-flex;align-items:center;gap:12px;animation:fadeIn 0.5s 0.3s both;">
@@ -89,11 +89,11 @@ function slide02() {
   <div style="position:relative;z-index:1;animation:fadeUp 0.5s both;">
     <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:32px;">02 · METÁFORA CENTRAL</div>
     <h1 style="font-size:108px;font-weight:900;line-height:0.92;letter-spacing:-0.03em;text-transform:uppercase;margin-bottom:44px;">
-      MAESTRO<br>NÃO TOCA.<br><span style="color:#0099FF;">ELE CONDUZ.</span>
+      MAESTRO<br>NêO TOCA.<br><span style="color:#0099FF;">ELE CONDUZ.</span>
     </h1>
     <div style="width:56px;height:3px;background:#0099FF;margin-bottom:32px;animation:scaleIn 0.5s 0.2s both;"></div>
     <p style="font-size:30px;font-weight:400;line-height:1.6;color:rgba(255,255,255,0.65);max-width:620px;animation:fadeUp 0.5s 0.2s both;">
-      O líder moderno orquestra agentes de IA —<br>não os opera.
+      O líder moderno orquestra agentes de IA —<br>nêo os opera.
     </p>
     <div style="margin-top:64px;font-size:15px;font-weight:700;color:rgba(255,255,255,0.2);letter-spacing:0.15em;">INEMA.VIP</div>
   </div>
@@ -111,14 +111,14 @@ function slide03() {
   <!-- Stat hero -->
   <div style="animation:scaleIn 0.5s both;">
     <div style="font-size:260px;font-weight:900;line-height:0.82;color:#0099FF;letter-spacing:-0.05em;text-shadow:0 0 80px rgba(0,153,255,0.35);">93%</div>
-    <div style="font-size:38px;font-weight:600;color:rgba(255,255,255,0.8);margin-top:20px;letter-spacing:0.04em;text-transform:uppercase;">das empresas terão agentes de IA</div>
+    <div style="font-size:38px;font-weight:600;color:rgba(255,255,255,0.8);margin-top:20px;letter-spacing:0.04em;text-transform:uppercase;">das empresas terêo agentes de IA</div>
   </div>
   <!-- Divider -->
   <div style="width:100px;height:2px;background:rgba(255,255,255,0.15);margin:44px auto;"></div>
   <!-- Question -->
   <div style="animation:fadeUp 0.5s 0.2s both;">
     <div style="font-size:56px;font-weight:900;color:#FFFFFF;margin-bottom:20px;letter-spacing:-0.01em;text-transform:uppercase;">E VOCÊ VAI LIDERAR?</div>
-    <div style="font-size:28px;font-weight:400;color:rgba(255,255,255,0.5);line-height:1.6;">A questão não é se sua empresa vai ter.<br>É se <strong style="color:white;font-weight:700;">você</strong> vai orquestrar.</div>
+    <div style="font-size:28px;font-weight:400;color:rgba(255,255,255,0.5);line-height:1.6;">A questêo nêo é se sua empresa vai ter.<br>É se <strong style="color:white;font-weight:700;">você</strong> vai orquestrar.</div>
   </div>
   <div style="position:absolute;bottom:48px;font-size:14px;font-weight:700;color:rgba(255,255,255,0.18);letter-spacing:0.15em;">INEMA</div>
 </div>`);
@@ -159,12 +159,12 @@ function slide04() {
       <div style="font-family:'Courier New',monospace;font-size:19px;line-height:1.9;color:rgba(0,255,136,0.85);">
         <div><span style="color:rgba(255,255,255,0.3);">→ </span><span style="color:#00FF88;">"Crie um relatório<br>&nbsp;&nbsp;&nbsp;de vendas Q1"</span></div>
         <div style="margin-top:16px;padding:14px;background:rgba(0,255,136,0.07);border-left:2px solid #00FF88;border-radius:4px;">
-          <span style="color:rgba(255,255,255,0.55);font-size:17px;">✓ Dados coletados<br>✓ Análise feita<br>✓ Insights gerados<br>✓ Apresentação pronta</span>
+          <span style="color:rgba(255,255,255,0.55);font-size:17px;">✓ Dados coletados<br>✓ Análise feita<br>✓ Insights gerados<br>✓ Apresentaçêo pronta</span>
         </div>
         <div style="margin-top:16px;color:rgba(255,255,255,0.25);font-size:15px;">// zero código escrito</div>
       </div>
     </div>
-    <div style="margin-top:20px;font-size:20px;font-weight:500;color:rgba(255,255,255,0.4);font-family:'Space Grotesk',sans-serif;text-align:center;">Linguagem natural → solução completa</div>
+    <div style="margin-top:20px;font-size:20px;font-weight:500;color:rgba(255,255,255,0.4);font-family:'Space Grotesk',sans-serif;text-align:center;">Linguagem natural → soluçêo completa</div>
   </div>
 </div>`);
 }
@@ -174,7 +174,7 @@ function slide05() {
 <div style="position:relative;width:1080px;height:1080px;background:#0D0D0D;display:flex;flex-direction:column;overflow:hidden;">
   <!-- Top section: headline -->
   <div style="padding:72px 80px 44px;border-bottom:1px solid rgba(255,255,255,0.07);flex:0 0 auto;animation:fadeUp 0.5s both;">
-    <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,0.3);letter-spacing:0.22em;text-transform:uppercase;margin-bottom:18px;">ORQUESTRAÇÃO VS DELEGAÇÃO</div>
+    <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,0.3);letter-spacing:0.22em;text-transform:uppercase;margin-bottom:18px;">ORQUESTRAÇêO VS DELEGAÇêO</div>
     <h1 style="font-size:68px;font-weight:900;line-height:0.97;letter-spacing:-0.02em;text-transform:uppercase;">
       VOCÊ DELEGA<br>TECNOLOGIA —<br><span style="color:#0099FF;">OU A ORQUESTRA?</span>
     </h1>
@@ -193,7 +193,7 @@ function slide05() {
     <div style="padding:52px 60px;display:flex;flex-direction:column;justify-content:center;background:rgba(0,153,255,0.04);animation:fadeUp 0.5s 0.25s both;">
       <div style="font-size:12px;font-weight:700;color:#0099FF;letter-spacing:0.3em;margin-bottom:18px;text-transform:uppercase;">AGORA</div>
       <div style="font-size:48px;font-weight:900;color:#0099FF;margin-bottom:24px;text-transform:uppercase;">ORQUESTRAR<br>COM IA</div>
-      <p style="font-size:24px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.55;">Decisões que os<br>outros simplesmente<br>não conseguem ver.</p>
+      <p style="font-size:24px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.55;">Decisões que os<br>outros simplesmente<br>nêo conseguem ver.</p>
     </div>
   </div>
   <div style="position:absolute;bottom:28px;right:56px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.18);letter-spacing:0.12em;">INEMA.VIP</div>
@@ -237,7 +237,7 @@ function slide06() {
     </div>
     <div style="width:1px;height:56px;background:rgba(255,255,255,0.1);"></div>
     <div style="text-align:left;">
-      <div style="font-size:30px;font-weight:700;color:rgba(255,255,255,0.8);line-height:1.35;">A elite da<br>transformação digital</div>
+      <div style="font-size:30px;font-weight:700;color:rgba(255,255,255,0.8);line-height:1.35;">A elite da<br>transformaçêo digital</div>
     </div>
   </div>
 </div>`);
@@ -276,7 +276,7 @@ function slide07() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CAROUSEL 2 — "Páscoa e IA: A Transformação que Ninguém Estava Esperando"
+// CAROUSEL 2 — "Páscoa e IA: A Transformaçêo que Ninguém Estava Esperando"
 // Theme: Verde Neon + simbolismo pascal — distinct from Carousel 1
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -305,7 +305,7 @@ function slide08() {
     <div style="height:2px;width:72px;background:rgba(200,160,74,0.5);margin:0 auto 36px;"></div>
     <div style="animation:fadeUp 0.5s 0.2s both;">
       <p style="font-size:30px;font-weight:400;color:rgba(255,255,255,0.55);line-height:1.65;max-width:800px;margin:0 auto;">
-        Da escravidão para a liberdade.<br>
+        Da escravidêo para a liberdade.<br>
         Do analógico para o digital.<br>
         <span style="color:rgba(200,160,74,0.9);font-weight:600;">Do usuário para o maestro.</span>
       </p>
@@ -322,7 +322,7 @@ function slide09() {
   <div style="position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse,rgba(0,153,255,0.07) 0%,transparent 65%);pointer-events:none;"></div>
   <!-- Top content -->
   <div style="animation:fadeUp 0.5s both;margin-bottom:auto;">
-    <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:24px;">EVOLUÇÃO DA LIDERANÇA</div>
+    <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:24px;">EVOLUÇêO DA LIDERANÇA</div>
     <h1 style="font-size:72px;font-weight:900;line-height:1.02;letter-spacing:-0.02em;text-transform:uppercase;max-width:920px;">
       A VIRADA ENTRE USAR IA<br>E <span style="color:#0099FF;">LIDERAR COM IA</span>
     </h1>
@@ -387,13 +387,13 @@ function slide10() {
   <div style="position:absolute;top:calc(50% - 118px);left:calc(50% + 192px);transform:translate(-50%,-50%);z-index:2;">
     <div style="background:rgba(0,255,136,0.09);border:1px solid rgba(0,255,136,0.32);border-radius:9px;padding:11px 20px;font-size:17px;font-weight:700;color:#00FF88;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;">Análise</div>
   </div>
-  <!-- Criação - bottom right -->
+  <!-- Criaçêo - bottom right -->
   <div style="position:absolute;top:calc(50% + 118px);left:calc(50% + 192px);transform:translate(-50%,-50%);z-index:2;">
-    <div style="background:rgba(0,255,136,0.09);border:1px solid rgba(0,255,136,0.32);border-radius:9px;padding:11px 20px;font-size:17px;font-weight:700;color:#00FF88;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;">Criação</div>
+    <div style="background:rgba(0,255,136,0.09);border:1px solid rgba(0,255,136,0.32);border-radius:9px;padding:11px 20px;font-size:17px;font-weight:700;color:#00FF88;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;">Criaçêo</div>
   </div>
-  <!-- Distribuição - bottom -->
+  <!-- Distribuiçêo - bottom -->
   <div style="position:absolute;top:calc(50% + 226px);left:50%;transform:translateX(-50%);z-index:2;">
-    <div style="background:rgba(0,255,136,0.09);border:1px solid rgba(0,255,136,0.32);border-radius:9px;padding:11px 20px;font-size:17px;font-weight:700;color:#00FF88;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;">Distribuição</div>
+    <div style="background:rgba(0,255,136,0.09);border:1px solid rgba(0,255,136,0.32);border-radius:9px;padding:11px 20px;font-size:17px;font-weight:700;color:#00FF88;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;">Distribuiçêo</div>
   </div>
   <!-- Planejamento - bottom left -->
   <div style="position:absolute;top:calc(50% + 118px);left:calc(50% - 192px);transform:translate(-50%,-50%);z-index:2;">
@@ -533,7 +533,7 @@ function slide13() {
       <div style="font-size:22px;font-weight:600;color:rgba(255,255,255,0.78);line-height:1.4;">C-level &<br>Executivos Sênior</div>
     </div>
     <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(0,153,255,0.2);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;">
-      <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;">TRANSFORMAÇÃO</div>
+      <div style="font-size:13px;font-weight:700;color:#0099FF;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;">TRANSFORMAÇêO</div>
       <div style="font-size:22px;font-weight:600;color:rgba(255,255,255,0.78);line-height:1.4;">Digital + Estratégia<br>Executiva</div>
     </div>
     <div style="background:rgba(0,153,255,0.1);border:1px solid rgba(0,153,255,0.35);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;">
@@ -543,7 +543,7 @@ function slide13() {
   </div>
   <!-- Bottom row -->
   <div style="margin-top:28px;display:flex;align-items:center;justify-content:space-between;flex:0 0 auto;animation:fadeUp 0.5s 0.3s both;">
-    <div style="font-size:22px;font-weight:600;color:rgba(255,255,255,0.45);">Networking com líderes que já estão do outro lado</div>
+    <div style="font-size:22px;font-weight:600;color:rgba(255,255,255,0.45);">Networking com líderes que já estêo do outro lado</div>
     <div style="font-size:16px;font-weight:800;color:rgba(0,153,255,0.7);letter-spacing:0.1em;white-space:nowrap;">INEMA.VIP →</div>
   </div>
 </div>`);
@@ -596,11 +596,11 @@ const slides = [
   { id: '02', fn: slide02, carousel: 1, concept: 'Metáfora do maestro — left-aligned editorial, blue accent, staff lines', copy_source: 'carousel_texts[1] / headlines[1]' },
   { id: '03', fn: slide03, carousel: 1, concept: 'Dado urgência 93% — hero number, blue, centered typographic', copy_source: 'carousel_texts[2] / headlines[2]' },
   { id: '04', fn: slide04, carousel: 1, concept: 'Vibe Coding — split grid, terminal CSS, green neon', copy_source: 'carousel_texts[3] / headlines[3]' },
-  { id: '05', fn: slide05, carousel: 1, concept: 'Delegação vs Orquestração — top headline + bottom split panel', copy_source: 'carousel_texts[4] / headlines[4]' },
+  { id: '05', fn: slide05, carousel: 1, concept: 'Delegaçêo vs Orquestraçêo — top headline + bottom split panel', copy_source: 'carousel_texts[4] / headlines[4]' },
   { id: '06', fn: slide06, carousel: 1, concept: 'Comunidade VIP — network nodes CSS, blue, stats bar', copy_source: 'carousel_texts[5] / headlines[8]' },
   { id: '07', fn: slide07, carousel: 1, concept: 'CTA Renascimento — egg CSS, gold, pill CTA button', copy_source: 'carousel_texts[6] / approved_ctas[0]' },
   { id: '08', fn: slide08, carousel: 2, concept: 'Hook simbólico — archway/portal CSS, gold passage metaphor', copy_source: 'carousel_texts[7] / headlines[9]' },
-  { id: '09', fn: slide09, carousel: 2, concept: 'Evolução liderança — timeline CSS 2005→2025→2026, blue', copy_source: 'carousel_texts[8] / headlines[5]' },
+  { id: '09', fn: slide09, carousel: 2, concept: 'Evoluçêo liderança — timeline CSS 2005→2025→2026, blue', copy_source: 'carousel_texts[8] / headlines[5]' },
   { id: '10', fn: slide10, carousel: 2, concept: 'Agentes autônomos — orbital nodes, green neon, orchestra', copy_source: 'carousel_texts[9]' },
   { id: '11', fn: slide11, carousel: 2, concept: 'Urgência do gap 62% — amber stat hero, warning tone', copy_source: 'carousel_texts[10]' },
   { id: '12', fn: slide12, carousel: 2, concept: 'Autoridade fundador — vertical timeline left panel, gold', copy_source: 'carousel_texts[11] / headlines[6]' },
@@ -659,7 +659,7 @@ async function renderAll() {
     total_slides: slides.length,
     carousels: {
       carousel_1: { title: 'O Líder Maestro: 7 Competências da Era Agentic', slides: 7 },
-      carousel_2: { title: 'Páscoa e IA: A Transformação que Ninguém Estava Esperando', slides: 7 }
+      carousel_2: { title: 'Páscoa e IA: A Transformaçêo que Ninguém Estava Esperando', slides: 7 }
     },
     slides: layoutSlides
   };

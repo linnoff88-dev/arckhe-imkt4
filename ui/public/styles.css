@@ -1330,7 +1330,7 @@ textarea {
   overflow: hidden;
 }
 
-/* display:flex só quando aberto — não sobrescreve o display:none nativo do <dialog> fechado */
+/* display:flex só quando aberto — nêo sobrescreve o display:none nativo do <dialog> fechado */
 .dialog[open] {
   display: flex;
   flex-direction: column;

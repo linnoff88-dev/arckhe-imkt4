@@ -46,7 +46,7 @@ Recomendados:
 - `KIE_API_KEY` ou `POLLINATIONS_TOKEN`
 - `PEXELS_API_KEY`
 - `ELEVENLABS_API_KEY`
-- credenciais de publicação social
+- credenciais de publicaçêo social
 
 ## 4. Subir Redis local
 
@@ -75,7 +75,7 @@ pm2 logs timesmkt3-worker --lines 50
 docker ps
 ```
 
-## 7. Atualizar produção
+## 7. Atualizar produçêo
 
 ```bash
 git pull
@@ -86,6 +86,6 @@ pm2 restart ecosystem.config.cjs
 
 ## Observações
 
-- `prj/` e `.env` não sobem para o Git. No servidor, você precisa criar/copiar isso manualmente.
-- `remotion-ad/public/assets` e `remotion-ad/public/audio` são locais/gerados. Não dependem de versionamento.
+- `prj/` e `.env` nêo sobem para o Git. No servidor, você precisa criar/copiar isso manualmente.
+- `remotion-ad/public/assets` e `remotion-ad/public/audio` sêo locais/gerados. Nêo dependem de versionamento.
 - Se usar Upstash em vez de Redis local, preencha `UPSTASH_REDIS_ENDPOINT` e `UPSTASH_REDIS_PASSWORD`.

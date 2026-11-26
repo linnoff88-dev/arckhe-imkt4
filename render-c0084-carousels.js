@@ -74,7 +74,7 @@ const slides = [
       Você sabe a<br><span style="color:${C.blue};">diferença?</span>
     </div>
     <div class="anim-up delay1" style="font-size:42px;font-weight:500;color:rgba(255,255,255,0.85);line-height:1.4;text-shadow:0 2px 12px rgba(0,0,0,0.7);">
-      Assistente, Agente ou Agentic<br>— não são a mesma coisa. 🤖
+      Assistente, Agente ou Agentic<br>— nêo sêo a mesma coisa. 🤖
     </div>
   </div>
   <div style="position:absolute;bottom:36px;right:64px;font-size:22px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:0.06em;">1 / 15</div>
@@ -153,14 +153,14 @@ const slides = [
     </div>
     <div class="anim-up delay2" style="width:120px;height:5px;background:${C.blue};border-radius:9999px;margin:24px auto;"></div>
     <div class="anim-up delay3" style="font-size:44px;font-weight:500;color:rgba(255,255,255,0.8);letter-spacing:0.04em;">
-      O Atendente de Balcão 🧑‍💼
+      O Atendente de Balcêo 🧑‍💼
     </div>
   </div>
   <div style="position:absolute;bottom:36px;right:64px;font-size:22px;font-weight:600;color:rgba(255,255,255,0.4);letter-spacing:0.06em;">4 / 15</div>
 </div>`)
   },
 
-  // SLIDE 5 — Assistente definição
+  // SLIDE 5 — Assistente definiçêo
   {
     filename: 'c0084-assistente_agente_agentic_ia_carousel_05.png',
     htmlFile: 'c0084-assistente_agente_agentic_ia_carousel_05.html',
@@ -187,7 +187,7 @@ const slides = [
       </div>
       <div style="display:flex;align-items:flex-start;gap:16px;">
         <div style="min-width:8px;height:8px;border-radius:50%;background:${C.blue};margin-top:20px;"></div>
-        <span style="font-size:38px;font-weight:500;color:rgba(255,255,255,0.85);line-height:1.4;">Não age por conta própria</span>
+        <span style="font-size:38px;font-weight:500;color:rgba(255,255,255,0.85);line-height:1.4;">Nêo age por conta própria</span>
       </div>
     </div>
   </div>
@@ -247,7 +247,7 @@ const slides = [
 </div>`)
   },
 
-  // SLIDE 8 — Agente definição
+  // SLIDE 8 — Agente definiçêo
   {
     filename: 'c0084-assistente_agente_agentic_ia_carousel_08.png',
     htmlFile: 'c0084-assistente_agente_agentic_ia_carousel_08.html',
@@ -274,7 +274,7 @@ const slides = [
       </div>
       <div style="display:flex;align-items:flex-start;gap:16px;">
         <div style="min-width:8px;height:8px;border-radius:50%;background:#00CCFF;margin-top:20px;"></div>
-        <span style="font-size:38px;font-weight:500;color:rgba(255,255,255,0.85);line-height:1.4;">Age dentro da missão</span>
+        <span style="font-size:38px;font-weight:500;color:rgba(255,255,255,0.85);line-height:1.4;">Age dentro da missêo</span>
       </div>
     </div>
   </div>
@@ -331,7 +331,7 @@ const slides = [
 </div>`)
   },
 
-  // SLIDE 11 — Agentic definição
+  // SLIDE 11 — Agentic definiçêo
   {
     filename: 'c0084-assistente_agente_agentic_ia_carousel_11.png',
     htmlFile: 'c0084-assistente_agente_agentic_ia_carousel_11.html',
@@ -345,7 +345,7 @@ const slides = [
       <span style="color:${C.green};font-size:26px;font-weight:700;letter-spacing:0.1em;">AGENTIC</span>
     </div>
     <div class="anim-up delay1" style="font-size:64px;font-weight:800;color:#fff;line-height:1.1;text-shadow:0 4px 24px rgba(0,0,0,0.8);margin-bottom:28px;">
-      Não é um tipo de IA.<br><span style="color:${C.green};">É um comportamento.</span>
+      Nêo é um tipo de IA.<br><span style="color:${C.green};">É um comportamento.</span>
     </div>
     <div class="anim-up delay2" style="width:80px;height:4px;background:${C.green};border-radius:9999px;margin-bottom:28px;"></div>
     <div class="anim-up delay2" style="font-size:40px;font-weight:500;color:rgba(255,255,255,0.82);line-height:1.55;">
@@ -521,13 +521,13 @@ async function render() {
         'Contexto — Nível mais básico',
         'Analogia — Cargos de trabalho',
         'ASSISTENTE — Título/Nível 1',
-        'ASSISTENTE — Definição',
+        'ASSISTENTE — Definiçêo',
         'ASSISTENTE — Exemplo real',
         'AGENTE — Título/Nível 2',
-        'AGENTE — Definição',
+        'AGENTE — Definiçêo',
         'AGENTE — Exemplo real',
         'AGENTIC — Título/Nível 3',
-        'AGENTIC — Definição',
+        'AGENTIC — Definiçêo',
         'AGENTIC — Exemplo real',
         'Comparativo 3 conceitos',
         'Por que isso importa',

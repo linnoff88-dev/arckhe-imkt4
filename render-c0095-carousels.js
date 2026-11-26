@@ -220,7 +220,7 @@ function s07() {
   `);
 }
 
-// Slide 08 — PROVA SOCIAL: Citação estilo editorial
+// Slide 08 — PROVA SOCIAL: Citaçêo estilo editorial
 function s08() {
   return wrap(`
     .bg { filter:brightness(0.72) contrast(1.18) saturate(1.15); }
@@ -237,7 +237,7 @@ function s08() {
       <div class="quote-mark">"</div>
       <div class="headline">Quem comprou transformou a viagem: economias reais e experiências que turistas comuns nunca têm.</div>
       <div class="divider"></div>
-      <div class="sub">Não é promessa — é o relato de quem viveu o Gramado do Leo Careca.</div>
+      <div class="sub">Nêo é promessa — é o relato de quem viveu o Gramado do Leo Careca.</div>
     </div>
   `);
 }
@@ -257,9 +257,9 @@ function s09() {
     <div class="overlay"></div>
     <div class="content">
       <div class="label">🔑 O Diferencial</div>
-      <div class="headline">Não é mais<br>um Guia <em>Genérico.</em></div>
+      <div class="headline">Nêo é mais<br>um Guia <em>Genérico.</em></div>
       <div class="divider"></div>
-      <div class="sub">É o atalho insider para a melhor versão de Gramado e Canela — o que nenhum site entrega.</div>
+      <div class="sub">É o atalho insider para a melhor versêo de Gramado e Canela — o que nenhum site entrega.</div>
     </div>
   `);
 }
@@ -306,12 +306,12 @@ function s11() {
       <div class="eyebrow">🤝 Seu Amigo Local</div>
       <div class="headline">Serra Gaúcha<br>como os<br><em>Locais Vivem</em></div>
       <div class="divider"></div>
-      <div class="body">Não como o Google mostra — do jeito que quem nasceu ali realmente conhece.</div>
+      <div class="body">Nêo como o Google mostra — do jeito que quem nasceu ali realmente conhece.</div>
     </div>
   `);
 }
 
-// Slide 12 — A VIAGEM QUE OS OUTROS NÃO FAZEM: Overlay radial central
+// Slide 12 — A VIAGEM QUE OS OUTROS NêO FAZEM: Overlay radial central
 function s12() {
   return wrap(`
     .bg { filter:brightness(0.76) contrast(1.22) saturate(1.28); }
@@ -327,9 +327,9 @@ function s12() {
     <div class="overlay"></div>
     <div class="content">
       <div class="eyebrow">✨ Experiência Única</div>
-      <div class="headline">A Viagem que<br>os Outros<br><em>Não Fazem</em></div>
+      <div class="headline">A Viagem que<br>os Outros<br><em>Nêo Fazem</em></div>
       <div class="divider"></div>
-      <div class="sub">Insider de verdade. Não é mais um blog. É quem vive e respira a Serra Gaúcha.</div>
+      <div class="sub">Insider de verdade. Nêo é mais um blog. É quem vive e respira a Serra Gaúcha.</div>
     </div>
   `);
 }
@@ -351,7 +351,7 @@ function s13() {
       <div class="badge">💎 Valor Real</div>
       <div class="headline">Viaje <em>Mais.</em><br>Pague Muito<br>Menos.</div>
       <div class="divider"></div>
-      <div class="sub">O ebook que se paga na própria viagem — economias reais em cada atração, cada refeição.</div>
+      <div class="sub">O ebook que se paga na própria viagem — economias reais em cada atraçêo, cada refeiçêo.</div>
     </div>
   `);
 }

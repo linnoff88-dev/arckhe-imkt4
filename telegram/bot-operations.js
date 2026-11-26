@@ -146,13 +146,13 @@ Instructions:
     })();
 
     if (!campaignFolder) {
-      return ctx.reply(`Campanha "${raw}" não encontrada.`);
+      return ctx.reply(`Campanha "${raw}" nêo encontrada.`);
     }
 
     const projectDir = findCampaignAcrossProjects(projectRoot, raw)?.projectDir || s.projectDir;
     const campDir = path.resolve(projectRoot, projectDir, 'outputs', campaignFolder);
     fs.writeFileSync(path.join(campDir, 'archived.json'), JSON.stringify({ archived: true, ts: new Date().toISOString() }));
-    await ctx.reply(`📦 <b>${campaignFolder}</b> arquivada — não aparecerá mais no startup.`, { parse_mode: 'HTML' });
+    await ctx.reply(`📦 <b>${campaignFolder}</b> arquivada — nêo aparecerá mais no startup.`, { parse_mode: 'HTML' });
   });
 
   bot.command('desarquivar', async (ctx) => {
@@ -169,7 +169,7 @@ Instructions:
     })();
 
     if (!campaignFolder) {
-      return ctx.reply(`Campanha "${raw}" não encontrada.`);
+      return ctx.reply(`Campanha "${raw}" nêo encontrada.`);
     }
 
     const projectDir = findCampaignAcrossProjects(projectRoot, raw)?.projectDir || s.projectDir;
@@ -186,17 +186,17 @@ Instructions:
 
     if (!cv) {
       await ctx.reply(
-        '<b>Modos de aprovação</b>\n\n'
+        '<b>Modos de aprovaçêo</b>\n\n'
           + 'Use este comando durante uma campanha ativa para ajustar os modos por etapa.\n\n'
           + 'Sintaxe: <code>/modos [etapa] [modo]</code>\n\n'
-          + 'Etapas: <code>1</code> (brief), <code>2</code> (criativos), <code>3</code> (vídeo), <code>4</code> (distribuição), <code>todas</code>\n'
+          + 'Etapas: <code>1</code> (brief), <code>2</code> (criativos), <code>3</code> (vídeo), <code>4</code> (distribuiçêo), <code>todas</code>\n'
           + 'Modos:\n'
           + '  👤 <code>humano</code> — você aprova antes de avançar\n'
           + '  🤖 <code>agente</code> — Agente Revisor decide\n'
-          + '  ⚡ <code>auto</code> — avança automaticamente sem aprovação\n\n'
+          + '  ⚡ <code>auto</code> — avança automaticamente sem aprovaçêo\n\n'
           + 'Exemplos:\n'
           + '<code>/modos todas auto</code> — sem aprovações\n'
-          + '<code>/modos 1 humano</code> — só etapa 1 com aprovação humana\n'
+          + '<code>/modos 1 humano</code> — só etapa 1 com aprovaçêo humana\n'
           + '<code>/modos notificacoes off</code> — silencia notificações',
         { parse_mode: 'HTML' },
       );
@@ -208,7 +208,7 @@ Instructions:
     const mode = parts[1];
 
     if (target === 'notificacoes' || target === 'notificações') {
-      cv.notifications = !(mode === 'off' || mode === 'nao' || mode === 'não' || mode === 'false');
+      cv.notifications = !(mode === 'off' || mode === 'nao' || mode === 'nêo' || mode === 'false');
       await ctx.reply(`Notificações ${cv.notifications ? 'ativadas ✅' : 'desativadas 🔇'}`);
       return;
     }

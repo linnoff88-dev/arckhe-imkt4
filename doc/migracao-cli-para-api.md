@@ -1,10 +1,10 @@
-# Migração: Claude CLI → Claude API
+# Migraçêo: Claude CLI → Claude API
 
-## Situação Atual
+## Situaçêo Atual
 
 Os agentes do pipeline rodam via **Claude CLI** (`claude -p <prompt> --dangerously-skip-permissions`), spawned como subprocesso pelo worker (`pipeline/worker.js`).
 
-### Função atual: `runClaude()`
+### Funçêo atual: `runClaude()`
 ```js
 const child = spawn('claude', ['-p', prompt, '--dangerously-skip-permissions'], { cwd: PROJECT_ROOT });
 ```
@@ -12,16 +12,16 @@ const child = spawn('claude', ['-p', prompt, '--dangerously-skip-permissions'], 
 ### Problemas do CLI
 - **Rate limit** — "You've hit your limit · resets 9pm" — bloqueia o pipeline inteiro
 - **Timeout** — processos longos (Opus scene plan) podem travar
-- **Sem controle de modelo** — usa o modelo default da sessão CLI
+- **Sem controle de modelo** — usa o modelo default da sessêo CLI
 - **Stdout parsing frágil** — depende de parsear texto de saída
 - **Sem streaming** — espera tudo terminar para obter resultado
 - **Concorrência limitada** — CLI tem limites de sessões simultâneas
 
 ---
 
-## Migração Proposta
+## Migraçêo Proposta
 
-### Opção A: Claude API (Anthropic) — RECOMENDADA
+### Opçêo A: Claude API (Anthropic) — RECOMENDADA
 
 **Requisitos:**
 - `ANTHROPIC_API_KEY` no `.env`
@@ -29,7 +29,7 @@ const child = spawn('claude', ['-p', prompt, '--dangerously-skip-permissions'], 
 
 **Mudanças no `worker.js`:**
 
-1. Substituir `runClaude()` por função que usa a API:
+1. Substituir `runClaude()` por funçêo que usa a API:
 ```js
 const Anthropic = require('@anthropic-ai/sdk');
 const client = new Anthropic();
@@ -66,7 +66,7 @@ async function runClaudeAPI(prompt, agentName, outputDir, timeout, opts = {}) {
 
 ---
 
-### Opção B: OpenAI Codex / GPT-4
+### Opçêo B: OpenAI Codex / GPT-4
 
 **Requisitos:**
 - `OPENAI_API_KEY` no `.env`
@@ -84,7 +84,7 @@ async function runClaudeAPI(prompt, agentName, outputDir, timeout, opts = {}) {
 
 ---
 
-### Opção C: Híbrida (CLI + API)
+### Opçêo C: Híbrida (CLI + API)
 
 Manter CLI para agentes simples (Sonnet) e usar API para agentes complexos (Opus):
 - Research Agent → CLI (Sonnet, rápido)
@@ -98,23 +98,23 @@ Manter CLI para agentes simples (Sonnet) e usar API para agentes complexos (Opus
 
 ---
 
-## Plano de Implementação
+## Plano de Implementaçêo
 
-### Fase 1: Preparação
+### Fase 1: Preparaçêo
 - [ ] Instalar `@anthropic-ai/sdk`
 - [ ] Adicionar `ANTHROPIC_API_KEY` ao `.env`
-- [ ] Criar `pipeline/run-claude-api.js` com nova função `runClaudeAPI()`
+- [ ] Criar `pipeline/run-claude-api.js` com nova funçêo `runClaudeAPI()`
 - [ ] Implementar tool use loop (Read, Write, Bash, Glob)
 
-### Fase 2: Migração gradual
+### Fase 2: Migraçêo gradual
 - [ ] Adicionar flag `use_api: true` no payload
 - [ ] Se `use_api`, usar `runClaudeAPI()` em vez de `runClaude()`
 - [ ] Testar com 1 agente (Dir. Fotografia)
 - [ ] Expandir para todos os agentes
 
-### Fase 3: Remoção do CLI
+### Fase 3: Remoçêo do CLI
 - [ ] Remover dependência do `claude` CLI
-- [ ] Atualizar documentação
+- [ ] Atualizar documentaçêo
 - [ ] Remover `--dangerously-skip-permissions`
 
 ---

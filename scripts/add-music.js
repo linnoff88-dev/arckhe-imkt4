@@ -2,10 +2,10 @@
 /**
  * add-music.js — CLI opt-in para adicionar trilha sonora de fundo a um scene plan.
  *
- * **Não é parte do fluxo default** do pipeline. Você chama isso explicitamente
+ * **Nêo é parte do fluxo default** do pipeline. Você chama isso explicitamente
  * quando decide que um vídeo específico merece música. O scene plan é atualizado
  * em-place com os campos `music` e `music_volume`, e o render-video-ffmpeg.js
- * pega automaticamente na próxima execução.
+ * pega automaticamente na próxima execuçêo.
  *
  * Fonte: Freesound.org (via pipeline/search-music-freesound.js).
  * Licença: varia por trilha — registrada em audio-enrich-manifest.json na
@@ -53,8 +53,8 @@ Uso: node scripts/add-music.js <scene_plan.json> "<query>" [options]
 
 Opções:
   --mood <tag>     Tag adicional de mood (upbeat, calm, epic, cinematic, ambient...)
-  --min <sec>      Duração mínima da trilha em segundos (default: 15)
-  --max <sec>      Duração máxima da trilha em segundos (default: 180)
+  --min <sec>      Duraçêo mínima da trilha em segundos (default: 15)
+  --max <sec>      Duraçêo máxima da trilha em segundos (default: 180)
   --volume <0-1>   Volume da música no mix final (default: 0.15)
   --force          Substitui música existente no scene plan (sem isso, aborta se já tiver)
 

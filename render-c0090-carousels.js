@@ -101,7 +101,7 @@ ${GF}${BASE}
       <div class="dn" style="font-size:60px">R$200</div><div class="dd">custo total</div>
     </div>
   </div>
-  <div class="bt">Isso não é hype — é mudança estrutural no jogo.</div>
+  <div class="bt">Isso nêo é hype — é mudança estrutural no jogo.</div>
 </div>
 </div></body></html>`
   },
@@ -126,7 +126,7 @@ ${GF}${BASE}
 <div class="c">
   <div class="pill">⚡ Vantagem Competitiva</div>
   <div class="hl">Quem testa<br>mais ideias,<br><em>ganha.</em></div>
-  <div class="body">Velocidade de iteração<br>não é diferencial — é moat.</div>
+  <div class="body">Velocidade de iteraçêo<br>nêo é diferencial — é moat.</div>
   <div class="badge"><span class="badge-t">Testar rápido = aprender rápido = vencer</span></div>
 </div>
 </div></body></html>`
@@ -159,7 +159,7 @@ ${GF}${BASE}
   <div class="div"></div>
   <div class="bullets">
     <div class="b"><div class="bd"></div><div class="bt">Uma pessoa + IA já cria MVP decente</div></div>
-    <div class="b"><div class="bd"></div><div class="bt">A barreira de entrada não é mais técnica</div></div>
+    <div class="b"><div class="bd"></div><div class="bt">A barreira de entrada nêo é mais técnica</div></div>
     <div class="b green"><div class="bd"></div><div class="bt">É estratégica. É cognitiva. É sua.</div></div>
   </div>
 </div>
@@ -188,11 +188,11 @@ ${GF}${BASE}
 <div class="brand">INEMA</div><div class="num">05 / 10</div>
 <div class="c">
   <div class="hl">O <span class="cm">código</span><br>virou<br><span class="vl">commodity.</span></div>
-  <div class="sub">O valor está na decisão:</div>
+  <div class="sub">O valor está na decisêo:</div>
   <div class="flow">
     <div class="fi"><div class="ff">Habilidade técnica</div><div class="fa">→</div><div class="ft">Problema certo</div></div>
     <div class="fi"><div class="ff">Velocidade de build</div><div class="fa">→</div><div class="ft">Entender o usuário</div></div>
-    <div class="fi"><div class="ff">Stack tecnológica</div><div class="fa">→</div><div class="ft">Distribuição certa</div></div>
+    <div class="fi"><div class="ff">Stack tecnológica</div><div class="fa">→</div><div class="ft">Distribuiçêo certa</div></div>
   </div>
 </div>
 </div></body></html>`
@@ -226,10 +226,10 @@ ${GF}${BASE}
 <div class="c">
   <div class="lbl">Nova Realidade</div>
   <div class="hl">Prototipar virou<br><em>pensamento</em><br>estratégico.</div>
-  <div class="body">Não é mais etapa de dev.<br>É ferramenta de validação do fundador.</div>
+  <div class="body">Nêo é mais etapa de dev.<br>É ferramenta de validaçêo do fundador.</div>
   <div class="sc">
     <div class="si from"><div class="sl">Antes</div><div class="st">Etapa de desenvolvimento</div></div>
-    <div class="si to"><div class="sl">Agora</div><div class="st">Ferramenta de decisão estratégica</div></div>
+    <div class="si to"><div class="sl">Agora</div><div class="st">Ferramenta de decisêo estratégica</div></div>
   </div>
 </div>
 </div></body></html>`
@@ -255,14 +255,14 @@ ${GF}${BASE}
 <div class="ov" style="background:linear-gradient(135deg,rgba(18,0,0,.9) 0%,rgba(0,0,0,.78) 100%);"></div>
 <div class="brand">INEMA</div><div class="num">07 / 10</div>
 <div class="c">
-  <div class="wtag">⚠ Atenção</div>
+  <div class="wtag">⚠ Atençêo</div>
   <div class="hl">O <span class="rr">risco</span><br>que o hype<br>ignora.</div>
   <div class="rl">
     <div class="ri"><div class="ic">▸</div><div class="rt">Dívida técnica invisível — difícil de ver enquanto cria</div></div>
     <div class="ri"><div class="ic">▸</div><div class="rt">Sistemas criados sem critério: difíceis de manter e escalar</div></div>
-    <div class="ri"><div class="ic">▸</div><div class="rt">Velocidade sem estratégia é armadilha, não vantagem</div></div>
+    <div class="ri"><div class="ic">▸</div><div class="rt">Velocidade sem estratégia é armadilha, nêo vantagem</div></div>
   </div>
-  <div class="bn">Velocidade precisa de direção.</div>
+  <div class="bn">Velocidade precisa de direçêo.</div>
 </div>
 </div></body></html>`
   },
@@ -286,11 +286,11 @@ ${GF}${BASE}
 <div class="ov" style="background:rgba(0,0,0,.82);"></div>
 <div class="brand">INEMA</div><div class="num">08 / 10</div>
 <div class="c">
-  <div class="lbl">O que NÃO mudou</div>
-  <div class="hl">Execução consistente<br>ainda <em>vence.</em></div>
+  <div class="lbl">O que NêO mudou</div>
+  <div class="hl">Execuçêo consistente<br>ainda <em>vence.</em></div>
   <div class="tc">
-    <div class="card"><div class="chk">✓</div><div class="ct">O cliente ainda quer valor real — não velocidade</div></div>
-    <div class="card"><div class="chk">✓</div><div class="ct">Execução consistente vence no longo prazo</div></div>
+    <div class="card"><div class="chk">✓</div><div class="ct">O cliente ainda quer valor real — nêo velocidade</div></div>
+    <div class="card"><div class="chk">✓</div><div class="ct">Execuçêo consistente vence no longo prazo</div></div>
     <div class="card"><div class="chk">✓</div><div class="ct">Escolher o problema certo ainda é o diferencial humano</div></div>
   </div>
 </div>
@@ -326,15 +326,15 @@ ${GF}${BASE}
   <div class="fw">
     <div class="fc adv">
       <div class="ft">🟢 Vantagem</div>
-      <div class="fi">Velocidade + clareza de decisão</div>
+      <div class="fi">Velocidade + clareza de decisêo</div>
       <div class="fi">Iterar rápido com foco no usuário</div>
-      <div class="fi">Prototipar para validar, não lançar</div>
+      <div class="fi">Prototipar para validar, nêo lançar</div>
     </div>
     <div class="fc trap">
       <div class="ft">🔴 Armadilha</div>
       <div class="fi">Velocidade sem estratégia</div>
-      <div class="fi">Build sem validação de problema</div>
-      <div class="fi">Código rápido, decisão errada</div>
+      <div class="fi">Build sem validaçêo de problema</div>
+      <div class="fi">Código rápido, decisêo errada</div>
     </div>
   </div>
   <div class="bi">A diferença está em saber qual é qual.</div>
@@ -364,7 +364,7 @@ ${GF}${BASE}
   <div class="bu">INEMA<span>.CLUB</span></div>
   <div class="tl">Trilha completa &nbsp;·&nbsp; 100% gratuita</div>
   <div class="btn">▶&nbsp; Comece agora</div>
-  <div class="fb">✓ Sem cartão · Sem truques · Acesso imediato</div>
+  <div class="fb">✓ Sem cartêo · Sem truques · Acesso imediato</div>
 </div>
 </div></body></html>`
   }

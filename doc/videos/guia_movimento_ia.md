@@ -1,19 +1,19 @@
-# 🎬 Guia Universal de Direção de Movimento para IA de Edição
+# 🎬 Guia Universal de Direçêo de Movimento para IA de Ediçêo
 
 ## ✅ Estrutura Universal (serve para qualquer vídeo)
 
-Use sempre este padrão:
+Use sempre este padrêo:
 
-- movimento (tipo + direção)  
+- movimento (tipo + direçêo)  
 - zoom (valores: de X para Y)  
-- duração (tempo em segundos)  
+- duraçêo (tempo em segundos)  
 - intensidade (leve / moderado / forte)  
 - ritmo (lento / médio / rápido)  
-- emoção (intenção da cena)  
+- emoçêo (intençêo da cena)  
 
 ---
 
-## ❌ O que NÃO é universal
+## ❌ O que NêO é universal
 
 Os VALORES mudam dependendo do estilo:
 
@@ -37,7 +37,7 @@ Todos os vídeos usam os mesmos movimentos:
 
 ---
 
-## 🔥 Exemplos de aplicação
+## 🔥 Exemplos de aplicaçêo
 
 ### 🎥 Hero Film (luxo)
 - zoom: 100 → 110 em 2.5s  
@@ -45,7 +45,7 @@ Todos os vídeos usam os mesmos movimentos:
 - intensidade: baixa  
 - ritmo: lento  
 - shake: nenhum  
-- emoção: sofisticação  
+- emoçêo: sofisticaçêo  
 
 ---
 
@@ -55,7 +55,7 @@ Todos os vídeos usam os mesmos movimentos:
 - intensidade: alta  
 - ritmo: rápido  
 - shake: leve  
-- emoção: urgência  
+- emoçêo: urgência  
 
 ---
 
@@ -65,7 +65,7 @@ Todos os vídeos usam os mesmos movimentos:
 - intensidade: variável  
 - ritmo: espontâneo  
 - shake: natural  
-- emoção: autenticidade  
+- emoçêo: autenticidade  
 
 ---
 
@@ -75,13 +75,13 @@ Todos os vídeos usam os mesmos movimentos:
 - intensidade: baixa  
 - ritmo: médio  
 - shake: nenhum  
-- emoção: clareza  
+- emoçêo: clareza  
 
 ---
 
 ## 🎯 Fórmula Universal
 
-> movimento + intensidade + tempo + emoção
+> movimento + intensidade + tempo + emoçêo
 
 ---
 
@@ -99,12 +99,12 @@ Todos os vídeos usam os mesmos movimentos:
 ## 🚀 Template para IA
 
 > Para este clip, aplique:
-> - movimento: [tipo + direção]
+> - movimento: [tipo + direçêo]
 > - zoom: [de X para Y]
-> - duração: [tempo]
+> - duraçêo: [tempo]
 > - intensidade: [leve/moderado/forte]
 > - ritmo: [lento/médio/rápido]
-> - emoção: [intenção]
+> - emoçêo: [intençêo]
 >
 > Use easing suave.  
 > Evite exageros.  
@@ -112,9 +112,9 @@ Todos os vídeos usam os mesmos movimentos:
 
 ---
 
-## 🧠 Conclusão
+## 🧠 Conclusêo
 
 ✔ A estrutura é universal  
-❌ Os valores não são  
+❌ Os valores nêo sêo  
 
-👉 O segredo é ajustar intensidade, tempo e emoção para cada estilo
+👉 O segredo é ajustar intensidade, tempo e emoçêo para cada estilo

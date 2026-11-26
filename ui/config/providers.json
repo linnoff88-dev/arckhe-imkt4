@@ -133,15 +133,15 @@
   "audio_modes": [
     {
       "value": "narration",
-      "label": "Narração"
+      "label": "Narraçêo"
     },
     {
       "value": "both",
-      "label": "Narração + música"
+      "label": "Narraçêo + música"
     },
     {
       "value": "none",
-      "label": "Sem narração"
+      "label": "Sem narraçêo"
     }
   ],
   "video_templates": [

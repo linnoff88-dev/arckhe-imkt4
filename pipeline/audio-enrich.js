@@ -1,11 +1,11 @@
 /**
  * audio-enrich.js — Opt-in: adiciona música de fundo e/ou SFX a um scene plan.
  *
- * **Não é parte do fluxo default** de geração de vídeo. É invocado manualmente
+ * **Nêo é parte do fluxo default** de geraçêo de vídeo. É invocado manualmente
  * (ou por um worker que o usuário explicitamente habilitar) quando queremos
  * enriquecer o áudio de uma campanha específica.
  *
- * Dois pontos de extensão:
+ * Dois pontos de extensêo:
  *  1. addBackgroundMusic(scenePlanPath, options)
  *     - Busca no Freesound por mood/query, baixa preview, adiciona `music` e
  *       `music_volume` ao scene plan. Render pega automaticamente (já suportado
@@ -14,11 +14,11 @@
  *  2. addSceneSfx(scenePlanPath, sceneIndexOrId, options)
  *     - Busca SFX no Pixabay (fallback Freesound), baixa, adiciona
  *       `sfx: [{file, offset_s, volume}]` na cena escolhida. Render precisa
- *       suportar este campo (extensão feita em render-video-ffmpeg.js).
+ *       suportar este campo (extensêo feita em render-video-ffmpeg.js).
  *
  * Design principles:
  *  - Opt-in: nada acontece sem chamada explícita
- *  - Idempotente: re-rodar com mesma query não duplica arquivos (checa existência)
+ *  - Idempotente: re-rodar com mesma query nêo duplica arquivos (checa existência)
  *  - Sem exigir network key: usa providers com fallback (Pixabay → Freesound)
  *  - Registra licença no manifest.json da pasta audio/ da campanha (rastreabilidade)
  *
@@ -57,14 +57,14 @@ function saveScenePlan(abs, plan) {
 }
 
 function resolveAudioDir(scenePlanAbs) {
-  // Padrão timesmkt3: scene plans ficam em {campaign}/video/ ou {campaign}/scene_plan.json,
+  // Padrêo timesmkt3: scene plans ficam em {campaign}/video/ ou {campaign}/scene_plan.json,
   // áudios em {campaign}/audio/. Resolvemos o dir de áudio subindo 1-2 níveis.
   const scenePlanDir = path.dirname(scenePlanAbs);
-  // Se scene plan está em .../video/, áudio é irmão ../audio/
+  // Se scene plan está em .../video/, áudio é irmêo ../audio/
   if (path.basename(scenePlanDir) === 'video') {
     return path.join(path.dirname(scenePlanDir), 'audio');
   }
-  // Senão, áudio é subpasta audio/ adjacente
+  // Senêo, áudio é subpasta audio/ adjacente
   return path.join(scenePlanDir, 'audio');
 }
 
@@ -101,8 +101,8 @@ function relFromPlan(scenePlanAbs, targetAbs) {
  * @param {object} options
  * @param {string} options.query - termo de busca (ex: "tech ambient", "corporate")
  * @param {string} [options.mood] - tag adicional (upbeat, calm, epic, tense...)
- * @param {number} [options.minDuration=15] - duração mínima em segundos
- * @param {number} [options.maxDuration=180] - duração máxima em segundos
+ * @param {number} [options.minDuration=15] - duraçêo mínima em segundos
+ * @param {number} [options.maxDuration=180] - duraçêo máxima em segundos
  * @param {number} [options.volume=0.15] - volume da música no mix final (0.0-1.0)
  * @param {boolean} [options.force=false] - se true, baixa mesmo se já existir música
  */
@@ -131,13 +131,13 @@ async function addBackgroundMusic(scenePlanPath, options = {}) {
   console.log(`[audio-enrich] buscando música: "${query}" (mood=${mood || 'any'}, ${minDuration}-${maxDuration}s)`);
   const sound = await searchMusic(query, mood, minDuration, maxDuration);
   if (!sound) {
-    console.warn('[audio-enrich] nenhuma música encontrada. Scene plan não foi modificado.');
+    console.warn('[audio-enrich] nenhuma música encontrada. Scene plan nêo foi modificado.');
     return { skipped: true, reason: 'no_results' };
   }
 
   const downloadedPath = await downloadPreview(sound, audioDir);
   if (!downloadedPath) {
-    console.warn('[audio-enrich] falha no download. Scene plan não foi modificado.');
+    console.warn('[audio-enrich] falha no download. Scene plan nêo foi modificado.');
     return { skipped: true, reason: 'download_failed' };
   }
 
@@ -196,12 +196,12 @@ async function addBackgroundMusic(scenePlanPath, options = {}) {
  * @param {string} options.query - termo de busca SFX
  * @param {number} [options.volume=0.5] - volume do SFX no mix
  * @param {number} [options.offset_s=0] - offset dentro da cena em segundos
- * @param {number} [options.maxDuration=5] - duração máxima do SFX
+ * @param {number} [options.maxDuration=5] - duraçêo máxima do SFX
  * @param {string} [options.provider='freesound'] - freesound ou pixabay-sfx
  *
- * NOTA: pixabay-sfx é um endpoint quebrado — o Pixabay não expõe áudio via API
+ * NOTA: pixabay-sfx é um endpoint quebrado — o Pixabay nêo expõe áudio via API
  * pública, só imagens. O default é 'freesound' que funciona de verdade.
- * Mantemos 'pixabay-sfx' como opção só pra interface consistente com o registry.
+ * Mantemos 'pixabay-sfx' como opçêo só pra interface consistente com o registry.
  */
 async function addSceneSfx(scenePlanPath, sceneIndexOrId, options = {}) {
   const {
@@ -227,7 +227,7 @@ async function addSceneSfx(scenePlanPath, sceneIndexOrId, options = {}) {
     sceneIdx = scenes.findIndex(s => s.id === sceneIndexOrId);
   }
   if (sceneIdx < 0 || sceneIdx >= scenes.length) {
-    throw new Error(`cena não encontrada: ${sceneIndexOrId}`);
+    throw new Error(`cena nêo encontrada: ${sceneIndexOrId}`);
   }
   const scene = scenes[sceneIdx];
   const sceneLabel = scene.id || `cena ${sceneIdx}`;

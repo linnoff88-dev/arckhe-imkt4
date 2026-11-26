@@ -275,7 +275,7 @@ bot.command('help', async (ctx) => {
 
     `<b>Etapas do pipeline:</b>\n` +
     `  1. Estrategia — Research + Diretor Criativo + Copywriter\n` +
-    `  2. Imagens — Ad Creative Designer (validação aspect ratio)\n` +
+    `  2. Imagens — Ad Creative Designer (validaçêo aspect ratio)\n` +
     `  3. Video — Quick (ffmpeg) + Pro (Diretor de Foto + Remotion)\n` +
     `  4. Plataformas — Instagram, YouTube, TikTok, Facebook, Threads, LinkedIn\n` +
     `  5. Distribuicao — Upload + Agendar + Publicar\n\n` +
@@ -300,7 +300,7 @@ bot.command('help', async (ctx) => {
 
     `<b>Midia</b>\n` +
     `/img-api, /img-free, /img-pasta\n` +
-    `/tts-api — narracao (Chatterbox VC local por padrão)\n` +
+    `/tts-api — narracao (Chatterbox VC local por padrêo)\n` +
     `/media-status — APIs configuradas\n\n` +
 
     `<b>Fotos (upload)</b>\n` +
@@ -335,7 +335,7 @@ bot.command('helpcampanha', async (ctx) => {
 
     `O pipeline roda em <b>5 etapas</b>:\n` +
     `  <b>1.</b> Estrategia — Research + Diretor Criativo + Copywriter\n` +
-    `  <b>2.</b> Imagens — Ad Creative Designer (validação 1:1/9:16)\n` +
+    `  <b>2.</b> Imagens — Ad Creative Designer (validaçêo 1:1/9:16)\n` +
     `  <b>3.</b> Video\n` +
     `      ▶️ Quick — slideshow 15s (ffmpeg)\n` +
     `      ▶️ Pro — Diretor de Fotografia + Scene Plan + Remotion 60s\n` +
@@ -343,14 +343,14 @@ bot.command('helpcampanha', async (ctx) => {
     `  <b>5.</b> Distribuicao — Upload + Agendar + Publicar\n\n` +
 
     `<b>Fases do Video Pro:</b>\n` +
-    `  1. Narração (ElevenLabs)\n` +
+    `  1. Narraçêo (ElevenLabs)\n` +
     `  1.5 Timing áudio (ffprobe)\n` +
     `  1.6 Diretor de Fotografia (Opus)\n` +
     `  2. Scene Plan (Opus)\n` +
     `  3. Imagens (se API)\n` +
     `  4. Render (Remotion)\n\n` +
 
-    `A cada etapa o bot envia o resultado e aguarda confirmação (modo padrão). Veja /helpaprovacoes.\n\n` +
+    `A cada etapa o bot envia o resultado e aguarda confirmaçêo (modo padrêo). Veja /helpaprovacoes.\n\n` +
 
     `<b>Como iniciar:</b>\n` +
     `Descreva sua campanha em linguagem natural:\n` +
@@ -359,11 +359,11 @@ bot.command('helpcampanha', async (ctx) => {
     `<code>/campanha &lt;nome&gt; [opcoes]</code>\n\n` +
 
     `<b>Opções:</b>\n` +
-    `  --date YYYY-MM-DD (padrão: hoje)\n` +
-    `  --lang pt-BR|en (padrão: pt-BR)\n` +
+    `  --date YYYY-MM-DD (padrêo: hoje)\n` +
+    `  --lang pt-BR|en (padrêo: pt-BR)\n` +
     `  --platforms instagram,youtube,threads\n` +
-    `  --images N — qtd de imagens (padrão: 5)\n` +
-    `  --videos N — qtd de vídeos (padrão: 1)\n` +
+    `  --images N — qtd de imagens (padrêo: 5)\n` +
+    `  --videos N — qtd de vídeos (padrêo: 1)\n` +
     `  --skip-research — pula pesquisa\n` +
     `  --skip-image — pula imagens\n` +
     `  --skip-video — pula vídeo\n\n` +
@@ -377,7 +377,7 @@ bot.command('helpcampanha', async (ctx) => {
     `/status — etapa atual e agentes rodando\n` +
     `/outputs — lista campanhas prontas\n` +
     `/enviar &lt;pasta&gt; — recebe os arquivos aqui\n` +
-    `/helpaprovacoes — configurar modos de aprovação`,
+    `/helpaprovacoes — configurar modos de aprovaçêo`,
     { parse_mode: 'HTML' }
   );
 });
@@ -388,34 +388,34 @@ bot.command('helpaprovacoes', async (ctx) => {
   await ctx.reply(
     `<b>APROVAÇÕES — Como funciona</b>\n\n` +
 
-    `O pipeline v4 tem <b>5 pontos de aprovação</b>, um por etapa:\n\n` +
+    `O pipeline v4 tem <b>5 pontos de aprovaçêo</b>, um por etapa:\n\n` +
     `  <b>Etapa 1</b> — Brief Criativo\n` +
-    `  O Diretor de Criação entrega o ângulo estratégico da campanha.\n` +
+    `  O Diretor de Criaçêo entrega o ângulo estratégico da campanha.\n` +
     `  Você aprova antes das imagens e copy serem gerados.\n\n` +
     `  <b>Etapa 2</b> — Imagens & Copy\n` +
-    `  Imagens chegam ao vivo à medida que são geradas.\n` +
-    `  Copy (Instagram, Threads, YouTube) é mostrado para aprovação.\n\n` +
+    `  Imagens chegam ao vivo à medida que sêo geradas.\n` +
+    `  Copy (Instagram, Threads, YouTube) é mostrado para aprovaçêo.\n\n` +
     `  <b>Etapa 3</b> — Vídeo\n` +
-    `  Roteiro cena a cena é enviado para revisão antes da renderização.\n\n` +
-    `  <b>Etapa 4</b> — Distribuição\n` +
-    `  Confirmação final antes de publicar nas plataformas.\n\n` +
+    `  Roteiro cena a cena é enviado para revisêo antes da renderizaçêo.\n\n` +
+    `  <b>Etapa 4</b> — Distribuiçêo\n` +
+    `  Confirmaçêo final antes de publicar nas plataformas.\n\n` +
 
     `<b>Modos por etapa:</b>\n\n` +
-    `  👤 <b>humano</b> — você recebe o resultado e responde <b>sim</b> ou <b>não</b> (padrão)\n` +
+    `  👤 <b>humano</b> — você recebe o resultado e responde <b>sim</b> ou <b>nêo</b> (padrêo)\n` +
     `  🤖 <b>agente</b> — Agente Revisor avalia e decide automaticamente; só notifica se pedir ajuste\n` +
-    `  ⚡ <b>auto</b> — avança sem nenhuma aprovação\n\n` +
+    `  ⚡ <b>auto</b> — avança sem nenhuma aprovaçêo\n\n` +
 
     `<b>Configurar antes de rodar:</b>\n` +
     `Descreva no briefing:\n` +
-    `<i>"campanha de páscoa, aprovação por agente em tudo"</i>\n` +
+    `<i>"campanha de páscoa, aprovaçêo por agente em tudo"</i>\n` +
     `<i>"campanha sem aprovações, notificações desativadas"</i>\n` +
-    `<i>"aprovação humana só no brief e na distribuição"</i>\n\n` +
+    `<i>"aprovaçêo humana só no brief e na distribuiçêo"</i>\n\n` +
 
     `<b>Configurar durante a campanha:</b>\n` +
     `<code>/modos todas auto</code> — sem aprovações\n` +
     `<code>/modos todas agente</code> — Agente Revisor em tudo\n` +
-    `<code>/modos 1 humano</code> — só etapa 1 com aprovação humana\n` +
-    `<code>/modos 3 auto</code> — vídeo sem aprovação\n` +
+    `<code>/modos 1 humano</code> — só etapa 1 com aprovaçêo humana\n` +
+    `<code>/modos 3 auto</code> — vídeo sem aprovaçêo\n` +
     `<code>/modos notificacoes off</code> — silencia notificações de agentes\n\n` +
 
     `<b>O Agente Revisor:</b>\n` +
@@ -425,7 +425,7 @@ bot.command('helpaprovacoes', async (ctx) => {
 
     `<b>Respostas aceitas nas aprovações:</b>\n` +
     `  <b>sim</b> / ok / confirma / vai / bora → avança\n` +
-    `  <b>não</b> / cancela → cancela a campanha\n` +
+    `  <b>nêo</b> / cancela → cancela a campanha\n` +
     `  Qualquer texto longo → ajuste (ex: "deixa o copy mais direto")`,
     { parse_mode: 'HTML' }
   );
@@ -826,14 +826,14 @@ bot.command('lotequick', async (ctx) => {
   const more = selected.length > 10 ? `\n<i>...e mais ${selected.length - 10}</i>` : '';
 
   await ctx.reply(
-    `<b>Lote quick — confirmação</b>\n\n`
+    `<b>Lote quick — confirmaçêo</b>\n\n`
     + `Projeto: <code>${s.projectDir}</code>\n`
     + `Escopo: <b>${scope}</b>\n`
     + `Campanhas: <b>${selected.length}</b>\n`
     + `Fonte de imagem: <b>${sourceLabel}</b>\n\n`
     + `Modo: <b>${quickMode}</b>\n\n`
     + `${preview}${more}\n\n`
-    + `Responda <b>sim</b> para iniciar ou <b>não</b> para cancelar.`,
+    + `Responda <b>sim</b> para iniciar ou <b>nêo</b> para cancelar.`,
     { parse_mode: 'HTML' },
   );
 });
@@ -919,7 +919,7 @@ bot.command('lote', async (ctx) => {
     + '<code>/lotecontinue &lt;batch_id&gt;</code>\n\n'
     + '<code>/loterun &lt;c1,c2,...&gt; &lt;etapas&gt; [flags]</code> — rerun em série\n\n'
     + 'Escopos:\n'
-    + '• <b>ativos</b> — só campanhas não arquivadas\n'
+    + '• <b>ativos</b> — só campanhas nêo arquivadas\n'
     + '• <b>todos</b> — inclui arquivadas\n\n'
     + '• <b>campanhas</b> — lista explícita; respeita os IDs mesmo se estiverem arquivados\n\n'
     + 'Fontes:\n'
@@ -1320,14 +1320,14 @@ bot.on('message:text', async (ctx) => {
     await ctx.reply(
       `⏳ <b>Pipeline rodando:</b> ${s.runningTask.taskName}\n\n`
       + `Use /status para acompanhar ou /cancel para cancelar.\n\n`
-      + `<i>Mensagens livres são ignoradas enquanto há pipeline ativo.</i>`,
+      + `<i>Mensagens livres sêo ignoradas enquanto há pipeline ativo.</i>`,
       { parse_mode: 'HTML' },
     );
     return;
   }
 
   // ── Detect rerun intent in free text ─────────────────────────────────
-  const rerunKeywords = /\b(recri[ae]|refaz|refazer|reprocessa|re-?run|gera? novas?|nova vers[ãa]o|outra vers[ãa]o|recriar)\b/i;
+  const rerunKeywords = /\b(recri[ae]|refaz|refazer|reprocessa|re-?run|gera? novas?|nova vers[êa]o|outra vers[êa]o|recriar)\b/i;
   const campaignRef = text.match(/\b(c\d{1,4})\b/i);
   if (rerunKeywords.test(text) && campaignRef && !s.runningTask && !s.processing) {
     let rerunProjectDir = detectProjectFromText(PROJECT_ROOT, text, s.projectDir);
@@ -1488,7 +1488,7 @@ async function sendStageApprovalRequest(ctx, chatId, stage) {
     await ctx.reply(
       '<b>Brief criativo pronto — Etapa 1/5 ✅</b>\n\n' +
       'Responda <b>sim</b> para avançar para imagens e copy.\n' +
-      '<b>não</b> para cancelar a campanha.\n' +
+      '<b>nêo</b> para cancelar a campanha.\n' +
       'Ou descreva ajustes.',
       { parse_mode: 'HTML' }
     );

@@ -154,7 +154,7 @@ test('handlePendingVideoApproval ignores expired approval', async () => {
   assert.equal(handled, true);
   assert.equal(approvals.length, 0);
   assert.equal(session.get(chatId).pendingVideoApproval, undefined);
-  assert.match(ctx.replies[0].text, /aprovação expirou/i);
+  assert.match(ctx.replies[0].text, /aprovaçêo expirou/i);
 });
 
 test('handlePendingCampaign starts pipeline and numbers campaign on confirmation', async () => {
